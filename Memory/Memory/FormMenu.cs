@@ -12,9 +12,14 @@ namespace Memory
 {
     public partial class FormMenu : Form
     {
+        public static FormMenu Menu;
         public FormMenu()
         {
             InitializeComponent();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e) {
+            FormMenu.Menu = this;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -24,7 +29,7 @@ namespace Memory
 
         private void ButtonPlay_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+            this.Hide();
             FormStartgame startgame = new FormStartgame();
             startgame.Show();
         }

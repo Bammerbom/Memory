@@ -26,6 +26,7 @@ namespace Memory
 
         private void buttonTerug_Click(object sender, EventArgs e) {
             this.Close();
+            FormMenu.Menu.Show();
         }
 
         private void buttonStart_Click(object sender, EventArgs e) {
