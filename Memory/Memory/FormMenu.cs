@@ -16,5 +16,17 @@ namespace Memory
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonPlay_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            FormStartgame startgame = new FormStartgame();
+            startgame.Show();
+        }
     }
 }
