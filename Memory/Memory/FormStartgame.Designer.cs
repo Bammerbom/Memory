@@ -159,7 +159,7 @@
             // buttonTerug
             // 
             this.buttonTerug.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerug.Location = new System.Drawing.Point(67, 794);
+            this.buttonTerug.Location = new System.Drawing.Point(93, 129);
             this.buttonTerug.Name = "buttonTerug";
             this.buttonTerug.Size = new System.Drawing.Size(196, 65);
             this.buttonTerug.TabIndex = 10;
@@ -170,7 +170,7 @@
             // buttonStart
             // 
             this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStart.Location = new System.Drawing.Point(851, 794);
+            this.buttonStart.Location = new System.Drawing.Point(811, 117);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(196, 65);
             this.buttonStart.TabIndex = 11;
