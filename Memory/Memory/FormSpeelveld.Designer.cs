@@ -1,6 +1,6 @@
 ﻿namespace Memory
 {
-    partial class Form2
+    partial class FormSpeelveld
     {
         /// <summary>
         /// Required designer variable.
