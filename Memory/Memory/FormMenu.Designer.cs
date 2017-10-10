@@ -86,7 +86,7 @@
             this.ButtonExit.TabIndex = 5;
             this.ButtonExit.Text = "Exit";
             this.ButtonExit.UseVisualStyleBackColor = true;
-            this.ButtonExit.Click += new System.EventHandler(this.button5_Click);
+            this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
             // plaatje1
             // 

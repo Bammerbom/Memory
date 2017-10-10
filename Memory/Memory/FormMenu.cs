@@ -22,16 +22,18 @@ namespace Memory
             FormMenu.Menu = this;
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void ButtonPlay_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormStartgame startgame = new FormStartgame();
             startgame.Show();
+        }
+
+        private void ButtonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
