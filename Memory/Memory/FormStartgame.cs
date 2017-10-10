@@ -17,7 +17,19 @@ namespace Memory
         }
 
         private void FormStartgame_Load(object sender, EventArgs e) {
-            WindowState = FormWindowState.Maximized;
+            
+        }
+
+        private void gametype_SelectedIndexChanged(object sender, EventArgs e) {
+            Console.WriteLine(comboGametype.Text);
+        }
+
+        private void buttonTerug_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e) {
+            //TODO call start game
         }
     }
 }
