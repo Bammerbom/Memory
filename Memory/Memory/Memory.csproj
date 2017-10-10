@@ -91,5 +91,29 @@
   <ItemGroup>
     <None Include="Resources\Voorkant Memory kaart.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaart8.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
