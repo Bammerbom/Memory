@@ -2,9 +2,10 @@ D:\GITHUB\Memory\Memory\Memory\bin\Debug\Memory.exe.config
 D:\GITHUB\Memory\Memory\Memory\bin\Debug\Memory.exe
 D:\GITHUB\Memory\Memory\Memory\bin\Debug\Memory.pdb
 D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.csprojResolveAssemblyReference.cache
-D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.Form2.resources
 D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.Properties.Resources.resources
 D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.csproj.GenerateResource.Cache
 D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.csproj.CoreCompileInputs.cache
 D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.exe
 D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.pdb
+D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.FormMenu.resources
+D:\GITHUB\Memory\Memory\Memory\obj\Debug\Memory.FormSpeelveld.resources

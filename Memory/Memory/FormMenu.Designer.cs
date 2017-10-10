@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Name = "FormMenu";
             this.Text = "Memory";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
 
         }
