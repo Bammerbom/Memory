@@ -297,6 +297,7 @@
             this.Kaart0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart0.TabIndex = 15;
             this.Kaart0.TabStop = false;
+            this.Kaart0.Click += new System.EventHandler(this.Kaart0_Click);
             // 
             // Kaart1
             // 
@@ -308,6 +309,7 @@
             this.Kaart1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart1.TabIndex = 16;
             this.Kaart1.TabStop = false;
+            this.Kaart1.Click += new System.EventHandler(this.Kaart1_Click);
             // 
             // Kaart2
             // 
@@ -319,6 +321,7 @@
             this.Kaart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart2.TabIndex = 17;
             this.Kaart2.TabStop = false;
+            this.Kaart2.Click += new System.EventHandler(this.Kaart2_Click);
             // 
             // Kaart3
             // 
@@ -330,6 +333,7 @@
             this.Kaart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart3.TabIndex = 18;
             this.Kaart3.TabStop = false;
+            this.Kaart3.Click += new System.EventHandler(this.Kaart3_Click);
             // 
             // Kaart7
             // 
@@ -341,6 +345,7 @@
             this.Kaart7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart7.TabIndex = 22;
             this.Kaart7.TabStop = false;
+            this.Kaart7.Click += new System.EventHandler(this.Kaart7_Click);
             // 
             // Kaart6
             // 
@@ -352,6 +357,7 @@
             this.Kaart6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart6.TabIndex = 21;
             this.Kaart6.TabStop = false;
+            this.Kaart6.Click += new System.EventHandler(this.Kaart6_Click);
             // 
             // Kaart5
             // 
@@ -363,6 +369,7 @@
             this.Kaart5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart5.TabIndex = 20;
             this.Kaart5.TabStop = false;
+            this.Kaart5.Click += new System.EventHandler(this.Kaart5_Click);
             // 
             // Kaart4
             // 
@@ -374,6 +381,7 @@
             this.Kaart4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart4.TabIndex = 19;
             this.Kaart4.TabStop = false;
+            this.Kaart4.Click += new System.EventHandler(this.Kaart4_Click);
             // 
             // Kaart11
             // 
@@ -385,6 +393,7 @@
             this.Kaart11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart11.TabIndex = 26;
             this.Kaart11.TabStop = false;
+            this.Kaart11.Click += new System.EventHandler(this.Kaart11_Click);
             // 
             // Kaart10
             // 
@@ -396,6 +405,7 @@
             this.Kaart10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart10.TabIndex = 25;
             this.Kaart10.TabStop = false;
+            this.Kaart10.Click += new System.EventHandler(this.Kaart10_Click);
             // 
             // Kaart9
             // 
@@ -407,6 +417,7 @@
             this.Kaart9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart9.TabIndex = 24;
             this.Kaart9.TabStop = false;
+            this.Kaart9.Click += new System.EventHandler(this.Kaart9_Click);
             // 
             // Kaart8
             // 
@@ -418,6 +429,7 @@
             this.Kaart8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart8.TabIndex = 23;
             this.Kaart8.TabStop = false;
+            this.Kaart8.Click += new System.EventHandler(this.Kaart8_Click);
             // 
             // Kaart15
             // 
@@ -429,6 +441,7 @@
             this.Kaart15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart15.TabIndex = 30;
             this.Kaart15.TabStop = false;
+            this.Kaart15.Click += new System.EventHandler(this.Kaart15_Click);
             // 
             // Kaart14
             // 
@@ -440,6 +453,7 @@
             this.Kaart14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart14.TabIndex = 29;
             this.Kaart14.TabStop = false;
+            this.Kaart14.Click += new System.EventHandler(this.Kaart14_Click);
             // 
             // Kaart13
             // 
@@ -451,6 +465,7 @@
             this.Kaart13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart13.TabIndex = 28;
             this.Kaart13.TabStop = false;
+            this.Kaart13.Click += new System.EventHandler(this.Kaart13_Click);
             // 
             // Kaart12
             // 
@@ -462,6 +477,7 @@
             this.Kaart12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Kaart12.TabIndex = 27;
             this.Kaart12.TabStop = false;
+            this.Kaart12.Click += new System.EventHandler(this.Kaart12_Click);
             // 
             // FormSpeelveld
             // 
