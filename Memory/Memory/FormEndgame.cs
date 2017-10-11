@@ -12,15 +12,9 @@ namespace Memory
 {
     public partial class FormEndgame : Form
     {
-        public static FormEndgame Endgame;
         public FormEndgame()
         {
             InitializeComponent();
-        }
-
-        private void FormEndgame_Load(object sender, EventArgs e)
-        {
-            FormEndgame.Endgame = this;
         }
 
         private void ButtonReset_Click(object sender, EventArgs e)
