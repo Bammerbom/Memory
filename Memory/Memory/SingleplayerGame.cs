@@ -96,9 +96,9 @@ namespace Memory
 
         }
 
-        public static void KaartReset()
+        public  async static void KaartReset()
         {
-            
+            await Task.Delay(2000);
             for (int i = 0; i <KaartenIds.Count; i++)
             {
                 string kaart = "Kaart" + i;
