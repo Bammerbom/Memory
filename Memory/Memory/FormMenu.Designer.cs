@@ -35,7 +35,6 @@
             this.ButtonHelp = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
             this.plaatje1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +77,7 @@
             this.ButtonHelp.TabIndex = 4;
             this.ButtonHelp.Text = "Help";
             this.ButtonHelp.UseVisualStyleBackColor = true;
+            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
             // 
             // ButtonExit
             // 
@@ -97,24 +97,11 @@
             this.plaatje1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.plaatje1.ErrorImage = null;
             this.plaatje1.InitialImage = null;
-            this.plaatje1.Location = new System.Drawing.Point(-5, -15);
+            this.plaatje1.Location = new System.Drawing.Point(-244, -2);
             this.plaatje1.Name = "plaatje1";
-            this.plaatje1.Size = new System.Drawing.Size(479, 412);
+            this.plaatje1.Size = new System.Drawing.Size(727, 412);
             this.plaatje1.TabIndex = 6;
             this.plaatje1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Underline);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(155, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 44);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Memory";
             // 
             // FormMenu
             // 
@@ -126,7 +113,6 @@
             this.Controls.Add(this.ButtonHighscores);
             this.Controls.Add(this.ButtonLoad);
             this.Controls.Add(this.ButtonPlay);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.plaatje1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -135,7 +121,6 @@
             this.Load += new System.EventHandler(this.FormMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -146,7 +131,6 @@
         private System.Windows.Forms.Button ButtonHelp;
         private System.Windows.Forms.Button ButtonExit;
         private System.Windows.Forms.PictureBox plaatje1;
-        private System.Windows.Forms.Label label1;
     }
 }
 

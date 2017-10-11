@@ -44,8 +44,15 @@ namespace Memory
         private void ButtonHighscores_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormHighscores startgame = new FormHighscores();
-            startgame.Show();
+            FormHighscores Highscores = new FormHighscores();
+            Highscores.Show();
+        }
+
+        private void ButtonHelp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormHelp Help = new FormHelp();
+            Help.Show();
         }
     }
 }

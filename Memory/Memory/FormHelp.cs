@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace Memory
 {
-    public partial class FormTutorial : Form
+    public partial class FormHelp : Form
     {
-        public FormTutorial()
+        public FormHelp()
         {
             InitializeComponent();
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormMenu.Menu.Show();
+        }
     }
 }
