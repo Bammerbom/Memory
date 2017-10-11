@@ -55,60 +55,9 @@ namespace Memory
         {
             int num = nummer;
             string kaart = "Kaart" + KaartenIds[num];
+            string kaartnum = "Kaart" + num;
+            ((PictureBox)Form.Controls[kaartnum]).Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
 
-            switch (num)
-            {
-                case 0:
-                    Form.Kaart0.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-
-                    break;
-                case 1:
-                    Form.Kaart1.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 2:
-                    Form.Kaart2.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 3:
-                    Form.Kaart3.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 4:
-                    Form.Kaart4.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 5:
-                    Form.Kaart5.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 6:
-                    Form.Kaart6.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 7:
-                    Form.Kaart7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 8:
-                    Form.Kaart8.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 9:
-                    Form.Kaart9.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 10:
-                    Form.Kaart10.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 11:
-                    Form.Kaart11.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 12:
-                    Form.Kaart12.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 13:
-                    Form.Kaart13.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 14:
-                    Form.Kaart14.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-                case 15:
-                    Form.Kaart15.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(kaart);
-                    break;
-
-            }
 
             kaartcounter++;
 
@@ -149,7 +98,7 @@ namespace Memory
 
         public static void KaartReset()
         {
-            System.Threading.Thread.Sleep(3000);
+            
             for (int i = 0; i <KaartenIds.Count; i++)
             {
                 string kaart = "Kaart" + i;
