@@ -256,6 +256,7 @@
             this.Label_Timer.Size = new System.Drawing.Size(95, 29);
             this.Label_Timer.TabIndex = 11;
             this.Label_Timer.Text = "Timer : ";
+            this.Label_Timer.Visible = false;
             // 
             // Textbox_Timer
             // 
@@ -266,6 +267,7 @@
             this.Textbox_Timer.Size = new System.Drawing.Size(100, 35);
             this.Textbox_Timer.TabIndex = 12;
             this.Textbox_Timer.Text = "10";
+            this.Textbox_Timer.Visible = false;
             // 
             // Button_Opslaan
             // 
@@ -519,7 +521,7 @@
             this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormSpeelveld";
-            this.Text = "W";
+            this.Text = "Memory";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

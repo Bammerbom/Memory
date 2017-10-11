@@ -43,7 +43,10 @@ namespace Memory
             Form = new FormSpeelveld();
             Form.Show();
 
-            Form.Label_Score_Speler_1.Text = "Hoi";
+            Form.Label_Score_Speler_1.Text = SingleplayerGame.Player + " :";
+            Form.Label_Score_Speler_2.Visible = false;
+            Form.Textbox_Score_Speler_2.Visible = false;
+            Form.TextBox_Beurt.Visible = false;
         }
 
         //draai kaart om
