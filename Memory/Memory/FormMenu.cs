@@ -26,7 +26,6 @@ namespace Memory
 
         private void ButtonPlay_Click(object sender, EventArgs e)
         {
-            this.Hide();
             FormStartgame startgame = new FormStartgame();
             startgame.Show();
         }

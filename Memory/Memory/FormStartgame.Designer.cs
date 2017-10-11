@@ -313,7 +313,7 @@
             this.Controls.Add(this.titel);
             this.Controls.Add(this.comboGametype);
             this.Name = "FormStartgame";
-            this.Text = "FormStartgame";
+            this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormStartgame_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
