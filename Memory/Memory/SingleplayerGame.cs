@@ -8,22 +8,21 @@ namespace Memory
 {
     class SingleplayerGame
     {
-               
-        private FormSpeelveld Form;
-        private List<int> KaartenIds;
+        private static FormSpeelveld Form;
+        private static List<int> KaartenIds;
 
-        private string Player;
-        private int Height;
-        private int Width;
+        private static string Player;
+        private static int Height;
+        private static int Width;
 
-        public SingleplayerGame(string player, int h, int w)
+        public static void Init(string player, int h, int w)
         {
-            this.Player = player;
-            this.Height = h;
-            this.Width = w;
+            SingleplayerGame.Player = player;
+            SingleplayerGame.Height = h;
+            SingleplayerGame.Width = w;
         }
 
-        public void Start()
+        public static void Start()
         {
             //Init lijst KaartenIds
             int kaarten = Height * Width / 2;

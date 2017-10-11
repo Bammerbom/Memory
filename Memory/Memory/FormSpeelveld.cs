@@ -84,7 +84,7 @@ namespace Memory
 
         private void Kaart13_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(13;
+            SingleplayerGame.KaartKlik(13);
         }
 
         private void Kaart14_Click(object sender, EventArgs e)
