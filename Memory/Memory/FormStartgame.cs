@@ -30,7 +30,16 @@ namespace Memory
         }
 
         private void buttonStart_Click(object sender, EventArgs e) {
-            //TODO call start game
+            switch (comboGametype.Text) {
+                case "Singleplayer":
+                    SingleplayerGame game = new SingleplayerGame("Speler", 4, 4); //TODO goede argumenten
+                    game.Start();
+                    this.Close();
+                    break;
+                default:
+                    //TODO geef error met niks geselecteerd
+                    break;
+            }
         }
     }
 }

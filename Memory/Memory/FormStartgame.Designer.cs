@@ -32,8 +32,6 @@
             this.labelANaam = new System.Windows.Forms.Label();
             this.labelASpelgrootte = new System.Windows.Forms.Label();
             this.comboASpelgrootte = new System.Windows.Forms.ComboBox();
-            this.labelASet = new System.Windows.Forms.Label();
-            this.comboASet = new System.Windows.Forms.ComboBox();
             this.buttonTerug = new System.Windows.Forms.Button();
             this.buttonStart = new System.Windows.Forms.Button();
             this.labelMultiplayerLocal = new System.Windows.Forms.Label();
@@ -41,12 +39,8 @@
             this.inputBNaam1 = new System.Windows.Forms.TextBox();
             this.labelBNaam2 = new System.Windows.Forms.Label();
             this.inputBNaam2 = new System.Windows.Forms.TextBox();
-            this.comboBSet = new System.Windows.Forms.ComboBox();
-            this.labelBSet = new System.Windows.Forms.Label();
             this.comboBSpelgrootte = new System.Windows.Forms.ComboBox();
             this.labelBSpelgrootte = new System.Windows.Forms.Label();
-            this.comboCSet = new System.Windows.Forms.ComboBox();
-            this.labelCSet = new System.Windows.Forms.Label();
             this.comboCSpelgrootte = new System.Windows.Forms.ComboBox();
             this.labelCSpelgrootte = new System.Windows.Forms.Label();
             this.labelCNaam = new System.Windows.Forms.Label();
@@ -134,28 +128,6 @@
             this.comboASpelgrootte.Size = new System.Drawing.Size(253, 33);
             this.comboASpelgrootte.TabIndex = 7;
             // 
-            // labelASet
-            // 
-            this.labelASet.AutoSize = true;
-            this.labelASet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelASet.Location = new System.Drawing.Point(121, 539);
-            this.labelASet.Name = "labelASet";
-            this.labelASet.Size = new System.Drawing.Size(168, 26);
-            this.labelASet.TabIndex = 8;
-            this.labelASet.Text = "Afbeeldingenset";
-            // 
-            // comboASet
-            // 
-            this.comboASet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboASet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboASet.FormattingEnabled = true;
-            this.comboASet.Items.AddRange(new object[] {
-            "Logo\'s"});
-            this.comboASet.Location = new System.Drawing.Point(67, 568);
-            this.comboASet.Name = "comboASet";
-            this.comboASet.Size = new System.Drawing.Size(253, 33);
-            this.comboASet.TabIndex = 9;
-            // 
             // buttonTerug
             // 
             this.buttonTerug.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,28 +196,6 @@
             this.inputBNaam2.Size = new System.Drawing.Size(253, 32);
             this.inputBNaam2.TabIndex = 15;
             // 
-            // comboBSet
-            // 
-            this.comboBSet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBSet.FormattingEnabled = true;
-            this.comboBSet.Items.AddRange(new object[] {
-            "Logo\'s"});
-            this.comboBSet.Location = new System.Drawing.Point(406, 665);
-            this.comboBSet.Name = "comboBSet";
-            this.comboBSet.Size = new System.Drawing.Size(253, 33);
-            this.comboBSet.TabIndex = 20;
-            // 
-            // labelBSet
-            // 
-            this.labelBSet.AutoSize = true;
-            this.labelBSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBSet.Location = new System.Drawing.Point(460, 636);
-            this.labelBSet.Name = "labelBSet";
-            this.labelBSet.Size = new System.Drawing.Size(168, 26);
-            this.labelBSet.TabIndex = 19;
-            this.labelBSet.Text = "Afbeeldingenset";
-            // 
             // comboBSpelgrootte
             // 
             this.comboBSpelgrootte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -271,28 +221,6 @@
             this.labelBSpelgrootte.Size = new System.Drawing.Size(123, 26);
             this.labelBSpelgrootte.TabIndex = 17;
             this.labelBSpelgrootte.Text = "Spelgrootte";
-            // 
-            // comboCSet
-            // 
-            this.comboCSet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboCSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboCSet.FormattingEnabled = true;
-            this.comboCSet.Items.AddRange(new object[] {
-            "Logo\'s"});
-            this.comboCSet.Location = new System.Drawing.Point(794, 568);
-            this.comboCSet.Name = "comboCSet";
-            this.comboCSet.Size = new System.Drawing.Size(253, 33);
-            this.comboCSet.TabIndex = 27;
-            // 
-            // labelCSet
-            // 
-            this.labelCSet.AutoSize = true;
-            this.labelCSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCSet.Location = new System.Drawing.Point(848, 539);
-            this.labelCSet.Name = "labelCSet";
-            this.labelCSet.Size = new System.Drawing.Size(168, 26);
-            this.labelCSet.TabIndex = 26;
-            this.labelCSet.Text = "Afbeeldingenset";
             // 
             // comboCSpelgrootte
             // 
@@ -363,15 +291,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 894);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboCSet);
-            this.Controls.Add(this.labelCSet);
             this.Controls.Add(this.comboCSpelgrootte);
             this.Controls.Add(this.labelCSpelgrootte);
             this.Controls.Add(this.labelCNaam);
             this.Controls.Add(this.inputCNaam);
             this.Controls.Add(this.labelMultiplayerOnline);
-            this.Controls.Add(this.comboBSet);
-            this.Controls.Add(this.labelBSet);
             this.Controls.Add(this.comboBSpelgrootte);
             this.Controls.Add(this.labelBSpelgrootte);
             this.Controls.Add(this.labelBNaam2);
@@ -381,8 +305,6 @@
             this.Controls.Add(this.labelMultiplayerLocal);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.buttonTerug);
-            this.Controls.Add(this.comboASet);
-            this.Controls.Add(this.labelASet);
             this.Controls.Add(this.comboASpelgrootte);
             this.Controls.Add(this.labelASpelgrootte);
             this.Controls.Add(this.labelANaam);
@@ -407,8 +329,6 @@
         private System.Windows.Forms.Label labelANaam;
         private System.Windows.Forms.Label labelASpelgrootte;
         private System.Windows.Forms.ComboBox comboASpelgrootte;
-        private System.Windows.Forms.Label labelASet;
-        private System.Windows.Forms.ComboBox comboASet;
         private System.Windows.Forms.Button buttonTerug;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Label labelMultiplayerLocal;
@@ -416,12 +336,8 @@
         private System.Windows.Forms.TextBox inputBNaam1;
         private System.Windows.Forms.Label labelBNaam2;
         private System.Windows.Forms.TextBox inputBNaam2;
-        private System.Windows.Forms.ComboBox comboBSet;
-        private System.Windows.Forms.Label labelBSet;
         private System.Windows.Forms.ComboBox comboBSpelgrootte;
         private System.Windows.Forms.Label labelBSpelgrootte;
-        private System.Windows.Forms.ComboBox comboCSet;
-        private System.Windows.Forms.Label labelCSet;
         private System.Windows.Forms.ComboBox comboCSpelgrootte;
         private System.Windows.Forms.Label labelCSpelgrootte;
         private System.Windows.Forms.Label labelCNaam;
