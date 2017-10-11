@@ -300,6 +300,9 @@ __pycache__/
 # End of https://www.gitignore.io/api/visualstudio
 Memory/.vs/Memory/v15/.suo
 
-Memory/Memory/bin
-Memory/Memory/obj
-
+bin
+bin/*
+obj
+obj/*
+debug/
+Debug/
