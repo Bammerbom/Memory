@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormHighscores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHighscores.Designer.cs">
+      <DependentUpon>FormHighscores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEndgame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEndgame.Designer.cs">
+      <DependentUpon>FormEndgame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormEndgame.resx">
+      <DependentUpon>FormEndgame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHighscores.resx">
+      <DependentUpon>FormHighscores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
