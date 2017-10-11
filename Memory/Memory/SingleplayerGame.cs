@@ -38,6 +38,7 @@ namespace Memory
             Form = new FormSpeelveld();
             Form.Show();
 
+            Form.Label_Score_Speler_1.Text = "Hoi";
         }
 
         public static void KaartKlik(int nummer)
