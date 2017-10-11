@@ -47,7 +47,7 @@
             this.ButtonPlay.Name = "ButtonPlay";
             this.ButtonPlay.Size = new System.Drawing.Size(161, 46);
             this.ButtonPlay.TabIndex = 1;
-            this.ButtonPlay.Text = "Play";
+            this.ButtonPlay.Text = "Speel";
             this.ButtonPlay.UseVisualStyleBackColor = false;
             this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
             // 
@@ -57,7 +57,7 @@
             this.ButtonLoad.Name = "ButtonLoad";
             this.ButtonLoad.Size = new System.Drawing.Size(161, 46);
             this.ButtonLoad.TabIndex = 2;
-            this.ButtonLoad.Text = "Load";
+            this.ButtonLoad.Text = "Laden";
             this.ButtonLoad.UseVisualStyleBackColor = true;
             // 
             // ButtonHighscores
@@ -68,6 +68,7 @@
             this.ButtonHighscores.TabIndex = 3;
             this.ButtonHighscores.Text = "Highscores";
             this.ButtonHighscores.UseVisualStyleBackColor = true;
+            this.ButtonHighscores.Click += new System.EventHandler(this.ButtonHighscores_Click);
             // 
             // ButtonHelp
             // 
@@ -84,7 +85,7 @@
             this.ButtonExit.Name = "ButtonExit";
             this.ButtonExit.Size = new System.Drawing.Size(161, 46);
             this.ButtonExit.TabIndex = 5;
-            this.ButtonExit.Text = "Exit";
+            this.ButtonExit.Text = "Afsluiten";
             this.ButtonExit.UseVisualStyleBackColor = true;
             this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
@@ -111,13 +112,13 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(155, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 54);
+            this.label1.Size = new System.Drawing.Size(159, 44);
             this.label1.TabIndex = 7;
             this.label1.Text = "Memory";
             // 
             // FormMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 409);
             this.Controls.Add(this.ButtonExit);

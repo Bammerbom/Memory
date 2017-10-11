@@ -35,5 +35,17 @@ namespace Memory
         {
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonHighscores_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormHighscores startgame = new FormHighscores();
+            startgame.Show();
+        }
     }
 }
