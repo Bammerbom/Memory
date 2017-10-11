@@ -45,7 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game.cs" />
+    <Compile Include="MultiplayerLocalGame.cs" />
+    <Compile Include="MultiplayerOnlineGame.cs" />
+    <Compile Include="SingleplayerGame.cs" />
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>

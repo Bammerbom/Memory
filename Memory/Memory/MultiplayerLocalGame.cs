@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Memory
 {
-    class Game
+    class MultiplayerLocalGame
     {
-
     }
 }
