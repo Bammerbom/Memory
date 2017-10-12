@@ -109,6 +109,13 @@ namespace Memory
                     if (SpelerAanBeurt == 1) Score1++;
                     if (SpelerAanBeurt == 2) Score2++;
                     Kaartcounter = 0;
+
+                    //Check voor win
+                    if (Checkwin()) {
+                        if (Gamemode == 0) GameSingleplayer.End();
+                        else if (Gamemode == 1) ;
+                        else if (Gamemode == 2) ; //TODO
+                    }
                 } else {
                     //Draai beide kaarten terug om
                     DraaiKaartenTerug();
