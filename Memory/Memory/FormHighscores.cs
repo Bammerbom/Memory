@@ -22,5 +22,10 @@ namespace Memory
             this.Close();
             FormMenu.Menu.Show();
         }
+
+        private void richTextBoxTerugButton_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
