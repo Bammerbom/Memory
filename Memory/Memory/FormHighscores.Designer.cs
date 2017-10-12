@@ -48,6 +48,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            label1.Location = new System.Drawing.Point(52, 207);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(138, 39);
+            label1.TabIndex = 3;
+            label1.Text = "1 speler";
+            // 
             // ButtonBack
             // 
             this.ButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
@@ -59,17 +70,6 @@
             this.ButtonBack.Text = "Terug";
             this.ButtonBack.UseVisualStyleBackColor = true;
             this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            label1.Location = new System.Drawing.Point(52, 207);
-            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(138, 39);
-            label1.TabIndex = 3;
-            label1.Text = "1 speler";
             // 
             // label3
             // 
@@ -144,9 +144,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "FormHighscores";
-            this.Text = "Form1";
+            this.Text = "Memory";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Sterren)).EndInit();
