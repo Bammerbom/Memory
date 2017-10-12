@@ -24,6 +24,7 @@ namespace Memory
 
         private void Kaart1_Click(object sender, EventArgs e)
         {
+
             BaseGame.KaartKlik(1,0);
         }
 
@@ -34,6 +35,7 @@ namespace Memory
 
         private void Kaart3_Click(object sender, EventArgs e)
         {
+            BaseGame.KaartKlik(3);
             BaseGame.KaartKlik(3,0);
         }
 

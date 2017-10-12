@@ -29,18 +29,24 @@ namespace Memory
         public static string Naam1;
         public static string Naam2;
         public static int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
+        public static int Tijdbeurt;
+        public static int Tijdtotaal;
 
         public static void InitSpeelveld(int h, int w) {
             Height = h;
             Width = w;
             Speelveld_types = new int[h, w];
             Speelveld_omgedraaid = new bool[h, w];
+            Tijdbeurt = 10;
+            Tijdtotaal = 0;
+
             //TODO vullen
         }
 
         public static void InitForm() {
             FormSpeelveld = new FormSpeelveld();
             FormSpeelveld.Show();
+
         }
 
         public static void KaartKlik(int x, int y) {
@@ -81,10 +87,10 @@ namespace Memory
         }
 
         public static void Render() {
-            Form.Textbox_Score_Speler_1.Text = Convert.ToString(score1);
-            Form.Textbox_Score_Speler_2.Text = Convert.ToString(score2);
-            Form.Textbox_Zetten.Text = Convert.ToString(zetten);
-
+            FormSpeelveld.Textbox_Score_Speler_1.Text = Convert.ToString(Score1);
+            FormSpeelveld.Textbox_Score_Speler_2.Text = Convert.ToString(Score2);
+            FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
+            FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
         }
 
         public static async void Timer() {
