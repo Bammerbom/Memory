@@ -16,14 +16,14 @@ namespace Memory
         public static int Width;
         public static int Zetten1 = 0;
         public static int Zetten2 = 0;
-        public static int Kaart;
-        public static int Score1;
-        public static int Score2;
+        public static int Kaart; // Waar is dit voor?
+        public static int Score1 = 0;
+        public static int Score2 = 0;
         public static int Kaart1x;
         public static int Kaart1y;
         public static int Kaart2x;
         public static int Kaart2y;
-        public static int Kaartcounter;
+        public static int Kaartcounter = 0;
         public static string Naam1;
         public static string Naam2;
         public static int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
@@ -36,7 +36,7 @@ namespace Memory
         }
 
         public static void InitForm() {
-
+            FormSpeelveld = new FormSpeelveld();
         }
 
         public static void KaartKlik(int x, int y) {
