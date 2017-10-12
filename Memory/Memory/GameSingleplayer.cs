@@ -17,6 +17,8 @@ namespace Memory
             BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
             BaseGame.SpelerAanBeurt = 1;
             BaseGame.Gamestate = 1;
+            BaseGame.Timer();
+
         }
 
         public static void End() {
