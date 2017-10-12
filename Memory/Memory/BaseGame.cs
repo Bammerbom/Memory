@@ -135,6 +135,32 @@ namespace Memory
 
         }
 
+        //check of alle kaarten zijn omgedraaid en returned true als dat gebeurt is
+        public static bool Checkwin()
+        {
+            bool win = false;
+            int hoogte = Speelveld_omgedraaid.GetLength(1);
+            int breedte = Speelveld_omgedraaid.GetLength(0);
+            int totaalkaarten = hoogte * breedte;
+            int aantalkaarten = 0;
+            for (int i = 0; i < hoogte; i++)
+            {
+                for (int j = 0; i < breedte; j++)
+                {
+                    if (Speelveld_omgedraaid[hoogte, breedte] == true)
+                    {
+                        aantalkaarten += 1;
+                    }
+                }
+            }
+            if (aantalkaarten == totaalkaarten)
+            {
+                win = true;
+            }
+
+            return win;
+        }
+
         private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
             Speelveld_omgedraaid[x, y] = omgedraaid;
             string kaartnaam = "Kaart" + x + "" + y;
