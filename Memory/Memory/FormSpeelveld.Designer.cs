@@ -306,7 +306,7 @@
             // Kaart1
             // 
             this.Kaart1.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart1.Image = global::Memory.Properties.Resources.Voorkant_Memory_kaart;
+            this.Kaart1.Image = global::Memory.Properties.Resources.KaartVoorkant;
             this.Kaart1.Location = new System.Drawing.Point(597, 27);
             this.Kaart1.Name = "Kaart1";
             this.Kaart1.Size = new System.Drawing.Size(166, 250);
