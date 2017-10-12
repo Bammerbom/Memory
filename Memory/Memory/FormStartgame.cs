@@ -32,7 +32,7 @@ namespace Memory
         private void buttonStart_Click(object sender, EventArgs e) {
             switch (comboGametype.Text) {
                 case "Singleplayer":
-                    GameSingleplayer.Start();
+                    GameSingleplayer.Start(4,4);
                     this.Close();
                     break;
                 default:

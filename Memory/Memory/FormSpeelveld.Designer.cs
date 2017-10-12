@@ -51,42 +51,42 @@
             this.Textbox_Timer = new System.Windows.Forms.TextBox();
             this.Button_Opslaan = new System.Windows.Forms.Button();
             this.Button_Exit = new System.Windows.Forms.Button();
-            this.Kaart0 = new System.Windows.Forms.PictureBox();
-            this.Kaart1 = new System.Windows.Forms.PictureBox();
-            this.Kaart2 = new System.Windows.Forms.PictureBox();
-            this.Kaart3 = new System.Windows.Forms.PictureBox();
-            this.Kaart7 = new System.Windows.Forms.PictureBox();
-            this.Kaart6 = new System.Windows.Forms.PictureBox();
-            this.Kaart5 = new System.Windows.Forms.PictureBox();
-            this.Kaart4 = new System.Windows.Forms.PictureBox();
-            this.Kaart11 = new System.Windows.Forms.PictureBox();
+            this.Kaart00 = new System.Windows.Forms.PictureBox();
             this.Kaart10 = new System.Windows.Forms.PictureBox();
-            this.Kaart9 = new System.Windows.Forms.PictureBox();
-            this.Kaart8 = new System.Windows.Forms.PictureBox();
-            this.Kaart15 = new System.Windows.Forms.PictureBox();
-            this.Kaart14 = new System.Windows.Forms.PictureBox();
-            this.Kaart13 = new System.Windows.Forms.PictureBox();
+            this.Kaart20 = new System.Windows.Forms.PictureBox();
+            this.Kaart30 = new System.Windows.Forms.PictureBox();
+            this.Kaart31 = new System.Windows.Forms.PictureBox();
+            this.Kaart21 = new System.Windows.Forms.PictureBox();
+            this.Kaart11 = new System.Windows.Forms.PictureBox();
+            this.Kaart01 = new System.Windows.Forms.PictureBox();
+            this.Kaart32 = new System.Windows.Forms.PictureBox();
+            this.Kaart22 = new System.Windows.Forms.PictureBox();
             this.Kaart12 = new System.Windows.Forms.PictureBox();
+            this.Kaart02 = new System.Windows.Forms.PictureBox();
+            this.Kaart33 = new System.Windows.Forms.PictureBox();
+            this.Kaart23 = new System.Windows.Forms.PictureBox();
+            this.Kaart13 = new System.Windows.Forms.PictureBox();
+            this.Kaart03 = new System.Windows.Forms.PictureBox();
             this.Label_Zetten_Speler_2 = new System.Windows.Forms.Label();
             this.Textbox_Zetten_Speler_2 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart00)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart03)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -291,173 +291,173 @@
             this.Button_Exit.Text = "Exit";
             this.Button_Exit.UseVisualStyleBackColor = true;
             // 
-            // Kaart0
+            // Kaart00
             // 
-            this.Kaart0.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart0.Image = ((System.Drawing.Image)(resources.GetObject("Kaart0.Image")));
-            this.Kaart0.Location = new System.Drawing.Point(391, 27);
-            this.Kaart0.Name = "Kaart0";
-            this.Kaart0.Size = new System.Drawing.Size(166, 250);
-            this.Kaart0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart0.TabIndex = 15;
-            this.Kaart0.TabStop = false;
-            this.Kaart0.Click += new System.EventHandler(this.Kaart0_Click);
-            // 
-            // Kaart1
-            // 
-            this.Kaart1.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart1.Image = global::Memory.Properties.Resources.KaartVoorkant;
-            this.Kaart1.Location = new System.Drawing.Point(597, 27);
-            this.Kaart1.Name = "Kaart1";
-            this.Kaart1.Size = new System.Drawing.Size(166, 250);
-            this.Kaart1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart1.TabIndex = 16;
-            this.Kaart1.TabStop = false;
-            this.Kaart1.Click += new System.EventHandler(this.Kaart1_Click);
-            // 
-            // Kaart2
-            // 
-            this.Kaart2.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart2.Image = ((System.Drawing.Image)(resources.GetObject("Kaart2.Image")));
-            this.Kaart2.Location = new System.Drawing.Point(803, 27);
-            this.Kaart2.Name = "Kaart2";
-            this.Kaart2.Size = new System.Drawing.Size(166, 250);
-            this.Kaart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart2.TabIndex = 17;
-            this.Kaart2.TabStop = false;
-            this.Kaart2.Click += new System.EventHandler(this.Kaart2_Click);
-            // 
-            // Kaart3
-            // 
-            this.Kaart3.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart3.Image = ((System.Drawing.Image)(resources.GetObject("Kaart3.Image")));
-            this.Kaart3.Location = new System.Drawing.Point(1009, 27);
-            this.Kaart3.Name = "Kaart3";
-            this.Kaart3.Size = new System.Drawing.Size(166, 250);
-            this.Kaart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart3.TabIndex = 18;
-            this.Kaart3.TabStop = false;
-            this.Kaart3.Click += new System.EventHandler(this.Kaart3_Click);
-            // 
-            // Kaart7
-            // 
-            this.Kaart7.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart7.Image = ((System.Drawing.Image)(resources.GetObject("Kaart7.Image")));
-            this.Kaart7.Location = new System.Drawing.Point(1009, 263);
-            this.Kaart7.Name = "Kaart7";
-            this.Kaart7.Size = new System.Drawing.Size(166, 250);
-            this.Kaart7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart7.TabIndex = 22;
-            this.Kaart7.TabStop = false;
-            this.Kaart7.Click += new System.EventHandler(this.Kaart7_Click);
-            // 
-            // Kaart6
-            // 
-            this.Kaart6.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart6.Image = ((System.Drawing.Image)(resources.GetObject("Kaart6.Image")));
-            this.Kaart6.Location = new System.Drawing.Point(803, 263);
-            this.Kaart6.Name = "Kaart6";
-            this.Kaart6.Size = new System.Drawing.Size(166, 250);
-            this.Kaart6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart6.TabIndex = 21;
-            this.Kaart6.TabStop = false;
-            this.Kaart6.Click += new System.EventHandler(this.Kaart6_Click);
-            // 
-            // Kaart5
-            // 
-            this.Kaart5.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart5.Image = ((System.Drawing.Image)(resources.GetObject("Kaart5.Image")));
-            this.Kaart5.Location = new System.Drawing.Point(597, 263);
-            this.Kaart5.Name = "Kaart5";
-            this.Kaart5.Size = new System.Drawing.Size(166, 250);
-            this.Kaart5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart5.TabIndex = 20;
-            this.Kaart5.TabStop = false;
-            this.Kaart5.Click += new System.EventHandler(this.Kaart5_Click);
-            // 
-            // Kaart4
-            // 
-            this.Kaart4.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart4.Image = ((System.Drawing.Image)(resources.GetObject("Kaart4.Image")));
-            this.Kaart4.Location = new System.Drawing.Point(391, 263);
-            this.Kaart4.Name = "Kaart4";
-            this.Kaart4.Size = new System.Drawing.Size(166, 250);
-            this.Kaart4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart4.TabIndex = 19;
-            this.Kaart4.TabStop = false;
-            this.Kaart4.Click += new System.EventHandler(this.Kaart4_Click);
-            // 
-            // Kaart11
-            // 
-            this.Kaart11.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart11.Image = ((System.Drawing.Image)(resources.GetObject("Kaart11.Image")));
-            this.Kaart11.Location = new System.Drawing.Point(1009, 498);
-            this.Kaart11.Name = "Kaart11";
-            this.Kaart11.Size = new System.Drawing.Size(166, 250);
-            this.Kaart11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart11.TabIndex = 26;
-            this.Kaart11.TabStop = false;
-            this.Kaart11.Click += new System.EventHandler(this.Kaart11_Click);
+            this.Kaart00.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart00.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart00.Location = new System.Drawing.Point(391, 27);
+            this.Kaart00.Name = "Kaart00";
+            this.Kaart00.Size = new System.Drawing.Size(166, 250);
+            this.Kaart00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart00.TabIndex = 15;
+            this.Kaart00.TabStop = false;
+            this.Kaart00.Click += new System.EventHandler(this.Kaart0_Click);
             // 
             // Kaart10
             // 
             this.Kaart10.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart10.Image = ((System.Drawing.Image)(resources.GetObject("Kaart10.Image")));
-            this.Kaart10.Location = new System.Drawing.Point(803, 498);
+            this.Kaart10.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart10.Location = new System.Drawing.Point(597, 27);
             this.Kaart10.Name = "Kaart10";
             this.Kaart10.Size = new System.Drawing.Size(166, 250);
             this.Kaart10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart10.TabIndex = 25;
+            this.Kaart10.TabIndex = 16;
             this.Kaart10.TabStop = false;
-            this.Kaart10.Click += new System.EventHandler(this.Kaart10_Click);
+            this.Kaart10.Click += new System.EventHandler(this.Kaart1_Click);
             // 
-            // Kaart9
+            // Kaart20
             // 
-            this.Kaart9.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart9.Image = ((System.Drawing.Image)(resources.GetObject("Kaart9.Image")));
-            this.Kaart9.Location = new System.Drawing.Point(597, 498);
-            this.Kaart9.Name = "Kaart9";
-            this.Kaart9.Size = new System.Drawing.Size(166, 250);
-            this.Kaart9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart9.TabIndex = 24;
-            this.Kaart9.TabStop = false;
-            this.Kaart9.Click += new System.EventHandler(this.Kaart9_Click);
+            this.Kaart20.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart20.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart20.Location = new System.Drawing.Point(803, 27);
+            this.Kaart20.Name = "Kaart20";
+            this.Kaart20.Size = new System.Drawing.Size(166, 250);
+            this.Kaart20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart20.TabIndex = 17;
+            this.Kaart20.TabStop = false;
+            this.Kaart20.Click += new System.EventHandler(this.Kaart2_Click);
             // 
-            // Kaart8
+            // Kaart30
             // 
-            this.Kaart8.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart8.Image = ((System.Drawing.Image)(resources.GetObject("Kaart8.Image")));
-            this.Kaart8.Location = new System.Drawing.Point(391, 498);
-            this.Kaart8.Name = "Kaart8";
-            this.Kaart8.Size = new System.Drawing.Size(166, 250);
-            this.Kaart8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart8.TabIndex = 23;
-            this.Kaart8.TabStop = false;
-            this.Kaart8.Click += new System.EventHandler(this.Kaart8_Click);
+            this.Kaart30.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart30.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart30.Location = new System.Drawing.Point(1009, 27);
+            this.Kaart30.Name = "Kaart30";
+            this.Kaart30.Size = new System.Drawing.Size(166, 250);
+            this.Kaart30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart30.TabIndex = 18;
+            this.Kaart30.TabStop = false;
+            this.Kaart30.Click += new System.EventHandler(this.Kaart3_Click);
             // 
-            // Kaart15
+            // Kaart31
             // 
-            this.Kaart15.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart15.Image = ((System.Drawing.Image)(resources.GetObject("Kaart15.Image")));
-            this.Kaart15.Location = new System.Drawing.Point(1009, 733);
-            this.Kaart15.Name = "Kaart15";
-            this.Kaart15.Size = new System.Drawing.Size(166, 250);
-            this.Kaart15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart15.TabIndex = 30;
-            this.Kaart15.TabStop = false;
-            this.Kaart15.Click += new System.EventHandler(this.Kaart15_Click);
+            this.Kaart31.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart31.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart31.Location = new System.Drawing.Point(1009, 263);
+            this.Kaart31.Name = "Kaart31";
+            this.Kaart31.Size = new System.Drawing.Size(166, 250);
+            this.Kaart31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart31.TabIndex = 22;
+            this.Kaart31.TabStop = false;
+            this.Kaart31.Click += new System.EventHandler(this.Kaart7_Click);
             // 
-            // Kaart14
+            // Kaart21
             // 
-            this.Kaart14.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart14.Image = ((System.Drawing.Image)(resources.GetObject("Kaart14.Image")));
-            this.Kaart14.Location = new System.Drawing.Point(803, 733);
-            this.Kaart14.Name = "Kaart14";
-            this.Kaart14.Size = new System.Drawing.Size(166, 250);
-            this.Kaart14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart14.TabIndex = 29;
-            this.Kaart14.TabStop = false;
-            this.Kaart14.Click += new System.EventHandler(this.Kaart14_Click);
+            this.Kaart21.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart21.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart21.Location = new System.Drawing.Point(803, 263);
+            this.Kaart21.Name = "Kaart21";
+            this.Kaart21.Size = new System.Drawing.Size(166, 250);
+            this.Kaart21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart21.TabIndex = 21;
+            this.Kaart21.TabStop = false;
+            this.Kaart21.Click += new System.EventHandler(this.Kaart6_Click);
+            // 
+            // Kaart11
+            // 
+            this.Kaart11.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart11.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart11.Location = new System.Drawing.Point(597, 263);
+            this.Kaart11.Name = "Kaart11";
+            this.Kaart11.Size = new System.Drawing.Size(166, 250);
+            this.Kaart11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart11.TabIndex = 20;
+            this.Kaart11.TabStop = false;
+            this.Kaart11.Click += new System.EventHandler(this.Kaart5_Click);
+            // 
+            // Kaart01
+            // 
+            this.Kaart01.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart01.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart01.Location = new System.Drawing.Point(391, 263);
+            this.Kaart01.Name = "Kaart01";
+            this.Kaart01.Size = new System.Drawing.Size(166, 250);
+            this.Kaart01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart01.TabIndex = 19;
+            this.Kaart01.TabStop = false;
+            this.Kaart01.Click += new System.EventHandler(this.Kaart4_Click);
+            // 
+            // Kaart32
+            // 
+            this.Kaart32.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart32.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart32.Location = new System.Drawing.Point(1009, 498);
+            this.Kaart32.Name = "Kaart32";
+            this.Kaart32.Size = new System.Drawing.Size(166, 250);
+            this.Kaart32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart32.TabIndex = 26;
+            this.Kaart32.TabStop = false;
+            this.Kaart32.Click += new System.EventHandler(this.Kaart11_Click);
+            // 
+            // Kaart22
+            // 
+            this.Kaart22.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart22.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart22.Location = new System.Drawing.Point(803, 498);
+            this.Kaart22.Name = "Kaart22";
+            this.Kaart22.Size = new System.Drawing.Size(166, 250);
+            this.Kaart22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart22.TabIndex = 25;
+            this.Kaart22.TabStop = false;
+            this.Kaart22.Click += new System.EventHandler(this.Kaart10_Click);
+            // 
+            // Kaart12
+            // 
+            this.Kaart12.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart12.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart12.Location = new System.Drawing.Point(583, 498);
+            this.Kaart12.Name = "Kaart12";
+            this.Kaart12.Size = new System.Drawing.Size(166, 250);
+            this.Kaart12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart12.TabIndex = 24;
+            this.Kaart12.TabStop = false;
+            this.Kaart12.Click += new System.EventHandler(this.Kaart9_Click);
+            // 
+            // Kaart02
+            // 
+            this.Kaart02.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart02.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart02.Location = new System.Drawing.Point(391, 498);
+            this.Kaart02.Name = "Kaart02";
+            this.Kaart02.Size = new System.Drawing.Size(166, 250);
+            this.Kaart02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart02.TabIndex = 23;
+            this.Kaart02.TabStop = false;
+            this.Kaart02.Click += new System.EventHandler(this.Kaart8_Click);
+            // 
+            // Kaart33
+            // 
+            this.Kaart33.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart33.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart33.Location = new System.Drawing.Point(1009, 733);
+            this.Kaart33.Name = "Kaart33";
+            this.Kaart33.Size = new System.Drawing.Size(166, 250);
+            this.Kaart33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart33.TabIndex = 30;
+            this.Kaart33.TabStop = false;
+            this.Kaart33.Click += new System.EventHandler(this.Kaart15_Click);
+            // 
+            // Kaart23
+            // 
+            this.Kaart23.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart23.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart23.Location = new System.Drawing.Point(803, 733);
+            this.Kaart23.Name = "Kaart23";
+            this.Kaart23.Size = new System.Drawing.Size(166, 250);
+            this.Kaart23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart23.TabIndex = 29;
+            this.Kaart23.TabStop = false;
+            this.Kaart23.Click += new System.EventHandler(this.Kaart14_Click);
             // 
             // Kaart13
             // 
@@ -471,17 +471,17 @@
             this.Kaart13.TabStop = false;
             this.Kaart13.Click += new System.EventHandler(this.Kaart13_Click);
             // 
-            // Kaart12
+            // Kaart03
             // 
-            this.Kaart12.BackColor = System.Drawing.Color.Transparent;
-            this.Kaart12.Image = ((System.Drawing.Image)(resources.GetObject("Kaart12.Image")));
-            this.Kaart12.Location = new System.Drawing.Point(391, 733);
-            this.Kaart12.Name = "Kaart12";
-            this.Kaart12.Size = new System.Drawing.Size(166, 250);
-            this.Kaart12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kaart12.TabIndex = 27;
-            this.Kaart12.TabStop = false;
-            this.Kaart12.Click += new System.EventHandler(this.Kaart12_Click);
+            this.Kaart03.BackColor = System.Drawing.Color.Transparent;
+            this.Kaart03.Image = global::Memory.Properties.Resources.KaartVoorkant;
+            this.Kaart03.Location = new System.Drawing.Point(391, 733);
+            this.Kaart03.Name = "Kaart03";
+            this.Kaart03.Size = new System.Drawing.Size(166, 250);
+            this.Kaart03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Kaart03.TabIndex = 27;
+            this.Kaart03.TabStop = false;
+            this.Kaart03.Click += new System.EventHandler(this.Kaart12_Click);
             // 
             // Label_Zetten_Speler_2
             // 
@@ -513,22 +513,22 @@
             this.ClientSize = new System.Drawing.Size(1264, 985);
             this.Controls.Add(this.Textbox_Zetten_Speler_2);
             this.Controls.Add(this.Label_Zetten_Speler_2);
-            this.Controls.Add(this.Kaart15);
-            this.Controls.Add(this.Kaart14);
+            this.Controls.Add(this.Kaart33);
+            this.Controls.Add(this.Kaart23);
             this.Controls.Add(this.Kaart13);
+            this.Controls.Add(this.Kaart03);
+            this.Controls.Add(this.Kaart32);
+            this.Controls.Add(this.Kaart22);
             this.Controls.Add(this.Kaart12);
+            this.Controls.Add(this.Kaart02);
+            this.Controls.Add(this.Kaart31);
+            this.Controls.Add(this.Kaart21);
             this.Controls.Add(this.Kaart11);
+            this.Controls.Add(this.Kaart01);
+            this.Controls.Add(this.Kaart30);
+            this.Controls.Add(this.Kaart20);
             this.Controls.Add(this.Kaart10);
-            this.Controls.Add(this.Kaart9);
-            this.Controls.Add(this.Kaart8);
-            this.Controls.Add(this.Kaart7);
-            this.Controls.Add(this.Kaart6);
-            this.Controls.Add(this.Kaart5);
-            this.Controls.Add(this.Kaart4);
-            this.Controls.Add(this.Kaart3);
-            this.Controls.Add(this.Kaart2);
-            this.Controls.Add(this.Kaart1);
-            this.Controls.Add(this.Kaart0);
+            this.Controls.Add(this.Kaart00);
             this.Controls.Add(this.Button_Exit);
             this.Controls.Add(this.Button_Opslaan);
             this.Controls.Add(this.Textbox_Timer);
@@ -549,22 +549,22 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart00)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kaart13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Kaart03)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -594,22 +594,22 @@
         public System.Windows.Forms.TextBox Textbox_Timer;
         public System.Windows.Forms.Button Button_Opslaan;
         public System.Windows.Forms.Button Button_Exit;
-        public System.Windows.Forms.PictureBox Kaart0;
-        public System.Windows.Forms.PictureBox Kaart1;
-        public System.Windows.Forms.PictureBox Kaart2;
-        public System.Windows.Forms.PictureBox Kaart3;
-        public System.Windows.Forms.PictureBox Kaart7;
-        public System.Windows.Forms.PictureBox Kaart6;
-        public System.Windows.Forms.PictureBox Kaart5;
-        public System.Windows.Forms.PictureBox Kaart4;
-        public System.Windows.Forms.PictureBox Kaart11;
+        public System.Windows.Forms.PictureBox Kaart00;
         public System.Windows.Forms.PictureBox Kaart10;
-        public System.Windows.Forms.PictureBox Kaart9;
-        public System.Windows.Forms.PictureBox Kaart8;
-        public System.Windows.Forms.PictureBox Kaart15;
-        public System.Windows.Forms.PictureBox Kaart14;
-        public System.Windows.Forms.PictureBox Kaart13;
+        public System.Windows.Forms.PictureBox Kaart20;
+        public System.Windows.Forms.PictureBox Kaart30;
+        public System.Windows.Forms.PictureBox Kaart31;
+        public System.Windows.Forms.PictureBox Kaart21;
+        public System.Windows.Forms.PictureBox Kaart11;
+        public System.Windows.Forms.PictureBox Kaart01;
+        public System.Windows.Forms.PictureBox Kaart32;
+        public System.Windows.Forms.PictureBox Kaart22;
         public System.Windows.Forms.PictureBox Kaart12;
+        public System.Windows.Forms.PictureBox Kaart02;
+        public System.Windows.Forms.PictureBox Kaart33;
+        public System.Windows.Forms.PictureBox Kaart23;
+        public System.Windows.Forms.PictureBox Kaart13;
+        public System.Windows.Forms.PictureBox Kaart03;
         public System.Windows.Forms.Label Label_Zetten_Speler_2;
         public System.Windows.Forms.TextBox Textbox_Zetten_Speler_2;
     }
