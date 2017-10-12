@@ -17,6 +17,7 @@ namespace Memory
             BaseGame.FormSpeelveld.Label_Zetten_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
             BaseGame.SpelerAanBeurt = 1;
+            BaseGame.Timer();
         }
     }
 }

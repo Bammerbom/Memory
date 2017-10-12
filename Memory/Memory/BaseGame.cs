@@ -31,6 +31,7 @@ namespace Memory
         public static int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
         public static int Tijdbeurt;
         public static int Tijdtotaal;
+        public static int Gamestate =1;
 
         public static void InitSpeelveld(int h, int w) {
             //Initialize variabelen
@@ -105,34 +106,58 @@ namespace Memory
 
                 //Kijk of kaarten gelijk zijn
                 if (Speelveld_types[Kaart1x, Kaart1y] == Speelveld_types[Kaart2x, Kaart2y]) {
-                    //Voeg 1 bij de score toe
-                    if (SpelerAanBeurt == 1) Score1++;
+                    if (SpelerAanBeurt == 1) Score1++;  //Voeg 1 bij de score toe
                     if (SpelerAanBeurt == 2) Score2++;
                     Kaartcounter = 0;
+                    Tijdbeurt = 10; //reset timer
                 } else {
-                    //Draai beide kaarten terug om
-                    DraaiKaartenTerug();
+                    DraaiKaartenTerug(); //Draai beide kaarten terug om
+                    Tijdbeurt = 10; //reset timer
                 }
             }
             Render();
         }
 
         public static async void DraaiKaartenTerug() {
-            await Task.Delay(2000); //TODO timer op beeld?
+            await Task.Delay(2000); 
             ZetOmgedraaid(Kaart1x, Kaart1y, false);
             ZetOmgedraaid(Kaart2x, Kaart2y, false);
             Kaartcounter = 0;
         }
 
         public static void Render() {
-            FormSpeelveld.Textbox_Score_Speler_1.Text = Convert.ToString(Score1);
+            FormSpeelveld.Textbox_Score_Speler_1.Text = Convert.ToString(Score1); //update textboxes
             FormSpeelveld.Textbox_Score_Speler_2.Text = Convert.ToString(Score2);
             FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
         }
 
         public static async void Timer() {
+            while (Gamestate == 1)
+            {
+                
+                while (Tijdbeurt > 0)  //loop die secondes telt
+                {
+                    await Task.Delay(1000);
+                    Tijdbeurt -- ;
+                    Tijdtotaal ++ ;
+                    FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
+                }
 
+                Tijdbeurt = 10; //timer reset
+
+                if (SpelerAanBeurt == 1)
+                {
+                    Zetten1++;
+                    FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
+                }
+                if (SpelerAanBeurt == 2)
+                {
+                    Zetten2++;
+                    FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
+                }
+
+            }
         }
 
         //check of alle kaarten zijn omgedraaid en returned true als dat gebeurt is
@@ -145,12 +170,12 @@ namespace Memory
         }
 
         private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
-            Speelveld_omgedraaid[x, y] = omgedraaid;
-            string kaartnaam = "Kaart" + x + "" + y;
+            Speelveld_omgedraaid[x, y] = omgedraaid; //zet string in afkorting
+            string kaartnaam = "Kaart" + x + "" + y; //zet kaartnaam in string voor gebruik in
             PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
-            if (omgedraaid) {
+            if (omgedraaid == true) {    //check of de kaart is omgedraaid
                 int kaarttype = Speelveld_types[x, y];
-                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("Kaart" + kaarttype);
+                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("Kaart" + kaarttype);  //verander plaatje kaart
             } else {
                 box.Image = Properties.Resources.KaartVoorkant;
             }
