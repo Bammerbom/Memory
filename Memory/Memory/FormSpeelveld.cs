@@ -35,7 +35,6 @@ namespace Memory
 
         private void Kaart3_Click(object sender, EventArgs e)
         {
-            BaseGame.KaartKlik(3);
             BaseGame.KaartKlik(3,0);
         }
 

@@ -16,7 +16,7 @@ namespace Memory
             BaseGame.FormSpeelveld.Label_Score_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Label_Zetten_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
-            
+            BaseGame.SpelerAanBeurt = 1;
         }
     }
 }

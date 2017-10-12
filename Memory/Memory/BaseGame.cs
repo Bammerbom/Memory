@@ -33,6 +33,7 @@ namespace Memory
         public static int Tijdtotaal;
 
         public static void InitSpeelveld(int h, int w) {
+            //Initialize variabelen
             Height = h;
             Width = w;
             Speelveld_types = new int[h, w];
@@ -40,13 +41,45 @@ namespace Memory
             Tijdbeurt = 10;
             Tijdtotaal = 0;
 
-            //TODO vullen
+            //Maak tijdelijke lijst met alle velden en shuffle die
+            var tempvelden = new List<int>();
+            int length = h * w / 2;
+            for (int i = 0; i < length; i++) {
+                tempvelden.Add(i);
+                tempvelden.Add(i);
+            }
+            tempvelden = Utils.ShuffleList(tempvelden);
+
+            //Voer alle velden in in de 2d array
+            for (int y = 0; y < Height; y++) {
+                for (int x = 0; x < Width; x++) {
+                    int pos = y * Width + x;
+                    Speelveld_types[x, y] = tempvelden[pos];
+                    Speelveld_omgedraaid[x, y] = false;
+                }
+            }
         }
 
         public static void InitForm() {
             FormSpeelveld = new FormSpeelveld();
             FormSpeelveld.Show();
 
+            //Hide alle kaarten die buiten het speelveld liggen
+            for (int y = 3; y >= Height; y--) {
+                for (int x = 0; x < 4; x++) {
+                    PictureBox box = ((PictureBox)FormSpeelveld.Controls["Kaart" + x + "" + y]);
+                    box.Visible = false;
+                }
+            }
+            for (int x = 3; x >= Width; x--) {
+                for (int y = 0; y < 4; y++) {
+                    PictureBox box = ((PictureBox)FormSpeelveld.Controls["Kaart" + x + "" + y]);
+                    box.Visible = false;
+                }
+            }
+
+            //Render standaard waardes
+            Render();
         }
 
         public static void KaartKlik(int x, int y) {
@@ -54,7 +87,7 @@ namespace Memory
             if (Kaartcounter == 2) return; //Negeer als er al 2 kaarten omgedraait zijn
 
             //Keer kaart om
-            Speelveld_omgedraaid[x, y] = true;
+            ZetOmgedraaid(x, y, true);
 
             Kaartcounter++;
             if (Kaartcounter == 1) {
@@ -62,12 +95,16 @@ namespace Memory
                 Kaart1x = x;
                 Kaart1y = y;
             } else if (Kaartcounter == 2) {
+                //Verhoog aantal zetten
+                if (SpelerAanBeurt == 1) Zetten1++;
+                if (SpelerAanBeurt == 2) Zetten2++;
+
                 //Sla tweede kaart op
                 Kaart2x = x;
                 Kaart2y = y;
 
                 //Kijk of kaarten gelijk zijn
-                if (Speelveld_omgedraaid[Kaart1x, Kaart1y] == Speelveld_omgedraaid[Kaart2x, Kaart2y]) {
+                if (Speelveld_types[Kaart1x, Kaart1y] == Speelveld_types[Kaart2x, Kaart2y]) {
                     //Voeg 1 bij de score toe
                     if (SpelerAanBeurt == 1) Score1++;
                     if (SpelerAanBeurt == 2) Score2++;
@@ -77,13 +114,14 @@ namespace Memory
                     DraaiKaartenTerug();
                 }
             }
+            Render();
         }
 
         public static async void DraaiKaartenTerug() {
             await Task.Delay(2000); //TODO timer op beeld?
-            Speelveld_omgedraaid[Kaart1x, Kaart1y] = false;
-            Speelveld_omgedraaid[Kaart2x, Kaart2y] = false;
-            
+            ZetOmgedraaid(Kaart1x, Kaart1y, false);
+            ZetOmgedraaid(Kaart2x, Kaart2y, false);
+            Kaartcounter = 0;
         }
 
         public static void Render() {
@@ -98,6 +136,7 @@ namespace Memory
         }
 
         private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
+            Speelveld_omgedraaid[x, y] = omgedraaid;
             string kaartnaam = "Kaart" + x + "" + y;
             PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
             if (omgedraaid) {

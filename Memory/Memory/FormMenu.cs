@@ -12,14 +12,14 @@ namespace Memory
 {
     public partial class FormMenu : Form
     {
-        public static FormMenu Menu;
+        public static FormMenu MenuForm;
         public FormMenu()
         {
             InitializeComponent();
         }
 
         private void FormMenu_Load(object sender, EventArgs e) {
-            FormMenu.Menu = this;
+            FormMenu.MenuForm = this;
         }
 
         
