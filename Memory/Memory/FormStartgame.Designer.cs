@@ -312,6 +312,8 @@
             this.Controls.Add(this.labelSingleplayer);
             this.Controls.Add(this.titel);
             this.Controls.Add(this.comboGametype);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormStartgame";
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormStartgame_Load);
