@@ -143,9 +143,9 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Voorkant_Memory_kaart {
+        internal static System.Drawing.Bitmap KaartVoorkant {
             get {
-                object obj = ResourceManager.GetObject("Voorkant Memory kaart", resourceCulture);
+                object obj = ResourceManager.GetObject("KaartVoorkant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Memory
 {
@@ -63,22 +65,19 @@ namespace Memory
                     //Voeg 1 bij de score toe
                     if (SpelerAanBeurt == 1) Score1++;
                     if (SpelerAanBeurt == 2) Score2++;
-                    KaartCounter = 0;
+                    Kaartcounter = 0;
                 } else {
                     //Draai beide kaarten terug om
                     DraaiKaartenTerug();
                 }
-
-                //Sla kaarten op
-                Speelveld.SetKaart(Pos1, kaart1);
-                Speelveld.SetKaart(Pos2, kaart2);
             }
-
-            GetRenderer().Update();
         }
 
-        public static async void ResetKaarten() {
-
+        public static async void DraaiKaartenTerug() {
+            await Task.Delay(2000); //TODO timer op beeld?
+            Speelveld_omgedraaid[Kaart1x, Kaart1y] = false;
+            Speelveld_omgedraaid[Kaart2x, Kaart2y] = false;
+            
         }
 
         public static void Render() {
@@ -87,6 +86,17 @@ namespace Memory
 
         public static async void Timer() {
 
+        }
+
+        private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
+            string kaartnaam = "Kaart" + x + "" + y;
+            PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
+            if (omgedraaid) {
+                int kaarttype = Speelveld_types[x, y];
+                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("Kaart" + kaarttype);
+            } else {
+                box.Image = Properties.Resources.KaartVoorkant;
+            }
         }
     }
 }

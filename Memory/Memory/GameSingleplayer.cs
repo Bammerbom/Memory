@@ -8,7 +8,7 @@ namespace Memory
 {
     class GameSingleplayer
     {
-        void Start() {
+        public static void Start() {
 
         }
     }
