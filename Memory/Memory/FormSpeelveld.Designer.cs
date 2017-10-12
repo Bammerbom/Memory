@@ -44,8 +44,8 @@
             this.Label_Score_Speler_2 = new System.Windows.Forms.Label();
             this.Textbox_Score_Speler_2 = new System.Windows.Forms.TextBox();
             this.Label_Score = new System.Windows.Forms.Label();
-            this.Label_Zetten = new System.Windows.Forms.Label();
-            this.Textbox_Zetten = new System.Windows.Forms.TextBox();
+            this.Label_Zetten_Speler_1 = new System.Windows.Forms.Label();
+            this.Textbox_Zetten_Speler_1 = new System.Windows.Forms.TextBox();
             this.TextBox_Beurt = new System.Windows.Forms.RichTextBox();
             this.Label_Timer = new System.Windows.Forms.Label();
             this.Textbox_Timer = new System.Windows.Forms.TextBox();
@@ -67,6 +67,8 @@
             this.Kaart14 = new System.Windows.Forms.PictureBox();
             this.Kaart13 = new System.Windows.Forms.PictureBox();
             this.Kaart12 = new System.Windows.Forms.PictureBox();
+            this.Label_Zetten_Speler_2 = new System.Windows.Forms.Label();
+            this.Textbox_Zetten_Speler_2 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart0)).BeginInit();
@@ -190,7 +192,7 @@
             this.Label_Score_Speler_2.AutoSize = true;
             this.Label_Score_Speler_2.BackColor = System.Drawing.SystemColors.Control;
             this.Label_Score_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Score_Speler_2.Location = new System.Drawing.Point(50, 202);
+            this.Label_Score_Speler_2.Location = new System.Drawing.Point(50, 245);
             this.Label_Score_Speler_2.Name = "Label_Score_Speler_2";
             this.Label_Score_Speler_2.Size = new System.Drawing.Size(116, 29);
             this.Label_Score_Speler_2.TabIndex = 4;
@@ -199,7 +201,7 @@
             // Textbox_Score_Speler_2
             // 
             this.Textbox_Score_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_Score_Speler_2.Location = new System.Drawing.Point(195, 199);
+            this.Textbox_Score_Speler_2.Location = new System.Drawing.Point(195, 242);
             this.Textbox_Score_Speler_2.Name = "Textbox_Score_Speler_2";
             this.Textbox_Score_Speler_2.ReadOnly = true;
             this.Textbox_Score_Speler_2.Size = new System.Drawing.Size(81, 35);
@@ -216,30 +218,30 @@
             this.Label_Score.TabIndex = 6;
             this.Label_Score.Text = "Score";
             // 
-            // Label_Zetten
+            // Label_Zetten_Speler_1
             // 
-            this.Label_Zetten.AutoSize = true;
-            this.Label_Zetten.BackColor = System.Drawing.Color.White;
-            this.Label_Zetten.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Zetten.Location = new System.Drawing.Point(50, 259);
-            this.Label_Zetten.Name = "Label_Zetten";
-            this.Label_Zetten.Size = new System.Drawing.Size(92, 29);
-            this.Label_Zetten.TabIndex = 7;
-            this.Label_Zetten.Text = "Zetten :";
+            this.Label_Zetten_Speler_1.AutoSize = true;
+            this.Label_Zetten_Speler_1.BackColor = System.Drawing.Color.White;
+            this.Label_Zetten_Speler_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Zetten_Speler_1.Location = new System.Drawing.Point(50, 189);
+            this.Label_Zetten_Speler_1.Name = "Label_Zetten_Speler_1";
+            this.Label_Zetten_Speler_1.Size = new System.Drawing.Size(92, 29);
+            this.Label_Zetten_Speler_1.TabIndex = 7;
+            this.Label_Zetten_Speler_1.Text = "Zetten :";
             // 
-            // Textbox_Zetten
+            // Textbox_Zetten_Speler_1
             // 
-            this.Textbox_Zetten.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_Zetten.Location = new System.Drawing.Point(195, 256);
-            this.Textbox_Zetten.Name = "Textbox_Zetten";
-            this.Textbox_Zetten.ReadOnly = true;
-            this.Textbox_Zetten.Size = new System.Drawing.Size(81, 35);
-            this.Textbox_Zetten.TabIndex = 8;
+            this.Textbox_Zetten_Speler_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Zetten_Speler_1.Location = new System.Drawing.Point(195, 186);
+            this.Textbox_Zetten_Speler_1.Name = "Textbox_Zetten_Speler_1";
+            this.Textbox_Zetten_Speler_1.ReadOnly = true;
+            this.Textbox_Zetten_Speler_1.Size = new System.Drawing.Size(81, 35);
+            this.Textbox_Zetten_Speler_1.TabIndex = 8;
             // 
             // TextBox_Beurt
             // 
             this.TextBox_Beurt.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Beurt.Location = new System.Drawing.Point(55, 310);
+            this.TextBox_Beurt.Location = new System.Drawing.Point(55, 392);
             this.TextBox_Beurt.Name = "TextBox_Beurt";
             this.TextBox_Beurt.ReadOnly = true;
             this.TextBox_Beurt.Size = new System.Drawing.Size(221, 121);
@@ -251,7 +253,7 @@
             this.Label_Timer.AutoSize = true;
             this.Label_Timer.BackColor = System.Drawing.Color.White;
             this.Label_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Timer.Location = new System.Drawing.Point(50, 442);
+            this.Label_Timer.Location = new System.Drawing.Point(50, 524);
             this.Label_Timer.Name = "Label_Timer";
             this.Label_Timer.Size = new System.Drawing.Size(95, 29);
             this.Label_Timer.TabIndex = 11;
@@ -261,7 +263,7 @@
             // Textbox_Timer
             // 
             this.Textbox_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_Timer.Location = new System.Drawing.Point(176, 439);
+            this.Textbox_Timer.Location = new System.Drawing.Point(176, 521);
             this.Textbox_Timer.Name = "Textbox_Timer";
             this.Textbox_Timer.ReadOnly = true;
             this.Textbox_Timer.Size = new System.Drawing.Size(100, 35);
@@ -481,6 +483,26 @@
             this.Kaart12.TabStop = false;
             this.Kaart12.Click += new System.EventHandler(this.Kaart12_Click);
             // 
+            // Label_Zetten_Speler_2
+            // 
+            this.Label_Zetten_Speler_2.AutoSize = true;
+            this.Label_Zetten_Speler_2.BackColor = System.Drawing.Color.White;
+            this.Label_Zetten_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Zetten_Speler_2.Location = new System.Drawing.Point(50, 283);
+            this.Label_Zetten_Speler_2.Name = "Label_Zetten_Speler_2";
+            this.Label_Zetten_Speler_2.Size = new System.Drawing.Size(92, 29);
+            this.Label_Zetten_Speler_2.TabIndex = 31;
+            this.Label_Zetten_Speler_2.Text = "Zetten :";
+            // 
+            // Textbox_Zetten_Speler_2
+            // 
+            this.Textbox_Zetten_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Zetten_Speler_2.Location = new System.Drawing.Point(195, 283);
+            this.Textbox_Zetten_Speler_2.Name = "Textbox_Zetten_Speler_2";
+            this.Textbox_Zetten_Speler_2.ReadOnly = true;
+            this.Textbox_Zetten_Speler_2.Size = new System.Drawing.Size(81, 35);
+            this.Textbox_Zetten_Speler_2.TabIndex = 32;
+            // 
             // FormSpeelveld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,6 +511,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.Controls.Add(this.Textbox_Zetten_Speler_2);
+            this.Controls.Add(this.Label_Zetten_Speler_2);
             this.Controls.Add(this.Kaart15);
             this.Controls.Add(this.Kaart14);
             this.Controls.Add(this.Kaart13);
@@ -510,8 +534,8 @@
             this.Controls.Add(this.Textbox_Timer);
             this.Controls.Add(this.Label_Timer);
             this.Controls.Add(this.TextBox_Beurt);
-            this.Controls.Add(this.Textbox_Zetten);
-            this.Controls.Add(this.Label_Zetten);
+            this.Controls.Add(this.Textbox_Zetten_Speler_1);
+            this.Controls.Add(this.Label_Zetten_Speler_1);
             this.Controls.Add(this.Label_Score);
             this.Controls.Add(this.Textbox_Score_Speler_2);
             this.Controls.Add(this.Label_Score_Speler_2);
@@ -563,8 +587,8 @@
         public System.Windows.Forms.Label Label_Score_Speler_2;
         public System.Windows.Forms.TextBox Textbox_Score_Speler_2;
         public System.Windows.Forms.Label Label_Score;
-        public System.Windows.Forms.Label Label_Zetten;
-        public System.Windows.Forms.TextBox Textbox_Zetten;
+        public System.Windows.Forms.Label Label_Zetten_Speler_1;
+        public System.Windows.Forms.TextBox Textbox_Zetten_Speler_1;
         public System.Windows.Forms.RichTextBox TextBox_Beurt;
         public System.Windows.Forms.Label Label_Timer;
         public System.Windows.Forms.TextBox Textbox_Timer;
@@ -586,5 +610,7 @@
         public System.Windows.Forms.PictureBox Kaart14;
         public System.Windows.Forms.PictureBox Kaart13;
         public System.Windows.Forms.PictureBox Kaart12;
+        public System.Windows.Forms.Label Label_Zetten_Speler_2;
+        public System.Windows.Forms.TextBox Textbox_Zetten_Speler_2;
     }
 }
