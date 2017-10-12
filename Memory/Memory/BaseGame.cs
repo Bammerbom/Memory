@@ -33,14 +33,48 @@ namespace Memory
             Width = w;
             Speelveld_types = new int[h, w];
             Speelveld_omgedraaid = new bool[h, w];
+            //TODO vullen
         }
 
         public static void InitForm() {
             FormSpeelveld = new FormSpeelveld();
+            FormSpeelveld.Show();
         }
 
         public static void KaartKlik(int x, int y) {
+            if (Speelveld_omgedraaid[x, y] == true) return; //Negeer klikken op kaart als de kaart al omgedraait is
+            if (Kaartcounter == 2) return; //Negeer als er al 2 kaarten omgedraait zijn
 
+            //Keer kaart om
+            Speelveld_omgedraaid[x, y] = true;
+
+            Kaartcounter++;
+            if (Kaartcounter == 1) {
+                //Sla eerste kaart op
+                Kaart1x = x;
+                Kaart1y = y;
+            } else if (Kaartcounter == 2) {
+                //Sla tweede kaart op
+                Kaart2x = x;
+                Kaart2y = y;
+
+                //Kijk of kaarten gelijk zijn
+                if (Speelveld_omgedraaid[Kaart1x, Kaart1y] == Speelveld_omgedraaid[Kaart2x, Kaart2y]) {
+                    //Voeg 1 bij de score toe
+                    if (SpelerAanBeurt == 1) Score1++;
+                    if (SpelerAanBeurt == 2) Score2++;
+                    KaartCounter = 0;
+                } else {
+                    //Draai beide kaarten terug om
+                    DraaiKaartenTerug();
+                }
+
+                //Sla kaarten op
+                Speelveld.SetKaart(Pos1, kaart1);
+                Speelveld.SetKaart(Pos2, kaart2);
+            }
+
+            GetRenderer().Update();
         }
 
         public static async void ResetKaarten() {
