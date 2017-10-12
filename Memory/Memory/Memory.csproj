@@ -101,7 +101,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Voorkant Memory kaart.png" />
+    <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Kaart1.png" />
@@ -127,6 +127,5 @@
   <ItemGroup>
     <None Include="Resources\Kaart0.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
