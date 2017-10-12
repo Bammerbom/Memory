@@ -8,46 +8,46 @@ namespace Memory
 {
     class BaseGame
     {
-        FormSpeelveld FormSpeelveld;
-        int Gamemode; // 0 = Singleplayer, 1 = Local, 2 = Online
-        int[,] Speelveld_types;
-        bool[,] Speelveld_omgedraaid;
-        int Height;
-        int Width;
-        int Zetten;
-        int Kaart;
-        int Score1;
-        int Score2;
-        int Kaart1x;
-        int Kaart1y;
-        int Kaart2x;
-        int Kaart2y;
-        int Kaartcounter;
-        string Naam1;
-        string Naam2;
-        int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
-        
-        void InitSpeelveld() {
+        public static FormSpeelveld FormSpeelveld;
+        public static int Gamemode; // 0 = Singleplayer, 1 = Local, 2 = Online
+        public static int[,] Speelveld_types;
+        public static bool[,] Speelveld_omgedraaid;
+        public static int Height;
+        public static int Width;
+        public static int Zetten;
+        public static int Kaart;
+        public static int Score1;
+        public static int Score2;
+        public static int Kaart1x;
+        public static int Kaart1y;
+        public static int Kaart2x;
+        public static int Kaart2y;
+        public static int Kaartcounter;
+        public static string Naam1;
+        public static string Naam2;
+        public static int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
+
+        public static void InitSpeelveld() {
 
         }
 
-        void InitForm() {
+        public static void InitForm() {
 
         }
 
-        void Click(int x, int y) {
+        public static void Click(int x, int y) {
 
         }
 
-        async void Reset() {
+        public static async void Reset() {
 
         }
 
-        void Render() {
+        public static void Render() {
 
         }
 
-        async void Timer() {
+        public static async void Timer() {
 
         }
     }
