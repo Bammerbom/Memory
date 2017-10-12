@@ -110,6 +110,13 @@ namespace Memory
                     if (SpelerAanBeurt == 2) Score2++;
                     Kaartcounter = 0;
                     Tijdbeurt = 10; //reset timer
+                                        
+                    if (Checkwin()) {    //Check voor win 
+                        if (Gamemode == 0) GameSingleplayer.End();
+                        else if (Gamemode == 1) ;
+                        else if (Gamemode == 2) ; //TODO
+                    }
+
                 } else {
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
                     Tijdbeurt = 10; //reset timer

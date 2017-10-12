@@ -8,7 +8,6 @@ namespace Memory
 {
     class GameSingleplayer
     {
-
         public static void Start(int Hoogte, int Breedte) {
             BaseGame.InitSpeelveld(Hoogte, Breedte);
             BaseGame.InitForm();
@@ -18,6 +17,10 @@ namespace Memory
             BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
             BaseGame.SpelerAanBeurt = 1;
             BaseGame.Timer();
+        }
+
+        public static void End() {
+
         }
     }
 }
