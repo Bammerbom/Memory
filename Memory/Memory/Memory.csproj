@@ -46,8 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseGame.cs" />
+    <Compile Include="GameMultiplayerOnline.cs" />
+    <Compile Include="GameMultiplayerLocal.cs" />
     <Compile Include="GameSingleplayer.cs" />
-        <Compile Include="FormHelp.cs">
+    <Compile Include="FormHelp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHelp.Designer.cs">
@@ -65,7 +67,7 @@
     <Compile Include="FormEndgame.Designer.cs">
       <DependentUpon>FormEndgame.cs</DependentUpon>
     </Compile>
-        <Compile Include="FormMenu.cs">
+    <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenu.Designer.cs">

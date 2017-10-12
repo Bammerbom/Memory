@@ -120,7 +120,6 @@
             this.MaximizeBox = false;
             this.Name = "FormMenu";
             this.Text = "Memory";
-            this.Load += new System.EventHandler(this.FormMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).EndInit();
             this.ResumeLayout(false);
 

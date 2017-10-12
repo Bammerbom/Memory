@@ -19,7 +19,15 @@ namespace Memory
 
         private void ButtonReset_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            BaseGame.Reset();
+            if(BaseGame.Gamemode == 0) {
+                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width);
+            }else if (BaseGame.Gamemode == 1) {
+                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width);
+            } else if(BaseGame.Gamemode == 2) {
+                GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
+            }
         }
 
         private void ButtonStartgame_Click(object sender, EventArgs e)
@@ -39,7 +47,6 @@ namespace Memory
         private void ButtonHome_Click(object sender, EventArgs e)
         {
             this.Close();
-            FormMenu.Menu.Show();
         }
     }
 }

@@ -12,13 +12,13 @@ namespace Memory
     {
         public static FormSpeelveld FormSpeelveld;
         public static int Gamemode; // 0 = Singleplayer, 1 = Local, 2 = Online
+        public static int Gamestate = 0; // 0 = Niet gestart, 1 = Ingame, 2 = Geeindigt
         public static int[,] Speelveld_types;
         public static bool[,] Speelveld_omgedraaid;
         public static int Height;
         public static int Width;
         public static int Zetten1 = 0;
         public static int Zetten2 = 0;
-        public static int Kaart; // Waar is dit voor?
         public static int Score1 = 0;
         public static int Score2 = 0;
         public static int Kaart1x;
@@ -32,12 +32,25 @@ namespace Memory
         public static int Tijdbeurt;
         public static int Tijdtotaal;
 
+        //Maakt game klaar voor een nieuwe ronde
+        public static void Reset() {
+            FormSpeelveld.Close();
+            FormSpeelveld = null;
+            Zetten1 = 0;
+            Zetten2 = 0;
+            Score1 = 0;
+            Score2 = 0;
+            Kaartcounter = 0;
+            Tijdbeurt = 0;
+            Tijdtotaal = 0;
+        }
+
         public static void InitSpeelveld(int h, int w) {
             //Initialize variabelen
             Height = h;
             Width = w;
-            Speelveld_types = new int[h, w];
-            Speelveld_omgedraaid = new bool[h, w];
+            Speelveld_types = new int[w, h];
+            Speelveld_omgedraaid = new bool[w, h];
             Tijdbeurt = 10;
             Tijdtotaal = 0;
 
@@ -54,8 +67,8 @@ namespace Memory
             for (int y = 0; y < Height; y++) {
                 for (int x = 0; x < Width; x++) {
                     int pos = y * Width + x;
-                    Speelveld_types[x, y] = tempvelden[pos];
-                    Speelveld_omgedraaid[x, y] = false;
+                    Speelveld_types[x,y] = tempvelden[pos];
+                    Speelveld_omgedraaid[x,y] = false;
                 }
             }
         }
@@ -113,8 +126,8 @@ namespace Memory
                     //Check voor win
                     if (Checkwin()) {
                         if (Gamemode == 0) GameSingleplayer.End();
-                        else if (Gamemode == 1) ;
-                        else if (Gamemode == 2) ; //TODO
+                        else if (Gamemode == 1) GameMultiplayerLocal.End();
+                        else if (Gamemode == 2) GameMultiplayerOnline.End(); //TODO
                     }
                 } else {
                     //Draai beide kaarten terug om

@@ -20,7 +20,6 @@ namespace Memory
         private void ButtonBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            FormMenu.MenuForm.Show();
         }
     
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Memory
 {
-    class GameSingleplayer
+    class GameMultiplayerLocal
     {
         public static void Start(int Hoogte, int Breedte) {
             BaseGame.InitSpeelveld(Hoogte, Breedte);
@@ -16,14 +16,10 @@ namespace Memory
             BaseGame.FormSpeelveld.Label_Zetten_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
             BaseGame.SpelerAanBeurt = 1;
-            BaseGame.Gamestate = 1;
         }
 
         public static void End() {
-            BaseGame.Gamestate = 2;
-            BaseGame.FormSpeelveld.Close();
-            FormEndgame endgame = new FormEndgame();
-            endgame.Show();
+
         }
     }
 }

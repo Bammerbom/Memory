@@ -12,17 +12,10 @@ namespace Memory
 {
     public partial class FormMenu : Form
     {
-        public static FormMenu MenuForm;
         public FormMenu()
         {
             InitializeComponent();
         }
-
-        private void FormMenu_Load(object sender, EventArgs e) {
-            FormMenu.MenuForm = this;
-        }
-
-        
 
         private void ButtonPlay_Click(object sender, EventArgs e)
         {

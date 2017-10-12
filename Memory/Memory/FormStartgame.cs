@@ -26,13 +26,12 @@ namespace Memory
 
         private void buttonTerug_Click(object sender, EventArgs e) {
             this.Close();
-            FormMenu.MenuForm.Show();
         }
 
         private void buttonStart_Click(object sender, EventArgs e) {
             switch (comboGametype.Text) {
                 case "Singleplayer":
-                    GameSingleplayer.Start(4,4);
+                    GameSingleplayer.Start(2,3);
                     this.Close();
                     break;
                 default:

@@ -39,7 +39,7 @@
             // ButtonReset
             // 
             this.ButtonReset.Location = new System.Drawing.Point(26, 275);
-            this.ButtonReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonReset.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonReset.Name = "ButtonReset";
             this.ButtonReset.Size = new System.Drawing.Size(98, 58);
             this.ButtonReset.TabIndex = 0;
@@ -50,7 +50,7 @@
             // ButtonStartgame
             // 
             this.ButtonStartgame.Location = new System.Drawing.Point(161, 275);
-            this.ButtonStartgame.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonStartgame.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonStartgame.Name = "ButtonStartgame";
             this.ButtonStartgame.Size = new System.Drawing.Size(98, 58);
             this.ButtonStartgame.TabIndex = 1;
@@ -61,7 +61,7 @@
             // ButtonHighscored
             // 
             this.ButtonHighscored.Location = new System.Drawing.Point(298, 275);
-            this.ButtonHighscored.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonHighscored.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonHighscored.Name = "ButtonHighscored";
             this.ButtonHighscored.Size = new System.Drawing.Size(98, 58);
             this.ButtonHighscored.TabIndex = 2;
@@ -72,7 +72,7 @@
             // ButtonHome
             // 
             this.ButtonHome.Location = new System.Drawing.Point(431, 275);
-            this.ButtonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonHome.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonHome.Name = "ButtonHome";
             this.ButtonHome.Size = new System.Drawing.Size(98, 58);
             this.ButtonHome.TabIndex = 3;
@@ -111,9 +111,11 @@
             this.Controls.Add(this.ButtonHighscored);
             this.Controls.Add(this.ButtonStartgame);
             this.Controls.Add(this.ButtonReset);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "FormEndgame";
-            this.Text = "Form1";
+            this.Text = "Memory";
             this.ResumeLayout(false);
             this.PerformLayout();
 
