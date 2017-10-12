@@ -44,6 +44,9 @@ namespace Memory
         }
 
         public static void Render() {
+            Form.Textbox_Score_Speler_1.Text = Convert.ToString(score1);
+            Form.Textbox_Score_Speler_2.Text = Convert.ToString(score2);
+            Form.Textbox_Zetten.Text = Convert.ToString(zetten);
 
         }
 
