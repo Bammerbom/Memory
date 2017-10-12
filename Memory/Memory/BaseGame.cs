@@ -14,8 +14,8 @@ namespace Memory
         public static bool[,] Speelveld_omgedraaid;
         public static int Height;
         public static int Width;
-        public static int Zetten1;
-        public static int Zetten2;
+        public static int Zetten1 = 0;
+        public static int Zetten2 = 0;
         public static int Kaart;
         public static int Score1;
         public static int Score2;
@@ -28,19 +28,22 @@ namespace Memory
         public static string Naam2;
         public static int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
 
-        public static void InitSpeelveld() {
-
+        public static void InitSpeelveld(int h, int w) {
+            Height = h;
+            Width = w;
+            Speelveld_types = new int[h, w];
+            Speelveld_omgedraaid = new bool[h, w];
         }
 
         public static void InitForm() {
 
         }
 
-        public static void Click(int x, int y) {
+        public static void KaartKlik(int x, int y) {
 
         }
 
-        public static async void Reset() {
+        public static async void ResetKaarten() {
 
         }
 
