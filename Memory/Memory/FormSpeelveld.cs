@@ -19,82 +19,82 @@ namespace Memory
 
         private void Kaart0_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(0);
+            BaseGame.KaartKlik(0);
         }
 
         private void Kaart1_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(1);
+            BaseGame.KaartKlik(1);
         }
 
         private void Kaart2_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(2);
+            BaseGame.KaartKlik(2);
         }
 
         private void Kaart3_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(3);
+            BaseGame.KaartKlik(3);
         }
 
         private void Kaart4_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(4);
+            BaseGame.KaartKlik(4);
         }
 
         private void Kaart5_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(5);
+            BaseGame.KaartKlik(5);
         }
 
         private void Kaart6_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(6);
+            BaseGame.KaartKlik(6);
         }
 
         private void Kaart7_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(7);
+            BaseGame.KaartKlik(7);
         }
 
         private void Kaart8_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(8);
+            BaseGame.KaartKlik(8);
         }
 
         private void Kaart9_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(9);
+            BaseGame.KaartKlik(9);
         }
 
         private void Kaart10_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(10);
+            BaseGame.KaartKlik(10);
         }
 
         private void Kaart11_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(11);
+            BaseGame.KaartKlik(11);
         }
 
         private void Kaart12_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(12);
+            BaseGame.KaartKlik(12);
         }
 
         private void Kaart13_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(13);
+            BaseGame.KaartKlik(13);
         }
 
         private void Kaart14_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(14);
+            BaseGame.KaartKlik(14);
         }
 
         private void Kaart15_Click(object sender, EventArgs e)
         {
-            SingleplayerGame.KaartKlik(15);
+            BaseGame.KaartKlik(15);
         }
     }
 }

@@ -45,9 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MultiplayerLocalGame.cs" />
-    <Compile Include="MultiplayerOnlineGame.cs" />
-    <Compile Include="SingleplayerGame.cs" />
+    <Compile Include="BaseGame.cs" />
+    <Compile Include="GameSingleplayer.cs" />
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,5 +127,6 @@
   <ItemGroup>
     <None Include="Resources\Kaart0.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
