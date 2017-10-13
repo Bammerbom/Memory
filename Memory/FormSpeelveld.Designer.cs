@@ -252,20 +252,20 @@
             // 
             this.Label_Timer.AutoSize = true;
             this.Label_Timer.BackColor = System.Drawing.Color.White;
-            this.Label_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Timer.Location = new System.Drawing.Point(50, 524);
+            this.Label_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Timer.Location = new System.Drawing.Point(12, 524);
             this.Label_Timer.Name = "Label_Timer";
-            this.Label_Timer.Size = new System.Drawing.Size(95, 29);
+            this.Label_Timer.Size = new System.Drawing.Size(209, 63);
             this.Label_Timer.TabIndex = 11;
             this.Label_Timer.Text = "Timer : ";
             // 
             // Textbox_Timer
             // 
-            this.Textbox_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_Timer.Location = new System.Drawing.Point(176, 521);
+            this.Textbox_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Timer.Location = new System.Drawing.Point(227, 521);
             this.Textbox_Timer.Name = "Textbox_Timer";
             this.Textbox_Timer.ReadOnly = true;
-            this.Textbox_Timer.Size = new System.Drawing.Size(100, 35);
+            this.Textbox_Timer.Size = new System.Drawing.Size(100, 68);
             this.Textbox_Timer.TabIndex = 12;
             this.Textbox_Timer.Text = "10";
             // 
