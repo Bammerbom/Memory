@@ -52,7 +52,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            label1.Location = new System.Drawing.Point(52, 207);
+            label1.Location = new System.Drawing.Point(275, 207);
             label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(138, 39);
@@ -62,10 +62,10 @@
             // ButtonBack
             // 
             this.ButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.ButtonBack.Location = new System.Drawing.Point(11, 26);
+            this.ButtonBack.Location = new System.Drawing.Point(23, 742);
             this.ButtonBack.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(103, 42);
+            this.ButtonBack.Size = new System.Drawing.Size(122, 41);
             this.ButtonBack.TabIndex = 0;
             this.ButtonBack.Text = "Terug";
             this.ButtonBack.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label3.Location = new System.Drawing.Point(710, 207);
+            this.label3.Location = new System.Drawing.Point(859, 207);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 39);
@@ -85,7 +85,7 @@
             // pictureBox1highscore
             // 
             this.pictureBox1highscore.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1highscore.Image")));
-            this.pictureBox1highscore.Location = new System.Drawing.Point(526, -38);
+            this.pictureBox1highscore.Location = new System.Drawing.Point(482, -38);
             this.pictureBox1highscore.Name = "pictureBox1highscore";
             this.pictureBox1highscore.Size = new System.Drawing.Size(314, 284);
             this.pictureBox1highscore.TabIndex = 6;
