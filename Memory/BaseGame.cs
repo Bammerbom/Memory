@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Memory
@@ -13,24 +14,25 @@ namespace Memory
         public static FormSpeelveld FormSpeelveld;
         public static int Gamemode; // 0 = Singleplayer, 1 = Local, 2 = Online
         public static int Gamestate = 0; // 0 = Niet gestart, 1 = Ingame, 2 = Geeindigt
-        public static int[,] Speelveld_types;
-        public static bool[,] Speelveld_omgedraaid;
-        public static int Height;
-        public static int Width;
-        public static int Zetten1 = 0;
+        public static int[,] Speelveld_types;  //deze array bevat de identiteit van de kaarten
+        public static bool[,] Speelveld_omgedraaid;    //deze array bevat de status van de kaarten
+        public static int Height;  //hoogte speelveld
+        public static int Width;  //breedte speelveld
+        public static int Zetten1 = 0;  //aantal zetten van de spelers
         public static int Zetten2 = 0;
-        public static int Score1 = 0;
+        public static int Score1 = 0;  // aantal punten van spelers
         public static int Score2 = 0;
-        public static int Kaart1x;
+        public static int Kaart1x;  //coördinaten van de getrokken kaarten
         public static int Kaart1y;
         public static int Kaart2x;
         public static int Kaart2y;
-        public static int Kaartcounter = 0;
-        public static string Naam1;
+        public static int Kaartcounter = 0;   // aantal getrokken kaarten in 1 beurt
+        public static string Naam1;    // namen spelers
         public static string Naam2;
         public static int SpelerAanBeurt; // 1 = Speler 1, 2 = Speler 2
-        public static int Tijdbeurt;
-        public static int Tijdtotaal;
+        public static int Tijdbeurt;  //de tijd counter voor de tijd die je hebt in een beurt
+        public static int Tijdtotaal;  //de totale tijd die het spel in beslag neemt
+        public static bool Terugdraai;  // false = er worden geen kaarten terug gedraaid , true = er worden kaarten teruggedraaid
         
 
         //Maakt game klaar voor een nieuwe ronde
@@ -44,6 +46,7 @@ namespace Memory
             Kaartcounter = 0;
             Tijdbeurt = 0;
             Tijdtotaal = 0;
+            Terugdraai = false;
         }
 
         public static void InitSpeelveld(int h, int w) {
@@ -125,6 +128,7 @@ namespace Memory
                     Tijdbeurt = 10; //reset timer
                                         
                     if (Checkwin()) {    //Check voor win 
+
                         if (Gamemode == 0) GameSingleplayer.End();
                         else if (Gamemode == 1) GameMultiplayerLocal.End();
                         else if (Gamemode == 2) GameMultiplayerOnline.End();
@@ -132,17 +136,19 @@ namespace Memory
 
                 } else {
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
-                    Tijdbeurt = 10; //reset timer
-                }
+                                    }
             }
             Render();
         }
 
         public static async void DraaiKaartenTerug() {
+            Terugdraai = true;
+            Tijdbeurt = 10; // reset timer
             await Task.Delay(2000); 
             ZetOmgedraaid(Kaart1x, Kaart1y, false);
             ZetOmgedraaid(Kaart2x, Kaart2y, false);
-            Kaartcounter = 0;
+            Kaartcounter = 0;            
+            Terugdraai = false;
         }
 
         public static void Render() {
@@ -152,16 +158,23 @@ namespace Memory
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
         }
 
-        public static async void Timer() {
+        public static async void Timer() {            
             while (Gamestate == 1)
             {
-                
+
                 while (Tijdbeurt > 0)  //loop die secondes telt
                 {
                     await Task.Delay(1000);
-                    Tijdbeurt -- ;
+                    if (Terugdraai == false)
+                    {
+                        Tijdbeurt--;
+                    }
                     Tijdtotaal ++ ;
                     FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
+                    if (Gamestate == 2)  // killed de timer als het spel is afgelopen.
+                    {
+                        return ;   
+                    }
                 }
 
                 Tijdbeurt = 10; //timer reset
@@ -176,8 +189,11 @@ namespace Memory
                     Zetten2++;
                     FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
                 }
+                
 
             }
+
+            
         }
 
         //check of alle kaarten zijn omgedraaid en returned true als dat gebeurt is

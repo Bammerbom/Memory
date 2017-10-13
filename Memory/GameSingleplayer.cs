@@ -15,6 +15,7 @@ namespace Memory
             BaseGame.FormSpeelveld.Label_Score_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Label_Zetten_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
+            BaseGame.FormSpeelveld.TextBox_Beurt.Visible = false;
             BaseGame.SpelerAanBeurt = 1;
             BaseGame.Gamestate = 1;
             BaseGame.Naam1 = Naam;
@@ -23,8 +24,9 @@ namespace Memory
 
         }
 
-        public static void End() {
+        public static async void End() {            
             BaseGame.Gamestate = 2;
+            await Task.Delay(2000);
             BaseGame.FormSpeelveld.Close();
             FormEndgame endgame = new FormEndgame();
             endgame.Show();
