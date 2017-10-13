@@ -33,9 +33,7 @@
             this.ButtonStartgame = new System.Windows.Forms.Button();
             this.ButtonHighscored = new System.Windows.Forms.Button();
             this.ButtonHome = new System.Windows.Forms.Button();
-            this.LabelKlaar = new System.Windows.Forms.Label();
             this.LabelResultatenmatch = new System.Windows.Forms.Label();
-            this.LabelResultatenmatch2 = new System.Windows.Forms.Label();
             this.ButtonSluiten = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -43,7 +41,8 @@
             // 
             this.ButtonReset.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ButtonReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonReset.Location = new System.Drawing.Point(11, 277);
+            this.ButtonReset.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonReset.Location = new System.Drawing.Point(11, 373);
             this.ButtonReset.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonReset.Name = "ButtonReset";
             this.ButtonReset.Size = new System.Drawing.Size(150, 70);
@@ -56,7 +55,7 @@
             // 
             this.ButtonStartgame.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ButtonStartgame.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonStartgame.Location = new System.Drawing.Point(165, 277);
+            this.ButtonStartgame.Location = new System.Drawing.Point(165, 373);
             this.ButtonStartgame.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonStartgame.Name = "ButtonStartgame";
             this.ButtonStartgame.Size = new System.Drawing.Size(150, 70);
@@ -69,7 +68,7 @@
             // 
             this.ButtonHighscored.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ButtonHighscored.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonHighscored.Location = new System.Drawing.Point(473, 277);
+            this.ButtonHighscored.Location = new System.Drawing.Point(473, 373);
             this.ButtonHighscored.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonHighscored.Name = "ButtonHighscored";
             this.ButtonHighscored.Size = new System.Drawing.Size(150, 70);
@@ -82,7 +81,7 @@
             // 
             this.ButtonHome.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonHome.Location = new System.Drawing.Point(627, 277);
+            this.ButtonHome.Location = new System.Drawing.Point(319, 373);
             this.ButtonHome.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonHome.Name = "ButtonHome";
             this.ButtonHome.Size = new System.Drawing.Size(150, 70);
@@ -91,43 +90,24 @@
             this.ButtonHome.UseVisualStyleBackColor = false;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
             // 
-            // LabelKlaar
-            // 
-            this.LabelKlaar.AutoSize = true;
-            this.LabelKlaar.Location = new System.Drawing.Point(386, 9);
-            this.LabelKlaar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LabelKlaar.Name = "LabelKlaar";
-            this.LabelKlaar.Size = new System.Drawing.Size(40, 13);
-            this.LabelKlaar.TabIndex = 4;
-            this.LabelKlaar.Text = "Klaar!!!";
-            // 
             // LabelResultatenmatch
             // 
             this.LabelResultatenmatch.AutoSize = true;
+            this.LabelResultatenmatch.BackColor = System.Drawing.Color.Transparent;
             this.LabelResultatenmatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelResultatenmatch.Location = new System.Drawing.Point(23, 48);
+            this.LabelResultatenmatch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LabelResultatenmatch.Location = new System.Drawing.Point(267, 136);
             this.LabelResultatenmatch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelResultatenmatch.Name = "LabelResultatenmatch";
             this.LabelResultatenmatch.Size = new System.Drawing.Size(48, 20);
             this.LabelResultatenmatch.TabIndex = 5;
             this.LabelResultatenmatch.Text = "Label";
             // 
-            // LabelResultatenmatch2
-            // 
-            this.LabelResultatenmatch2.AutoSize = true;
-            this.LabelResultatenmatch2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.LabelResultatenmatch2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelResultatenmatch2.Location = new System.Drawing.Point(23, 97);
-            this.LabelResultatenmatch2.Name = "LabelResultatenmatch2";
-            this.LabelResultatenmatch2.Size = new System.Drawing.Size(57, 20);
-            this.LabelResultatenmatch2.TabIndex = 6;
-            this.LabelResultatenmatch2.Text = "Label2";
-            // 
             // ButtonSluiten
             // 
             this.ButtonSluiten.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ButtonSluiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSluiten.Location = new System.Drawing.Point(319, 277);
+            this.ButtonSluiten.Location = new System.Drawing.Point(627, 373);
             this.ButtonSluiten.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonSluiten.Name = "ButtonSluiten";
             this.ButtonSluiten.Size = new System.Drawing.Size(150, 70);
@@ -140,20 +120,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(792, 358);
-            this.Controls.Add(this.ButtonSluiten);
-            this.Controls.Add(this.LabelResultatenmatch2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.BackgroundImage = global::Memory.Properties.Resources.Game_over_lagere_resolutie;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(785, 454);
             this.Controls.Add(this.LabelResultatenmatch);
-            this.Controls.Add(this.LabelKlaar);
+            this.Controls.Add(this.ButtonSluiten);
             this.Controls.Add(this.ButtonHome);
             this.Controls.Add(this.ButtonHighscored);
             this.Controls.Add(this.ButtonStartgame);
             this.Controls.Add(this.ButtonReset);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEndgame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormEndgame_Load);
             this.ResumeLayout(false);
@@ -167,9 +148,7 @@
         private System.Windows.Forms.Button ButtonStartgame;
         private System.Windows.Forms.Button ButtonHighscored;
         private System.Windows.Forms.Button ButtonHome;
-        private System.Windows.Forms.Label LabelKlaar;
         private System.Windows.Forms.Label LabelResultatenmatch;
-        private System.Windows.Forms.Label LabelResultatenmatch2;
         private System.Windows.Forms.Button ButtonSluiten;
     }
 }

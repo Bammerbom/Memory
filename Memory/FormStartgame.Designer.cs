@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStartgame));
             this.comboGametype = new System.Windows.Forms.ComboBox();
             this.titel = new System.Windows.Forms.Label();
             this.labelSingleplayer = new System.Windows.Forms.Label();
@@ -313,8 +314,10 @@
             this.Controls.Add(this.titel);
             this.Controls.Add(this.comboGametype);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormStartgame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormStartgame_Load);
             this.ResumeLayout(false);
