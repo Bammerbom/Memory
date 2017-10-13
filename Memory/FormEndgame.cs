@@ -39,7 +39,6 @@ namespace Memory
 
         private void ButtonHighscored_Click(object sender, EventArgs e)
         {
-            this.Close();
             FormHighscores highscores = new FormHighscores();
             highscores.Show();
         }
