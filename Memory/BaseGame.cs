@@ -219,5 +219,18 @@ namespace Memory
                 box.Image = Properties.Resources.KaartVoorkant;
             }
         }
+
+        public static void GameResultatenOpslaan()
+        {
+            GameResultaten.CheckHighscoreFiles();
+            if (Gamemode == 0)
+            {
+                GameResultaten.SingleplayerSave();
+            }
+            else if (Gamemode == 1)
+            {
+                GameResultaten.MultiplayerLocalSave();
+            }
+        }
     }
 }

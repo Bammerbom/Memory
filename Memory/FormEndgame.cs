@@ -48,7 +48,7 @@ namespace Memory
             this.Close();
         }
 
-        private void LabelGameResultaat()
+        private void LabelGameResultaat()               //<----------------------- ?
         {
               
         }
