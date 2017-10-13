@@ -41,7 +41,6 @@ namespace Memory
 
         private void ButtonHelp_Click(object sender, EventArgs e)
         {
-            this.Hide();
             FormHelp Help = new FormHelp();
             Help.Show();
         }
