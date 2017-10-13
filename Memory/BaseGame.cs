@@ -128,10 +128,7 @@ namespace Memory
                     Tijdbeurt = 10; //reset timer
                                         
                     if (Checkwin()) {    //Check voor win 
-
-                        if (Gamemode == 0) GameSingleplayer.End();
-                        else if (Gamemode == 1) GameMultiplayerLocal.End();
-                        else if (Gamemode == 2) GameMultiplayerOnline.End();
+                        Endgame();
                     }
 
                 } else {
@@ -203,6 +200,12 @@ namespace Memory
                 if (!omgedraaid) return false;
             }
             return true;
+        }
+
+        public static void Endgame() {
+            if (Gamemode == 0) GameSingleplayer.End();
+            else if (Gamemode == 1) GameMultiplayerLocal.End();
+            else if (Gamemode == 2) GameMultiplayerOnline.End();
         }
 
         private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {

@@ -278,6 +278,7 @@
             this.Button_Opslaan.TabIndex = 13;
             this.Button_Opslaan.Text = "Opslaan en Exit";
             this.Button_Opslaan.UseVisualStyleBackColor = true;
+            this.Button_Opslaan.Click += new System.EventHandler(this.Button_Opslaan_Click);
             // 
             // Button_Exit
             // 
@@ -288,6 +289,7 @@
             this.Button_Exit.TabIndex = 14;
             this.Button_Exit.Text = "Exit";
             this.Button_Exit.UseVisualStyleBackColor = true;
+            this.Button_Exit.Click += new System.EventHandler(this.Button_Exit_Click);
             // 
             // Kaart00
             // 

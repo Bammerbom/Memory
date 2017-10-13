@@ -97,5 +97,14 @@ namespace Memory
         {
             BaseGame.KaartKlik(3,3);
         }
+
+        private void Button_Exit_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
+        private void Button_Opslaan_Click(object sender, EventArgs e) {
+            this.Close();
+            //TODO save
+        }
     }
 }
