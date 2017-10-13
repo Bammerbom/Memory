@@ -31,12 +31,37 @@ namespace Memory
         private void buttonStart_Click(object sender, EventArgs e) {
             switch (comboGametype.Text) {
                 case "Singleplayer":
-                    GameSingleplayer.Start(2,3);
+                    string naam = inputANaam.Text;
+                    if(naam == null || naam.Length == 0) {
+                        MessageBox.Show("Voer een naam in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    switch (comboASpelgrootte.Text) {
+                        //2x2 2x3 2x4 3x4 4x4
+                        case "2x2":
+                            GameSingleplayer.Start(2, 2, naam);
+                            break;
+                        case "2x3":
+                            GameSingleplayer.Start(2, 3, naam);
+                            break;
+                        case "2x4":
+                            GameSingleplayer.Start(2, 4, naam);
+                            break;
+                        case "3x4":
+                            GameSingleplayer.Start(3, 4, naam);
+                            break;
+                        case "4x4":
+                            GameSingleplayer.Start(4, 4, naam);
+                            break;
+                        default:
+                            MessageBox.Show("Voer een spelgrootte in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                    }
                     this.Close();
                     break;
                 default:
-                    //TODO geef error met niks geselecteerd
-                    break;
+                    MessageBox.Show("Voer een gamemode in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
             }
         }
     }

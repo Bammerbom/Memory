@@ -127,7 +127,7 @@ namespace Memory
                     if (Checkwin()) {    //Check voor win 
                         if (Gamemode == 0) GameSingleplayer.End();
                         else if (Gamemode == 1) GameMultiplayerLocal.End();
-                        else if (Gamemode == 2) GameMultiplayerOnline.End(); //TODO
+                        else if (Gamemode == 2) GameMultiplayerOnline.End();
                     }
 
                 } else {

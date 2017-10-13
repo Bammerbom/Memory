@@ -22,7 +22,7 @@ namespace Memory
             this.Close();
             BaseGame.Reset();
             if(BaseGame.Gamemode == 0) {
-                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width);
+                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
             }else if (BaseGame.Gamemode == 1) {
                 GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width);
             } else if(BaseGame.Gamemode == 2) {
