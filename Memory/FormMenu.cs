@@ -35,7 +35,6 @@ namespace Memory
 
         private void ButtonHighscores_Click(object sender, EventArgs e)
         {
-            this.Hide();
             FormHighscores Highscores = new FormHighscores();
             Highscores.Show();
         }
