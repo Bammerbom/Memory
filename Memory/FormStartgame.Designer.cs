@@ -155,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Memory.Properties.Resources.floppy_disks;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.labelSpelgrootte);
             this.Controls.Add(this.labelNaam2);
@@ -166,6 +167,7 @@
             this.Controls.Add(this.textboxNaam1);
             this.Controls.Add(this.titel);
             this.Controls.Add(this.comboGametype);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
