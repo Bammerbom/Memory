@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Memory
@@ -157,7 +158,7 @@ namespace Memory
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
         }
 
-        public static async void Timer() {
+        public static async void Timer() {            
             while (Gamestate == 1)
             {
 
@@ -170,6 +171,10 @@ namespace Memory
                     }
                     Tijdtotaal ++ ;
                     FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
+                    if (Gamestate == 2)  // killed de timer als het spel is afgelopen.
+                    {
+                        return ;   
+                    }
                 }
 
                 Tijdbeurt = 10; //timer reset
@@ -184,8 +189,11 @@ namespace Memory
                     Zetten2++;
                     FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
                 }
+                
 
             }
+
+            
         }
 
         //check of alle kaarten zijn omgedraaid en returned true als dat gebeurt is
