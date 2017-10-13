@@ -59,6 +59,7 @@
             "Singleplayer",
             "Multiplayer Local",
             "Multiplayer Online"});
+            this.comboGametype.Text = "Singleplayer";
             this.comboGametype.Location = new System.Drawing.Point(406, 149);
             this.comboGametype.Name = "comboGametype";
             this.comboGametype.Size = new System.Drawing.Size(253, 33);
@@ -124,6 +125,7 @@
             "2x4",
             "3x4",
             "4x4"});
+            this.comboASpelgrootte.Text = "4x4";
             this.comboASpelgrootte.Location = new System.Drawing.Point(67, 470);
             this.comboASpelgrootte.Name = "comboASpelgrootte";
             this.comboASpelgrootte.Size = new System.Drawing.Size(253, 33);

@@ -33,8 +33,7 @@ namespace Memory
                 case "Singleplayer":
                     string naam = inputANaam.Text;
                     if(naam == null || naam.Length == 0) {
-                        MessageBox.Show("Voer een naam in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
+                        naam = "Speler 1";
                     }
                     switch (comboASpelgrootte.Text) {
                         //2x2 2x3 2x4 3x4 4x4
