@@ -116,9 +116,11 @@
             this.Controls.Add(this.plaatje1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "FormMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
             ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).EndInit();
             this.ResumeLayout(false);

@@ -63,6 +63,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Game_over {
+            get {
+                object obj = ResourceManager.GetObject("Game over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Game_over_lagere_resolutie {
+            get {
+                object obj = ResourceManager.GetObject("Game over lagere resolutie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Kaart0 {
             get {
                 object obj = ResourceManager.GetObject("Kaart0", resourceCulture);

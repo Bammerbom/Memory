@@ -130,6 +130,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Game over.png" />
+    <None Include="Resources\Game over lagere resolutie.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
