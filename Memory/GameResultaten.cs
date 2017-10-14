@@ -12,6 +12,7 @@ namespace Memory
 
         public static string path1 = "TextFileSingleplayerScores.txt"; //@"C:\Users\Me\Documents\GitHub\Memory\
         public static string path2 = "TextFileLocalMultiplayerScores.txt";
+        public static int ShowCountSingelplayer = 10;
 
         public static void CheckHighscoreFiles()
         {
@@ -30,12 +31,12 @@ namespace Memory
             string resultaat = BaseGame.Naam1 + "|" + Convert.ToString(BaseGame.Score1) + "|" + Convert.ToString(BaseGame.Zetten1) + "|" + Convert.ToString(BaseGame.Tijdtotaal);
 
             int lineCount = File.ReadLines(GameResultaten.path1).Count();
-            if (lineCount < 10)
+            if (lineCount < GameResultaten.ShowCountSingelplayer)
             {
-                using (StreamWriter writer = new StreamWriter(GameResultaten.path1))
-                {
-                    writer.WriteLine(resultaat);
-                }
+                File.WriteAllLines(path1, File.ReadAllLines(path1).Where(l => !string.IsNullOrWhiteSpace(l))); // l ????
+                File.AppendAllText(path1, resultaat);
+                File.AppendAllText(path1, Environment.NewLine);
+                lineCount = File.ReadLines(GameResultaten.path1).Count() - 1;
             }
 
             string[] lines = File.ReadAllLines(GameResultaten.path1);
