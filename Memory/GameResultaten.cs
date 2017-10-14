@@ -12,7 +12,7 @@ namespace Memory
 
         public static string path1 = "TextFileSingleplayerScores.txt"; //@"C:\Users\Me\Documents\GitHub\Memory\
         public static string path2 = "TextFileLocalMultiplayerScores.txt";
-        public static int ShowCountSingelplayer = 10;
+        public static int SaveCountSingelplayer = 10;
 
         public static void CheckHighscoreFiles()
         {
@@ -28,23 +28,53 @@ namespace Memory
 
         public static void SingleplayerSave()
         {
+        //toevoegen en lege lijnen verwijderen:
             string resultaat = BaseGame.Naam1 + "|" + Convert.ToString(BaseGame.Score1) + "|" + Convert.ToString(BaseGame.Zetten1) + "|" + Convert.ToString(BaseGame.Tijdtotaal);
-
-            int lineCount = File.ReadLines(GameResultaten.path1).Count();
-            if (lineCount < GameResultaten.ShowCountSingelplayer)
-            {
+            //if (lineCount < GameResultaten.ShowCountSingelplayer)
+            //{
                 File.WriteAllLines(path1, File.ReadAllLines(path1).Where(l => !string.IsNullOrWhiteSpace(l))); // l ????
                 File.AppendAllText(path1, resultaat);
                 File.AppendAllText(path1, Environment.NewLine);
-                lineCount = File.ReadLines(GameResultaten.path1).Count() - 1;
+            //}
+
+        //gegevens klaar zetten voor bubbelsorting:
+            //int lineCount = File.ReadLines(GameResultaten.path1).Count();
+            string[] lines = File.ReadAllLines(GameResultaten.path1);
+            //int score_res = BaseGame.Score1;      //string[] resultaat_gegevens = resultaat.Split('|');//int score_res = Convert.ToInt32(resultaat_gegevens[1]);
+
+        //bubbelsorting:
+            string temp ="";
+            for (int write = 0; write < lines.Length; write++)
+            {
+                for (int sort = 0; sort < lines.Length - 1; sort++)
+                {
+                    string[] line = lines[sort].Split('|');
+                    int score1 = Convert.ToInt32(line[1]);
+                    line = lines[sort + 1].Split('|');
+                    int score2 = Convert.ToInt32(line[1]);
+                    if (score1 > score2)
+                    {
+                        temp = lines[sort + 1];
+                        lines[sort + 1] = lines[sort];
+                        lines[sort] = temp;
+                    }
+                }
+            }
+            File.WriteAllLines(path1, lines);
+        //haal overbodige info weg
+            while (File.ReadLines(GameResultaten.path1).Count() > GameResultaten.SaveCountSingelplayer)
+            {
+                lines[File.ReadLines(GameResultaten.path1).Count() - 1] = "";
+                File.WriteAllLines(path1, File.ReadAllLines(path1).Where(l => !string.IsNullOrWhiteSpace(l)));
+                lines = File.ReadAllLines(GameResultaten.path1);
             }
 
-            string[] lines = File.ReadAllLines(GameResultaten.path1);
-            int score_res = BaseGame.Score1; //string[] resultaat_gegevens = resultaat.Split('|');//int score_res = Convert.ToInt32(resultaat_gegevens[1]);
+
+
 
             //for (int i = lineCount; i >= 0; i--)
-            //{
-            //    if (lines[i] != null )
+            //        {
+            //        if (lines[i] != null)
             //    {
             //        string[] line = lines[i].Split('|');
             //        int score = Convert.ToInt32(line[1]);
@@ -59,17 +89,18 @@ namespace Memory
             //    }
             //    else if (lines[i] == null && lines[i - 1] != null)
             //    {
-            //        string[] line = lines[i-1].Split('|');
+            //        string[] line = lines[i - 1].Split('|');
             //        int score = Convert.ToInt32(line[1]);
+
             //        if (score < score_res)
             //        {
             //            lines[i] = lines[i - 1];
-            //            lines[i-1] = resultaat;
+            //            lines[i - 1] = resultaat;
             //        }
             //        else
             //        {
             //            lines[i] = resultaat;
-            //        }    
+            //        }
             //    }
             //    else if (lines[i] == null && i == 0)
             //    {
