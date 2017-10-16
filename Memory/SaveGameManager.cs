@@ -58,7 +58,12 @@ namespace Memory
                 Bestandslocatie = Path.GetFullPath(sfd.FileName);
             }
 
-          
+            if (Bestandslocatie == null) //voorkomt lege bestandslocatie error
+            {
+                return;
+            }
+
+
 
             System.IO.File.WriteAllText(Bestandslocatie, WriteData); //write
 
@@ -70,11 +75,16 @@ namespace Memory
             //get bestands path met open file dialog
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "save files (*.sav)|*.sav|All files (*.*)|*.*";
-            string sfdname = ofd.FileName;
+            string ofdname = ofd.FileName;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
 
                 Bestandslocatie = Path.GetFullPath(ofd.FileName);
+            }
+
+            if (Bestandslocatie == null) //voorkomt lege bestandslocatie error
+            {
+                return;
             }
 
             string Readdata = System.IO.File.ReadAllText(Bestandslocatie);  //read

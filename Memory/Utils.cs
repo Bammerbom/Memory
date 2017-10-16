@@ -18,7 +18,7 @@ namespace Memory
         }
 
 
-        public static string ArrayToString(Array ar)
+        public static string ArrayToString(Array ar) //convert alle soorten arrays naar 1 string
         {
             using (MemoryStream ms = new MemoryStream())
             {
@@ -28,7 +28,7 @@ namespace Memory
             }
         }
 
-        public static object StringToArray(string s)
+        public static object StringToArray(string s)  //convert string terug naar array
         {
             using (MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(s)))
             {
