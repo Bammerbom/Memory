@@ -2,7 +2,7 @@
 using System.Net.Sockets;
 using System.Text;
 
-namespace MemoryInternetTest {
+namespace Memory {
 	class NetClient {
 		private static TcpClient Client;
         private static string Ip;
@@ -21,12 +21,17 @@ namespace MemoryInternetTest {
 			byte[] bytes = Encoding.UTF8.GetBytes(message);
 			NetworkStream stream = Client.GetStream();  
 			stream.Write(bytes, 0, bytes.Length);
-			
-			//Wait for return
-			bytes = new byte[ByteSize];
-			stream.Read(bytes, 0, ByteSize);
-			return cleanMessage(bytes);
+
+            //Wait for return
+            return ReceiveMessage();
 		}
+
+        public static string ReceiveMessage() {
+            byte[] bytes = new byte[ByteSize];
+            NetworkStream stream = Client.GetStream();
+            stream.Read(bytes, 0, ByteSize);
+            return cleanMessage(bytes);
+        }
 
 		public static void Disconnect() {
 			Client.Close();

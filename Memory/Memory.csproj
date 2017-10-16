@@ -85,6 +85,7 @@
     <Compile Include="FormStartgame.Designer.cs">
       <DependentUpon>FormStartgame.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerMultiplayer.cs" />
     <Compile Include="NetClient.cs" />
     <Compile Include="NetServer.cs" />
     <Compile Include="Program.cs" />

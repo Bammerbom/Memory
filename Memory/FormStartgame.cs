@@ -48,7 +48,7 @@ namespace Memory
                 textboxNaam2.Visible = false;
                 labelNaam2.Visible = false;
             }
-            if (comboGametype.Text == "Local Multiplayer" || comboGametype.Text == "Multiplayer Online")
+            if (comboGametype.Text == "Local Multiplayer")
             {
                 comboSpelgrootte.Visible = true;
                 labelSpelgrootte.Visible = true;
@@ -57,6 +57,15 @@ namespace Memory
                 labelNaam1.Text = "Naam 1 invullen";
                 labelNaam1.Visible = true;
                 labelNaam2.Visible = true;
+            }
+            if(comboGametype.Text == "Host Multiplayer") {
+                comboSpelgrootte.Visible = true;
+                labelSpelgrootte.Visible = true;
+                textboxNaam1.Visible = true;
+                labelNaam1.Text = "Naam invullen";
+                labelNaam1.Visible = true;
+                textboxNaam2.Visible = false;
+                labelNaam2.Visible = false;
             }
 
         }
@@ -95,6 +104,9 @@ namespace Memory
                         MessageBox.Show("Voer de grootte van het speelveld in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                 }
+            } else {
+                h = 0;
+                w = 0;
             }
             switch (comboGametype.Text) {
                 case "Singleplayer":
@@ -118,6 +130,7 @@ namespace Memory
                     this.Close();
                     break;
                 case "Host Multiplayer":
+                    bool success = ManagerMultiplayer.Server(this, 8978); //TODO port
                     break;
                 case "Join Multiplayer":
                     break;

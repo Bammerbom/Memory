@@ -7,52 +7,58 @@ using System.Net.Sockets;
 using System.Net;
 using System.Net.Mail;
 
-namespace MemoryInternetTest {
+namespace Memory {
 	class NetServer {
         private static int Port;
         private static int ByteSize;
+        private static bool Open = false;
+        private static TcpListener Listener;
+        private static TcpClient Client;
 
-        public static void Start(Action<string> cJoin, Func<string, string> cMessage, Action<string> cDisconnect, int port, int bytesize) {
+        private static Action<string> cJoin;
+        private static Func<string, string> cMessage;
+        private static Action<string> cDisconnect;
+
+        public static async void Start(Action<string> clJoin, Func<string, string> clMessage, Action<string> clDisconnect, int port, int bytesize) {
+            cJoin = clJoin;
+            cMessage = clMessage;
+            cDisconnect = clDisconnect;
             Port = port;
             ByteSize = bytesize;
             IPEndPoint ep = new IPEndPoint(IPAddress.Any, Port);
-			TcpListener listener = new TcpListener(ep);
-			listener.Start();
-			Console.WriteLine("> SERVER START");
-
-			// Run the loop continously; this is the server.  
-			while (true) {
-				//Prepare client
-				byte[] buffer;
-				var sender = listener.AcceptTcpClient();
-				cJoin(sender.Client.RemoteEndPoint.ToString());
-				
-				//Read data
-				while (true) {
-					try {
-						buffer = new byte[bytesize];
-						sender.GetStream().Read(buffer, 0, bytesize);
-						string message = cleanMessage(buffer);
-						if (message == null) {
-							cDisconnect(null);
-							break;
-						}
-						
-						string rtrn = cMessage(message);
-
-						//Reply
-						byte[] bytes = Encoding.UTF8.GetBytes(rtrn);
-						sender.GetStream().Write(bytes, 0, bytes.Length); // Send the response
-					}
-					catch (Exception e) {
-						cDisconnect(e.Message);
-						break;
-					}
-				}
-				
-				sender.Close();
-			}
+			Listener = new TcpListener(ep);
+			Listener.Start();
 		}
+
+        public static bool NextClient() {
+            Client = Listener.AcceptTcpClient();
+            cJoin(Client.Client.RemoteEndPoint.ToString());
+            return true;
+        }
+
+        public static bool NextMessage() {
+            try {
+                byte[] buffer = new byte[ByteSize];
+                Client.GetStream().Read(buffer, 0, ByteSize);
+                string message = cleanMessage(buffer);
+                if (message == null) {
+                    cDisconnect(null);
+                    Client.Close();
+                    return false;
+                }
+
+                string rtrn = cMessage(message);
+
+                //Reply
+                byte[] bytes = Encoding.UTF8.GetBytes(rtrn);
+                Client.GetStream().Write(bytes, 0, bytes.Length); // Send the response
+                return true;
+            } catch (Exception e) {
+                cDisconnect(e.Message);
+                Client.Close();
+                return false;
+            }
+        }
 
 		private static string cleanMessage(byte[] bytes) {
 			string message = Encoding.UTF8.GetString(bytes);
