@@ -33,6 +33,7 @@ namespace Memory
         private void ButtonStartgame_Click(object sender, EventArgs e)
         {
             this.Close();
+            BaseGame.Reset();
             FormStartgame startgame = new FormStartgame();
             startgame.Show();
         }
@@ -46,6 +47,7 @@ namespace Memory
         private void ButtonHome_Click(object sender, EventArgs e)
         {
             this.Close();
+            BaseGame.Reset();
         }
 
         private void LabelGameResultaat()
