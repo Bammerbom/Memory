@@ -208,7 +208,7 @@ namespace Memory
             else if (Gamemode == 2) GameMultiplayerOnline.End();
         }
 
-        private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
+        public static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
             Speelveld_omgedraaid[x, y] = omgedraaid; //zet string in afkorting
             string kaartnaam = "Kaart" + x + "" + y; //zet kaartnaam in string voor gebruik in
             PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
