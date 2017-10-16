@@ -46,9 +46,9 @@
             this.comboGametype.Items.AddRange(new object[] {
             "Kies spelmodus",
             "Singleplayer",
-            "Multiplayer Local",
-            "Host Multiplayer Online",
-            "Join Multiplayer Online"});
+            "Local Multiplayer",
+            "Host Multiplayer",
+            "Join Multiplayer"});
             this.comboGametype.Location = new System.Drawing.Point(261, 62);
             this.comboGametype.Name = "comboGametype";
             this.comboGametype.Size = new System.Drawing.Size(278, 45);

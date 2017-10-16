@@ -48,7 +48,7 @@ namespace Memory
                 textboxNaam2.Visible = false;
                 labelNaam2.Visible = false;
             }
-            if (comboGametype.Text == "Multiplayer Local" || comboGametype.Text == "Multiplayer Online")
+            if (comboGametype.Text == "Local Multiplayer" || comboGametype.Text == "Multiplayer Online")
             {
                 comboSpelgrootte.Visible = true;
                 labelSpelgrootte.Visible = true;
@@ -68,31 +68,33 @@ namespace Memory
         private void buttonStart_Click(object sender, EventArgs e) {
             int h, w;
             BaseGame.Reset(); //Just in case
-            switch (comboSpelgrootte.Text) {
-                //2x2 2x3 2x4 3x4 4x4
-                case "2x2":
-                    h = 2;
-                    w = 2;
-                    break;
-                case "2x3":
-                    h = 2;
-                    w = 3;
-                    break;
-                case "2x4":
-                    h = 2;
-                    w = 4;
-                    break;
-                case "3x4":
-                    h = 3;
-                    w = 4;
-                    break;
-                case "4x4":
-                    h = 4;
-                    w = 4;
-                    break;
-                default:
-                    MessageBox.Show("Voer de grootte van het speelveld in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+            if (comboGametype.Text != "Join Multiplayer") {
+                switch (comboSpelgrootte.Text) {
+                    //2x2 2x3 2x4 3x4 4x4
+                    case "2x2":
+                        h = 2;
+                        w = 2;
+                        break;
+                    case "2x3":
+                        h = 2;
+                        w = 3;
+                        break;
+                    case "2x4":
+                        h = 2;
+                        w = 4;
+                        break;
+                    case "3x4":
+                        h = 3;
+                        w = 4;
+                        break;
+                    case "4x4":
+                        h = 4;
+                        w = 4;
+                        break;
+                    default:
+                        MessageBox.Show("Voer de grootte van het speelveld in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                }
             }
             switch (comboGametype.Text) {
                 case "Singleplayer":
@@ -103,7 +105,7 @@ namespace Memory
                     GameSingleplayer.Start(h, w, naam);
                     this.Close();
                     break;
-                case "Multiplayer Local":
+                case "Local Multiplayer":
                     string naam1 = textboxNaam1.Text;
                     if (naam1 == null || naam1.Length == 0) {
                         naam1 = "Speler 1";
@@ -114,6 +116,10 @@ namespace Memory
                     }
                     GameMultiplayerLocal.Start(h, w, naam1, naam2);
                     this.Close();
+                    break;
+                case "Host Multiplayer":
+                    break;
+                case "Join Multiplayer":
                     break;
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
