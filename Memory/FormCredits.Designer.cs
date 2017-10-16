@@ -1,6 +1,6 @@
 ﻿namespace Memory
 {
-    partial class Credits
+    partial class FormCredits
     {
         /// <summary>
         /// Required designer variable.
