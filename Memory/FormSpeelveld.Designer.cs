@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSpeelveld));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.bestandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,7 +70,7 @@
             this.Kaart03 = new System.Windows.Forms.PictureBox();
             this.Label_Zetten_Speler_2 = new System.Windows.Forms.Label();
             this.Textbox_Zetten_Speler_2 = new System.Windows.Forms.TextBox();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Buton_Reset = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart00)).BeginInit();
@@ -115,6 +116,13 @@
             this.bestandToolStripMenuItem.Name = "bestandToolStripMenuItem";
             this.bestandToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.bestandToolStripMenuItem.Text = "Bestand";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(186, 26);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -307,7 +315,7 @@
             this.Button_Exit.Location = new System.Drawing.Point(73, 1022);
             this.Button_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Button_Exit.Name = "Button_Exit";
-            this.Button_Exit.Size = new System.Drawing.Size(295, 102);
+            this.Button_Exit.Size = new System.Drawing.Size(295, 95);
             this.Button_Exit.TabIndex = 14;
             this.Button_Exit.Text = "Exit";
             this.Button_Exit.UseVisualStyleBackColor = true;
@@ -543,12 +551,17 @@
             this.Textbox_Zetten_Speler_2.Size = new System.Drawing.Size(107, 41);
             this.Textbox_Zetten_Speler_2.TabIndex = 32;
             // 
-            // exitToolStripMenuItem1
+            // Buton_Reset
             // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(186, 26);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            this.Buton_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Buton_Reset.Location = new System.Drawing.Point(73, 752);
+            this.Buton_Reset.Margin = new System.Windows.Forms.Padding(4);
+            this.Buton_Reset.Name = "Buton_Reset";
+            this.Buton_Reset.Size = new System.Drawing.Size(295, 95);
+            this.Buton_Reset.TabIndex = 14;
+            this.Buton_Reset.Text = "Reset";
+            this.Buton_Reset.UseVisualStyleBackColor = true;
+            this.Buton_Reset.Click += new System.EventHandler(this.Buton_Reset_Click);
             // 
             // FormSpeelveld
             // 
@@ -558,6 +571,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1685, 1218);
+            this.Controls.Add(this.Buton_Reset);
             this.Controls.Add(this.Textbox_Zetten_Speler_2);
             this.Controls.Add(this.Label_Zetten_Speler_2);
             this.Controls.Add(this.Kaart33);
@@ -666,5 +680,6 @@
         public System.Windows.Forms.Label Label_Zetten_Speler_2;
         public System.Windows.Forms.TextBox Textbox_Zetten_Speler_2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        public System.Windows.Forms.Button Buton_Reset;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Memory
 {
-    public partial class Credits : Form
+    public partial class FormCredits : Form
     {
-        public Credits()
+        public FormCredits()
         {
             InitializeComponent();
         }

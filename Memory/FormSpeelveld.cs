@@ -121,7 +121,7 @@ namespace Memory
 
         private void creditsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Credits Credits = new Credits();
+            FormCredits Credits = new FormCredits();
             Credits.Show();
         }
 
@@ -136,6 +136,24 @@ namespace Memory
         }
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            BaseGame.Reset();
+            if (BaseGame.Gamemode == 0)
+            {
+                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
+            }
+            else if (BaseGame.Gamemode == 1)
+            {
+                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width);
+            }
+            else if (BaseGame.Gamemode == 2)
+            {
+                GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
+            }
+        }
+
+        private void Buton_Reset_Click(object sender, EventArgs e)
         {
             this.Close();
             BaseGame.Reset();
