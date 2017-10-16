@@ -47,7 +47,8 @@
             "Kies spelmodus",
             "Singleplayer",
             "Multiplayer Local",
-            "Multiplayer Online"});
+            "Host Multiplayer Online",
+            "Join Multiplayer Online"});
             this.comboGametype.Location = new System.Drawing.Point(261, 62);
             this.comboGametype.Name = "comboGametype";
             this.comboGametype.Size = new System.Drawing.Size(278, 45);
