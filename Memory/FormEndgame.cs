@@ -24,7 +24,7 @@ namespace Memory
             if(BaseGame.Gamemode == 0) {
                 GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
             }else if (BaseGame.Gamemode == 1) {
-                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width);
+                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2);
             } else if(BaseGame.Gamemode == 2) {
                 GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
             }
@@ -70,35 +70,26 @@ namespace Memory
             }
             else //2 speler spel
             {
-                if (BaseGame.Score1 > BaseGame.Score2) //checkt of score van Player 1 groter is dan score van Player 2
-                {
-                    LabelResultatenmatch.Text = BaseGame.Naam1 + " heeft gewonnen met een score van: " + BaseGame.Score1 + " punten." 
-                        + "\nMet een totale tijd van: " + BaseGame.Tijdtotaal + " seconden.\n" 
-                        + BaseGame.Naam1 + " heeft " + BaseGame.Zetten1 + " zetten gebruikt."
-                        + BaseGame.Naam2 + " heeft verloren met een score van: " + BaseGame.Score2 + "."; 
-                }
-                else if (BaseGame.Score1 < BaseGame.Score2) //checkt of score van P1 kleiner is dan score van P2
-                {
-                    LabelResultatenmatch.Text = BaseGame.Naam2 + " heeft gewonnen met een score van: " + BaseGame.Score2 + " punten." 
-                        + "\nMet een totale tijd van: " + BaseGame.Tijdtotaal + " seconden.\n" 
-                        + BaseGame.Naam2 + " heeft " + BaseGame.Zetten2 + " zetten gebruikt."
-                        + BaseGame.Naam1 + " heeft verloren met een score van: " + BaseGame.Score1 + ".";
-                }
-                else if ((BaseGame.Score1 == BaseGame.Score2) && (BaseGame.Zetten1 > BaseGame.Zetten2)) //checkt of bij gelijk spel aantal zetten van P1 groter is dan aantal zetten van P2
-                {
-                    LabelResultatenmatch.Text = "Het is een gelijkspel!" + BaseGame.Naam1 + " heeft een score van: " + BaseGame.Score1 + " punten.\n" 
-                        + BaseGame.Naam2 + " heeft een score van: " + BaseGame.Score2 + " punten.\n" 
-                        + "De totale tijd is: " + BaseGame.Tijdtotaal + " seconden.\n"
-                        + BaseGame.Naam1 + " heeft gewonnen. Je hebt de minste zetten gebruikt: " + BaseGame.Zetten1 + BaseGame.Naam2 
-                        + " heeft " + BaseGame.Zetten2 + " gebruikt.";
-                }
-                else if ((BaseGame.Score1 == BaseGame.Score2) && (BaseGame.Zetten1 < BaseGame.Zetten2)) //checkt of bij gelijk spel aantal zetten van P1 kleiner is dan aantal zetten van P2
-                {
-                    LabelResultatenmatch.Text = "Het is een gelijkspel!" + BaseGame.Naam2 + " heeft een score van: " + BaseGame.Score2 + " punten.\n"
-                        + BaseGame.Naam1 + " heeft een score van: " + BaseGame.Score1 + " punten.\n"
-                        + "De totale tijd is: " + BaseGame.Tijdtotaal + " seconden.\n"
-                        + BaseGame.Naam2 + " heeft gewonnen. Je hebt de minste zetten gebruikt: " + BaseGame.Zetten2 
-                        + BaseGame.Naam1 + " heeft " + BaseGame.Zetten1 + " gebruikt.";
+                String winnaam = BaseGame.Score1 > BaseGame.Score2 ? BaseGame.Naam1 : BaseGame.Naam2;
+                String verliesnaam = BaseGame.Score1 < BaseGame.Score2 ? BaseGame.Naam1 : BaseGame.Naam2;
+                if(BaseGame.Score1 != BaseGame.Score2) {
+                    //Er is een winnaar
+                    LabelResultatenmatch.Text = winnaam + " heeft gewonnen!\n"
+                        + BaseGame.Naam1 + " heeft score: " + BaseGame.Score1 + " (Zetten: " + BaseGame.Zetten1 + ")\n"
+                        + BaseGame.Naam2 + " heeft score: " + BaseGame.Score2 + " (Zetten: " + BaseGame.Zetten2 + ")";
+                } else {
+                    //Is aantal zetten gelijk?
+                    if(BaseGame.Zetten1 != BaseGame.Zetten2) {
+                        winnaam = BaseGame.Zetten1 < BaseGame.Zetten2 ? BaseGame.Naam1 : BaseGame.Naam2;
+                        verliesnaam = BaseGame.Zetten1 > BaseGame.Zetten2 ? BaseGame.Naam1 : BaseGame.Naam2;
+                        LabelResultatenmatch.Text = winnaam + " heeft gewonnenen met minder zetten!\n"
+                        + BaseGame.Naam1 + " heeft score: " + BaseGame.Score1 + " (Zetten: " + BaseGame.Zetten1 + ")\n"
+                        + BaseGame.Naam2 + " heeft score: " + BaseGame.Score2 + " (Zetten: " + BaseGame.Zetten2 + ")";
+                    } else {
+                        LabelResultatenmatch.Text = "Gelijkspel! Beide spelers hebben evenveel score en zetten.\n"
+                        + BaseGame.Naam1 + " heeft score: " + BaseGame.Score1 + " (Zetten: " + BaseGame.Zetten1 + ")\n"
+                        + BaseGame.Naam2 + " heeft score: " + BaseGame.Score2 + " (Zetten: " + BaseGame.Zetten2 + ")";
+                    }
                 }
             }
         }
