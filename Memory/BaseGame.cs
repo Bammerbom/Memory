@@ -163,9 +163,9 @@ namespace Memory
             FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
             if (SpelerAanBeurt == 1) {
-                FormSpeelveld.TextBox_Beurt.Text = Naam1;
+                FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam1;
             } else {
-                FormSpeelveld.TextBox_Beurt.Text = Naam2;
+                FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam2;
             }
         }
 

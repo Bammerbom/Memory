@@ -241,12 +241,12 @@
             // TextBox_Beurt
             // 
             this.TextBox_Beurt.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Beurt.Location = new System.Drawing.Point(12, 414);
+            this.TextBox_Beurt.Location = new System.Drawing.Point(12, 361);
             this.TextBox_Beurt.Name = "TextBox_Beurt";
             this.TextBox_Beurt.ReadOnly = true;
-            this.TextBox_Beurt.Size = new System.Drawing.Size(315, 62);
+            this.TextBox_Beurt.Size = new System.Drawing.Size(315, 115);
             this.TextBox_Beurt.TabIndex = 10;
-            this.TextBox_Beurt.Text = "Beurt";
+            this.TextBox_Beurt.Text = "BeurtHoi";
             // 
             // Label_Timer
             // 
