@@ -48,7 +48,7 @@
     <Compile Include="BaseGame.cs" />
     <Compile Include="GameMultiplayerOnline.cs" />
     <Compile Include="GameMultiplayerLocal.cs" />
-    <Compile Include="GameResultaten.cs" />
+    <Compile Include="ManagerHighscores.cs" />
     <Compile Include="GameSingleplayer.cs" />
     <Compile Include="FormHelp.cs">
       <SubType>Form</SubType>

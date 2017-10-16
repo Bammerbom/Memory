@@ -222,14 +222,14 @@ namespace Memory
 
         public static void GameResultatenOpslaan()
         {
-            GameResultaten.CheckHighscoreFiles();
+            ManagerHighscores.CheckHighscoreFiles();
             if (Gamemode == 0)
             {
-                GameResultaten.SingleplayerSave();
+                ManagerHighscores.SingleplayerSave();
             }
             else if (Gamemode == 1)
             {
-                GameResultaten.MultiplayerLocalSave();
+                ManagerHighscores.MultiplayerLocalSave();
             }
         }
     }
