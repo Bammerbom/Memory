@@ -36,6 +36,10 @@
             this.textboxNaam2 = new System.Windows.Forms.TextBox();
             this.labelSpelgrootte = new System.Windows.Forms.Label();
             this.comboSpelgrootte = new System.Windows.Forms.ComboBox();
+            this.labelIp = new System.Windows.Forms.Label();
+            this.textboxIp = new System.Windows.Forms.TextBox();
+            this.labelPort = new System.Windows.Forms.Label();
+            this.textboxPort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboGametype
@@ -69,7 +73,7 @@
             // textboxNaam1
             // 
             this.textboxNaam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNaam1.Location = new System.Drawing.Point(261, 261);
+            this.textboxNaam1.Location = new System.Drawing.Point(262, 239);
             this.textboxNaam1.Name = "textboxNaam1";
             this.textboxNaam1.Size = new System.Drawing.Size(277, 32);
             this.textboxNaam1.TabIndex = 3;
@@ -100,7 +104,7 @@
             // 
             this.labelNaam1.AutoSize = true;
             this.labelNaam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNaam1.Location = new System.Drawing.Point(315, 232);
+            this.labelNaam1.Location = new System.Drawing.Point(316, 210);
             this.labelNaam1.Name = "labelNaam1";
             this.labelNaam1.Size = new System.Drawing.Size(169, 26);
             this.labelNaam1.TabIndex = 14;
@@ -110,7 +114,7 @@
             // 
             this.labelNaam2.AutoSize = true;
             this.labelNaam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNaam2.Location = new System.Drawing.Point(315, 336);
+            this.labelNaam2.Location = new System.Drawing.Point(315, 297);
             this.labelNaam2.Name = "labelNaam2";
             this.labelNaam2.Size = new System.Drawing.Size(169, 26);
             this.labelNaam2.TabIndex = 16;
@@ -119,7 +123,7 @@
             // textboxNaam2
             // 
             this.textboxNaam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNaam2.Location = new System.Drawing.Point(261, 365);
+            this.textboxNaam2.Location = new System.Drawing.Point(261, 326);
             this.textboxNaam2.Name = "textboxNaam2";
             this.textboxNaam2.Size = new System.Drawing.Size(278, 32);
             this.textboxNaam2.TabIndex = 15;
@@ -153,12 +157,52 @@
             this.comboSpelgrootte.Size = new System.Drawing.Size(68, 33);
             this.comboSpelgrootte.TabIndex = 7;
             // 
+            // labelIp
+            // 
+            this.labelIp.AutoSize = true;
+            this.labelIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIp.Location = new System.Drawing.Point(342, 297);
+            this.labelIp.Name = "labelIp";
+            this.labelIp.Size = new System.Drawing.Size(96, 26);
+            this.labelIp.TabIndex = 19;
+            this.labelIp.Text = "IP Adres";
+            // 
+            // textboxIp
+            // 
+            this.textboxIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxIp.Location = new System.Drawing.Point(261, 326);
+            this.textboxIp.Name = "textboxIp";
+            this.textboxIp.Size = new System.Drawing.Size(278, 32);
+            this.textboxIp.TabIndex = 18;
+            // 
+            // labelPort
+            // 
+            this.labelPort.AutoSize = true;
+            this.labelPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPort.Location = new System.Drawing.Point(361, 381);
+            this.labelPort.Name = "labelPort";
+            this.labelPort.Size = new System.Drawing.Size(52, 26);
+            this.labelPort.TabIndex = 21;
+            this.labelPort.Text = "Port";
+            // 
+            // textboxPort
+            // 
+            this.textboxPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxPort.Location = new System.Drawing.Point(262, 410);
+            this.textboxPort.Name = "textboxPort";
+            this.textboxPort.Size = new System.Drawing.Size(278, 32);
+            this.textboxPort.TabIndex = 20;
+            // 
             // FormStartgame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Memory.Properties.Resources.floppy_disks;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(784, 601);
+            this.Controls.Add(this.labelPort);
+            this.Controls.Add(this.textboxPort);
+            this.Controls.Add(this.labelIp);
+            this.Controls.Add(this.textboxIp);
             this.Controls.Add(this.labelSpelgrootte);
             this.Controls.Add(this.labelNaam2);
             this.Controls.Add(this.textboxNaam2);
@@ -194,5 +238,9 @@
         private System.Windows.Forms.TextBox textboxNaam2;
         private System.Windows.Forms.Label labelSpelgrootte;
         private System.Windows.Forms.ComboBox comboSpelgrootte;
+        private System.Windows.Forms.Label labelIp;
+        private System.Windows.Forms.TextBox textboxIp;
+        private System.Windows.Forms.Label labelPort;
+        private System.Windows.Forms.TextBox textboxPort;
     }
 }

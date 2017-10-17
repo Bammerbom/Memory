@@ -10,48 +10,41 @@ using System.Windows.Forms;
 namespace Memory {
     class ManagerServer {
         private static readonly int PacketSize = 1024 * 1024;
+        private static BackgroundWorker b;
 
         public static bool Server(int port) {
-            BackgroundWorker b = new BackgroundWorker();
+            /*b = new BackgroundWorker();
 
             //Deze code wordt in een nieuwe Thread gerunned maar kan interacten met de main thread
             b.DoWork += delegate(object o, DoWorkEventArgs args) {
                 BackgroundWorker bw = o as BackgroundWorker;
-                Server_internal(port);
+                
             };
 
             //Als iemand geconnect is
             Console.WriteLine("A");
             b.RunWorkerCompleted += delegate {
                 Console.WriteLine("B");
-
+                
             };
             
-            b.RunWorkerAsync();
+            //Start achtergrond taak
+            b.RunWorkerAsync();*/
+            Server_internal(port);
 
             //Popup
-            //MessageBox.Show("Wachten op verbinding...\nKlik op OK om te annuleren", "Memory");
+            //DialogResult result = MessageBox.Show("Wachten op verbinding...\nKlik op OK om te annuleren", "Memory");
             Console.WriteLine("C");
             return true;
         }
 
         private static void Server_internal(int port) {
-            NetServer.Start(ServerConnect, ServerMessage, ServerDisconnect, port, PacketSize);
+            NetServer.Start(ServerConnect, ServerDisconnect, port, PacketSize);
             NetServer.NextClient();
-            while (NetServer.IsOpen()) {
-                NetServer.NextMessage();
-            }
-            
         }
 
         public static void ServerConnect(string ip) {
             Console.WriteLine("> CONNECT " + ip);
-        }
-
-        public static string ServerMessage(string message) {
-            Console.WriteLine("> MESSAGE RECEIVED");
-            Console.WriteLine(message);
-            return "Ook " + message;
         }
 
         public static void ServerDisconnect(string error) {
