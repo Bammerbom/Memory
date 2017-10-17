@@ -58,7 +58,7 @@ namespace Memory
                 Bestandslocatie = Path.GetFullPath(sfd.FileName);
             }
 
-            if (Bestandslocatie == null) //voorkomt lege bestandslocatie error
+            if (Bestandslocatie == null || Bestandslocatie == "") //voorkomt lege bestandslocatie error
             {
                 return;
             }
@@ -82,7 +82,7 @@ namespace Memory
                 Bestandslocatie = Path.GetFullPath(ofd.FileName);
             }
 
-            if (Bestandslocatie == null) //voorkomt lege bestandslocatie error
+            if (Bestandslocatie == null || Bestandslocatie == "") //voorkomt lege bestandslocatie error
             {
                 return;
             }
