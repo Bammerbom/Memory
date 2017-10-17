@@ -14,113 +14,56 @@ namespace Memory
     {
         public FormSpeelveld()
         {
-            int xLocation = 366;
-            int yLocation = 17;
+            double yTussenruimte = -35;
+            double xTussenruimte = 25;
+            double xSizeTemp = 175;
+            double ySizeTemp = 263;
             InitializeComponent();
             PictureBox[,] Kaart = new PictureBox[BaseGame.Width, BaseGame.Height];
-            for (int y = 0; y < BaseGame.Height; y++)
+            if (BaseGame.Width == 2 && BaseGame.Height == 2) //speelveld 2x2
             {
-                for(int x = 0; x < BaseGame.Width; x++)
-                {
-                    string Kaartnaam = "Kaart" + x + "" + y;
-                    Kaart[y, x] = new PictureBox();
-                    Kaart[y, x].Name = Kaartnaam;
-                    Kaart[y, x].Size = new Size(175, 262);
-                    Kaart[y, x].BackgroundImage = Properties.Resources.KaartVoorkant;
-                    Kaart[y, x].BackColor = Color.Transparent;
-                    Kaart[y, x].Visible = true;
-                    Kaart[y, x].Anchor = AnchorStyles.Left;
-                    Kaart[y, x].BackgroundImageLayout = ImageLayout.Zoom;
-                    Kaart[y, x].Location = new Point(xLocation, yLocation);
-                    Kaart[y, x].BringToFront();
-                    this.Controls.Add(Kaart[y, x]);
-                    xLocation += 200;
-                }
-                xLocation = 366;
-                yLocation += 235;
+                xSizeTemp *= 2;
+                ySizeTemp *= 2;
+            }
+            else if (BaseGame.Width == 3 && BaseGame.Height == 2) //speelveld 2x3
+            {
+                xSizeTemp *= 1.25;
+                ySizeTemp *= 1.25;
             }
 
-        }
+            int yLocation = 5;
+            for (int y = 0; y < BaseGame.Height; y++)
+            {
+                int xLocation = 366;
+                for (int x = 0; x < BaseGame.Width; x++)
+                {
+                    string Kaartnaam = "Kaart" + x + "" + y;
+                    Kaart[x, y] = new PictureBox();
+                    Kaart[x, y].Name = Kaartnaam;
+                    Kaart[x, y].Size = new Size(Convert.ToInt32(xSizeTemp), Convert.ToInt32(ySizeTemp));
+                    Kaart[x, y].Image = Properties.Resources.KaartVoorkant;
+                    Kaart[x, y].BackColor = Color.Transparent;
+                    Kaart[x, y].Visible = true;
+                    Kaart[x, y].Anchor = AnchorStyles.Left;
+                    Kaart[x, y].SizeMode = PictureBoxSizeMode.Zoom;
+                    Kaart[x, y].Location = new Point(xLocation, yLocation);
+                    Kaart[x, y].BringToFront();
+                    string eventnaam = Kaartnaam + "_Click";
+                    int x2 = x;
+                    int y2 = y;
+                    Kaart[x, y].Click += new EventHandler((sender, e) => {
+                        BaseGame.KaartKlik(x2, y2);
+                    });
+                    this.Controls.Add(Kaart[x, y]);
+                    xLocation += Convert.ToInt32(xSizeTemp) + Convert.ToInt32(xTussenruimte);
+                }
+                yLocation += Convert.ToInt32(ySizeTemp) + Convert.ToInt32(yTussenruimte);
+            }
 
-        private void Kaart00_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(0,0);
-        }
 
-        private void Kaart01_Click(object sender, EventArgs e)
-        {
 
-            BaseGame.KaartKlik(1,0);
-        }
 
-        private void Kaart2_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(2,0);
-        }
 
-        private void Kaart3_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(3,0);
-        }
-
-        private void Kaart4_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(0,1);
-        }
-
-        private void Kaart5_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(1,1);
-        }
-
-        private void Kaart6_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(2,1);
-        }
-
-        private void Kaart7_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(3,1);
-        }
-
-        private void Kaart8_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(0,2);
-        }
-
-        private void Kaart9_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(1,2);
-        }
-
-        private void Kaart10_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(2,2);
-        }
-
-        private void Kaart11_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(3,2);
-        }
-
-        private void Kaart12_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(0,3);
-        }
-
-        private void Kaart13_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(1,3);
-        }
-
-        private void Kaart14_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(2,3);
-        }
-
-        private void Kaart15_Click(object sender, EventArgs e)
-        {
-            BaseGame.KaartKlik(3,3);
         }
 
         private void Button_Exit_Click(object sender, EventArgs e) {

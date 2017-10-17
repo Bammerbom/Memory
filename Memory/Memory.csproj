@@ -140,6 +140,7 @@
     <None Include="Resources\Game over.png" />
     <None Include="Resources\Game over lagere resolutie.png" />
     <None Include="Resources\floppy-disks.jpg" />
+    <None Include="Resources\Achterkant.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
