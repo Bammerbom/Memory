@@ -87,9 +87,15 @@ namespace Memory
                 return;
             }
 
-            string Readdata = System.IO.File.ReadAllText(Bestandslocatie);  //read
-            Loaddata = Utils.StringToArray(Readdata) as string[];  //convert naar array
-
+            try
+            {
+                string Readdata = System.IO.File.ReadAllText(Bestandslocatie);  //read
+                Loaddata = Utils.StringToArray(Readdata) as string[];  //convert naar array
+            }
+            catch
+            {
+                MessageBox.Show("error");
+            }
             switch(Convert.ToInt32(Loaddata[0]))
             {
                 case 0:  //singleplayer
@@ -97,6 +103,8 @@ namespace Memory
                     Initiate();
                     break;
                 case 1:  //multiplayer
+                    GameMultiplayerLocal.Start(Convert.ToInt32(Loaddata[4]), Convert.ToInt32(Loaddata[5]), Loaddata[15], Loaddata[16]);
+                    Initiate();
                     break;
             }
            
@@ -144,6 +152,7 @@ namespace Memory
         public static void SaveEnEnd()
         {
             Savegame();
+            Bestandslocatie = "";
             BaseGame.Endgame();
         }
         
