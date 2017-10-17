@@ -84,8 +84,8 @@ namespace Memory
                 textboxPort.Visible = true;
             }
             else if (comboGametype.Text == "Join Multiplayer") {
-                comboSpelgrootte.Visible = true;
-                labelSpelgrootte.Visible = true;
+                comboSpelgrootte.Visible = false;
+                labelSpelgrootte.Visible = false;
                 textboxNaam1.Visible = true;
                 labelNaam1.Text = "Naam invullen";
                 labelNaam1.Visible = true;

@@ -12,37 +12,47 @@ namespace Memory
         public static void Start(int Hoogte, int Breedte, string Naam, bool host) {
             Host = host;
             BaseGame.Gamemode = 2;
-            string Naam1, Naam2;
 
             //Join packet
             if (!host) {
-                Naam2 = Naam;
-                string[] join = new string[2];
+                //CLIENT stuurt join
+                BaseGame.Naam2 = Naam;
+                object[] join = new object[2];
                 join[0] = "join"; //Packet
                 join[1] = Naam; //Naam
                 NetClient.SendMessage(Utils.ArrayToString(join));
 
-                string[] join2 = Utils.StringToArray(NetClient.ReceiveMessage()) as string[];
-                Naam1 = join2[1];
+                //CLIENT krijgt join2
+                object[] join2 = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
+                BaseGame.Naam1 = (string) join2[1];
+                BaseGame.InitSpeelveld((int)join2[2], (int)join2[3]);
+                BaseGame.Speelveld_types = Utils.StringToArray((string)join2[4]) as int[,];
+                BaseGame.SpelerAanBeurt = (int)join2[5];
             } else {
-                Naam1 = Naam;
-                string[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as string[];
-                Naam2 = join[1];
+                //Init
+                BaseGame.SpelerAanBeurt = Utils.rand.Next(1, 3);
 
-                string[] join2 = new string[2];
+                //HOST krijgt join
+                BaseGame.Naam1 = Naam;
+                string[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as string[];
+                BaseGame.Naam2 = join[1];
+
+                //HOST stuurt join2
+                object[] join2 = new object[2];
                 join2[0] = "join2"; //Packet
                 join2[1] = Naam; //Naam
-                NetClient.SendMessage(Utils.ArrayToString(join2));
+                join2[2] = Hoogte;
+                join2[3] = Breedte;
+                join2[4] = Utils.ArrayToString(BaseGame.Speelveld_types);
+                join2[5] = BaseGame.SpelerAanBeurt;
+                NetServer.SendMessage(Utils.ArrayToString(join2));
             }
 
-            BaseGame.InitSpeelveld(Hoogte, Breedte);
             BaseGame.InitForm();
-            BaseGame.SpelerAanBeurt = Utils.rand.Next(1, 3);
+            
             BaseGame.Gamestate = 1;
-            BaseGame.Naam1 = Naam1;
-            BaseGame.Naam2 = Naam2;
-            BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = Naam1 + " : ";
-            BaseGame.FormSpeelveld.Label_Score_Speler_2.Text = Naam2 + " : ";
+            BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = BaseGame.Naam1 + " : ";
+            BaseGame.FormSpeelveld.Label_Score_Speler_2.Text = BaseGame.Naam2 + " : ";
             BaseGame.Timer();
             BaseGame.Render();
         }
@@ -55,8 +65,12 @@ namespace Memory
             }
         }
 
-        public static void End() {
-
+        public static async void End() {
+            BaseGame.Gamestate = 2;
+            await Task.Delay(2000);
+            BaseGame.FormSpeelveld.Close();
+            FormEndgame endgame = new FormEndgame();
+            endgame.Show();
         }
     }
 }
