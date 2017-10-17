@@ -170,5 +170,10 @@ namespace Memory
                 GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
             }
         }
+
+        private void FormSpeelveld_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

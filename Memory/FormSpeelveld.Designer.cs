@@ -570,7 +570,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1685, 1218);
+            this.ClientSize = new System.Drawing.Size(1685, 1037);
             this.Controls.Add(this.Buton_Reset);
             this.Controls.Add(this.Textbox_Zetten_Speler_2);
             this.Controls.Add(this.Label_Zetten_Speler_2);
@@ -613,6 +613,7 @@
             this.Name = "FormSpeelveld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
+            this.Load += new System.EventHandler(this.FormSpeelveld_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

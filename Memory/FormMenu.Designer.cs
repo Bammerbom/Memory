@@ -35,6 +35,7 @@
             this.ButtonHelp = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
             this.plaatje1 = new System.Windows.Forms.PictureBox();
+            this.Button_Credits = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             this.ButtonPlay.BackColor = System.Drawing.Color.Transparent;
             this.ButtonPlay.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonPlay.Location = new System.Drawing.Point(155, 100);
+            this.ButtonPlay.Location = new System.Drawing.Point(155, 83);
             this.ButtonPlay.Name = "ButtonPlay";
             this.ButtonPlay.Size = new System.Drawing.Size(161, 46);
             this.ButtonPlay.TabIndex = 1;
@@ -52,7 +53,7 @@
             // 
             // ButtonLoad
             // 
-            this.ButtonLoad.Location = new System.Drawing.Point(155, 152);
+            this.ButtonLoad.Location = new System.Drawing.Point(155, 135);
             this.ButtonLoad.Name = "ButtonLoad";
             this.ButtonLoad.Size = new System.Drawing.Size(161, 46);
             this.ButtonLoad.TabIndex = 2;
@@ -61,7 +62,7 @@
             // 
             // ButtonHighscores
             // 
-            this.ButtonHighscores.Location = new System.Drawing.Point(155, 204);
+            this.ButtonHighscores.Location = new System.Drawing.Point(155, 187);
             this.ButtonHighscores.Name = "ButtonHighscores";
             this.ButtonHighscores.Size = new System.Drawing.Size(161, 46);
             this.ButtonHighscores.TabIndex = 3;
@@ -71,7 +72,7 @@
             // 
             // ButtonHelp
             // 
-            this.ButtonHelp.Location = new System.Drawing.Point(155, 256);
+            this.ButtonHelp.Location = new System.Drawing.Point(155, 239);
             this.ButtonHelp.Name = "ButtonHelp";
             this.ButtonHelp.Size = new System.Drawing.Size(161, 46);
             this.ButtonHelp.TabIndex = 4;
@@ -81,7 +82,7 @@
             // 
             // ButtonExit
             // 
-            this.ButtonExit.Location = new System.Drawing.Point(155, 308);
+            this.ButtonExit.Location = new System.Drawing.Point(155, 343);
             this.ButtonExit.Name = "ButtonExit";
             this.ButtonExit.Size = new System.Drawing.Size(161, 46);
             this.ButtonExit.TabIndex = 5;
@@ -103,11 +104,22 @@
             this.plaatje1.TabIndex = 6;
             this.plaatje1.TabStop = false;
             // 
+            // Button_Credits
+            // 
+            this.Button_Credits.Location = new System.Drawing.Point(155, 291);
+            this.Button_Credits.Name = "Button_Credits";
+            this.Button_Credits.Size = new System.Drawing.Size(161, 46);
+            this.Button_Credits.TabIndex = 7;
+            this.Button_Credits.Text = "Credits";
+            this.Button_Credits.UseVisualStyleBackColor = true;
+            this.Button_Credits.Click += new System.EventHandler(this.Button_Credits_Click);
+            // 
             // FormMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 409);
+            this.Controls.Add(this.Button_Credits);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonHelp);
             this.Controls.Add(this.ButtonHighscores);
@@ -134,6 +146,7 @@
         private System.Windows.Forms.Button ButtonHelp;
         private System.Windows.Forms.Button ButtonExit;
         private System.Windows.Forms.PictureBox plaatje1;
+        private System.Windows.Forms.Button Button_Credits;
     }
 }
 

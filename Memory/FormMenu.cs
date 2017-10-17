@@ -44,5 +44,11 @@ namespace Memory
             FormHelp Help = new FormHelp();
             Help.Show();
         }
+
+        private void Button_Credits_Click(object sender, EventArgs e)
+        {
+            FormCredits Credits = new FormCredits();
+            Credits.Show();
+        }
     }
 }

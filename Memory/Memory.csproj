@@ -142,6 +142,8 @@
     <None Include="Resources\Game over.png" />
     <None Include="Resources\Game over lagere resolutie.png" />
     <None Include="Resources\floppy-disks.jpg" />
+    <None Include="Resources\IMG_5240.JPG" />
+    <None Include="Resources\IMG_5240 - kopie.JPG" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
