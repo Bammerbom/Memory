@@ -81,19 +81,26 @@ namespace Memory
             FormSpeelveld = new FormSpeelveld();
             FormSpeelveld.Show();
 
-            //Hide alle kaarten die buiten het speelveld liggen
-            for (int y = 3; y >= Height; y--) {
-                for (int x = 0; x < 4; x++) {
-                    PictureBox box = ((PictureBox)FormSpeelveld.Controls["Kaart" + x + "" + y]);
-                    box.Visible = false;
-                }
-            }
-            for (int x = 3; x >= Width; x--) {
-                for (int y = 0; y < 4; y++) {
-                    PictureBox box = ((PictureBox)FormSpeelveld.Controls["Kaart" + x + "" + y]);
-                    box.Visible = false;
-                }
-            }
+
+
+
+            ////Hide alle kaarten die buiten het speelveld liggen
+            //for (int y = 3; y >= Height; y--)
+            //{
+            //    for (int x = 0; x < 4; x++)
+            //    {
+            //        PictureBox box = ((PictureBox)FormSpeelveld.Controls["Kaart" + x + "" + y]);
+            //        box.Visible = false;
+            //    }
+            //}
+            //for (int x = 3; x >= Width; x--)
+            //{
+            //    for (int y = 0; y < 4; y++)
+            //    {
+            //        PictureBox box = ((PictureBox)FormSpeelveld.Controls["Kaart" + x + "" + y]);
+            //        box.Visible = false;
+            //    }
+            //}
 
             //Render standaard waardes
             Render();
