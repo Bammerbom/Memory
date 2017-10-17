@@ -173,7 +173,7 @@ namespace Memory
                         naamt = "Speler 1";
                     }
                     if (ManagerClient.Client("141.252.239.186", 8978)) {
-                        GameMultiplayerOnline.Start(h, w, naamt, true);
+                        GameMultiplayerOnline.Start(h, w, naamt, false);
                     }
                     //Errorbox wordt weergegeven dooe Client method
                     break;

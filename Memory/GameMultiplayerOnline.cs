@@ -26,7 +26,7 @@ namespace Memory
                 Naam1 = join2[1];
             } else {
                 Naam1 = Naam;
-                string[] join = Utils.StringToArray(NetClient.ReceiveMessage()) as string[];
+                string[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as string[];
                 Naam2 = join[1];
 
                 string[] join2 = new string[2];
