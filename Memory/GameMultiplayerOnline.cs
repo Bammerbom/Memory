@@ -31,14 +31,15 @@ namespace Memory
             } else {
                 //Init
                 BaseGame.SpelerAanBeurt = Utils.rand.Next(1, 3);
+                BaseGame.InitSpeelveld(Hoogte, Breedte);
 
                 //HOST krijgt join
                 BaseGame.Naam1 = Naam;
-                string[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as string[];
-                BaseGame.Naam2 = join[1];
+                object[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
+                BaseGame.Naam2 = (string) join[1];
 
                 //HOST stuurt join2
-                object[] join2 = new object[2];
+                object[] join2 = new object[6];
                 join2[0] = "join2"; //Packet
                 join2[1] = Naam; //Naam
                 join2[2] = Hoogte;
