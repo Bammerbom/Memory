@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSpeelveld));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.bestandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,6 +70,7 @@
             this.Kaart03 = new System.Windows.Forms.PictureBox();
             this.Label_Zetten_Speler_2 = new System.Windows.Forms.Label();
             this.Textbox_Zetten_Speler_2 = new System.Windows.Forms.TextBox();
+            this.Buton_Reset = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Kaart00)).BeginInit();
@@ -92,19 +94,21 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bestandToolStripMenuItem,
             this.helpToolStripMenuItem,
             this.creditsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1264, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1247, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // bestandToolStripMenuItem
             // 
             this.bestandToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem1,
             this.exitToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.restartToolStripMenuItem});
@@ -112,23 +116,33 @@
             this.bestandToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.bestandToolStripMenuItem.Text = "Bestand";
             // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.exitToolStripMenuItem.Text = "Opslaan en Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -137,11 +151,12 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // instructiesToolStripMenuItem
             // 
             this.instructiesToolStripMenuItem.Name = "instructiesToolStripMenuItem";
-            this.instructiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.instructiesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.instructiesToolStripMenuItem.Text = "Instructies";
             // 
             // creditsToolStripMenuItem
@@ -151,11 +166,12 @@
             this.creditsToolStripMenuItem.Name = "creditsToolStripMenuItem";
             this.creditsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.creditsToolStripMenuItem.Text = "Credits";
+            this.creditsToolStripMenuItem.Click += new System.EventHandler(this.creditsToolStripMenuItem_Click);
             // 
             // creditsToolStripMenuItem1
             // 
             this.creditsToolStripMenuItem1.Name = "creditsToolStripMenuItem1";
-            this.creditsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.creditsToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
             this.creditsToolStripMenuItem1.Text = "Credits";
             // 
             // pictureBox1
@@ -241,10 +257,10 @@
             // TextBox_Beurt
             // 
             this.TextBox_Beurt.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Beurt.Location = new System.Drawing.Point(12, 361);
+            this.TextBox_Beurt.Location = new System.Drawing.Point(55, 392);
             this.TextBox_Beurt.Name = "TextBox_Beurt";
             this.TextBox_Beurt.ReadOnly = true;
-            this.TextBox_Beurt.Size = new System.Drawing.Size(315, 115);
+            this.TextBox_Beurt.Size = new System.Drawing.Size(221, 121);
             this.TextBox_Beurt.TabIndex = 10;
             this.TextBox_Beurt.Text = "BeurtHoi";
             // 
@@ -285,7 +301,7 @@
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Exit.Location = new System.Drawing.Point(55, 830);
             this.Button_Exit.Name = "Button_Exit";
-            this.Button_Exit.Size = new System.Drawing.Size(221, 83);
+            this.Button_Exit.Size = new System.Drawing.Size(221, 77);
             this.Button_Exit.TabIndex = 14;
             this.Button_Exit.Text = "Exit";
             this.Button_Exit.UseVisualStyleBackColor = true;
@@ -503,14 +519,27 @@
             this.Textbox_Zetten_Speler_2.Size = new System.Drawing.Size(81, 35);
             this.Textbox_Zetten_Speler_2.TabIndex = 32;
             // 
+            // Buton_Reset
+            // 
+            this.Buton_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Buton_Reset.Location = new System.Drawing.Point(55, 611);
+            this.Buton_Reset.Name = "Buton_Reset";
+            this.Buton_Reset.Size = new System.Drawing.Size(221, 77);
+            this.Buton_Reset.TabIndex = 14;
+            this.Buton_Reset.Text = "Reset";
+            this.Buton_Reset.UseVisualStyleBackColor = true;
+            this.Buton_Reset.Click += new System.EventHandler(this.Buton_Reset_Click);
+            // 
             // FormSpeelveld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.ClientSize = new System.Drawing.Size(1264, 843);
+            this.Controls.Add(this.Buton_Reset);
             this.Controls.Add(this.Textbox_Zetten_Speler_2);
             this.Controls.Add(this.Label_Zetten_Speler_2);
             this.Controls.Add(this.Kaart33);
@@ -551,6 +580,7 @@
             this.Name = "FormSpeelveld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
+            this.Load += new System.EventHandler(this.FormSpeelveld_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -617,5 +647,7 @@
         public System.Windows.Forms.PictureBox Kaart03;
         public System.Windows.Forms.Label Label_Zetten_Speler_2;
         public System.Windows.Forms.TextBox Textbox_Zetten_Speler_2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        public System.Windows.Forms.Button Buton_Reset;
     }
 }

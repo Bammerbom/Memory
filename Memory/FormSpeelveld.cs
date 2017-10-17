@@ -106,5 +106,74 @@ namespace Memory
             SaveGameManager.SaveEnEnd();
             
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            //TODO save
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHelp Help = new FormHelp();
+            Help.Show();
+        }
+
+        private void creditsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCredits Credits = new FormCredits();
+            Credits.Show();
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO save
+        }
+
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            BaseGame.Reset();
+            if (BaseGame.Gamemode == 0)
+            {
+                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
+            }
+            else if (BaseGame.Gamemode == 1)
+            {
+                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width,BaseGame.Naam1, BaseGame.Naam2);
+            }
+            else if (BaseGame.Gamemode == 2)
+            {
+                GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
+            }
+        }
+
+        private void Buton_Reset_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            BaseGame.Reset();
+            if (BaseGame.Gamemode == 0)
+            {
+                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
+            }
+            else if (BaseGame.Gamemode == 1)
+            {
+                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2);
+            }
+            else if (BaseGame.Gamemode == 2)
+            {
+                GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
+            }
+        }
+
+        private void FormSpeelveld_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
