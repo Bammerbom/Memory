@@ -130,6 +130,7 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.exitToolStripMenuItem.Text = "Opslaan en Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+
             // 
             // saveToolStripMenuItem
             // 
@@ -272,7 +273,7 @@
             this.TextBox_Beurt.ReadOnly = true;
             this.TextBox_Beurt.Size = new System.Drawing.Size(293, 148);
             this.TextBox_Beurt.TabIndex = 10;
-            this.TextBox_Beurt.Text = "Speler X is aan Beurt";
+            this.TextBox_Beurt.Text = "BeurtHoi";
             // 
             // Label_Timer
             // 

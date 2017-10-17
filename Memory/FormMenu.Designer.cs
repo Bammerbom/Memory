@@ -59,6 +59,7 @@
             this.ButtonLoad.TabIndex = 2;
             this.ButtonLoad.Text = "Laden";
             this.ButtonLoad.UseVisualStyleBackColor = true;
+            this.ButtonLoad.Click += new System.EventHandler(this.ButtonLoad_Click);
             // 
             // ButtonHighscores
             // 

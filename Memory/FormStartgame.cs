@@ -48,7 +48,7 @@ namespace Memory
                 textboxNaam2.Visible = false;
                 labelNaam2.Visible = false;
             }
-            if (comboGametype.Text == "Multiplayer Local" || comboGametype.Text == "Multiplayer Online")
+            if (comboGametype.Text == "Local Multiplayer")
             {
                 comboSpelgrootte.Visible = true;
                 labelSpelgrootte.Visible = true;
@@ -58,6 +58,15 @@ namespace Memory
                 labelNaam1.Visible = true;
                 labelNaam2.Visible = true;
             }
+            if(comboGametype.Text == "Host Multiplayer") {
+                comboSpelgrootte.Visible = true;
+                labelSpelgrootte.Visible = true;
+                textboxNaam1.Visible = true;
+                labelNaam1.Text = "Naam invullen";
+                labelNaam1.Visible = true;
+                textboxNaam2.Visible = false;
+                labelNaam2.Visible = false;
+            }
 
         }
 
@@ -66,34 +75,65 @@ namespace Memory
         }
 
         private void buttonStart_Click(object sender, EventArgs e) {
+            int h, w;
+            BaseGame.Reset(); //Just in case
+            if (comboGametype.Text != "Join Multiplayer") {
+                switch (comboSpelgrootte.Text) {
+                    //2x2 2x3 2x4 3x4 4x4
+                    case "2x2":
+                        h = 2;
+                        w = 2;
+                        break;
+                    case "2x3":
+                        h = 2;
+                        w = 3;
+                        break;
+                    case "2x4":
+                        h = 2;
+                        w = 4;
+                        break;
+                    case "3x4":
+                        h = 3;
+                        w = 4;
+                        break;
+                    case "4x4":
+                        h = 4;
+                        w = 4;
+                        break;
+                    default:
+                        MessageBox.Show("Voer de grootte van het speelveld in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                }
+            } else {
+                h = 0;
+                w = 0;
+            }
             switch (comboGametype.Text) {
-                default:
+                case "Singleplayer":
                     string naam = textboxNaam1.Text;
                     if(naam == null || naam.Length == 0) {
                         naam = "Speler 1";
                     }
-                    switch (comboSpelgrootte.Text) {
-                        //2x2 2x3 2x4 3x4 4x4
-                        case "2x2":
-                            GameSingleplayer.Start(2, 2, naam);
-                            break;
-                        case "2x3":
-                            GameSingleplayer.Start(2, 3, naam);
-                            break;
-                        case "2x4":
-                            GameSingleplayer.Start(2, 4, naam);
-                            break;
-                        case "3x4":
-                            GameSingleplayer.Start(3, 4, naam);
-                            break;
-                        case "4x4":
-                            GameSingleplayer.Start(4, 4, naam);
-                            break;
-                        default:
-                            MessageBox.Show("Voer de grootte van het speelveld in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                    }
+                    GameSingleplayer.Start(h, w, naam);
                     this.Close();
+                    break;
+                case "Local Multiplayer":
+                    string naam1 = textboxNaam1.Text;
+                    if (naam1 == null || naam1.Length == 0) {
+                        naam1 = "Speler 1";
+                    }
+                    string naam2 = textboxNaam2.Text;
+                    if (naam2 == null || naam2.Length == 0) {
+                        naam2 = "Speler 2";
+                    }
+                    GameMultiplayerLocal.Start(h, w, naam1, naam2);
+                    this.Close();
+                    break;
+                case "Host Multiplayer":
+                    bool serversuccess = ManagerServer.Server(8978); //TODO port
+                    break;
+                case "Join Multiplayer":
+                    bool clientsuccess = ManagerClient.Client("141.252.239.186", 8978);
                     break;
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
