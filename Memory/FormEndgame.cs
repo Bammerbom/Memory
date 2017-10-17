@@ -60,13 +60,13 @@ namespace Memory
         private void FormEndgame_Load(object sender, EventArgs e)
         {
            
-            if (BaseGame.Gamemode == 0) //1 speler spel
+            if (BaseGame.Gamemode == 0 && BaseGame.Checkwin() == true) //1 speler spel
             {
                 LabelResultatenmatch.Text = "Gefeliciteerd! U heeft gewonnen.\nU heeft een score behaald van " + BaseGame.Score1 + " punten." 
                     + "\nU had " + BaseGame.Tijdtotaal + " seconden nodig om te winnen."
                     + "\nU had " + BaseGame.Zetten1 + " zetten nodig om te winnen." ;
             }
-            else //2 speler spel
+            else if (BaseGame.Checkwin() == true) //2 speler spel
             {
                 if (BaseGame.Score1 > BaseGame.Score2) //checkt of score van Player 1 groter is dan score van Player 2
                 {
@@ -98,6 +98,10 @@ namespace Memory
                         + BaseGame.Naam2 + " heeft gewonnen. Je hebt de minste zetten gebruikt: " + BaseGame.Zetten2 
                         + BaseGame.Naam1 + " heeft " + BaseGame.Zetten1 + " gebruikt.";
                 }
+            }
+            else
+            {
+                LabelResultatenmatch.Text = "het spel is voortijdig beëindigt.";
             }
         }
     }

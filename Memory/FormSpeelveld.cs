@@ -99,13 +99,12 @@ namespace Memory
         }
 
         private void Button_Exit_Click(object sender, EventArgs e) {
-            this.Close();
+            BaseGame.Endgame();
         }
 
         private void Button_Opslaan_Click(object sender, EventArgs e) {
-            SaveGameManager.Savegame();
-            GameSingleplayer.End();
-            //TODO save
+            SaveGameManager.SaveEnEnd();
+            
         }
     }
 }

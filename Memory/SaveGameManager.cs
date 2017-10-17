@@ -140,6 +140,12 @@ namespace Memory
             }
 
         }
+
+        public static void SaveEnEnd()
+        {
+            Savegame();
+            BaseGame.Endgame();
+        }
         
             
 
