@@ -37,8 +37,12 @@ namespace Memory
                 textboxNaam2.Visible = false;
                 labelNaam1.Visible = false;
                 labelNaam2.Visible = false;
+                labelIp.Visible = false;
+                textboxIp.Visible = false;
+                labelPort.Visible = false;
+                textboxPort.Visible = false;
             }
-            if(comboGametype.Text == "Singleplayer")
+            else if(comboGametype.Text == "Singleplayer")
             {
                 comboSpelgrootte.Visible = true;
                 labelSpelgrootte.Visible = true;
@@ -47,8 +51,12 @@ namespace Memory
                 labelNaam1.Visible = true;
                 textboxNaam2.Visible = false;
                 labelNaam2.Visible = false;
+                labelIp.Visible = false;
+                textboxIp.Visible = false;
+                labelPort.Visible = false;
+                textboxPort.Visible = false;
             }
-            if (comboGametype.Text == "Local Multiplayer")
+            else if (comboGametype.Text == "Local Multiplayer")
             {
                 comboSpelgrootte.Visible = true;
                 labelSpelgrootte.Visible = true;
@@ -57,8 +65,12 @@ namespace Memory
                 labelNaam1.Text = "Naam 1 invullen";
                 labelNaam1.Visible = true;
                 labelNaam2.Visible = true;
+                labelIp.Visible = false;
+                textboxIp.Visible = false;
+                labelPort.Visible = false;
+                textboxPort.Visible = false;
             }
-            if(comboGametype.Text == "Host Multiplayer") {
+            else if(comboGametype.Text == "Host Multiplayer") {
                 comboSpelgrootte.Visible = true;
                 labelSpelgrootte.Visible = true;
                 textboxNaam1.Visible = true;
@@ -66,8 +78,24 @@ namespace Memory
                 labelNaam1.Visible = true;
                 textboxNaam2.Visible = false;
                 labelNaam2.Visible = false;
+                labelIp.Visible = true;
+                textboxIp.Visible = true;
+                labelPort.Visible = true;
+                textboxPort.Visible = true;
             }
-
+            else if (comboGametype.Text == "Join Multiplayer") {
+                comboSpelgrootte.Visible = false;
+                labelSpelgrootte.Visible = false;
+                textboxNaam1.Visible = true;
+                labelNaam1.Text = "Naam invullen";
+                labelNaam1.Visible = true;
+                textboxNaam2.Visible = false;
+                labelNaam2.Visible = false;
+                labelIp.Visible = true;
+                textboxIp.Visible = true;
+                labelPort.Visible = true;
+                textboxPort.Visible = true;
+            }
         }
 
         private void buttonTerug_Click(object sender, EventArgs e) {
@@ -130,10 +158,24 @@ namespace Memory
                     this.Close();
                     break;
                 case "Host Multiplayer":
-                    bool serversuccess = ManagerServer.Server(8978); //TODO port
+                    string naams = textboxNaam1.Text;
+                    if (naams == null || naams.Length == 0) {
+                        naams = "Speler 1";
+                    }
+                    if (ManagerServer.Server(8978)) {
+                        GameMultiplayerOnline.Start(h, w, naams, true);
+                    }
+                    //Errorbox wordt weergegeven door Server method
                     break;
                 case "Join Multiplayer":
-                    bool clientsuccess = ManagerClient.Client("141.252.239.186", 8978);
+                    string naamt = textboxNaam1.Text;
+                    if (naamt == null || naamt.Length == 0) {
+                        naamt = "Speler 1";
+                    }
+                    if (ManagerClient.Client("141.252.239.186", 8978)) {
+                        GameMultiplayerOnline.Start(h, w, naamt, false);
+                    }
+                    //Errorbox wordt weergegeven dooe Client method
                     break;
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

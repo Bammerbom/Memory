@@ -16,12 +16,10 @@ namespace Memory {
         private static TcpClient Client;
 
         private static Action<string> cJoin;
-        private static Func<string, string> cMessage;
         private static Action<string> cDisconnect;
 
-        public static async void Start(Action<string> clJoin, Func<string, string> clMessage, Action<string> clDisconnect, int port, int bytesize) {
+        public static async void Start(Action<string> clJoin, Action<string> clDisconnect, int port, int bytesize) {
             cJoin = clJoin;
-            cMessage = clMessage;
             cDisconnect = clDisconnect;
             Port = port;
             ByteSize = bytesize;
@@ -41,7 +39,20 @@ namespace Memory {
             return true;
         }
 
-        public static bool NextMessage() {
+        public static bool SendMessage(string message) {
+            try {
+                byte[] bytes = Encoding.UTF8.GetBytes(message);
+                Client.GetStream().Write(bytes, 0, bytes.Length); // Send the response
+                return true;
+            } catch (Exception e) {
+                cDisconnect(e.Message);
+                Client.Close();
+                Open = false;
+                return false;
+            }
+        }
+
+        public static string ReceiveMessage() {
             try {
                 byte[] buffer = new byte[ByteSize];
                 Client.GetStream().Read(buffer, 0, ByteSize);
@@ -50,20 +61,15 @@ namespace Memory {
                     cDisconnect(null);
                     Client.Close();
                     Open = false;
-                    return false;
+                    return null;
                 }
 
-                string rtrn = cMessage(message);
-
-                //Reply
-                byte[] bytes = Encoding.UTF8.GetBytes(rtrn);
-                Client.GetStream().Write(bytes, 0, bytes.Length); // Send the response
-                return true;
+                return message;
             } catch (Exception e) {
                 cDisconnect(e.Message);
                 Client.Close();
                 Open = false;
-                return false;
+                return null;
             }
         }
 

@@ -16,14 +16,11 @@ namespace Memory {
 			Client = new TcpClient(ip, port);
 		}
 
-		public static string SendMessage(string message) {
+		public static void SendMessage(string message) {
 			//Send message
 			byte[] bytes = Encoding.UTF8.GetBytes(message);
 			NetworkStream stream = Client.GetStream();  
 			stream.Write(bytes, 0, bytes.Length);
-
-            //Wait for return
-            return ReceiveMessage();
 		}
 
         public static string ReceiveMessage() {
