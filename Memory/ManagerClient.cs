@@ -1,26 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Memory
-{
-    class ManagerMultiplayer
-    {
+namespace Memory {
+    class ManagerClient {
         private static readonly int PacketSize = 1024 * 1024;
-        public static bool Server(FormStartgame form, int port) {
-            new Thread(() => {
+
+        public static bool Client(string ip, int port) {
+            BackgroundWorker b = new BackgroundWorker();
+
+            //Deze code wordt in een nieuwe Thread gerunned maar kan interacten met de main thread
+            b.DoWork += delegate(object o, DoWorkEventArgs args) {
+                BackgroundWorker bw = o as BackgroundWorker;
                 Server_internal(port);
-            }).Start();
-            MessageBox.Show("Connecting...");
+            };
+
+            //Als iemand geconnect is
+            Console.WriteLine("A");
+            b.RunWorkerCompleted += delegate {
+                Console.WriteLine("B");
+
+            };
+            
+            b.RunWorkerAsync();
+
+            //Popup
+            //MessageBox.Show("Wachten op verbinding...\nKlik op OK om te annuleren", "Memory");
+            Console.WriteLine("C");
             return true;
         }
+
         private static void Server_internal(int port) {
             NetServer.Start(ServerConnect, ServerMessage, ServerDisconnect, port, PacketSize);
             NetServer.NextClient();
+            while (NetServer.IsOpen()) {
+                NetServer.NextMessage();
+            }
+            
         }
 
         public static void ServerConnect(string ip) {
@@ -37,7 +58,8 @@ namespace Memory
             if (error != null) {
                 Console.WriteLine("> DISCONNECT (ERROR)");
                 Console.WriteLine(error);
-            } else {
+            }
+            else {
                 Console.WriteLine("> DISCONNECT (NORMAL)");
             }
         }

@@ -30,9 +30,14 @@ namespace Memory {
 			Listener.Start();
 		}
 
+        public static bool IsOpen() {
+            return Open;
+        }
+
         public static bool NextClient() {
             Client = Listener.AcceptTcpClient();
             cJoin(Client.Client.RemoteEndPoint.ToString());
+            Open = true;
             return true;
         }
 
@@ -44,6 +49,7 @@ namespace Memory {
                 if (message == null) {
                     cDisconnect(null);
                     Client.Close();
+                    Open = false;
                     return false;
                 }
 
@@ -56,6 +62,7 @@ namespace Memory {
             } catch (Exception e) {
                 cDisconnect(e.Message);
                 Client.Close();
+                Open = false;
                 return false;
             }
         }

@@ -130,9 +130,10 @@ namespace Memory
                     this.Close();
                     break;
                 case "Host Multiplayer":
-                    bool success = ManagerMultiplayer.Server(this, 8978); //TODO port
+                    bool serversuccess = ManagerServer.Server(8978); //TODO port
                     break;
                 case "Join Multiplayer":
+                    bool clientsuccess = ManagerClient.Client("141.252.239.186", 8978);
                     break;
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
