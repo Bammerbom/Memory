@@ -11,7 +11,7 @@ namespace Memory
 {
     class Utils
     {
-        static Random rand = new Random();
+        public static Random rand = new Random();
         public static List<T> ShuffleList<T>(List<T> items) {
             items = items.OrderBy(x => rand.Next()).ToList();
             return items;

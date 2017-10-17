@@ -9,6 +9,7 @@ namespace Memory
     class GameSingleplayer
     {
         public static void Start(int Hoogte, int Breedte, string Naam) {
+            BaseGame.Gamemode = 0;
             BaseGame.InitSpeelveld(Hoogte, Breedte);
             BaseGame.InitForm();
             BaseGame.FormSpeelveld.Textbox_Score_Speler_2.Visible = false;
@@ -21,6 +22,10 @@ namespace Memory
             BaseGame.Naam1 = Naam;
             BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = Naam + " : ";
             BaseGame.Timer();
+            BaseGame.Render();
+        }
+
+        public static void VolgendeBeurt() {
 
         }
 
