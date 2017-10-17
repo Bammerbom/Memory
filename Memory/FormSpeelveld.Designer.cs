@@ -83,19 +83,19 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             // 
             // helpToolStripMenuItem
@@ -109,7 +109,7 @@
             // instructiesToolStripMenuItem
             // 
             this.instructiesToolStripMenuItem.Name = "instructiesToolStripMenuItem";
-            this.instructiesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.instructiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.instructiesToolStripMenuItem.Text = "Instructies";
             // 
             // creditsToolStripMenuItem
@@ -123,7 +123,7 @@
             // creditsToolStripMenuItem1
             // 
             this.creditsToolStripMenuItem1.Name = "creditsToolStripMenuItem1";
-            this.creditsToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
+            this.creditsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.creditsToolStripMenuItem1.Text = "Credits";
             // 
             // pictureBox1
@@ -209,12 +209,12 @@
             // TextBox_Beurt
             // 
             this.TextBox_Beurt.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Beurt.Location = new System.Drawing.Point(55, 392);
+            this.TextBox_Beurt.Location = new System.Drawing.Point(12, 361);
             this.TextBox_Beurt.Name = "TextBox_Beurt";
             this.TextBox_Beurt.ReadOnly = true;
-            this.TextBox_Beurt.Size = new System.Drawing.Size(221, 121);
+            this.TextBox_Beurt.Size = new System.Drawing.Size(315, 115);
             this.TextBox_Beurt.TabIndex = 10;
-            this.TextBox_Beurt.Text = "Speler X is aan Beurt";
+            this.TextBox_Beurt.Text = "BeurtHoi";
             // 
             // Label_Timer
             // 

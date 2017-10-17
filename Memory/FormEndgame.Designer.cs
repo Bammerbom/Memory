@@ -96,7 +96,7 @@
             this.LabelResultatenmatch.BackColor = System.Drawing.Color.Transparent;
             this.LabelResultatenmatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelResultatenmatch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LabelResultatenmatch.Location = new System.Drawing.Point(267, 136);
+            this.LabelResultatenmatch.Location = new System.Drawing.Point(161, 125);
             this.LabelResultatenmatch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelResultatenmatch.Name = "LabelResultatenmatch";
             this.LabelResultatenmatch.Size = new System.Drawing.Size(48, 20);

@@ -44,5 +44,10 @@ namespace Memory
             FormHelp Help = new FormHelp();
             Help.Show();
         }
+
+        private void ButtonLoad_Click(object sender, EventArgs e)
+        {
+            SaveGameManager.Loadgame();
+        }
     }
 }

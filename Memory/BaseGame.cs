@@ -37,7 +37,9 @@ namespace Memory
 
         //Maakt game klaar voor een nieuwe ronde
         public static void Reset() {
-            FormSpeelveld.Close();
+            try {
+                FormSpeelveld.Close();
+            } catch { };
             FormSpeelveld = null;
             Zetten1 = 0;
             Zetten2 = 0;
@@ -137,12 +139,12 @@ namespace Memory
                     if (Checkwin()) {    //Check voor win 
                         Endgame();
                     }
-
                 } else {
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
-                                    }
+                }
+                Render();
+                VolgendeBeurt();
             }
-            Render();
         }
 
         public static async void DraaiKaartenTerug() {
@@ -153,6 +155,13 @@ namespace Memory
             ZetOmgedraaid(Kaart2x, Kaart2y, false);
             Kaartcounter = 0;            
             Terugdraai = false;
+            Render();
+        }
+
+        public static void VolgendeBeurt() {
+            if (Gamemode == 0) GameSingleplayer.VolgendeBeurt();
+            else if (Gamemode == 1) GameMultiplayerLocal.VolgendeBeurt();
+            else if (Gamemode == 2) GameMultiplayerOnline.VolgendeBeurt();
         }
 
         public static void Render() {
@@ -160,6 +169,11 @@ namespace Memory
             FormSpeelveld.Textbox_Score_Speler_2.Text = Convert.ToString(Score2);
             FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
+            if (SpelerAanBeurt == 1) {
+                FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam1;
+            } else {
+                FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam2;
+            }
         }
 
         public static async void Timer() {            
@@ -201,8 +215,7 @@ namespace Memory
         }
 
         //check of alle kaarten zijn omgedraaid en returned true als dat gebeurt is
-        public static bool Checkwin()
-        {
+        public static bool Checkwin() {
             foreach(bool omgedraaid in Speelveld_omgedraaid) {
                 if (!omgedraaid) return false;
             }
@@ -215,7 +228,7 @@ namespace Memory
             else if (Gamemode == 2) GameMultiplayerOnline.End();
         }
 
-        private static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
+        public static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
             Speelveld_omgedraaid[x, y] = omgedraaid; //zet string in afkorting
             string kaartnaam = "Kaart" + x + "" + y; //zet kaartnaam in string voor gebruik in
             PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
