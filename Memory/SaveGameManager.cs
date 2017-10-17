@@ -146,6 +146,7 @@ namespace Memory
                     BaseGame.ZetOmgedraaid(w, h, BaseGame.Speelveld_omgedraaid[w, h]);
                 }
             }
+            BaseGame.DraaiKaartenTerug();
 
         }
 
