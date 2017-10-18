@@ -137,8 +137,6 @@
     <value>..\Resources\Game over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_5240" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_5240.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  <data name="floppy-disks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\floppy-disks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="USBSTICKWOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -153,23 +151,8 @@
   <data name="Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Game over lagere resolutie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game over lagere resolutie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-    <data name="Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-      <value>..\Resources\Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    </data>
-  <data name="Game over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Game over lagere resolutie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game over lagere resolutie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,17 +163,88 @@
   <data name="Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IMG_5240 - kopie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_5240 - kopie.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-    <data name="Achterkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-      <value>..\Resources\Achterkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    </data>
-    <data name="sterren" type="System.Resources.ResXFileRef, System.Windows.Forms">
-      <value>..\Resources\sterren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    </data>
+  <data name="Achterkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Achterkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sterren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sterren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DarthVaderMenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DarthVaderMenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeathstarAchtergrondHighscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeathstarAchtergrondHighscore.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Disneycastlespeelveld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Disneycastlespeelveld.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DisneyStartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DisneyStartGameAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Galaxyachtergrondspeelveld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Galaxyachtergrondspeelveld.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spaceship_starwars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spaceship starwars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartGameStormtroopers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartGameStormtroopers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Voorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Voorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

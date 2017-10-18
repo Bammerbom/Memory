@@ -147,6 +147,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\StartGameStormtroopers.jpg" />
+    <None Include="Resources\Spaceship starwars.jpg" />
+    <None Include="Resources\Thema2Kaart7.png" />
+    <None Include="Resources\Thema2Kaart6.png" />
+    <None Include="Resources\Thema2Kaart5.png" />
+    <None Include="Resources\Thema2Kaart4.png" />
+    <None Include="Resources\Thema2Kaart3.png" />
+    <None Include="Resources\Thema2Kaart2.png" />
+    <None Include="Resources\Thema2Kaart1.png" />
+    <None Include="Resources\Thema2Kaart0.png" />
+    <None Include="Resources\Thema1Voorkant.png" />
+    <None Include="Resources\Thema1Kaart7.png" />
+    <None Include="Resources\Thema1Kaart6.png" />
+    <None Include="Resources\Thema1Kaart5.png" />
+    <None Include="Resources\Thema1Kaart4.png" />
+    <None Include="Resources\Thema1Kaart3.png" />
+    <None Include="Resources\Thema1Kaart2.png" />
+    <None Include="Resources\Thema1Kaart1.png" />
+    <None Include="Resources\Thema1Kaart0.png" />
+    <None Include="Resources\Thema2Voorkant.png" />
     <None Include="Resources\sterren.png" />
     <None Include="Resources\USBSTICKWOW.png" />
     <None Include="Resources\OKE.jpg" />
@@ -156,6 +176,11 @@
     <None Include="Resources\IMG_5240.JPG" />
     <None Include="Resources\IMG_5240 - kopie.JPG" />
     <None Include="Resources\Achterkant.png" />
+    <None Include="Resources\DarthVaderMenuAchtergrond.jpg" />
+    <None Include="Resources\DeathstarAchtergrondHighscore.jpeg" />
+    <None Include="Resources\Disneycastlespeelveld.jpg" />
+    <None Include="Resources\DisneyStartGameAchtergrond.jpg" />
+    <None Include="Resources\Galaxyachtergrondspeelveld.jpg" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
