@@ -86,28 +86,50 @@ namespace Memory
                 //Coole syntax om speler aan beurt te switchen tussen 1 en 2
                 BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;
             }
+
+            //Stuur volgendebeurt packet
+            object[] volgendebeurt = new object[2];
+            volgendebeurt[0] = "volgendebeurt";
+            volgendebeurt[1] = BaseGame.SpelerAanBeurt;
+            if (Host) {
+                NetServer.SendMessage(Utils.ArrayToString(volgendebeurt));
+            } else {
+                NetClient.SendMessage(Utils.ArrayToString(volgendebeurt));
+            }
         }
 
         public static void KlaarVoorVolgendeKlikkaart() {
-            //Als deze speler aan de beurt is
-            if ((Host ? 1 : 2) == BaseGame.SpelerAanBeurt) {
-                //Niks
-            } else {
+            //Als deze speler niet aan de beurt is
+            if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) {
                 //Wacht op klik kaart packets van andere kant
                 BackgroundWorker b = new BackgroundWorker();
+
+                //Wordt op tweede thread gerunned
                 b.DoWork += delegate (object o, DoWorkEventArgs args) {
                     BackgroundWorker bw = o as BackgroundWorker;
-                    object[] klikkaart;
+                    object[] packet;
                     if (Host) {
-                        klikkaart = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
+                        packet = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
                     } else {
-                        klikkaart = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
+                        packet = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
                     }
-                    args.Result = klikkaart;
+                    args.Result = packet;
                 };
+
+                //Als er een bericht is binnen gekomen
                 b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
-                    object[] klikkaart = (object[]) args.Result;
-                    BaseGame.KaartKlik((int)klikkaart[1], (int)klikkaart[2], false);
+                    object[] packet = (object[]) args.Result;
+                    //Is het een klik kaart, of een volgende beurt packet?
+                    if(((string) packet[0]) == "klikkaart") {
+                        //Update speelveld
+                        BaseGame.KaartKlik((int)packet[1], (int)packet[2], false);
+                    } else if(((string)packet[0]) == "volgendebeurt") {
+                        //Zet speler aan beurt goed
+                        BaseGame.SpelerAanBeurt = (int)packet[1];
+                    }
+
+                    //Klaar voor volgende beurt
+                    KlaarVoorVolgendeKlikkaart();
                 };
                 b.RunWorkerAsync();
             }
