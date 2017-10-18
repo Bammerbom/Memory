@@ -55,7 +55,7 @@ namespace Memory
             BaseGame.Gamestate = 1;
             BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = BaseGame.Naam1 + " : ";
             BaseGame.FormSpeelveld.Label_Score_Speler_2.Text = BaseGame.Naam2 + " : ";
-            BaseGame.Timer();
+            //BaseGame.Timer();
             BaseGame.Render();
 
             KlaarVoorVolgendeKlikkaart();
@@ -63,6 +63,7 @@ namespace Memory
 
         public static bool KlikKaart(int x, int y) {
             //Als de speler niet aan de beurt is, return true
+            Console.WriteLine(BaseGame.SpelerAanBeurt);
             if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) return true;
 
             //Maak packet
@@ -86,6 +87,7 @@ namespace Memory
                 //Coole syntax om speler aan beurt te switchen tussen 1 en 2
                 BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;
             }
+            Console.WriteLine(Host + " Stuur volgendebeurt " + BaseGame.SpelerAanBeurt);
 
             //Stuur volgendebeurt packet
             object[] volgendebeurt = new object[2];
@@ -119,6 +121,7 @@ namespace Memory
                 //Als er een bericht is binnen gekomen
                 b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
                     object[] packet = (object[]) args.Result;
+                    Console.WriteLine(Host + " Krijg " + packet[0] + " " + packet[1]);
                     //Is het een klik kaart, of een volgende beurt packet?
                     if(((string) packet[0]) == "klikkaart") {
                         //Update speelveld

@@ -95,6 +95,7 @@ namespace Memory
                 labelPort.Visible = true;
                 textboxPort.Visible = true;
                 textboxIp.Text = GetLocalIPAddress();
+                textboxIp.ReadOnly = true;
             }
             else if (comboGametype.Text == "Join Multiplayer") {
                 comboSpelgrootte.Visible = false;
@@ -109,6 +110,7 @@ namespace Memory
                 labelPort.Visible = true;
                 textboxPort.Visible = true;
                 textboxIp.Text = "";
+                textboxIp.ReadOnly = false;
             }
         }
 
@@ -179,16 +181,18 @@ namespace Memory
                     int port = (int) textboxPort.Value;
                     if (ManagerServer.Server(8978)) {
                         GameMultiplayerOnline.Start(h, w, naams, true);
+                        this.Close();
                     }
                     //Errorbox wordt weergegeven door Server method
                     break;
                 case "Join Multiplayer":
                     string naamt = textboxNaam1.Text;
                     if (naamt == null || naamt.Length == 0) {
-                        naamt = "Speler 1";
+                        naamt = "Speler 2";
                     }
                     if (ManagerClient.Client("141.252.239.175", 8978)) {
                         GameMultiplayerOnline.Start(h, w, naamt, false);
+                        this.Close();
                     }
                     //Errorbox wordt weergegeven dooe Client method
                     break;
