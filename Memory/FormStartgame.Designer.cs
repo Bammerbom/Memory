@@ -39,7 +39,8 @@
             this.labelIp = new System.Windows.Forms.Label();
             this.textboxIp = new System.Windows.Forms.TextBox();
             this.labelPort = new System.Windows.Forms.Label();
-            this.textboxPort = new System.Windows.Forms.TextBox();
+            this.textboxPort = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).BeginInit();
             this.SuspendLayout();
             // 
             // comboGametype
@@ -188,10 +189,25 @@
             // textboxPort
             // 
             this.textboxPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxPort.Increment = new decimal(new int[] {
+            8000,
+            0,
+            0,
+            0});
             this.textboxPort.Location = new System.Drawing.Point(262, 410);
+            this.textboxPort.Maximum = new decimal(new int[] {
+            9000,
+            0,
+            0,
+            0});
             this.textboxPort.Name = "textboxPort";
-            this.textboxPort.Size = new System.Drawing.Size(278, 32);
-            this.textboxPort.TabIndex = 20;
+            this.textboxPort.Size = new System.Drawing.Size(277, 32);
+            this.textboxPort.TabIndex = 22;
+            this.textboxPort.Value = new decimal(new int[] {
+            8978,
+            0,
+            0,
+            0});
             // 
             // FormStartgame
             // 
@@ -199,8 +215,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Memory.Properties.Resources.floppy_disks;
             this.ClientSize = new System.Drawing.Size(784, 601);
-            this.Controls.Add(this.labelPort);
             this.Controls.Add(this.textboxPort);
+            this.Controls.Add(this.labelPort);
             this.Controls.Add(this.labelIp);
             this.Controls.Add(this.textboxIp);
             this.Controls.Add(this.labelSpelgrootte);
@@ -221,6 +237,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormStartgame_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,6 +258,6 @@
         private System.Windows.Forms.Label labelIp;
         private System.Windows.Forms.TextBox textboxIp;
         private System.Windows.Forms.Label labelPort;
-        private System.Windows.Forms.TextBox textboxPort;
+        private System.Windows.Forms.NumericUpDown textboxPort;
     }
 }

@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,6 +27,16 @@ namespace Memory
             textboxNaam2.Visible = false;
             labelNaam1.Visible = false;
             labelNaam2.Visible = false;
+        }
+
+        private string GetLocalIPAddress() {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList) {
+                if (ip.AddressFamily == AddressFamily.InterNetwork) {
+                    return ip.ToString();
+                }
+            }
+            return "";
         }
 
         private void gametype_SelectedIndexChanged(object sender, EventArgs e) {
@@ -82,6 +94,7 @@ namespace Memory
                 textboxIp.Visible = true;
                 labelPort.Visible = true;
                 textboxPort.Visible = true;
+                textboxIp.Text = GetLocalIPAddress();
             }
             else if (comboGametype.Text == "Join Multiplayer") {
                 comboSpelgrootte.Visible = false;
@@ -95,6 +108,7 @@ namespace Memory
                 textboxIp.Visible = true;
                 labelPort.Visible = true;
                 textboxPort.Visible = true;
+                textboxIp.Text = "";
             }
         }
 
@@ -162,6 +176,7 @@ namespace Memory
                     if (naams == null || naams.Length == 0) {
                         naams = "Speler 1";
                     }
+                    int port = (int) textboxPort.Value;
                     if (ManagerServer.Server(8978)) {
                         GameMultiplayerOnline.Start(h, w, naams, true);
                     }
