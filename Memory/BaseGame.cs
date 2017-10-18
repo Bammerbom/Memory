@@ -140,7 +140,9 @@ namespace Memory
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
                 }
                 Render();
-                VolgendeBeurt();
+                if (multi) {
+                    VolgendeBeurt();
+                }
             }
         }
 
