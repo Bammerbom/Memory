@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,7 +58,26 @@ namespace Memory
             BaseGame.Timer();
             BaseGame.Render();
 
-            VolgendeBeurt2();
+            KlaarVoorVolgendeKlikkaart();
+        }
+
+        public static bool KlikKaart(int x, int y) {
+            //Als de speler niet aan de beurt is, return true
+            if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) return true;
+
+            //Maak packet
+            object[] klikkaart = new object[3];
+            klikkaart[0] = "klikkaart";
+            klikkaart[1] = x;
+            klikkaart[2] = y;
+
+            //Stuur packet
+            if (Host) {
+                NetServer.SendMessage(Utils.ArrayToString(klikkaart));
+            } else {
+                NetClient.SendMessage(Utils.ArrayToString(klikkaart));
+            }
+            return false;
         }
 
         public static void VolgendeBeurt() {
@@ -68,12 +88,28 @@ namespace Memory
             }
         }
 
-        public static void VolgendeBeurt2() {
-            //Als deze speler niet aan de beurt is
-            if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) {
-
+        public static void KlaarVoorVolgendeKlikkaart() {
+            //Als deze speler aan de beurt is
+            if ((Host ? 1 : 2) == BaseGame.SpelerAanBeurt) {
+                //Niks
             } else {
-
+                //Wacht op klik kaart packets van andere kant
+                BackgroundWorker b = new BackgroundWorker();
+                b.DoWork += delegate (object o, DoWorkEventArgs args) {
+                    BackgroundWorker bw = o as BackgroundWorker;
+                    object[] klikkaart;
+                    if (Host) {
+                        klikkaart = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
+                    } else {
+                        klikkaart = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
+                    }
+                    args.Result = klikkaart;
+                };
+                b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
+                    object[] klikkaart = (object[]) args.Result;
+                    BaseGame.KaartKlik((int)klikkaart[1], (int)klikkaart[2], false);
+                };
+                b.RunWorkerAsync();
             }
         }
 

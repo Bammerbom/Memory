@@ -101,9 +101,13 @@ namespace Memory
             Render();
         }
 
-        public static void KaartKlik(int x, int y) {
+        public static void KaartKlik(int x, int y, bool multi = true) { //multi wordt naar false gezet om een infinite loop te voorkomen
             if (Speelveld_omgedraaid[x, y] == true) return; //Negeer klikken op kaart als de kaart al omgedraait is
             if (Kaartcounter == 2) return; //Negeer als er al 2 kaarten omgedraait zijn
+
+            if(Gamemode == 2 && multi) {
+                if (GameMultiplayerOnline.KlikKaart(x, y)) return;
+            }
 
             //Keer kaart om
             ZetOmgedraaid(x, y, true);
@@ -149,6 +153,10 @@ namespace Memory
             Kaartcounter = 0;            
             Terugdraai = false;
             Render();
+
+            if (Gamemode == 2) {
+                GameMultiplayerOnline.KlaarVoorVolgendeKlikkaart();
+            }
         }
 
         public static void VolgendeBeurt() {
