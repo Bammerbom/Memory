@@ -83,7 +83,7 @@ namespace Memory
         }
 
         private void Button_Opslaan_Click(object sender, EventArgs e) {
-            SaveGameManager.SaveEnEnd();
+            ManagerSavegames.SaveEnEnd();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

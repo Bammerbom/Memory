@@ -53,7 +53,7 @@ namespace Memory
         }
         private void ButtonLoad_Click(object sender, EventArgs e)
         {
-            SaveGameManager.Loadgame();
+            ManagerSavegames.Loadgame();
 
         }
     }

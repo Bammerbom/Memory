@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Memory
 {
-    class SaveGameManager
+    class ManagerSavegames
     {
         public static string[] Savedata = new string[25];
         public static string[] Loaddata;
