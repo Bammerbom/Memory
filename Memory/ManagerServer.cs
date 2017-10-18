@@ -34,7 +34,6 @@ namespace Memory {
 
             //Popup
             //DialogResult result = MessageBox.Show("Wachten op verbinding...\nKlik op OK om te annuleren", "Memory");
-            Console.WriteLine("C");
             return true;
         }
 

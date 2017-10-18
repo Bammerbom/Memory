@@ -40,7 +40,6 @@ namespace Memory
         }
 
         private void gametype_SelectedIndexChanged(object sender, EventArgs e) {
-            Console.WriteLine(comboGametype.Text);
             if(comboGametype.Text == "Kies spelmodus")
             {
                 comboSpelgrootte.Visible = false;
