@@ -172,7 +172,7 @@ namespace Memory
                     if (naamt == null || naamt.Length == 0) {
                         naamt = "Speler 1";
                     }
-                    if (ManagerClient.Client("141.252.239.186", 8978)) {
+                    if (ManagerClient.Client("141.252.239.175", 8978)) {
                         GameMultiplayerOnline.Start(h, w, naamt, false);
                     }
                     //Errorbox wordt weergegeven dooe Client method
