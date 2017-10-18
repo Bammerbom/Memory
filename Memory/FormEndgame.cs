@@ -50,7 +50,7 @@ namespace Memory
             BaseGame.Reset();
         }
 
-        private void LabelGameResultaat()
+        private void LabelGameResultaat()               //<----------------------- ?
         {
               
         }

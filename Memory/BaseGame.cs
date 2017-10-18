@@ -248,5 +248,18 @@ namespace Memory
                 box.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
+
+        public static void GameResultatenOpslaan()
+        {
+            ManagerHighscores.CheckHighscoreFiles();
+            if (Gamemode == 0)
+            {
+                ManagerHighscores.SingleplayerSave();
+            }
+            else if (Gamemode == 1)
+            {
+                ManagerHighscores.MultiplayerLocalSave();
+            }
+        }
     }
 }
