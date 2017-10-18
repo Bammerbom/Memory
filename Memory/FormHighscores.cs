@@ -21,6 +21,5 @@ namespace Memory
         {
             this.Close();
         }
-    
     }
 }

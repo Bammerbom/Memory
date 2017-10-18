@@ -151,6 +151,7 @@
     <None Include="Resources\floppy-disks.jpg" />
     <None Include="Resources\IMG_5240.JPG" />
     <None Include="Resources\IMG_5240 - kopie.JPG" />
+    <None Include="Resources\Achterkant.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
