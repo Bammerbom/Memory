@@ -178,7 +178,7 @@ namespace Memory
                         naams = "Speler 1";
                     }
                     int port = (int) textboxPort.Value;
-                    if (ManagerServer.Server(8978)) {
+                    if (ManagerServer.Server(port)) {
                         GameMultiplayerOnline.Start(h, w, naams, true);
                         this.Close();
                     }
@@ -189,7 +189,9 @@ namespace Memory
                     if (naamt == null || naamt.Length == 0) {
                         naamt = "Speler 2";
                     }
-                    if (ManagerClient.Client("141.252.239.175", 8978)) {
+                    string ip = string.IsNullOrEmpty(textboxIp.Text) ? "141.252.239.175" : textboxIp.Text;
+                    int port2 = (int)textboxPort.Value;
+                    if (ManagerClient.Client(ip, port2)) {
                         GameMultiplayerOnline.Start(h, w, naamt, false);
                         this.Close();
                     }
