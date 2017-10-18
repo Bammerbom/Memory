@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,8 +29,17 @@ namespace Memory
             labelNaam2.Visible = false;
         }
 
+        private string GetLocalIPAddress() {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList) {
+                if (ip.AddressFamily == AddressFamily.InterNetwork) {
+                    return ip.ToString();
+                }
+            }
+            return "";
+        }
+
         private void gametype_SelectedIndexChanged(object sender, EventArgs e) {
-            Console.WriteLine(comboGametype.Text);
             if(comboGametype.Text == "Kies spelmodus")
             {
                 comboSpelgrootte.Visible = false;
@@ -82,6 +93,8 @@ namespace Memory
                 textboxIp.Visible = true;
                 labelPort.Visible = true;
                 textboxPort.Visible = true;
+                textboxIp.Text = GetLocalIPAddress();
+                textboxIp.ReadOnly = true;
             }
             else if (comboGametype.Text == "Join Multiplayer") {
                 comboSpelgrootte.Visible = false;
@@ -95,6 +108,8 @@ namespace Memory
                 textboxIp.Visible = true;
                 labelPort.Visible = true;
                 textboxPort.Visible = true;
+                textboxIp.Text = "";
+                textboxIp.ReadOnly = false;
             }
         }
 
@@ -162,18 +177,21 @@ namespace Memory
                     if (naams == null || naams.Length == 0) {
                         naams = "Speler 1";
                     }
+                    int port = (int) textboxPort.Value;
                     if (ManagerServer.Server(8978)) {
                         GameMultiplayerOnline.Start(h, w, naams, true);
+                        this.Close();
                     }
                     //Errorbox wordt weergegeven door Server method
                     break;
                 case "Join Multiplayer":
                     string naamt = textboxNaam1.Text;
                     if (naamt == null || naamt.Length == 0) {
-                        naamt = "Speler 1";
+                        naamt = "Speler 2";
                     }
-                    if (ManagerClient.Client("141.252.239.186", 8978)) {
+                    if (ManagerClient.Client("141.252.239.175", 8978)) {
                         GameMultiplayerOnline.Start(h, w, naamt, false);
+                        this.Close();
                     }
                     //Errorbox wordt weergegeven dooe Client method
                     break;

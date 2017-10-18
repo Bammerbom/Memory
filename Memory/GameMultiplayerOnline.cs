@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,10 +55,30 @@ namespace Memory
             BaseGame.Gamestate = 1;
             BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = BaseGame.Naam1 + " : ";
             BaseGame.FormSpeelveld.Label_Score_Speler_2.Text = BaseGame.Naam2 + " : ";
-            BaseGame.Timer();
+            //BaseGame.Timer();
             BaseGame.Render();
 
-            VolgendeBeurt2();
+            KlaarVoorVolgendeKlikkaart();
+        }
+
+        public static bool KlikKaart(int x, int y) {
+            //Als de speler niet aan de beurt is, return true
+            Console.WriteLine(BaseGame.SpelerAanBeurt);
+            if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) return true;
+
+            //Maak packet
+            object[] klikkaart = new object[3];
+            klikkaart[0] = "klikkaart";
+            klikkaart[1] = x;
+            klikkaart[2] = y;
+
+            //Stuur packet
+            if (Host) {
+                NetServer.SendMessage(Utils.ArrayToString(klikkaart));
+            } else {
+                NetClient.SendMessage(Utils.ArrayToString(klikkaart));
+            }
+            return false;
         }
 
         public static void VolgendeBeurt() {
@@ -66,14 +87,54 @@ namespace Memory
                 //Coole syntax om speler aan beurt te switchen tussen 1 en 2
                 BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;
             }
+            Console.WriteLine(Host + " Stuur volgendebeurt " + BaseGame.SpelerAanBeurt);
+
+            //Stuur volgendebeurt packet
+            object[] volgendebeurt = new object[2];
+            volgendebeurt[0] = "volgendebeurt";
+            volgendebeurt[1] = BaseGame.SpelerAanBeurt;
+            if (Host) {
+                NetServer.SendMessage(Utils.ArrayToString(volgendebeurt));
+            } else {
+                NetClient.SendMessage(Utils.ArrayToString(volgendebeurt));
+            }
         }
 
-        public static void VolgendeBeurt2() {
+        public static void KlaarVoorVolgendeKlikkaart() {
             //Als deze speler niet aan de beurt is
             if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) {
+                //Wacht op klik kaart packets van andere kant
+                BackgroundWorker b = new BackgroundWorker();
 
-            } else {
+                //Wordt op tweede thread gerunned
+                b.DoWork += delegate (object o, DoWorkEventArgs args) {
+                    BackgroundWorker bw = o as BackgroundWorker;
+                    object[] packet;
+                    if (Host) {
+                        packet = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
+                    } else {
+                        packet = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
+                    }
+                    args.Result = packet;
+                };
 
+                //Als er een bericht is binnen gekomen
+                b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
+                    object[] packet = (object[]) args.Result;
+                    Console.WriteLine(Host + " Krijg " + packet[0] + " " + packet[1]);
+                    //Is het een klik kaart, of een volgende beurt packet?
+                    if(((string) packet[0]) == "klikkaart") {
+                        //Update speelveld
+                        BaseGame.KaartKlik((int)packet[1], (int)packet[2], false);
+                    } else if(((string)packet[0]) == "volgendebeurt") {
+                        //Zet speler aan beurt goed
+                        BaseGame.SpelerAanBeurt = (int)packet[1];
+                    }
+
+                    //Klaar voor volgende beurt
+                    KlaarVoorVolgendeKlikkaart();
+                };
+                b.RunWorkerAsync();
             }
         }
 
