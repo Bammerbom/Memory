@@ -18,6 +18,11 @@ namespace Memory
             InitializeComponent();
         }
 
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void FormHighscores_Load(object sender, EventArgs e)
         {
             ManagerHighscores.CheckHighscoreFiles();
@@ -26,15 +31,23 @@ namespace Memory
 
         public void Load_Tabbelen()
         {
+            //highscores table singelplayer
             dataGridViewSingelplayer.DataSource = ManagerHighscores.GetTableSingelplayer();
+            dataGridViewSingelplayer.CurrentCell = null;
+            dataGridViewSingelplayer.Columns[0].Width = 35;
+            dataGridViewSingelplayer.Columns[1].Width = 260;
+            dataGridViewSingelplayer.Columns[2].Width = 70;
+            dataGridViewSingelplayer.Columns[3].Width = 70;
+            //highscores table multiplayer
             dataGridViewMultiplayer.DataSource = ManagerHighscores.GetTableMultiplayer();
+            dataGridViewMultiplayer.CurrentCell = null;
+            dataGridViewMultiplayer.Columns[0].Width = 35;
+            dataGridViewMultiplayer.Columns[1].Width = 260;
+            dataGridViewMultiplayer.Columns[2].Width = 70;
+            dataGridViewMultiplayer.Columns[3].Width = 70;         
         }
 
-        private void ButtonBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        //vraagt of je zeker bent dat je de de singelplayer en/of multiplayer highscores gegefens wil verwijderen
         private void Label_HighscoresVerwijderen_Click(object sender, EventArgs e)
         {
             DialogResult result1 = MessageBox.Show("Wil je de singelplayer highscores verwijderen?", "Verwijderen highscores singelplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -51,63 +64,10 @@ namespace Memory
                     {
                         File.Create(ManagerHighscores.path2).Close();
                     }
+                    //reload de tabellen zodat ze leeg zijn
                     Load_Tabbelen();
                 }
             }
         }
     }
 }
-
-
-
-
-
-
-//oud: lines file naar text label
-
-//for (int i = 0; i < 2; i++)
-//{
-//    string path;
-//    if (i == 0)
-//    {
-//        path = ManagerHighscores.path1;
-//    } else
-//    {
-//        path = ManagerHighscores.path2;
-//    }
-//    int lineCount = File.ReadLines(path).Count();
-//    string text = "";
-//    if (lineCount != 0)
-//    {
-//        string[] lines = File.ReadAllLines(path);
-//        int nummer = 1;
-//        text += "      naam       score   zetten tijd\n";
-//        foreach (string line in lines)
-//        {
-//            string[] inhoud = line.Split('|');
-//            if (i == 0)
-//            {
-//                text += string.Format("{0,-4}  {1,-20} {2,-7} {3,-6} {4,-5}\n", nummer + ".", inhoud[0], inhoud[1], inhoud[2], inhoud[3]);
-//            } else
-//            {
-//                if (Convert.ToInt32(inhoud[1]) >= Convert.ToInt32(inhoud[5]))
-//                {
-//                    text += string.Format("{0,-4}  {1,-10} {2,-7} {3,-6} {4,-5}\n     {5} {6} {7}\n", nummer, inhoud[0], inhoud[1], inhoud[2], inhoud[3], inhoud[4], inhoud[5], inhoud[6]);
-//                } else
-//                {
-//                    text += string.Format("{0,-4}  {5,-10} {6,-7} {7,-6} {4,-5}\n     {1,-10} {2,-5} {3-4}\n", nummer, inhoud[0], inhoud[1], inhoud[2], inhoud[3], inhoud[4], inhoud[5], inhoud[6]);
-//                }
-//            }
-//            nummer++;
-//        }
-//    } else
-//    {
-//        text = "Geen Resultaten";
-//    }
-//    if (i == 0)
-//    {
-//        Highscores_1spelers.Text = text;
-//    } else
-//    {
-//        Highscores_2spelers.Text = text;
-//    }

@@ -73,7 +73,7 @@
             this.Highscores_2spelers.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.Highscores_2spelers.ForeColor = System.Drawing.Color.White;
             this.Highscores_2spelers.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Highscores_2spelers.Location = new System.Drawing.Point(861, 174);
+            this.Highscores_2spelers.Location = new System.Drawing.Point(875, 197);
             this.Highscores_2spelers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Highscores_2spelers.Name = "Highscores_2spelers";
             this.Highscores_2spelers.Size = new System.Drawing.Size(155, 39);
@@ -149,14 +149,13 @@
             // 
             this.Highscores_1spelers.AutoSize = true;
             this.Highscores_1spelers.BackColor = System.Drawing.Color.Transparent;
-            this.Highscores_1spelers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Highscores_1spelers.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.Highscores_1spelers.ForeColor = System.Drawing.Color.White;
-            this.Highscores_1spelers.Location = new System.Drawing.Point(169, 174);
+            this.Highscores_1spelers.Location = new System.Drawing.Point(220, 196);
             this.Highscores_1spelers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Highscores_1spelers.Name = "Highscores_1spelers";
             this.Highscores_1spelers.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Highscores_1spelers.Size = new System.Drawing.Size(157, 41);
+            this.Highscores_1spelers.Size = new System.Drawing.Size(155, 39);
             this.Highscores_1spelers.TabIndex = 21;
             this.Highscores_1spelers.Text = "1 spelers";
             this.Highscores_1spelers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,19 +166,30 @@
             this.dataGridViewSingelplayer.AllowUserToDeleteRows = false;
             this.dataGridViewSingelplayer.AllowUserToResizeColumns = false;
             this.dataGridViewSingelplayer.AllowUserToResizeRows = false;
+            this.dataGridViewSingelplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSingelplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSingelplayer.Location = new System.Drawing.Point(30, 223);
+            this.dataGridViewSingelplayer.Enabled = false;
+            this.dataGridViewSingelplayer.Location = new System.Drawing.Point(30, 252);
             this.dataGridViewSingelplayer.Name = "dataGridViewSingelplayer";
             this.dataGridViewSingelplayer.ReadOnly = true;
-            this.dataGridViewSingelplayer.Size = new System.Drawing.Size(551, 381);
+            this.dataGridViewSingelplayer.RowHeadersVisible = false;
+            this.dataGridViewSingelplayer.Size = new System.Drawing.Size(551, 466);
             this.dataGridViewSingelplayer.TabIndex = 22;
             // 
             // dataGridViewMultiplayer
             // 
+            this.dataGridViewMultiplayer.AllowUserToAddRows = false;
+            this.dataGridViewMultiplayer.AllowUserToDeleteRows = false;
+            this.dataGridViewMultiplayer.AllowUserToResizeColumns = false;
+            this.dataGridViewMultiplayer.AllowUserToResizeRows = false;
+            this.dataGridViewMultiplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewMultiplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMultiplayer.Location = new System.Drawing.Point(677, 223);
+            this.dataGridViewMultiplayer.Enabled = false;
+            this.dataGridViewMultiplayer.Location = new System.Drawing.Point(676, 252);
             this.dataGridViewMultiplayer.Name = "dataGridViewMultiplayer";
-            this.dataGridViewMultiplayer.Size = new System.Drawing.Size(551, 381);
+            this.dataGridViewMultiplayer.ReadOnly = true;
+            this.dataGridViewMultiplayer.RowHeadersVisible = false;
+            this.dataGridViewMultiplayer.Size = new System.Drawing.Size(551, 466);
             this.dataGridViewMultiplayer.TabIndex = 23;
             // 
             // label_HighscoresVerwijderen
@@ -188,11 +198,11 @@
             this.label_HighscoresVerwijderen.BackColor = System.Drawing.Color.Transparent;
             this.label_HighscoresVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label_HighscoresVerwijderen.ForeColor = System.Drawing.Color.White;
-            this.label_HighscoresVerwijderen.Location = new System.Drawing.Point(1038, 770);
+            this.label_HighscoresVerwijderen.Location = new System.Drawing.Point(1036, 770);
             this.label_HighscoresVerwijderen.Name = "label_HighscoresVerwijderen";
-            this.label_HighscoresVerwijderen.Size = new System.Drawing.Size(214, 25);
+            this.label_HighscoresVerwijderen.Size = new System.Drawing.Size(225, 25);
             this.label_HighscoresVerwijderen.TabIndex = 25;
-            this.label_HighscoresVerwijderen.Text = "Highscores verwijderen";
+            this.label_HighscoresVerwijderen.Text = "Highscores verwijderen?";
             this.label_HighscoresVerwijderen.Click += new System.EventHandler(this.Label_HighscoresVerwijderen_Click);
             // 
             // FormHighscores
