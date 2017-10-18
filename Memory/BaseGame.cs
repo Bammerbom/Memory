@@ -36,17 +36,14 @@ namespace Memory
         
 
         //Maakt game klaar voor een nieuwe ronde
-        public static void Reset() {
-            try {
-                FormSpeelveld.Close();
-            } catch { };
+        public static void Reset() {           
             FormSpeelveld = null;
             Zetten1 = 0;
             Zetten2 = 0;
             Score1 = 0;
             Score2 = 0;
             Kaartcounter = 0;
-            Tijdbeurt = 0;
+            Tijdbeurt = 10;
             Tijdtotaal = 0;
             Terugdraai = false;
         }

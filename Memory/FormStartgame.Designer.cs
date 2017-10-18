@@ -74,6 +74,7 @@
             // 
             this.textboxNaam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxNaam1.Location = new System.Drawing.Point(262, 239);
+            this.textboxNaam1.MaxLength = 15;
             this.textboxNaam1.Name = "textboxNaam1";
             this.textboxNaam1.Size = new System.Drawing.Size(277, 32);
             this.textboxNaam1.TabIndex = 3;
@@ -124,6 +125,7 @@
             // 
             this.textboxNaam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxNaam2.Location = new System.Drawing.Point(261, 326);
+            this.textboxNaam2.MaxLength = 15;
             this.textboxNaam2.Name = "textboxNaam2";
             this.textboxNaam2.Size = new System.Drawing.Size(278, 32);
             this.textboxNaam2.TabIndex = 15;
@@ -170,7 +172,7 @@
             // textboxIp
             // 
             this.textboxIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxIp.Location = new System.Drawing.Point(261, 326);
+            this.textboxIp.Location = new System.Drawing.Point(262, 326);
             this.textboxIp.Name = "textboxIp";
             this.textboxIp.Size = new System.Drawing.Size(278, 32);
             this.textboxIp.TabIndex = 18;
