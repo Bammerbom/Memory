@@ -56,5 +56,18 @@ namespace Memory
             ManagerSavegames.Loadgame();
 
         }
+
+        private void ThemaComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ThemaManager.VeranderThema(ThemaComboBox.Text);
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "MenuAchtergrond");
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            ThemaManager.Themaprefix = "Thema0";
+            ThemaManager.Themanummer = 0;
+
+        }
     }
 }

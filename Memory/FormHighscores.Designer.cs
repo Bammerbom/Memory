@@ -209,7 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Memory.Properties.Resources.sterren;
+            this.BackgroundImage = global::Memory.Properties.Resources.Thema0HighscoresAchtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 804);
             this.Controls.Add(this.label_HighscoresVerwijderen);

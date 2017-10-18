@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\MemoryIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -106,6 +109,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ManagerSavegames.cs" />
+    <Compile Include="ThemaManager.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="FormCredits.resx">
       <DependentUpon>FormCredits.cs</DependentUpon>
@@ -147,6 +151,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
+    <None Include="Resources\micro chip2.jpg" />
+    <None Include="Resources\Thema2MenuAchtergrond.jpg" />
+    <None Include="Resources\MemoryIcon.ico" />
     <None Include="Resources\StartGameStormtroopers.jpg" />
     <None Include="Resources\Spaceship starwars.jpg" />
     <None Include="Resources\Thema2Kaart7.png" />
@@ -181,6 +189,7 @@
     <None Include="Resources\Disneycastlespeelveld.jpg" />
     <None Include="Resources\DisneyStartGameAchtergrond.jpg" />
     <None Include="Resources\Galaxyachtergrondspeelveld.jpg" />
+    <None Include="Resources\Icon.bmp" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

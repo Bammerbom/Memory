@@ -73,66 +73,6 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DarthVaderMenuAchtergrond {
-            get {
-                object obj = ResourceManager.GetObject("DarthVaderMenuAchtergrond", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DeathstarAchtergrondHighscore {
-            get {
-                object obj = ResourceManager.GetObject("DeathstarAchtergrondHighscore", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Disneycastlespeelveld {
-            get {
-                object obj = ResourceManager.GetObject("Disneycastlespeelveld", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DisneyStartGameAchtergrond {
-            get {
-                object obj = ResourceManager.GetObject("DisneyStartGameAchtergrond", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap floppy_disks {
-            get {
-                object obj = ResourceManager.GetObject("floppy-disks", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Galaxyachtergrondspeelveld {
-            get {
-                object obj = ResourceManager.GetObject("Galaxyachtergrondspeelveld", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Game_over {
             get {
                 object obj = ResourceManager.GetObject("Game over", resourceCulture);
@@ -171,92 +111,12 @@ namespace Memory.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Bitmap Kaart0 {
+        internal static System.Drawing.Icon MemoryIcon {
             get {
-                object obj = ResourceManager.GetObject("Kaart0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart1 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart2 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart3 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart4 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart5 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart6 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Kaart7 {
-            get {
-                object obj = ResourceManager.GetObject("Kaart7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap KaartVoorkant {
-            get {
-                object obj = ResourceManager.GetObject("KaartVoorkant", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("MemoryIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -283,9 +143,9 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap StartGameStormtroopers {
+        internal static System.Drawing.Bitmap Thema0HighscoresAchtergrond {
             get {
-                object obj = ResourceManager.GetObject("StartGameStormtroopers", resourceCulture);
+                object obj = ResourceManager.GetObject("Thema0HighscoresAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +153,119 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sterren {
+        internal static System.Drawing.Bitmap Thema0Kaart0 {
             get {
-                object obj = ResourceManager.GetObject("sterren", resourceCulture);
+                object obj = ResourceManager.GetObject("Thema0Kaart0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart1 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart2 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart3 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart4 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart5 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart6 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Kaart7 {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Kaart7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0SpeelveldAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema0SpeelveldAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0StartGameAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema0StartGameAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Voorkant {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Voorkant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema1HighscoresAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema1HighscoresAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +346,36 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema1Kaart7 {
             get {
                 object obj = ResourceManager.GetObject("Thema1Kaart7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema1MenuAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema1MenuAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema1SpeelveldAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema1SpeelveldAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema1StartGameAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema1StartGameAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +466,36 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema2Kaart7 {
             get {
                 object obj = ResourceManager.GetObject("Thema2Kaart7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2MenuAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema2MenuAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2SpeelveldAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema2SpeelveldAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2StartGameAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema2StartGameAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

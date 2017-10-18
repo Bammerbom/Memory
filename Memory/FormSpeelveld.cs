@@ -14,10 +14,10 @@ namespace Memory
     {
         public FormSpeelveld()
         {
-            double yTussenruimte = -35;
-            double xTussenruimte = 25;
-            double xSizeTemp = 175;
-            double ySizeTemp = 263;
+            double yTussenruimte = 10;
+            double xTussenruimte = 60;
+            double xSizeTemp = 150;
+            double ySizeTemp = 225;
             InitializeComponent();
             PictureBox[,] Kaart = new PictureBox[BaseGame.Width, BaseGame.Height];
             if (BaseGame.Width == 2 && BaseGame.Height == 2) //speelveld 2x2 vergroot de kaarten met factor 2
@@ -32,23 +32,23 @@ namespace Memory
             }
             else if (BaseGame.Width == 4 && BaseGame.Height == 2) //speelveld 2x4 vergroot de kaarten met 1.15
             {
-                yTussenruimte = -18;
+                yTussenruimte = 10;
                 xSizeTemp *= 1.15;
                 ySizeTemp *= 1.15;
             }
             else if (BaseGame.Width == 4 && BaseGame.Height == 3) //speelveld 3x4 vergroot de kaarten met 1.15
             {
-                yTussenruimte = -18;
+                yTussenruimte = 10;
                 xSizeTemp *= 1.15;
                 ySizeTemp *= 1.15;
             }
             else if (BaseGame.Width == 4 && BaseGame.Height == 4) //speelveld 4x4 geen vergroting
             {
-                yTussenruimte = -18;
+                yTussenruimte = 10;
                 xSizeTemp *= 1;
                 ySizeTemp *= 1;
             }
-            int yLocation = 5;
+            int yLocation = 25;
             for (int y = 0; y < BaseGame.Height; y++) //voert alle kaarten in met goede tussenruimtes en juiste locatie
             {
                 int xLocation = 366; //begin locatie
@@ -58,7 +58,7 @@ namespace Memory
                     Kaart[x, y] = new PictureBox(); //maakt nieuwe picturebox
                     Kaart[x, y].Name = Kaartnaam;
                     Kaart[x, y].Size = new Size(Convert.ToInt32(xSizeTemp), Convert.ToInt32(ySizeTemp)); //juiste size per speelveld 
-                    Kaart[x, y].Image = Properties.Resources.KaartVoorkant; 
+                    Kaart[x, y].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Voorkant"); 
                     Kaart[x, y].BackColor = Color.Transparent;
                     Kaart[x, y].Visible = true;
                     Kaart[x, y].Anchor = AnchorStyles.Left;
@@ -152,7 +152,19 @@ namespace Memory
 
         private void FormSpeelveld_Load(object sender, EventArgs e)
         {
-
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "SpeelveldAchtergrond");
+            if (ThemaManager.Themanummer == 1)
+            {
+                this.pictureBox1.BackColor = System.Drawing.Color.Navy; 
+            }
+            else if (ThemaManager.Themanummer == 2)
+            {
+                this.pictureBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            }
+            else
+            {
+                this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
+            }
         }
     }
 }
