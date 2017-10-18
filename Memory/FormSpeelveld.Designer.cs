@@ -94,34 +94,21 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-<<<<<<< HEAD
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.exitToolStripMenuItem.Text = "Opslaan en Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-=======
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
->>>>>>> Dynamisch-Speelveld
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-<<<<<<< HEAD
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-=======
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
->>>>>>> Dynamisch-Speelveld
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-<<<<<<< HEAD
             this.restartToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-=======
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
->>>>>>> Dynamisch-Speelveld
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
