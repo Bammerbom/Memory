@@ -131,6 +131,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sterren.png" />
+    <None Include="Resources\USBSTICKWOW.png" />
+    <None Include="Resources\OKE.jpg" />
     <None Include="Resources\Game over.png" />
     <None Include="Resources\Game over lagere resolutie.png" />
     <None Include="Resources\floppy-disks.jpg" />
