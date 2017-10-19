@@ -15,7 +15,7 @@ namespace Memory
             BaseGame.Gamemode = 2;
 
             //Join packet
-            if (!host) {
+            if (!host) {   //client side
                 //CLIENT stuurt join
                 BaseGame.Naam2 = Naam;
                 object[] join = new object[2];
@@ -29,7 +29,7 @@ namespace Memory
                 BaseGame.InitSpeelveld((int)join2[2], (int)join2[3]);
                 BaseGame.Speelveld_types = Utils.StringToArray((string)join2[4]) as int[,];
                 BaseGame.SpelerAanBeurt = (int)join2[5];
-            } else {
+            } else {  //host side
                 //Init
                 BaseGame.SpelerAanBeurt = Utils.rand.Next(1, 3);
                 BaseGame.InitSpeelveld(Hoogte, Breedte);
@@ -81,10 +81,10 @@ namespace Memory
         }
 
         public static void VolgendeBeurt() {
-            //Als de kaarten niet gelijk zijn
+            //Als de kaarten niet gelijk zijn is volgende aan beurt
             if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y]) {
                 //Coole syntax om speler aan beurt te switchen tussen 1 en 2
-                BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;
+                BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;  //1 ? 2 : 1 als het 1 is word het 2, als het 2 is word het 1.
             }
 
             //Stuur volgendebeurt packet
@@ -100,12 +100,12 @@ namespace Memory
 
         public static void KlaarVoorVolgendeKlikkaart() {
             //Als deze speler niet aan de beurt is
-            if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) {
+            if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) {  // ((Host ? 1 : 2) als de host true is dan 1 zo niet dan 2
                 //Wacht op klik kaart packets van andere kant
                 BackgroundWorker b = new BackgroundWorker();
 
                 //Wordt op tweede thread gerunned
-                b.DoWork += delegate (object o, DoWorkEventArgs args) {
+                b.DoWork += delegate (object o, DoWorkEventArgs args) {  //doe dit op achtergrond  (delegate is mini method in method)
                     BackgroundWorker bw = o as BackgroundWorker;
                     object[] packet;
                     if (Host) {
@@ -117,7 +117,7 @@ namespace Memory
                 };
 
                 //Als er een bericht is binnen gekomen
-                b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
+                b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) { //achtergrond shit is klaar
                     object[] packet = (object[]) args.Result;
                     //Is het een klik kaart, of een volgende beurt packet?
                     if(((string) packet[0]) == "klikkaart") {
