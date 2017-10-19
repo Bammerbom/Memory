@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using System.Net;
-using System.Net.Mail;
 
 namespace Memory {
 	class NetServer {
@@ -30,6 +29,10 @@ namespace Memory {
 
         public static bool IsOpen() {
             return Open;
+        }
+
+        public static void Disconnect() {
+            Client.Close();
         }
 
         public static bool NextClient() {

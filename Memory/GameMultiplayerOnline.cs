@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Memory
 {
@@ -141,6 +142,45 @@ namespace Memory
             BaseGame.FormSpeelveld.Close();
             FormEndgame endgame = new FormEndgame();
             endgame.Show();
+
+            //Als het een client is, wacht op reset packet van host
+            if (!Host) {
+                BackgroundWorker b = new BackgroundWorker();
+
+                //Wordt op tweede thread gerunned
+                b.DoWork += delegate (object o, DoWorkEventArgs args) {
+                    BackgroundWorker bw = o as BackgroundWorker;
+                    object[] reset = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
+                    args.Result = reset;
+                };
+
+                //Als er een bericht is binnen gekomen
+                b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
+                    object[] reset = (object[])args.Result;
+                    if((reset[0] as string) == "reset") {
+                        
+                    }
+                };
+                b.RunWorkerAsync();
+            }
+        }
+
+        public static void Reset() {
+            if (Host) {
+                object[] reset = new object[1];
+                reset[0] = "reset";
+                NetServer.SendMessage(Utils.ArrayToString(reset));
+            } else {
+                MessageBox.Show("Alleen de host kan de game opnieuw opstarten", "Memory", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static void Disconnect() {
+            if (Host) {
+                NetServer.Disconnect();
+            } else {
+                NetClient.Disconnect();
+            }
         }
     }
 }
