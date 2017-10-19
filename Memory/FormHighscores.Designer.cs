@@ -105,7 +105,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Memory.Properties.Resources.USBSTICKWOW;
-            this.pictureBox4.Location = new System.Drawing.Point(998, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(985, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(263, 182);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -138,7 +138,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Memory.Properties.Resources.USBSTICKWOW;
-            this.pictureBox7.Location = new System.Drawing.Point(30, 35);
+            this.pictureBox7.Location = new System.Drawing.Point(30, 22);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(226, 158);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

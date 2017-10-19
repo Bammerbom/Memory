@@ -151,6 +151,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\VraagtekenHelp.png" />
+    <None Include="Resources\LabelHelpDefinitief.png" />
+    <None Include="Resources\LabelHelp.png" />
+    <None Include="Resources\Thema0HelpAchtergrond.jpg" />
+    <None Include="Resources\Thema0Picturebox1Highscore.png" />
+    <None Include="Resources\Picturebox0Highscore.png" />
+    <None Include="Resources\Picturebox0Highscore.jpg" />
+    <None Include="Resources\Thema0MenuAchtergrond.jpg" />
     <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
     <None Include="Resources\micro chip2.jpg" />
     <None Include="Resources\Thema2MenuAchtergrond.jpg" />
