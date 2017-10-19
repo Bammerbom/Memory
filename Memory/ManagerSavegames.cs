@@ -146,7 +146,13 @@ namespace Memory
                     BaseGame.ZetOmgedraaid(w, h, BaseGame.Speelveld_omgedraaid[w, h]);
                 }
             }
-            BaseGame.DraaiKaartenTerug();
+
+            //draait 2 ongelijke kaarten terug als die geload zijn.
+            if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y]) 
+            {
+                BaseGame.DraaiKaartenTerug();
+            }
+            
 
         }
 

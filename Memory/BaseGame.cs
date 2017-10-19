@@ -183,7 +183,7 @@ namespace Memory
             }
         }
 
-        public static async void Timer() {            
+        public static async void Timer() {            //timer methode 
             while (Gamestate == 1)
             {
 
