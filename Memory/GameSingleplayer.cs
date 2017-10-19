@@ -30,7 +30,6 @@ namespace Memory
         }
 
         public static async void End() {
-            BaseGame.GameResultatenOpslaan();
             BaseGame.Gamestate = 2;
             await Task.Delay(2000);
             BaseGame.FormSpeelveld.Close();

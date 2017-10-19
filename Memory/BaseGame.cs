@@ -230,6 +230,7 @@ namespace Memory
         }
 
         public static void Endgame() {
+            BaseGame.GameResultatenOpslaan();
             if (Gamemode == 0) GameSingleplayer.End();
             else if (Gamemode == 1) GameMultiplayerLocal.End();
             else if (Gamemode == 2) GameMultiplayerOnline.End();
