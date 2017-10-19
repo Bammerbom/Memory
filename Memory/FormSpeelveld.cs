@@ -12,8 +12,11 @@ namespace Memory
 {
     public partial class FormSpeelveld : Form
     {
+        private static bool reset;
+
         public FormSpeelveld()
         {
+            reset = false;
             double yTussenruimte = -35;
             double xTussenruimte = 25;
             double xSizeTemp = 175;
@@ -133,6 +136,9 @@ namespace Memory
 
         private void Buton_Reset_Click(object sender, EventArgs e)
         {
+
+
+            reset = true;
             this.Close();
             BaseGame.Reset();
             if (BaseGame.Gamemode == 0)
@@ -149,9 +155,12 @@ namespace Memory
             }
         }
 
-        private void FormSpeelveld_Load(object sender, EventArgs e)
+        private void FormSpeelveld_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            if (reset == false)
+            {
+                BaseGame.Exitgame();
+            }
         }
     }
 }
