@@ -235,6 +235,13 @@ namespace Memory
             else if (Gamemode == 2) GameMultiplayerOnline.End();
         }
 
+        public static void Exitgame()
+        {
+            if (Gamemode == 0) GameSingleplayer.Exit();
+            else if (Gamemode == 1) GameMultiplayerLocal.Exit();
+            else if (Gamemode == 2) GameMultiplayerOnline.Exit();
+        }
+
         public static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
             Speelveld_omgedraaid[x, y] = omgedraaid; //zet string in afkorting
             string kaartnaam = "Kaart" + x + "" + y; //zet kaartnaam in string voor gebruik in

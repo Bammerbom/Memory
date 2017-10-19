@@ -79,7 +79,7 @@ namespace Memory
         }
 
         private void Button_Exit_Click(object sender, EventArgs e) {
-            BaseGame.Endgame();
+            BaseGame.Exitgame();
         }
 
         private void Button_Opslaan_Click(object sender, EventArgs e) {
@@ -88,8 +88,7 @@ namespace Memory
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-            //TODO save
+            ManagerSavegames.SaveEnEnd();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,12 +105,12 @@ namespace Memory
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            BaseGame.Exitgame();
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO save
+            ManagerSavegames.Savegame();          
         }
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)

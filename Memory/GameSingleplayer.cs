@@ -37,5 +37,14 @@ namespace Memory
             FormEndgame endgame = new FormEndgame();
             endgame.Show();
         }
+
+        public static void Exit()
+        {
+            BaseGame.GameResultatenOpslaan();
+            BaseGame.Gamestate = 2;
+            BaseGame.FormSpeelveld.Close();
+            FormEndgame endgame = new FormEndgame();
+            endgame.Show();
+        }
     }
 }
