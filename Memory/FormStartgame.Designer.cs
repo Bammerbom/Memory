@@ -216,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Memory.Properties.Resources.floppy_disks;
+            this.BackgroundImage = global::Memory.Properties.Resources.Thema0StartGameAchtergrond;
             this.ClientSize = new System.Drawing.Size(784, 601);
             this.Controls.Add(this.textboxPort);
             this.Controls.Add(this.labelPort);

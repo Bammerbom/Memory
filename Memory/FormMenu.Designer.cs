@@ -34,9 +34,8 @@
             this.ButtonHighscores = new System.Windows.Forms.Button();
             this.ButtonHelp = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
-            this.plaatje1 = new System.Windows.Forms.PictureBox();
             this.Button_Credits = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).BeginInit();
+            this.ThemaComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // ButtonPlay
@@ -91,20 +90,6 @@
             this.ButtonExit.UseVisualStyleBackColor = true;
             this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
-            // plaatje1
-            // 
-            this.plaatje1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.plaatje1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plaatje1.BackgroundImage")));
-            this.plaatje1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.plaatje1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.plaatje1.ErrorImage = null;
-            this.plaatje1.InitialImage = null;
-            this.plaatje1.Location = new System.Drawing.Point(-244, -2);
-            this.plaatje1.Name = "plaatje1";
-            this.plaatje1.Size = new System.Drawing.Size(727, 412);
-            this.plaatje1.TabIndex = 6;
-            this.plaatje1.TabStop = false;
-            // 
             // Button_Credits
             // 
             this.Button_Credits.Location = new System.Drawing.Point(155, 291);
@@ -115,18 +100,35 @@
             this.Button_Credits.UseVisualStyleBackColor = true;
             this.Button_Credits.Click += new System.EventHandler(this.Button_Credits_Click);
             // 
+            // ThemaComboBox
+            // 
+            this.ThemaComboBox.FormattingEnabled = true;
+            this.ThemaComboBox.Items.AddRange(new object[] {
+            "Default",
+            "Disney",
+            "StarWars"});
+            this.ThemaComboBox.Location = new System.Drawing.Point(0, 0);
+            this.ThemaComboBox.MaxDropDownItems = 3;
+            this.ThemaComboBox.Name = "ThemaComboBox";
+            this.ThemaComboBox.Size = new System.Drawing.Size(121, 32);
+            this.ThemaComboBox.TabIndex = 8;
+            this.ThemaComboBox.Text = "Thema";
+            this.ThemaComboBox.SelectedIndexChanged += new System.EventHandler(this.ThemaComboBox_SelectedIndexChanged);
+            // 
             // FormMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(476, 409);
+            this.Controls.Add(this.ThemaComboBox);
             this.Controls.Add(this.Button_Credits);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonHelp);
             this.Controls.Add(this.ButtonHighscores);
             this.Controls.Add(this.ButtonLoad);
             this.Controls.Add(this.ButtonPlay);
-            this.Controls.Add(this.plaatje1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -135,7 +137,7 @@
             this.Name = "FormMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
-            ((System.ComponentModel.ISupportInitialize)(this.plaatje1)).EndInit();
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
 
         }
@@ -146,8 +148,8 @@
         private System.Windows.Forms.Button ButtonHighscores;
         private System.Windows.Forms.Button ButtonHelp;
         private System.Windows.Forms.Button ButtonExit;
-        private System.Windows.Forms.PictureBox plaatje1;
         private System.Windows.Forms.Button Button_Credits;
+        private System.Windows.Forms.ComboBox ThemaComboBox;
     }
 }
 

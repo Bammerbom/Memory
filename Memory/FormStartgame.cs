@@ -20,6 +20,7 @@ namespace Memory
 
         private void FormStartgame_Load(object sender, EventArgs e)
         {
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "StartGameAchtergrond");
             comboGametype.Text = "Kies spelmodus";
             comboSpelgrootte.Visible = false;
             labelSpelgrootte.Visible = false;

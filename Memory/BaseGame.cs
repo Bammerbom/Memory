@@ -242,10 +242,10 @@ namespace Memory
             PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
             if (omgedraaid == true) {    //check of de kaart is omgedraaid
                 int kaarttype = Speelveld_types[x, y];
-                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("Kaart" + kaarttype);  //verander plaatje kaart
+                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix +"Kaart" + kaarttype);  //verander plaatje kaart
                 box.SizeMode = PictureBoxSizeMode.Zoom;
             } else {
-                box.Image = Properties.Resources.KaartVoorkant;
+                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Voorkant");
                 box.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
