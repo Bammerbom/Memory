@@ -120,7 +120,7 @@ namespace Memory
             table.Columns.Add("Name", typeof(string));
             table.Columns.Add("Score", typeof(int));
             table.Columns.Add("Zetten", typeof(int));
-            table.Columns.Add("Tijd", typeof(int));
+            table.Columns.Add("Tijd (sec)", typeof(int));
             //rows / inhoud
             string[] lines = File.ReadAllLines(path1);
             for (int i = 0; i < File.ReadAllLines(path1).Count(); i++)
@@ -144,7 +144,7 @@ namespace Memory
             table.Columns.Add("Name", typeof(string));
             table.Columns.Add("Score", typeof(int));
             table.Columns.Add("Zetten", typeof(int));
-            table.Columns.Add("Tijd", typeof(int));
+            table.Columns.Add("Tijd (sec)", typeof(int));
             //rows / inhoud
             string[] lines = File.ReadAllLines(path2);
             for (int i = 0; i < File.ReadAllLines(path2).Count(); i++)
