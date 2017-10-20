@@ -26,12 +26,16 @@ namespace Memory
             }else if (BaseGame.Gamemode == 1) {
                 GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2);
             } else if(BaseGame.Gamemode == 2) {
+                GameMultiplayerOnline.Reset();
                 //GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2, GameMultiplayerOnline.Host);
             }
         }
 
         private void ButtonStartgame_Click(object sender, EventArgs e)
         {
+            if (BaseGame.Gamemode == 2) {
+                GameMultiplayerOnline.Disconnect();
+            }
             this.Close();
             BaseGame.Reset();
             FormStartgame startgame = new FormStartgame();

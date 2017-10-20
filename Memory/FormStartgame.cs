@@ -189,7 +189,7 @@ namespace Memory
                     if (naamt == null || naamt.Length == 0) {
                         naamt = "Speler 2";
                     }
-                    string ip = string.IsNullOrEmpty(textboxIp.Text) ? "141.252.239.175" : textboxIp.Text;
+                    string ip = textboxIp.Text;
                     int port2 = (int)textboxPort.Value;
                     if (ManagerClient.Client(ip, port2)) {
                         GameMultiplayerOnline.Start(h, w, naamt, false);
