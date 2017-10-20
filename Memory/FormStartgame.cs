@@ -117,6 +117,14 @@ namespace Memory
             this.Close();
         }
 
+        private void textboxNaam1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void buttonStart_Click(object sender, EventArgs e) {
             int h, w;
             BaseGame.Reset(); //Just in case

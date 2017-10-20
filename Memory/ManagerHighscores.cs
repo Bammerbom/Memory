@@ -120,7 +120,7 @@ namespace Memory
             table.Columns.Add("Name", typeof(string));
             table.Columns.Add("Score", typeof(int));
             table.Columns.Add("Zetten", typeof(int));
-            table.Columns.Add("Tijd", typeof(int));
+            table.Columns.Add("Tijd (sec)", typeof(int));
             //rows / inhoud
             string[] lines = File.ReadAllLines(path1);
             for (int i = 0; i < File.ReadAllLines(path1).Count(); i++)
@@ -144,7 +144,7 @@ namespace Memory
             table.Columns.Add("Name", typeof(string));
             table.Columns.Add("Score", typeof(int));
             table.Columns.Add("Zetten", typeof(int));
-            table.Columns.Add("Tijd", typeof(int));
+            table.Columns.Add("Tijd (sec)", typeof(int));
             //rows / inhoud
             string[] lines = File.ReadAllLines(path2);
             for (int i = 0; i < File.ReadAllLines(path2).Count(); i++)
@@ -154,17 +154,17 @@ namespace Memory
                 if (Convert.ToInt32(inhoud[1]) >= Convert.ToInt32(inhoud[5]))
                 {
                     table.Rows.Add((i + 1) + ".", inhoud[0], inhoud[1], inhoud[2], inhoud[3]);
-                    table.Rows.Add("", inhoud[4], inhoud[5], inhoud[6], "");
+                    table.Rows.Add(" ", inhoud[4], inhoud[5], inhoud[6], null);
                 }
                 //speler 2 won
                 else
                 {
                     table.Rows.Add((i + 1) + ".", inhoud[4], inhoud[5], inhoud[6], inhoud[3]);
-                    table.Rows.Add("", inhoud[0], inhoud[1], inhoud[2], "");
+                    table.Rows.Add(" ", inhoud[0], inhoud[1], inhoud[2], null);
                 }
             }
             //voeg lege rows toe indien nodig
-            for (int i = 0; i < (SaveLengthMultiplayer * 2) - lines.Length; i++) // dit zou anders kunnen gedaan worden!!!!!!!
+            for (int i = 0; i < (SaveLengthMultiplayer - lines.Length) * 2; i++) // dit zou anders kunnen gedaan worden!!!!!!!
             {
                 table.Rows.Add();
             }

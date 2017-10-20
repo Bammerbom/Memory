@@ -79,6 +79,7 @@
             this.textboxNaam1.Name = "textboxNaam1";
             this.textboxNaam1.Size = new System.Drawing.Size(277, 32);
             this.textboxNaam1.TabIndex = 3;
+            this.textboxNaam1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textboxNaam1_KeyPress);
             // 
             // buttonTerug
             // 
