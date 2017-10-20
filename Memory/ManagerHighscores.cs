@@ -154,7 +154,7 @@ namespace Memory
                 if (Convert.ToInt32(inhoud[1]) >= Convert.ToInt32(inhoud[5]))
                 {
                     table.Rows.Add((i + 1) + ".", inhoud[0], inhoud[1], inhoud[2], inhoud[3]);
-                    table.Rows.Add("", inhoud[4], inhoud[5], inhoud[6], null);
+                    table.Rows.Add(" ", inhoud[4], inhoud[5], inhoud[6], null);
                 }
                 //speler 2 won
                 else
