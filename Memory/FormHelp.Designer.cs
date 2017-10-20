@@ -70,7 +70,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Memory.Properties.Resources.LabelHelpDefinitief;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 117);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 115);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(874, 596);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
