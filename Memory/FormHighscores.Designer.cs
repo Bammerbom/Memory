@@ -93,7 +93,6 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::Memory.Properties.Resources.USBSTICKWOW;
             this.pictureBox8.Location = new System.Drawing.Point(542, 319);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(263, 182);
@@ -104,7 +103,6 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Memory.Properties.Resources.USBSTICKWOW;
             this.pictureBox4.Location = new System.Drawing.Point(985, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(263, 182);
@@ -115,7 +113,6 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Memory.Properties.Resources.USBSTICKWOW;
             this.pictureBox5.Location = new System.Drawing.Point(985, 599);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(226, 158);
@@ -126,7 +123,6 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Memory.Properties.Resources.USBSTICKWOW;
             this.pictureBox6.Location = new System.Drawing.Point(84, 544);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(263, 182);
@@ -137,7 +133,6 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::Memory.Properties.Resources.USBSTICKWOW;
             this.pictureBox7.Location = new System.Drawing.Point(30, 22);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(226, 158);
