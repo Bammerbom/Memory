@@ -163,6 +163,16 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema0CreditsAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema0CreditsAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema0HelpAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema0HelpAchtergrond", resourceCulture);
@@ -283,6 +293,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema0Picturebox1Highscore__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Picturebox1Highscore__2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema0Picturebox2Highscore {
+            get {
+                object obj = ResourceManager.GetObject("Thema0Picturebox2Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema0SpeelveldAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema0SpeelveldAchtergrond", resourceCulture);
@@ -306,6 +336,16 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema0Voorkant {
             get {
                 object obj = ResourceManager.GetObject("Thema0Voorkant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema1CreditsAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema1CreditsAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,6 +463,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema1Picturebox1Highscore {
+            get {
+                object obj = ResourceManager.GetObject("Thema1Picturebox1Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema1Picturebox2Highscore {
+            get {
+                object obj = ResourceManager.GetObject("Thema1Picturebox2Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema1SpeelveldAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema1SpeelveldAchtergrond", resourceCulture);
@@ -446,6 +506,16 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema1Voorkant {
             get {
                 object obj = ResourceManager.GetObject("Thema1Voorkant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2CreditsAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema2CreditsAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -553,6 +623,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema2Picturebox1Highscore {
+            get {
+                object obj = ResourceManager.GetObject("Thema2Picturebox1Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2Picturebox2Highscore {
+            get {
+                object obj = ResourceManager.GetObject("Thema2Picturebox2Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema2SpeelveldAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema2SpeelveldAchtergrond", resourceCulture);
@@ -576,16 +666,6 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema2Voorkant {
             get {
                 object obj = ResourceManager.GetObject("Thema2Voorkant", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap USBSTICKWOW {
-            get {
-                object obj = ResourceManager.GetObject("USBSTICKWOW", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

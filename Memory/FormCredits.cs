@@ -26,5 +26,10 @@ namespace Memory
         {
             
         }
+
+        private void FormCredits_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "CreditsAchtergrond");
+        }
     }
 }
