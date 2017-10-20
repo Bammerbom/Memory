@@ -257,7 +257,7 @@ namespace Memory
             {
                 ManagerHighscores.SingleplayerSave();
             }
-            else if (Gamemode == 1 || Gamemode == 2)
+            else if (Gamemode == 1)
             {
                 ManagerHighscores.MultiplayerLocalSave();
             }
