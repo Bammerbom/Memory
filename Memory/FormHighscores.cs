@@ -69,5 +69,11 @@ namespace Memory
                 }
             }
         }
+
+        private void FormHighscores_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+        }
     }
 }

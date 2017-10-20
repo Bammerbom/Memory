@@ -33,10 +33,12 @@ namespace Memory
         public static int Tijdbeurt;  //de tijd counter voor de tijd die je hebt in een beurt
         public static int Tijdtotaal;  //de totale tijd die het spel in beslag neemt
         public static bool Terugdraai;  // false = er worden geen kaarten terug gedraaid , true = er worden kaarten teruggedraaid
+        public static bool Resetstatus;
         
 
         //Maakt game klaar voor een nieuwe ronde
-        public static void Reset() {           
+        public static void Reset() {
+            Resetstatus = true;
             FormSpeelveld = null;
             Zetten1 = 0;
             Zetten2 = 0;
@@ -46,16 +48,19 @@ namespace Memory
             Tijdbeurt = 10;
             Tijdtotaal = 0;
             Terugdraai = false;
+
         }
 
         public static void InitSpeelveld(int h, int w) {
             //Initialize variabelen
+            Resetstatus = false;
             Height = h;
             Width = w;
             Speelveld_types = new int[w, h];
             Speelveld_omgedraaid = new bool[w, h];
             Tijdbeurt = 10;
             Tijdtotaal = 0;
+            
 
             //Maak tijdelijke lijst met alle velden en shuffle die
             var tempvelden = new List<int>();
@@ -189,6 +194,10 @@ namespace Memory
 
                 while (Tijdbeurt > 0)  //loop die secondes telt
                 {
+                    if (Gamestate == 2 || (Resetstatus == true))  // killed de timer als het spel is afgelopen.
+                    {
+                        return;
+                    }
                     await Task.Delay(1000);
                     if (Terugdraai == false)
                     {
@@ -196,10 +205,7 @@ namespace Memory
                     }
                     Tijdtotaal ++ ;
                     FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
-                    if (Gamestate == 2)  // killed de timer als het spel is afgelopen.
-                    {
-                        return ;   
-                    }
+                    
                 }
 
                 Tijdbeurt = 10; //timer reset
@@ -234,6 +240,13 @@ namespace Memory
             if (Gamemode == 0) GameSingleplayer.End();
             else if (Gamemode == 1) GameMultiplayerLocal.End();
             else if (Gamemode == 2) GameMultiplayerOnline.End();
+        }
+
+        public static void Exitgame()
+        {
+            if (Gamemode == 0) GameSingleplayer.Exit();
+            else if (Gamemode == 1) GameMultiplayerLocal.Exit();
+            else if (Gamemode == 2) GameMultiplayerOnline.Exit();
         }
 
         public static void ZetOmgedraaid(int x, int y, bool omgedraaid) {

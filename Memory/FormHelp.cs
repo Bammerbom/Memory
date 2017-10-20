@@ -22,12 +22,19 @@ namespace Memory
             this.Close();
         }
 
+
         private void FormHelp_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "HelpAchtergrond");
         }
 
         
+        private void FormHelp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+        }
+
     }
 
 }

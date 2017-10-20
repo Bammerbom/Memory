@@ -8,7 +8,8 @@ namespace Memory
 {
     class GameMultiplayerLocal
     {
-        public static void Start(int Hoogte, int Breedte, string Naam1, string Naam2) {
+        public static void Start(int Hoogte, int Breedte, string Naam1, string Naam2)
+        {
             BaseGame.Gamemode = 1;
             BaseGame.InitSpeelveld(Hoogte, Breedte);
             BaseGame.InitForm();
@@ -22,20 +23,35 @@ namespace Memory
             BaseGame.Render();
         }
 
-        public static void VolgendeBeurt() {
+        public static void VolgendeBeurt()
+        {
             //Als de kaarten niet gelijk zijn
-            if(BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y]) {
+            if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y])
+            {
                 //Coole syntax om speler aan beurt te switchen tussen 1 en 2
                 BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;
             }
         }
 
-        public static async void End() {
+        public static async void End()
+        {
             BaseGame.Gamestate = 2;
             await Task.Delay(2000);
             BaseGame.FormSpeelveld.Close();
+            BaseGame.FormSpeelveld.Dispose();
+            GC.Collect();
             FormEndgame endgame = new FormEndgame();
             endgame.Show();
+        }
+        public static void Exit()
+        {
+            BaseGame.Gamestate = 2;
+            BaseGame.FormSpeelveld.Close();
+            BaseGame.FormSpeelveld.Dispose();
+            GC.Collect();
+            FormEndgame endgame = new FormEndgame();
+            endgame.Show();
+
         }
     }
 }

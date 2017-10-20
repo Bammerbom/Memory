@@ -12,6 +12,8 @@ namespace Memory
 {
     public partial class FormSpeelveld : Form
     {
+        private static bool reset;
+
         public FormSpeelveld()
         {
             double yTussenruimte = 10;
@@ -79,7 +81,7 @@ namespace Memory
         }
 
         private void Button_Exit_Click(object sender, EventArgs e) {
-            BaseGame.Endgame();
+            BaseGame.Exitgame();
         }
 
         private void Button_Opslaan_Click(object sender, EventArgs e) {
@@ -88,8 +90,7 @@ namespace Memory
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-            //TODO save
+            ManagerSavegames.SaveEnEnd();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,12 +107,13 @@ namespace Memory
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            BaseGame.Exitgame();
+
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO save
+            ManagerSavegames.Savegame();          
         }
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,8 +136,12 @@ namespace Memory
 
         private void Buton_Reset_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+
+            
+
             BaseGame.Reset();
+            this.Close();
             if (BaseGame.Gamemode == 0)
             {
                 GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
@@ -149,6 +155,7 @@ namespace Memory
                 //TODO GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
             }
         }
+
 
         private void FormSpeelveld_Load(object sender, EventArgs e)
         {
@@ -166,5 +173,6 @@ namespace Memory
                 this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
             }
         }
+
     }
 }

@@ -339,7 +339,6 @@
             this.Name = "FormSpeelveld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
-            this.Load += new System.EventHandler(this.FormSpeelveld_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

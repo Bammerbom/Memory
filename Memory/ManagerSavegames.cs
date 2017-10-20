@@ -160,7 +160,7 @@ namespace Memory
         {
             Savegame();
             Bestandslocatie = "";
-            BaseGame.Endgame();
+            BaseGame.Exitgame();
         }
         
             
