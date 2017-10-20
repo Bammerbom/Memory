@@ -20,6 +20,8 @@ namespace Memory
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.Dispose();
+            GC.Collect();
             BaseGame.Reset();
             if(BaseGame.Gamemode == 0) {
                 GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
@@ -33,6 +35,8 @@ namespace Memory
         private void ButtonStartgame_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.Dispose();
+            GC.Collect();
             BaseGame.Reset();
             FormStartgame startgame = new FormStartgame();
             startgame.Show();
@@ -47,6 +51,8 @@ namespace Memory
         private void ButtonHome_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.Dispose();
+            GC.Collect();
             BaseGame.Reset();
         }
 

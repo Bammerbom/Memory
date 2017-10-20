@@ -21,5 +21,11 @@ namespace Memory
         {
             this.Close();
         }
+
+        private void FormHelp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            GC.Collect();
+        }
     }
 }

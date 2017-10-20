@@ -34,6 +34,8 @@ namespace Memory
             BaseGame.Gamestate = 2;
             await Task.Delay(2000);
             BaseGame.FormSpeelveld.Close();
+            BaseGame.FormSpeelveld.Dispose();
+            GC.Collect();
             FormEndgame endgame = new FormEndgame();
             endgame.Show();
         }
@@ -43,6 +45,8 @@ namespace Memory
             BaseGame.GameResultatenOpslaan();
             BaseGame.Gamestate = 2;
             BaseGame.FormSpeelveld.Close();
+            BaseGame.FormSpeelveld.Dispose();
+            GC.Collect();
             FormEndgame endgame = new FormEndgame();
             endgame.Show();
         }

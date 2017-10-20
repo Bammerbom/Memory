@@ -108,6 +108,7 @@ namespace Memory
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             BaseGame.Exitgame();
+
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -155,12 +156,6 @@ namespace Memory
             }
         }
 
-        private void FormSpeelveld_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (BaseGame.Resetstatus == false)
-            {
-                BaseGame.Exitgame();
-            }
-        }
+        
     }
 }
