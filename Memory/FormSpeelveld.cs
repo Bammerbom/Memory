@@ -16,7 +16,6 @@ namespace Memory
 
         public FormSpeelveld()
         {
-            reset = false;
             double yTussenruimte = -35;
             double xTussenruimte = 25;
             double xSizeTemp = 175;
@@ -138,9 +137,10 @@ namespace Memory
         {
 
 
-            reset = true;
-            this.Close();
+            
+
             BaseGame.Reset();
+            this.Close();
             if (BaseGame.Gamemode == 0)
             {
                 GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
@@ -157,7 +157,7 @@ namespace Memory
 
         private void FormSpeelveld_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (reset == false)
+            if (BaseGame.Resetstatus == false)
             {
                 BaseGame.Exitgame();
             }
