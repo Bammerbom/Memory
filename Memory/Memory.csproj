@@ -151,6 +151,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema2HelpAchtergrond.jpg" />
+    <None Include="Resources\Thema1HelpAchtergrond.jpg" />
     <None Include="Resources\VraagtekenHelp.png" />
     <None Include="Resources\LabelHelpDefinitief.png" />
     <None Include="Resources\LabelHelp.png" />

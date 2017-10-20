@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHelp));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -38,19 +37,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(891, 228);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(459, 375);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -78,7 +70,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Memory.Properties.Resources.LabelHelpDefinitief;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 122);
+            this.pictureBox3.Location = new System.Drawing.Point(21, 117);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(874, 596);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +103,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F);
-            this.label3.Location = new System.Drawing.Point(369, 156);
+            this.label3.Location = new System.Drawing.Point(380, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 35);
             this.label3.TabIndex = 9;
@@ -122,7 +114,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(186, 217);
+            this.label4.Location = new System.Drawing.Point(190, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(506, 24);
             this.label4.TabIndex = 10;
@@ -133,19 +125,56 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label5.Location = new System.Drawing.Point(186, 241);
+            this.label5.Location = new System.Drawing.Point(190, 241);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(581, 96);
             this.label5.TabIndex = 11;
             this.label5.Text = "Het doel is om zoveel mogelijk twee dezelfde kaartjes om te draaien.\r\n\r\n\r\n\r\n";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label6.Location = new System.Drawing.Point(190, 266);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(447, 24);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Let wel op dat  er een timer links op het scherm staat";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label7.Location = new System.Drawing.Point(190, 313);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(561, 24);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Aan het begin van het memory spel worden alle kaarten geschud.";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Location = new System.Drawing.Point(190, 337);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(588, 168);
+            this.label8.TabIndex = 14;
+            this.label8.Text = resources.GetString("label8.Text");
+            // 
             // FormHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.BackgroundImage = global::Memory.Properties.Resources.Thema0HelpAchtergrond;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -153,7 +182,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -161,7 +189,7 @@
             this.Name = "FormHelp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FormHelp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -170,7 +198,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -179,6 +206,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
