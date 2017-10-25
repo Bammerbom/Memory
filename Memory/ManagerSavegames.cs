@@ -47,6 +47,8 @@ namespace Memory
             Savedata[24] = Convert.ToString("");
 
             string WriteData = Utils.ArrayToString(Savedata); //convert array naar 1 string
+            WriteData = Utils.Encrypt(WriteData, "dat boi harro");
+
 
             //maak bestands path met save file dialog
             SaveFileDialog sfd = new SaveFileDialog();
@@ -67,7 +69,7 @@ namespace Memory
 
             System.IO.File.WriteAllText(Bestandslocatie, WriteData); //write
 
-
+          
         }
 
         public static void Loadgame()
@@ -86,10 +88,12 @@ namespace Memory
             {
                 return;
             }
+            
 
             try
             {
                 string Readdata = System.IO.File.ReadAllText(Bestandslocatie);  //read
+                Readdata = Utils.Decrypt(Readdata, "dat boi harro");
                 Loaddata = Utils.StringToArray(Readdata) as string[];  //convert naar array
             }
             catch
