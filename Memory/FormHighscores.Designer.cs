@@ -34,10 +34,7 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Highscores_2spelers = new System.Windows.Forms.Label();
             this.pictureBox1highscore = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Highscores_1spelers = new System.Windows.Forms.Label();
             this.dataGridViewSingelplayer = new System.Windows.Forms.DataGridView();
@@ -45,10 +42,7 @@
             this.label_HighscoresVerwijderen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).BeginInit();
@@ -90,54 +84,19 @@
             this.pictureBox1highscore.TabIndex = 6;
             this.pictureBox1highscore.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::Memory.Properties.Resources.USBSTICKWOW;
-            this.pictureBox8.Location = new System.Drawing.Point(542, 319);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(263, 182);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 15;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Memory.Properties.Resources.USBSTICKWOW;
-            this.pictureBox4.Location = new System.Drawing.Point(985, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(263, 182);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Memory.Properties.Resources.USBSTICKWOW;
-            this.pictureBox5.Location = new System.Drawing.Point(985, 599);
+            this.pictureBox5.Location = new System.Drawing.Point(1012, 22);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(226, 158);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Memory.Properties.Resources.USBSTICKWOW;
-            this.pictureBox6.Location = new System.Drawing.Point(84, 544);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(263, 182);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 19;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::Memory.Properties.Resources.USBSTICKWOW;
             this.pictureBox7.Location = new System.Drawing.Point(30, 22);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(226, 158);
@@ -185,7 +144,7 @@
             this.dataGridViewMultiplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewMultiplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMultiplayer.Enabled = false;
-            this.dataGridViewMultiplayer.Location = new System.Drawing.Point(676, 252);
+            this.dataGridViewMultiplayer.Location = new System.Drawing.Point(687, 252);
             this.dataGridViewMultiplayer.Name = "dataGridViewMultiplayer";
             this.dataGridViewMultiplayer.ReadOnly = true;
             this.dataGridViewMultiplayer.RowHeadersVisible = false;
@@ -218,12 +177,9 @@
             this.Controls.Add(this.Highscores_2spelers);
             this.Controls.Add(this.Highscores_1spelers);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox1highscore);
             this.Controls.Add(this.ButtonBack);
-            this.Controls.Add(this.pictureBox4);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -235,10 +191,7 @@
             this.Load += new System.EventHandler(this.FormHighscores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).EndInit();
@@ -253,10 +206,7 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label Highscores_2spelers;
         private System.Windows.Forms.PictureBox pictureBox1highscore;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label Highscores_1spelers;
         private System.Windows.Forms.DataGridView dataGridViewSingelplayer;

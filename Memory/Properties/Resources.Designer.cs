@@ -153,6 +153,16 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PijlTerug {
+            get {
+                object obj = ResourceManager.GetObject("PijlTerug", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Spaceship_starwars {
             get {
                 object obj = ResourceManager.GetObject("Spaceship_starwars", resourceCulture);
@@ -286,16 +296,6 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema0Picturebox1Highscore {
             get {
                 object obj = ResourceManager.GetObject("Thema0Picturebox1Highscore", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Thema0Picturebox1Highscore__2_ {
-            get {
-                object obj = ResourceManager.GetObject("Thema0Picturebox1Highscore__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
