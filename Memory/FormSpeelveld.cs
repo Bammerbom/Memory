@@ -59,7 +59,8 @@ namespace Memory
                     Kaart[x, y] = new PictureBox(); //maakt nieuwe picturebox
                     Kaart[x, y].Name = Kaartnaam;
                     Kaart[x, y].Size = new Size(Convert.ToInt32(xSizeTemp), Convert.ToInt32(ySizeTemp)); //juiste size per speelveld 
-                    Kaart[x, y].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Voorkant"); 
+                    Kaart[x, y].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Voorkant");
+                    Kaart[x, y].BackgroundImageLayout = ImageLayout.Stretch;
                     Kaart[x, y].BackColor = Color.Transparent;
                     Kaart[x, y].Visible = true;
                     Kaart[x, y].Anchor = AnchorStyles.Left;
