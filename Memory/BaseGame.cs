@@ -33,13 +33,12 @@ namespace Memory
         public static int Tijdbeurt;  //de tijd counter voor de tijd die je hebt in een beurt
         public static int Tijdtotaal;  //de totale tijd die het spel in beslag neemt
         public static bool Terugdraai;  // false = er worden geen kaarten terug gedraaid , true = er worden kaarten teruggedraaid
-        public static bool Resetstatus;
-        
+
+
+
 
         //Maakt game klaar voor een nieuwe ronde
         public static void Reset() {
-            Resetstatus = true;
-            FormSpeelveld = null;
             Zetten1 = 0;
             Zetten2 = 0;
             Score1 = 0;
@@ -48,12 +47,28 @@ namespace Memory
             Tijdbeurt = 10;
             Tijdtotaal = 0;
             Terugdraai = false;
+        }
+
+        public static void ResetVeld() // reset het veld midgame met variabelen van standaard Reset
+        {
+           
+            InitSpeelveld(Height, Width); //reset kaarten variabelen
+
+            //reset alle kaarten onscreen
+            for (int h = 0; h < BaseGame.Height; h++)
+            {
+                for (int w = 0; w < BaseGame.Width; w++)
+                {
+                    BaseGame.ZetOmgedraaid(w, h, BaseGame.Speelveld_omgedraaid[w, h]);
+                }
+            }
+
+            Render();
 
         }
 
         public static void InitSpeelveld(int h, int w) {
             //Initialize variabelen
-            Resetstatus = false;
             Height = h;
             Width = w;
             Speelveld_types = new int[w, h];
@@ -181,6 +196,7 @@ namespace Memory
             FormSpeelveld.Textbox_Score_Speler_2.Text = Convert.ToString(Score2);
             FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
+            FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
             if (SpelerAanBeurt == 1) {
                 FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam1;
             } else {
@@ -194,7 +210,7 @@ namespace Memory
 
                 while (Tijdbeurt > 0)  //loop die secondes telt
                 {
-                    if (Gamestate == 2 || (Resetstatus == true))  // killed de timer als het spel is afgelopen.
+                    if (Gamestate == 2)  // killed de timer als het spel is afgelopen.
                     {
                         return;
                     }
@@ -205,7 +221,7 @@ namespace Memory
                     }
                     Tijdtotaal ++ ;
                     FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
-                    
+
                 }
 
                 Tijdbeurt = 10; //timer reset

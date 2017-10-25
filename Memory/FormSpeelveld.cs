@@ -12,7 +12,6 @@ namespace Memory
 {
     public partial class FormSpeelveld : Form
     {
-        private static bool reset;
 
         public FormSpeelveld()
         {
@@ -118,42 +117,14 @@ namespace Memory
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
             BaseGame.Reset();
-            if (BaseGame.Gamemode == 0)
-            {
-                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
-            }
-            else if (BaseGame.Gamemode == 1)
-            {
-                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width,BaseGame.Naam1, BaseGame.Naam2);
-            }
-            else if (BaseGame.Gamemode == 2)
-            {
-                //TODO GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width, );
-            }
+            BaseGame.ResetVeld();
         }
 
         private void Buton_Reset_Click(object sender, EventArgs e)
         {
-
-
-            
-
             BaseGame.Reset();
-            this.Close();
-            if (BaseGame.Gamemode == 0)
-            {
-                GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
-            }
-            else if (BaseGame.Gamemode == 1)
-            {
-                GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2);
-            }
-            else if (BaseGame.Gamemode == 2)
-            {
-                //TODO GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width);
-            }
+            BaseGame.ResetVeld();
         }
 
 

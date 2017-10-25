@@ -116,6 +116,7 @@ namespace Memory
 
         private void buttonTerug_Click(object sender, EventArgs e) {
             this.Close();
+            this.Dispose();
         }
 
         private void textboxNaam1_KeyPress(object sender, KeyPressEventArgs e)
@@ -128,7 +129,6 @@ namespace Memory
 
         private void buttonStart_Click(object sender, EventArgs e) {
             int h, w;
-            BaseGame.Reset(); //Just in case
             if (comboGametype.Text != "Join Multiplayer") {
                 switch (comboSpelgrootte.Text) {
                     //2x2 2x3 2x4 3x4 4x4
@@ -168,6 +168,7 @@ namespace Memory
                     }
                     GameSingleplayer.Start(h, w, naam);
                     this.Close();
+                    this.Dispose();
                     break;
                 case "Local Multiplayer":
                     string naam1 = textboxNaam1.Text;
@@ -180,6 +181,7 @@ namespace Memory
                     }
                     GameMultiplayerLocal.Start(h, w, naam1, naam2);
                     this.Close();
+                    this.Dispose();
                     break;
                 case "Host Multiplayer":
                     string naams = textboxNaam1.Text;
@@ -190,6 +192,7 @@ namespace Memory
                     if (ManagerServer.Server(port)) {
                         GameMultiplayerOnline.Start(h, w, naams, true);
                         this.Close();
+                        this.Dispose();
                     }
                     //Errorbox wordt weergegeven door Server method
                     break;
@@ -203,6 +206,7 @@ namespace Memory
                     if (ManagerClient.Client(ip, port2)) {
                         GameMultiplayerOnline.Start(h, w, naamt, false);
                         this.Close();
+                        this.Dispose();
                     }
                     //Errorbox wordt weergegeven dooe Client method
                     break;
