@@ -15,6 +15,13 @@ namespace Memory
             Host = host;
             BaseGame.Gamemode = 2;
 
+            //TODO Test
+            if (Host) {
+                Console.WriteLine(NetServer.ReceiveMessage());
+            } else {
+                NetClient.SendMessage("Poep");
+            }
+
             //Join packet
             if (!host) {   //client side
                 //CLIENT stuurt join
@@ -22,7 +29,8 @@ namespace Memory
                 object[] join = new object[2];
                 join[0] = "join"; //Packet
                 join[1] = Naam; //Naam
-                NetClient.SendMessage(Utils.ArrayToString(join));
+                string pakketje = Utils.ArrayToString(join);
+                NetClient.SendMessage(pakketje);
                 Console.WriteLine((Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds); //TODO DEBUG
 
                 //CLIENT krijgt join2

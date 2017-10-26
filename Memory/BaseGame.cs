@@ -156,6 +156,7 @@ namespace Memory
                                         
                     if (Checkwin()) {    //Check voor win 
                         Endgame();
+                        return;
                     }
                 } else {
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
