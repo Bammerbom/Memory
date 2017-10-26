@@ -12,9 +12,11 @@ namespace Memory
 {
     public partial class FormEndgame : Form
     {
+        public static FormEndgame instance;
         public FormEndgame()
         {
             InitializeComponent();
+            FormEndgame.instance = this;
         }
 
         private void ButtonReset_Click(object sender, EventArgs e)

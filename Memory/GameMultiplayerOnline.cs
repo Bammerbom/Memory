@@ -165,6 +165,8 @@ namespace Memory
                     object[] reset = (object[])args.Result;
                     if ((reset[0] as string) == "reset") {
                         BaseGame.Reset();
+                        FormEndgame.instance.Close();
+                        FormEndgame.instance.Dispose();
                         Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam2, false);
                     }
                 };
