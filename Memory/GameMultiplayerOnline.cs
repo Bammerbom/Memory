@@ -26,6 +26,7 @@ namespace Memory
                 NetClient.SendMessage(pakketje);
 
                 //CLIENT krijgt join2
+                Console.WriteLine("Ding A");
                 object[] join2 = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
                 BaseGame.Naam1 = (string) join2[1];
                 BaseGame.InitSpeelveld((int)join2[2], (int)join2[3]);
@@ -38,7 +39,8 @@ namespace Memory
 
                 //HOST krijgt join
                 BaseGame.Naam1 = Naam;
-                object[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
+                string mes = NetServer.ReceiveMessage();
+                object[] join = Utils.StringToArray(mes) as object[];
                 BaseGame.Naam2 = (string) join[1];
 
                 //HOST stuurt join2
@@ -136,7 +138,7 @@ namespace Memory
                     }
 
                     //Klaar voor volgende beurt
-                    KlaarVoorVolgendeKlikkaart();
+                    if(BaseGame.Gamestate == 1) KlaarVoorVolgendeKlikkaart();
                 };
                 b.RunWorkerAsync();
             }

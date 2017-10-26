@@ -66,7 +66,6 @@ namespace Memory {
                     Open = false;
                     return null;
                 }
-
                 return message;
             } catch (Exception e) {
                 cDisconnect(e.Message);
