@@ -103,12 +103,12 @@
     <Compile Include="NetServer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ManagerSavegames.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ManagerSavegames.cs" />
     <Compile Include="ThemaManager.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="FormCredits.resx">

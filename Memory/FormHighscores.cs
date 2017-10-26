@@ -44,7 +44,14 @@ namespace Memory
             dataGridViewMultiplayer.Columns[0].Width = 35;
             dataGridViewMultiplayer.Columns[1].Width = 260;
             dataGridViewMultiplayer.Columns[2].Width = 70;
-            dataGridViewMultiplayer.Columns[3].Width = 70;  
+            dataGridViewMultiplayer.Columns[3].Width = 70;
+            for (int i = 0; i < ManagerHighscores.SaveLengthMultiplayer * 2; i++)
+            {
+                if (i % 2 != 0 )
+                {
+                    dataGridViewMultiplayer.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                }
+            }
         }
 
         //vraagt of je zeker bent dat je de de singelplayer en/of multiplayer highscores gegefens wil verwijderen

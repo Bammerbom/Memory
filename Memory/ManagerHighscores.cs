@@ -28,7 +28,7 @@ namespace Memory
             }
         }
 
-    //Gegevens Highscores opslaan 
+        //Gegevens Highscores opslaan 
         public static void SingleplayerSave()
         {
             //toevoegen en lege lijnen verwijderen:
@@ -44,11 +44,38 @@ namespace Memory
             {
                 for (int sort = 0; sort < lines.Length - 1; sort++)
                 {
+                    bool hoger = false;
                     string[] line = lines[sort].Split('|');
-                    int score1 = Convert.ToInt32(line[1]);
-                    line = lines[sort + 1].Split('|');
-                    int score2 = Convert.ToInt32(line[1]);
-                    if (score1 < score2)
+                    int max = Convert.ToInt32(line[1]);
+                    string[] line2 = lines[sort + 1].Split('|');
+                    int max2 = Convert.ToInt32(line2[1]);
+                    //kijk voor hogere score
+                    if (max == max2)
+                    {
+                        //kijk voor lagere zetten
+                        int zet = Convert.ToInt32(line[2]);
+                        int zet2 = Convert.ToInt32(line2[2]);
+                        if (zet == zet2)
+                        {
+                            //kijk voor kortere tijd
+                            int time = Convert.ToInt32(line[3]);
+                            int time2 = Convert.ToInt32(line2[3]);
+                            if (time > time2)
+                            {
+                                hoger = true;
+                            }
+                        }
+                        else if (zet > zet2)
+                        {
+                            hoger = true;
+                        }
+                    }
+                    else if (max < max2)
+                    {
+                        hoger = true;
+                    }
+                    //als een van de if'en geld voer verplaating uit
+                    if (hoger == true)
                     {
                         temp = lines[sort + 1];
                         lines[sort + 1] = lines[sort];
@@ -71,9 +98,32 @@ namespace Memory
 
         public static void MultiplayerLocalSave()
         {
+            //kijken wie het beste heeft gespeeld:
+            bool Player1won = false;
+            if (BaseGame.Score1 == BaseGame.Score2)
+            {
+                if (BaseGame.Zetten1 <= BaseGame.Zetten2)
+                {
+                    Player1won = true;
+                }
+            }
+            else if (BaseGame.Score1 > BaseGame.Score2)
+            {
+                Player1won = true;
+            }
+             
             //toevoegen en lege lijnen verwijderen:
-            string resultaat = BaseGame.Naam1 + "|" + Convert.ToString(BaseGame.Score1) + "|" + Convert.ToString(BaseGame.Zetten1) + "|" + Convert.ToString(BaseGame.Tijdtotaal)
-                + "|" + BaseGame.Naam2 + "|" + BaseGame.Score2 + "|" + BaseGame.Zetten2;
+            string resultaat = "";
+            if (Player1won == true)
+            {
+                resultaat = BaseGame.Naam1 + "|" + Convert.ToString(BaseGame.Score1) + "|" + Convert.ToString(BaseGame.Zetten1) + "|" + Convert.ToString(BaseGame.Tijdtotaal)
+                + "|" + BaseGame.Naam2 + "|" + Convert.ToString(BaseGame.Score2) + "|" + Convert.ToString(BaseGame.Zetten2);
+            }
+            else
+            {
+                resultaat = BaseGame.Naam2 + "|" + Convert.ToString(BaseGame.Score2) + "|" + Convert.ToString(BaseGame.Zetten2) + "|" + Convert.ToString(BaseGame.Tijdtotaal)
+                + "|" + BaseGame.Naam1 + "|" + Convert.ToString(BaseGame.Score1) + "|" + Convert.ToString(BaseGame.Zetten1);
+            }
             File.WriteAllLines(path2, File.ReadAllLines(path2).Where(l => !string.IsNullOrWhiteSpace(l)));
             File.AppendAllText(path2, resultaat);
             File.AppendAllText(path2, Environment.NewLine);
@@ -85,15 +135,34 @@ namespace Memory
             {
                 for (int sort = 0; sort < lines.Length - 1; sort++)
                 {
+                    bool hoger = false;
                     string[] line = lines[sort].Split('|');
-                    int[] score1 = new int[] { Convert.ToInt32(line[1]), Convert.ToInt32(line[5]) };
-                    int max = score1.Max();
-
-                    line = lines[sort + 1].Split('|');
-                    int[] score2 = new int[] { Convert.ToInt32(line[1]), Convert.ToInt32(line[5]) };
-                    int max2 = score2.Max();
-
-                    if (max < max2)
+                    int score = Convert.ToInt32(line[1]);
+                    string[] line2 = lines[sort + 1].Split('|');
+                    int score2 = Convert.ToInt32(line2[1]);
+                    if (score == score2)
+                    {
+                        int zet = Convert.ToInt32(line[2]);
+                        int zet2 = Convert.ToInt32(line2[2]);
+                        if (zet == zet2)
+                        {
+                            int time = Convert.ToInt32(line[3]);
+                            int time2 = Convert.ToInt32(line2[3]);
+                            if (time > time2)
+                            {
+                                hoger = true;
+                            }
+                        }
+                        else if (zet > zet2)
+                        {
+                            hoger = true;
+                        }
+                    }
+                    else if (score < score2)
+                    {
+                        hoger = true;
+                    }
+                    if (hoger == true)
                     {
                         temp = lines[sort + 1];
                         lines[sort + 1] = lines[sort];
@@ -102,16 +171,19 @@ namespace Memory
                 }
             }
             //haal overbodige info weg
-            if (SaveLengthMultiplayer < File.ReadLines(path2).Count()) {
+            if (SaveLengthMultiplayer < File.ReadLines(path2).Count())
+            {
                 string[] newlines = new string[SaveLengthMultiplayer];
                 Array.Copy(lines, 0, newlines, 0, SaveLengthMultiplayer);
                 File.WriteAllLines(path2, newlines);
-            } else {
+            }
+            else
+            {
                 File.WriteAllLines(path2, lines);
             }
         }
 
-    //load tabbelen FormHighscores
+        //load tabbelen FormHighscores
         static public DataTable GetTableSingelplayer()
         {
             //columns
@@ -150,18 +222,8 @@ namespace Memory
             for (int i = 0; i < File.ReadAllLines(path2).Count(); i++)
             {
                 string[] inhoud = lines[i].Split('|');
-                //speler 1 won
-                if (Convert.ToInt32(inhoud[1]) >= Convert.ToInt32(inhoud[5]))
-                {
-                    table.Rows.Add((i + 1) + ".", inhoud[0], inhoud[1], inhoud[2], inhoud[3]);
-                    table.Rows.Add(" ", inhoud[4], inhoud[5], inhoud[6], null);
-                }
-                //speler 2 won
-                else
-                {
-                    table.Rows.Add((i + 1) + ".", inhoud[4], inhoud[5], inhoud[6], inhoud[3]);
-                    table.Rows.Add(" ", inhoud[0], inhoud[1], inhoud[2], null);
-                }
+                table.Rows.Add((i + 1) + ".", inhoud[0], inhoud[1], inhoud[2], inhoud[3]);
+                table.Rows.Add(" ", inhoud[4], inhoud[5], inhoud[6], null);
             }
             //voeg lege rows toe indien nodig
             for (int i = 0; i < (SaveLengthMultiplayer - lines.Length) * 2; i++) // dit zou anders kunnen gedaan worden!!!!!!!
