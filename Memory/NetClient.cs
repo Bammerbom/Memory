@@ -18,11 +18,15 @@ namespace Memory {
 		}
 
 		public static void SendMessage(string message) {
-			//Send message
-			byte[] bytes = Encoding.UTF8.GetBytes(message);
-			NetworkStream stream = Client.GetStream();  
-			stream.Write(bytes, 0, bytes.Length);
-		}
+            try {
+                //Send message
+                byte[] bytes = Encoding.UTF8.GetBytes(message);
+			    NetworkStream stream = Client.GetStream();  
+		    	stream.Write(bytes, 0, bytes.Length);
+            } catch (Exception e) {
+                Client.Close();
+            }
+        }
 
         public static string ReceiveMessage() {
             byte[] bytes = new byte[ByteSize];
