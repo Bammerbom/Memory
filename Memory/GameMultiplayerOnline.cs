@@ -22,11 +22,9 @@ namespace Memory
                 object[] join = new object[2];
                 join[0] = "join"; //Packet
                 join[1] = Naam; //Naam
-                string pakketje = Utils.ArrayToString(join);
-                NetClient.SendMessage(pakketje);
+                NetClient.SendMessage(Utils.ArrayToString(join));
 
                 //CLIENT krijgt join2
-                Console.WriteLine("Ding A");
                 object[] join2 = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
                 BaseGame.Naam1 = (string) join2[1];
                 BaseGame.InitSpeelveld((int)join2[2], (int)join2[3]);
@@ -39,8 +37,7 @@ namespace Memory
 
                 //HOST krijgt join
                 BaseGame.Naam1 = Naam;
-                string mes = NetServer.ReceiveMessage();
-                object[] join = Utils.StringToArray(mes) as object[];
+                object[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
                 BaseGame.Naam2 = (string) join[1];
 
                 //HOST stuurt join2

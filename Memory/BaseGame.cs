@@ -171,16 +171,18 @@ namespace Memory
         public static async void DraaiKaartenTerug() {
             Terugdraai = true;
             Tijdbeurt = 10; // reset timer
-            await Task.Delay(2000); 
-            ZetOmgedraaid(Kaart1x, Kaart1y, false);
-            ZetOmgedraaid(Kaart2x, Kaart2y, false);
-            Kaartcounter = 0;            
-            Terugdraai = false;
-            Render();
+            await Task.Delay(2000);
+            try {
+                ZetOmgedraaid(Kaart1x, Kaart1y, false);
+                ZetOmgedraaid(Kaart2x, Kaart2y, false);
+                Kaartcounter = 0;
+                Terugdraai = false;
+                Render();
 
-            if (Gamemode == 2) {
-                GameMultiplayerOnline.KlaarVoorVolgendeKlikkaart();
-            }
+                if (Gamemode == 2) {
+                    GameMultiplayerOnline.KlaarVoorVolgendeKlikkaart();
+                }
+            } catch { };
         }
 
         public static void VolgendeBeurt() {
