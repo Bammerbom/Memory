@@ -102,6 +102,7 @@
             // 
             // ThemaComboBox
             // 
+            this.ThemaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ThemaComboBox.FormattingEnabled = true;
             this.ThemaComboBox.Items.AddRange(new object[] {
             "Default",
