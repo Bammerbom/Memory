@@ -151,6 +151,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Pijltjeterug.png" />
+    <None Include="Resources\PijlTerug1.png" />
     <None Include="Resources\PijlTerug.png" />
     <None Include="Resources\Thema2Picturebox1Highscore.png" />
     <None Include="Resources\Thema1Picturebox1Highscore.png" />
@@ -211,6 +213,22 @@
     <None Include="Resources\DisneyStartGameAchtergrond.jpg" />
     <None Include="Resources\Galaxyachtergrondspeelveld.jpg" />
     <None Include="Resources\Icon.bmp" />
+    <None Include="Resources\ArrowBack.png" />
+    <None Include="Resources\ArrowTerug.png" />
+    <None Include="Resources\Button menuSpeel.png" />
+    <None Include="Resources\Button menuCredits.png" />
+    <None Include="Resources\Button menuExit.png" />
+    <None Include="Resources\Button menuHighscores.png" />
+    <None Include="Resources\Button menuLaden.png" />
+    <None Include="Resources\.Button menuAfsluiten.png" />
+    <None Include="Resources\Button menuAfsluiten1.png" />
+    <None Include="Resources\Button menuSpeel1.png" />
+    <None Include="Resources\Button menuSpeel2.png" />
+    <None Include="Resources\Button menuHelp.png" />
+    <None Include="Resources\Bluebutton1233Terugspeelveld.png" />
+    <None Include="Resources\Bluebutton1233TerugStartmenu.png" />
+    <None Include="Resources\Button SpeelveldStart.png" />
+    <None Include="Resources\Button SpeelveldTerug.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

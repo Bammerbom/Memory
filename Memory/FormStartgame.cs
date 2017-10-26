@@ -114,11 +114,12 @@ namespace Memory
             }
         }
 
-        private void buttonTerug_Click(object sender, EventArgs e) {
-            this.Close();
+        private void pictureBoxStartmenuTerug_Click(object sender, EventArgs e)
+        {
+        this.Close();
         }
 
-        private void buttonStart_Click(object sender, EventArgs e) {
+        private void pictureBoxStartmenuStart_Click(object sender, EventArgs e) {
             int h, w;
             BaseGame.Reset(); //Just in case
             if (comboGametype.Text != "Join Multiplayer") {
@@ -203,5 +204,7 @@ namespace Memory
                     return;
             }
         }
+
+       
     }
 }

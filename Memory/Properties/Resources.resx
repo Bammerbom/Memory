@@ -283,9 +283,6 @@
   <data name="Thema2CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema2CreditsAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PijlTerug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PijlTerug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema0Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema0Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -303,5 +300,44 @@
   </data>
   <data name="Thema2Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema2Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArrowBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrowBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArrowTerug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrowTerug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuAfsluiten1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuAfsluiten1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuCredits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuCredits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuHighscores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuHighscores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuLaden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuLaden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_menuSpeel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button menuSpeel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_SpeelveldStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button SpeelveldStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_SpeelveldTerug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button SpeelveldTerug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PijlTerug1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PijlTerug1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pijltjeterug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pijltjeterug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

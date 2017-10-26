@@ -16,45 +16,48 @@ namespace Memory
         {
             InitializeComponent();
         }
-
-        private void ButtonPlay_Click(object sender, EventArgs e)
+        private void pictureBox1Speel_Click(object sender, EventArgs e)
         {
-            FormStartgame startgame = new FormStartgame();
-            startgame.Show();
+            {
+                FormStartgame startgame = new FormStartgame();
+                startgame.Show();
+            }
+        }
+        private void pictureBox5Afsluiten_Click(object sender, EventArgs e)
+        {
+        this.Close();
+           
+        }
+        private void pictureBox3Highscores_Click(object sender, EventArgs e)
+        {
+            {
+                FormHighscores Highscores = new FormHighscores();
+                Highscores.Show();
+            }
         }
 
-        private void ButtonExit_Click(object sender, EventArgs e)
+        private void pictureBox6Help_Click(object sender, EventArgs e)
         {
-            this.Close();
+            {
+                FormHelp Help = new FormHelp();
+                Help.Show();
+            }
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox4Credits_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void ButtonHighscores_Click(object sender, EventArgs e)
-        {
-            FormHighscores Highscores = new FormHighscores();
-            Highscores.Show();
-        }
-
-        private void ButtonHelp_Click(object sender, EventArgs e)
-        {
-            FormHelp Help = new FormHelp();
-            Help.Show();
+            {
+                FormCredits Credits = new FormCredits();
+                Credits.Show();
+            }
         }
 
 
-        private void Button_Credits_Click(object sender, EventArgs e)
+        private void pictureBox2Laden_Click(object sender, EventArgs e)
         {
-            FormCredits Credits = new FormCredits();
-            Credits.Show();
-        }
-        private void ButtonLoad_Click(object sender, EventArgs e)
-        {
-            ManagerSavegames.Loadgame();
+            {
+                ManagerSavegames.Loadgame();
 
+            }
         }
 
         private void ThemaComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -69,5 +72,7 @@ namespace Memory
             ThemaManager.Themanummer = 0;
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "MenuAchtergrond");
         }
+
+        
     }
 }

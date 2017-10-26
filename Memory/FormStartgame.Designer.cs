@@ -29,8 +29,6 @@
             this.comboGametype = new System.Windows.Forms.ComboBox();
             this.titel = new System.Windows.Forms.Label();
             this.textboxNaam1 = new System.Windows.Forms.TextBox();
-            this.buttonTerug = new System.Windows.Forms.Button();
-            this.buttonStart = new System.Windows.Forms.Button();
             this.labelNaam1 = new System.Windows.Forms.Label();
             this.labelNaam2 = new System.Windows.Forms.Label();
             this.textboxNaam2 = new System.Windows.Forms.TextBox();
@@ -40,7 +38,11 @@
             this.textboxIp = new System.Windows.Forms.TextBox();
             this.labelPort = new System.Windows.Forms.Label();
             this.textboxPort = new System.Windows.Forms.NumericUpDown();
+            this.pictureBoxStartmenuStart = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStartmenuTerug = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuTerug)).BeginInit();
             this.SuspendLayout();
             // 
             // comboGametype
@@ -79,28 +81,6 @@
             this.textboxNaam1.Name = "textboxNaam1";
             this.textboxNaam1.Size = new System.Drawing.Size(277, 32);
             this.textboxNaam1.TabIndex = 3;
-            // 
-            // buttonTerug
-            // 
-            this.buttonTerug.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTerug.Location = new System.Drawing.Point(12, 62);
-            this.buttonTerug.Name = "buttonTerug";
-            this.buttonTerug.Size = new System.Drawing.Size(196, 45);
-            this.buttonTerug.TabIndex = 10;
-            this.buttonTerug.Text = "Terug";
-            this.buttonTerug.UseVisualStyleBackColor = true;
-            this.buttonTerug.Click += new System.EventHandler(this.buttonTerug_Click);
-            // 
-            // buttonStart
-            // 
-            this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStart.Location = new System.Drawing.Point(576, 62);
-            this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(196, 45);
-            this.buttonStart.TabIndex = 11;
-            this.buttonStart.Text = "Start";
-            this.buttonStart.UseVisualStyleBackColor = true;
-            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // labelNaam1
             // 
@@ -211,12 +191,36 @@
             0,
             0});
             // 
+            // pictureBoxStartmenuStart
+            // 
+            this.pictureBoxStartmenuStart.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxStartmenuStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxStartmenuStart.Image = global::Memory.Properties.Resources.Button_SpeelveldStart;
+            this.pictureBoxStartmenuStart.Location = new System.Drawing.Point(571, 62);
+            this.pictureBoxStartmenuStart.Name = "pictureBoxStartmenuStart";
+            this.pictureBoxStartmenuStart.Size = new System.Drawing.Size(179, 49);
+            this.pictureBoxStartmenuStart.TabIndex = 23;
+            this.pictureBoxStartmenuStart.TabStop = false;
+            // 
+            // pictureBoxStartmenuTerug
+            // 
+            this.pictureBoxStartmenuTerug.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxStartmenuTerug.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxStartmenuTerug.Image = global::Memory.Properties.Resources.Button_SpeelveldTerug;
+            this.pictureBoxStartmenuTerug.Location = new System.Drawing.Point(45, 62);
+            this.pictureBoxStartmenuTerug.Name = "pictureBoxStartmenuTerug";
+            this.pictureBoxStartmenuTerug.Size = new System.Drawing.Size(177, 49);
+            this.pictureBoxStartmenuTerug.TabIndex = 24;
+            this.pictureBoxStartmenuTerug.TabStop = false;
+            // 
             // FormStartgame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Memory.Properties.Resources.Thema0StartGameAchtergrond;
             this.ClientSize = new System.Drawing.Size(784, 601);
+            this.Controls.Add(this.pictureBoxStartmenuTerug);
+            this.Controls.Add(this.pictureBoxStartmenuStart);
             this.Controls.Add(this.textboxPort);
             this.Controls.Add(this.labelPort);
             this.Controls.Add(this.labelIp);
@@ -225,8 +229,6 @@
             this.Controls.Add(this.labelNaam2);
             this.Controls.Add(this.textboxNaam2);
             this.Controls.Add(this.labelNaam1);
-            this.Controls.Add(this.buttonStart);
-            this.Controls.Add(this.buttonTerug);
             this.Controls.Add(this.comboSpelgrootte);
             this.Controls.Add(this.textboxNaam1);
             this.Controls.Add(this.titel);
@@ -240,6 +242,8 @@
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormStartgame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuTerug)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,8 +254,6 @@
         private System.Windows.Forms.ComboBox comboGametype;
         private System.Windows.Forms.Label titel;
         private System.Windows.Forms.TextBox textboxNaam1;
-        private System.Windows.Forms.Button buttonTerug;
-        private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Label labelNaam1;
         private System.Windows.Forms.Label labelNaam2;
         private System.Windows.Forms.TextBox textboxNaam2;
@@ -261,5 +263,7 @@
         private System.Windows.Forms.TextBox textboxIp;
         private System.Windows.Forms.Label labelPort;
         private System.Windows.Forms.NumericUpDown textboxPort;
+        private System.Windows.Forms.PictureBox pictureBoxStartmenuStart;
+        private System.Windows.Forms.PictureBox pictureBoxStartmenuTerug;
     }
 }

@@ -17,19 +17,13 @@ namespace Memory
             InitializeComponent();
         }
 
-        private void Terug_Knop_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void FormCredits_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "CreditsAchtergrond");
         }
+
+        
     }
 }
