@@ -118,6 +118,7 @@ namespace Memory
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return; 
             BaseGame.Reset();
             BaseGame.ResetVeld();
         }

@@ -19,6 +19,7 @@ namespace Memory
 
         private void ButtonReset_Click(object sender, EventArgs e)
         {
+            if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return;
             this.Close();
             this.Dispose();
             GC.Collect();
@@ -27,9 +28,8 @@ namespace Memory
                 GameSingleplayer.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1);
             }else if (BaseGame.Gamemode == 1) {
                 GameMultiplayerLocal.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2);
-            } else if(BaseGame.Gamemode == 2) {
-                GameMultiplayerOnline.Reset();
-                //GameMultiplayerOnline.Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, BaseGame.Naam2, GameMultiplayerOnline.Host);
+            }else if(BaseGame.Gamemode == 2) {
+                GameMultiplayerOnline.Reset2();
             }
         }
 

@@ -11,7 +11,7 @@ namespace Memory
     class GameMultiplayerOnline
     {
         public static bool Host;
-        public static void Start(int Hoogte, int Breedte, string Naam, bool host) {
+        public static async void Start(int Hoogte, int Breedte, string Naam, bool host) {
             Host = host;
             BaseGame.Gamemode = 2;
 
@@ -23,6 +23,7 @@ namespace Memory
                 join[0] = "join"; //Packet
                 join[1] = Naam; //Naam
                 NetClient.SendMessage(Utils.ArrayToString(join));
+                Console.WriteLine((Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds); //TODO DEBUG
 
                 //CLIENT krijgt join2
                 object[] join2 = Utils.StringToArray(NetClient.ReceiveMessage()) as object[];
@@ -37,6 +38,7 @@ namespace Memory
 
                 //HOST krijgt join
                 BaseGame.Naam1 = Naam;
+                Console.WriteLine((Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds); //TODO DEBUG
                 object[] join = Utils.StringToArray(NetServer.ReceiveMessage()) as object[];
                 BaseGame.Naam2 = (string) join[1];
 
@@ -52,6 +54,11 @@ namespace Memory
             }
 
             BaseGame.InitForm();
+            BaseGame.FormSpeelveld.Button_Opslaan.Hide();
+            BaseGame.FormSpeelveld.Buton_Reset.Hide();
+            BaseGame.FormSpeelveld.restartToolStripMenuItem.HideDropDown();
+            BaseGame.FormSpeelveld.Label_Timer.Hide();
+            BaseGame.FormSpeelveld.Textbox_Timer.Hide();
             
             BaseGame.Gamestate = 1;
             BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = BaseGame.Naam1 + " : ";
@@ -139,21 +146,7 @@ namespace Memory
         public static async void End() {
             BaseGame.Gamestate = 2;
             await Task.Delay(2000);
-            BaseGame.FormSpeelveld.Close();
-            BaseGame.FormSpeelveld.Dispose();
-            GC.Collect();
-            FormEndgame endgame = new FormEndgame();
-            endgame.Show();
-        }
-
-        public static void Exit()
-        {
-            BaseGame.Gamestate = 2;
-            BaseGame.FormSpeelveld.Close();
-            BaseGame.FormSpeelveld.Dispose();
-            GC.Collect();
-            FormEndgame endgame = new FormEndgame();
-            endgame.Show();
+            Exit();
 
             //Als het een client is, wacht op reset packet van host
             if (!Host) {
@@ -169,21 +162,40 @@ namespace Memory
                 //Als er een bericht is binnen gekomen
                 b.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
                     object[] reset = (object[])args.Result;
-                    if((reset[0] as string) == "reset") {
-                        
+                    if ((reset[0] as string) == "reset") {
+                        BaseGame.Reset();
+                        Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam2, false);
                     }
                 };
                 b.RunWorkerAsync();
             }
         }
 
-        public static void Reset() {
+        public static void Exit()
+        {
+            BaseGame.Gamestate = 2;
+            BaseGame.FormSpeelveld.Close();
+            BaseGame.FormSpeelveld.Dispose();
+            GC.Collect();
+            FormEndgame endgame = new FormEndgame();
+            endgame.Show();
+        }
+
+        public static bool Reset() {
+            if (Host) {
+                return false;
+            } else {
+                MessageBox.Show("Alleen de host kan de game opnieuw opstarten", "Memory", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return true;
+            }
+        }
+
+        public static void Reset2() {
             if (Host) {
                 object[] reset = new object[1];
                 reset[0] = "reset";
                 NetServer.SendMessage(Utils.ArrayToString(reset));
-            } else {
-                MessageBox.Show("Alleen de host kan de game opnieuw opstarten", "Memory", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Start(BaseGame.Height, BaseGame.Width, BaseGame.Naam1, true);
             }
         }
 
