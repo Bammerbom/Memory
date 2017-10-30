@@ -22,7 +22,7 @@ namespace Memory
 
         private void FormHelp_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "HelpAchtergrond");
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "HelpAchtergrond");
         }
 
 

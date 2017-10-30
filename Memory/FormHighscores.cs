@@ -25,8 +25,8 @@ namespace Memory
 
         private void FormHighscores_Load(object sender, EventArgs e)
         {
-        this.pictureBox5.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Picturebox1Highscore");
-        this.pictureBox7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Picturebox2Highscore");
+        this.pictureBox5.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox1Highscore");
+        this.pictureBox7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox2Highscore");
 
             //highscores table singelplayer
             ManagerHighscores.CheckHighscoreFiles();

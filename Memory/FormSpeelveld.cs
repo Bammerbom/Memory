@@ -59,7 +59,7 @@ namespace Memory
                     Kaart[x, y] = new PictureBox(); //maakt nieuwe picturebox
                     Kaart[x, y].Name = Kaartnaam;
                     Kaart[x, y].Size = new Size(Convert.ToInt32(xSizeTemp), Convert.ToInt32(ySizeTemp)); //juiste size per speelveld 
-                    Kaart[x, y].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Voorkant");
+                    Kaart[x, y].Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Voorkant");
                     Kaart[x, y].BackgroundImageLayout = ImageLayout.Stretch;
                     Kaart[x, y].BackColor = Color.Transparent;
                     Kaart[x, y].Visible = true;
@@ -132,12 +132,12 @@ namespace Memory
 
         private void FormSpeelveld_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "SpeelveldAchtergrond");
-            if (ThemaManager.Themanummer == 1)
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "SpeelveldAchtergrond");
+            if (ManagerThema.Themanummer == 1)
             {
                 this.pictureBox1.BackColor = System.Drawing.Color.Navy; 
             }
-            else if (ThemaManager.Themanummer == 2)
+            else if (ManagerThema.Themanummer == 2)
             {
                 this.pictureBox1.BackColor = System.Drawing.Color.RoyalBlue;
             }
