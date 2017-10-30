@@ -204,7 +204,7 @@ namespace Memory.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Game_over_lagere_resolutie {
             get {
-                object obj = ResourceManager.GetObject("Game over lagere resolutie", resourceCulture);
+                object obj = ResourceManager.GetObject("Game_over_lagere_resolutie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,6 +215,26 @@ namespace Memory.Properties {
         internal static System.IO.UnmanagedMemoryStream GameOver {
             get {
                 return ResourceManager.GetStream("GameOver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Geluidsicoontje {
+            get {
+                object obj = ResourceManager.GetObject("Geluidsicoontje", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GeluidsicoontjeKruis {
+            get {
+                object obj = ResourceManager.GetObject("GeluidsicoontjeKruis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

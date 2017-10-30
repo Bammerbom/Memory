@@ -73,7 +73,7 @@ namespace Memory
 
         private void FormEndgame_Load(object sender, EventArgs e)
         {
-           
+            Geluid.AchtergrondMuziek();
             if (BaseGame.Gamemode == 0 && BaseGame.Checkwin() == true) //1 speler spel
             {
                 LabelResultatenmatch.Text = "Gefeliciteerd! U heeft gewonnen.\nU heeft een score behaald van " + BaseGame.Score1 + " punten." 
