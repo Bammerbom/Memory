@@ -41,7 +41,6 @@ namespace Memory
 
         public static void Exit()
         {
-            BaseGame.GameResultatenOpslaan();
             BaseGame.Gamestate = 2;
             BaseGame.FormSpeelveld.Close();
             BaseGame.FormSpeelveld.Dispose();
