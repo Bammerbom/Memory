@@ -196,9 +196,6 @@
   <data name="Thema2Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema2Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Game over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema2HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema2HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -229,9 +226,6 @@
   <data name="Thema0MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema0MenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Thema0Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema1Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -246,9 +240,6 @@
   </data>
   <data name="Thema1Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_5240" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\floppy-disks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Picturebox0Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Picturebox0Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,9 +258,6 @@
   </data>
   <data name="Thema0Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VraagtekenHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VraagtekenHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema1HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -342,5 +330,29 @@
   </data>
   <data name="Pijltjeterug" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pijltjeterug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonclick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameOver.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KaartFlick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KaartFlick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KaartGelijk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KaartGelijk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Piano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Piano.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Thema0AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Thema1AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Thema2AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

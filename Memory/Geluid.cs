@@ -65,6 +65,21 @@ namespace Memory
             }
         }
 
+        public static void KaartGelijk()
+        {
+            try
+            {
+                str = (Stream)Properties.Resources.ResourceManager.GetObject("KaartGelijk");
+                player = new SoundPlayer(str);
+                player.Play();
+                
+            }
+            catch
+            {
+                Console.WriteLine("sound_error");
+            }
+        }
+
 
 
 

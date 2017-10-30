@@ -133,9 +133,11 @@ namespace Memory
             //Keer kaart om
             ZetOmgedraaid(x, y, true);
 
+
             Kaartcounter++;
             if (Kaartcounter == 1) {
                 //Sla eerste kaart op
+                Geluid.KaartKlik();
                 Kaart1x = x;
                 Kaart1y = y;
             } else if (Kaartcounter == 2) {
@@ -149,6 +151,7 @@ namespace Memory
 
                 //Kijk of kaarten gelijk zijn
                 if (Speelveld_types[Kaart1x, Kaart1y] == Speelveld_types[Kaart2x, Kaart2y]) {
+                    Geluid.KaartGelijk();
                     if (SpelerAanBeurt == 1) Score1++;  //Voeg 1 bij de score toe
                     if (SpelerAanBeurt == 2) Score2++;
                     Kaartcounter = 0;
@@ -159,6 +162,7 @@ namespace Memory
                         return;
                     }
                 } else {
+                    Geluid.KaartKlik();
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
                 }
                 Render();
@@ -270,12 +274,26 @@ namespace Memory
             string kaartnaam = "Kaart" + x + "" + y; //zet kaartnaam in string voor gebruik in
             PictureBox box = ((PictureBox)FormSpeelveld.Controls[kaartnaam]);
             if (omgedraaid == true) {    //check of de kaart is omgedraaid
-                int kaarttype = Speelveld_types[x, y];
-                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix +"Kaart" + kaarttype);  //verander plaatje kaart
-                box.SizeMode = PictureBoxSizeMode.Zoom;
+                try
+                {
+                    int kaarttype = Speelveld_types[x, y];
+                    box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Kaart" + kaarttype);  //verander plaatje kaart
+                    box.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                catch
+                {
+                    Console.WriteLine("picture_error");
+                }
             } else {
-                box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Voorkant");
-                box.SizeMode = PictureBoxSizeMode.Zoom;
+                try
+                {
+                    box.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Voorkant");
+                    box.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                catch
+                {
+                    Console.WriteLine("picture_error");
+                }
             }
         }
 

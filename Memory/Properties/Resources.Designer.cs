@@ -181,6 +181,15 @@ namespace Memory.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Buttonclick {
+            get {
+                return ResourceManager.GetStream("Buttonclick", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Game_over {
@@ -201,6 +210,15 @@ namespace Memory.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GameOver {
+            get {
+                return ResourceManager.GetStream("GameOver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap IMG_5240 {
@@ -217,6 +235,24 @@ namespace Memory.Properties {
             get {
                 object obj = ResourceManager.GetObject("IMG_5240 - kopie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream KaartFlick {
+            get {
+                return ResourceManager.GetStream("KaartFlick", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream KaartGelijk {
+            get {
+                return ResourceManager.GetStream("KaartGelijk", resourceCulture);
             }
         }
         
@@ -247,6 +283,15 @@ namespace Memory.Properties {
             get {
                 object obj = ResourceManager.GetObject("OKE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Piano {
+            get {
+                return ResourceManager.GetStream("Piano", resourceCulture);
             }
         }
         
@@ -287,6 +332,15 @@ namespace Memory.Properties {
             get {
                 object obj = ResourceManager.GetObject("Spaceship_starwars", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Thema0AchtergrondMuziek {
+            get {
+                return ResourceManager.GetStream("Thema0AchtergrondMuziek", resourceCulture);
             }
         }
         
@@ -451,6 +505,15 @@ namespace Memory.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Thema1AchtergrondMuziek {
+            get {
+                return ResourceManager.GetStream("Thema1AchtergrondMuziek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Thema1CreditsAchtergrond {
@@ -597,6 +660,15 @@ namespace Memory.Properties {
             get {
                 object obj = ResourceManager.GetObject("Thema1Voorkant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Thema2AchtergrondMuziek {
+            get {
+                return ResourceManager.GetStream("Thema2AchtergrondMuziek", resourceCulture);
             }
         }
         

@@ -152,6 +152,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema2AchtergrondMuziek.wav" />
+    <None Include="Resources\Thema1AchtergrondMuziek.wav" />
+    <None Include="Resources\Thema0AchtergrondMuziek.wav" />
+    <None Include="Resources\Piano.wav" />
     <None Include="Resources\Pijltjeterug.png" />
     <None Include="Resources\PijlTerug1.png" />
     <None Include="Resources\PijlTerug.png" />
@@ -230,6 +234,10 @@
     <None Include="Resources\Bluebutton1233TerugStartmenu.png" />
     <None Include="Resources\Button SpeelveldStart.png" />
     <None Include="Resources\Button SpeelveldTerug.png" />
+    <None Include="Resources\Buttonclick.wav" />
+    <None Include="Resources\GameOver.wav" />
+    <None Include="Resources\KaartFlick.wav" />
+    <None Include="Resources\KaartGelijk.wav" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

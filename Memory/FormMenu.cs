@@ -66,6 +66,7 @@ namespace Memory
 
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
             Geluid.player.Dispose();
+            Geluid.str.Dispose();
             GC.Collect();                
             Geluid.AchtergrondMuziek();
 
