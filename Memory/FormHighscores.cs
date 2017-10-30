@@ -25,13 +25,16 @@ namespace Memory
 
         private void FormHighscores_Load(object sender, EventArgs e)
         {
+        this.pictureBox5.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Picturebox1Highscore");
+        this.pictureBox7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "Picturebox2Highscore");
+
+            //highscores table singelplayer
             ManagerHighscores.CheckHighscoreFiles();
-            Load_Tabbelen();
+        Load_Tabbelen();
         }
 
         public void Load_Tabbelen()
         {
-            //highscores table singelplayer
             dataGridViewSingelplayer.DataSource = ManagerHighscores.GetTableSingelplayer();
             dataGridViewSingelplayer.CurrentCell = null;
             dataGridViewSingelplayer.Columns[0].Width = 35;

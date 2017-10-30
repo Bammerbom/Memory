@@ -114,7 +114,8 @@ namespace Memory
             }
         }
 
-        private void buttonTerug_Click(object sender, EventArgs e) {
+        private void pictureBoxStartmenuTerug_Click_1(object sender, EventArgs e)
+        {
             this.Close();
             this.Dispose();
         }
@@ -127,7 +128,8 @@ namespace Memory
             }
         }
 
-        private void buttonStart_Click(object sender, EventArgs e) {
+        private void pictureBoxStartmenuStart_Click_1(object sender, EventArgs e)
+        {
             int h, w;
             if (comboGametype.Text != "Join Multiplayer") {
                 switch (comboSpelgrootte.Text) {
@@ -213,7 +215,10 @@ namespace Memory
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
+
             }
         }
+
+        
     }
 }

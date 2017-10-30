@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Terug_Knop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,19 +35,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Picturebox1Credits = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Picturebox1Credits)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Terug_Knop
-            // 
-            this.Terug_Knop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.Terug_Knop.Location = new System.Drawing.Point(166, 375);
-            this.Terug_Knop.Margin = new System.Windows.Forms.Padding(2);
-            this.Terug_Knop.Name = "Terug_Knop";
-            this.Terug_Knop.Size = new System.Drawing.Size(158, 54);
-            this.Terug_Knop.TabIndex = 0;
-            this.Terug_Knop.Text = "Terug";
-            this.Terug_Knop.UseVisualStyleBackColor = true;
-            this.Terug_Knop.Click += new System.EventHandler(this.Terug_Knop_Click);
             // 
             // label1
             // 
@@ -127,11 +116,23 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Gerlof Prins";
             // 
+            // Picturebox1Credits
+            // 
+            this.Picturebox1Credits.BackColor = System.Drawing.Color.Transparent;
+            this.Picturebox1Credits.Image = global::Memory.Properties.Resources.Pijltjeterug;
+            this.Picturebox1Credits.Location = new System.Drawing.Point(12, 355);
+            this.Picturebox1Credits.Name = "Picturebox1Credits";
+            this.Picturebox1Credits.Size = new System.Drawing.Size(151, 86);
+            this.Picturebox1Credits.TabIndex = 16;
+            this.Picturebox1Credits.TabStop = false;
+            
+            // 
             // FormCredits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(474, 440);
+            this.Controls.Add(this.Picturebox1Credits);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -139,20 +140,18 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Terug_Knop);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FormCredits";
             this.Text = "Credits";
             this.Load += new System.EventHandler(this.FormCredits_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Picturebox1Credits)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Terug_Knop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -160,5 +159,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox Picturebox1Credits;
     }
 }

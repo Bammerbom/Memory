@@ -29,92 +29,107 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
-            this.ButtonPlay = new System.Windows.Forms.Button();
-            this.ButtonLoad = new System.Windows.Forms.Button();
-            this.ButtonHighscores = new System.Windows.Forms.Button();
-            this.ButtonHelp = new System.Windows.Forms.Button();
-            this.ButtonExit = new System.Windows.Forms.Button();
-            this.Button_Credits = new System.Windows.Forms.Button();
-            this.ThemaComboBox = new System.Windows.Forms.ComboBox();
+            this.ThemaBox = new System.Windows.Forms.ComboBox();
+            this.pictureBox2Laden = new System.Windows.Forms.PictureBox();
+            this.pictureBox3Highscores = new System.Windows.Forms.PictureBox();
+            this.pictureBox4Credits = new System.Windows.Forms.PictureBox();
+            this.pictureBox1Speel = new System.Windows.Forms.PictureBox();
+            this.pictureBox5Afsluiten = new System.Windows.Forms.PictureBox();
+            this.pictureBox6Help = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Laden)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3Highscores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4Credits)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Speel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5Afsluiten)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6Help)).BeginInit();
             this.SuspendLayout();
             // 
-            // ButtonPlay
+
+            // ThemaBox
             // 
-            this.ButtonPlay.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonPlay.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonPlay.Location = new System.Drawing.Point(155, 83);
-            this.ButtonPlay.Name = "ButtonPlay";
-            this.ButtonPlay.Size = new System.Drawing.Size(161, 46);
-            this.ButtonPlay.TabIndex = 1;
-            this.ButtonPlay.Text = "Speel";
-            this.ButtonPlay.UseVisualStyleBackColor = false;
-            this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
-            // 
-            // ButtonLoad
-            // 
-            this.ButtonLoad.Location = new System.Drawing.Point(155, 135);
-            this.ButtonLoad.Name = "ButtonLoad";
-            this.ButtonLoad.Size = new System.Drawing.Size(161, 46);
-            this.ButtonLoad.TabIndex = 2;
-            this.ButtonLoad.Text = "Laden";
-            this.ButtonLoad.UseVisualStyleBackColor = true;
-            this.ButtonLoad.Click += new System.EventHandler(this.ButtonLoad_Click);
-            // 
-            // ButtonHighscores
-            // 
-            this.ButtonHighscores.Location = new System.Drawing.Point(155, 187);
-            this.ButtonHighscores.Name = "ButtonHighscores";
-            this.ButtonHighscores.Size = new System.Drawing.Size(161, 46);
-            this.ButtonHighscores.TabIndex = 3;
-            this.ButtonHighscores.Text = "Highscores";
-            this.ButtonHighscores.UseVisualStyleBackColor = true;
-            this.ButtonHighscores.Click += new System.EventHandler(this.ButtonHighscores_Click);
-            // 
-            // ButtonHelp
-            // 
-            this.ButtonHelp.Location = new System.Drawing.Point(155, 239);
-            this.ButtonHelp.Name = "ButtonHelp";
-            this.ButtonHelp.Size = new System.Drawing.Size(161, 46);
-            this.ButtonHelp.TabIndex = 4;
-            this.ButtonHelp.Text = "Help";
-            this.ButtonHelp.UseVisualStyleBackColor = true;
-            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
-            // 
-            // ButtonExit
-            // 
-            this.ButtonExit.Location = new System.Drawing.Point(155, 343);
-            this.ButtonExit.Name = "ButtonExit";
-            this.ButtonExit.Size = new System.Drawing.Size(161, 46);
-            this.ButtonExit.TabIndex = 5;
-            this.ButtonExit.Text = "Afsluiten";
-            this.ButtonExit.UseVisualStyleBackColor = true;
-            this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
-            // 
-            // Button_Credits
-            // 
-            this.Button_Credits.Location = new System.Drawing.Point(155, 291);
-            this.Button_Credits.Name = "Button_Credits";
-            this.Button_Credits.Size = new System.Drawing.Size(161, 46);
-            this.Button_Credits.TabIndex = 7;
-            this.Button_Credits.Text = "Credits";
-            this.Button_Credits.UseVisualStyleBackColor = true;
-            this.Button_Credits.Click += new System.EventHandler(this.Button_Credits_Click);
-            // 
-            // ThemaComboBox
-            // 
-            this.ThemaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ThemaComboBox.FormattingEnabled = true;
-            this.ThemaComboBox.Items.AddRange(new object[] {
+            this.ThemaBox.FormattingEnabled = true;
+            this.ThemaBox.Items.AddRange(new object[] {
             "Default",
             "Disney",
             "StarWars"});
-            this.ThemaComboBox.Location = new System.Drawing.Point(0, 0);
-            this.ThemaComboBox.MaxDropDownItems = 3;
-            this.ThemaComboBox.Name = "ThemaComboBox";
-            this.ThemaComboBox.Size = new System.Drawing.Size(121, 32);
-            this.ThemaComboBox.TabIndex = 8;
-            this.ThemaComboBox.Text = "Thema";
-            this.ThemaComboBox.SelectedIndexChanged += new System.EventHandler(this.ThemaComboBox_SelectedIndexChanged);
+            this.ThemaBox.Location = new System.Drawing.Point(3, 2);
+            this.ThemaBox.MaxDropDownItems = 3;
+            this.ThemaBox.Name = "ThemaBox";
+            this.ThemaBox.Size = new System.Drawing.Size(121, 32);
+            this.ThemaBox.TabIndex = 8;
+            this.ThemaBox.Text = "Thema";
+            this.ThemaBox.SelectedIndexChanged += new System.EventHandler(this.ThemaComboBox_SelectedIndexChanged);
+            // 
+            // pictureBox2Laden
+            // 
+            this.pictureBox2Laden.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2Laden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2Laden.Image = global::Memory.Properties.Resources.Button_menuLaden;
+            this.pictureBox2Laden.Location = new System.Drawing.Point(145, 100);
+            this.pictureBox2Laden.Name = "pictureBox2Laden";
+            this.pictureBox2Laden.Size = new System.Drawing.Size(185, 48);
+            this.pictureBox2Laden.TabIndex = 10;
+            this.pictureBox2Laden.TabStop = false;
+            this.pictureBox2Laden.Click += new System.EventHandler(this.pictureBox2Laden_Click);
+            // 
+            // pictureBox3Highscores
+            // 
+            this.pictureBox3Highscores.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3Highscores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3Highscores.Image = global::Memory.Properties.Resources.Button_menuHighscores;
+            this.pictureBox3Highscores.Location = new System.Drawing.Point(145, 154);
+            this.pictureBox3Highscores.Name = "pictureBox3Highscores";
+            this.pictureBox3Highscores.Size = new System.Drawing.Size(185, 50);
+            this.pictureBox3Highscores.TabIndex = 11;
+            this.pictureBox3Highscores.TabStop = false;
+            this.pictureBox3Highscores.Click += new System.EventHandler(this.pictureBox3Highscores_Click);
+            // 
+            // pictureBox4Credits
+            // 
+            this.pictureBox4Credits.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4Credits.Image = global::Memory.Properties.Resources.Button_menuCredits;
+            this.pictureBox4Credits.Location = new System.Drawing.Point(145, 210);
+            this.pictureBox4Credits.Name = "pictureBox4Credits";
+            this.pictureBox4Credits.Size = new System.Drawing.Size(185, 51);
+            this.pictureBox4Credits.TabIndex = 12;
+            this.pictureBox4Credits.TabStop = false;
+            this.pictureBox4Credits.Click += new System.EventHandler(this.pictureBox4Credits_Click);
+            // 
+            // pictureBox1Speel
+            // 
+            this.pictureBox1Speel.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Speel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1Speel.Image = global::Memory.Properties.Resources.Button_menuSpeel2;
+            this.pictureBox1Speel.Location = new System.Drawing.Point(145, 45);
+            this.pictureBox1Speel.Name = "pictureBox1Speel";
+            this.pictureBox1Speel.Size = new System.Drawing.Size(185, 49);
+            this.pictureBox1Speel.TabIndex = 13;
+            this.pictureBox1Speel.TabStop = false;
+            this.pictureBox1Speel.Click += new System.EventHandler(this.pictureBox1Speel_Click);
+            // 
+            // pictureBox5Afsluiten
+            // 
+            this.pictureBox5Afsluiten.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5Afsluiten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5Afsluiten.Image = global::Memory.Properties.Resources.Button_menuAfsluiten1;
+            this.pictureBox5Afsluiten.Location = new System.Drawing.Point(145, 323);
+            this.pictureBox5Afsluiten.Name = "pictureBox5Afsluiten";
+            this.pictureBox5Afsluiten.Size = new System.Drawing.Size(185, 48);
+            this.pictureBox5Afsluiten.TabIndex = 14;
+            this.pictureBox5Afsluiten.TabStop = false;
+            this.pictureBox5Afsluiten.Click += new System.EventHandler(this.pictureBox5Afsluiten_Click);
+            // 
+            // pictureBox6Help
+            // 
+            this.pictureBox6Help.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6Help.Image = global::Memory.Properties.Resources.Button_menuHelp;
+            this.pictureBox6Help.Location = new System.Drawing.Point(145, 267);
+            this.pictureBox6Help.Name = "pictureBox6Help";
+            this.pictureBox6Help.Size = new System.Drawing.Size(185, 50);
+            this.pictureBox6Help.TabIndex = 15;
+            this.pictureBox6Help.TabStop = false;
+            this.pictureBox6Help.Click += new System.EventHandler(this.pictureBox6Help_Click);
             // 
             // FormMenu
             // 
@@ -122,13 +137,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(476, 409);
-            this.Controls.Add(this.ThemaComboBox);
-            this.Controls.Add(this.Button_Credits);
-            this.Controls.Add(this.ButtonExit);
-            this.Controls.Add(this.ButtonHelp);
-            this.Controls.Add(this.ButtonHighscores);
-            this.Controls.Add(this.ButtonLoad);
-            this.Controls.Add(this.ButtonPlay);
+            this.Controls.Add(this.pictureBox6Help);
+            this.Controls.Add(this.pictureBox5Afsluiten);
+            this.Controls.Add(this.pictureBox1Speel);
+            this.Controls.Add(this.pictureBox4Credits);
+            this.Controls.Add(this.pictureBox3Highscores);
+            this.Controls.Add(this.pictureBox2Laden);
+            this.Controls.Add(this.ThemaBox);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -139,18 +154,24 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Laden)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3Highscores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4Credits)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Speel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5Afsluiten)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6Help)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button ButtonPlay;
-        private System.Windows.Forms.Button ButtonLoad;
-        private System.Windows.Forms.Button ButtonHighscores;
-        private System.Windows.Forms.Button ButtonHelp;
-        private System.Windows.Forms.Button ButtonExit;
-        private System.Windows.Forms.Button Button_Credits;
-        private System.Windows.Forms.ComboBox ThemaComboBox;
+        private System.Windows.Forms.PictureBox pictureBox2Laden;
+        private System.Windows.Forms.PictureBox pictureBox3Highscores;
+        private System.Windows.Forms.PictureBox pictureBox4Credits;
+        private System.Windows.Forms.PictureBox pictureBox1Speel;
+        private System.Windows.Forms.PictureBox pictureBox5Afsluiten;
+        private System.Windows.Forms.PictureBox pictureBox6Help;
+        private System.Windows.Forms.ComboBox ThemaBox;
     }
 }
 
