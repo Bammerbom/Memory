@@ -152,9 +152,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema2AchtergrondMuziek.wav" />
     <None Include="Resources\Thema2Kaart3.png" />
     <None Include="Resources\Thema1Kaart7.png" />
-    <None Include="Resources\Thema2AchtergrondMuziek.wav" />
     <None Include="Resources\Thema1AchtergrondMuziek.wav" />
     <None Include="Resources\Thema0AchtergrondMuziek.wav" />
     <None Include="Resources\Piano.wav" />
