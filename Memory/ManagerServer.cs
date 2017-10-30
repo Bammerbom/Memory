@@ -54,6 +54,7 @@ namespace Memory {
             else {
                 Console.WriteLine("> DISCONNECT (NORMAL)");
             }
+            BaseGame.Exitgame();
         }
     }
 }

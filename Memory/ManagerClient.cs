@@ -13,12 +13,22 @@ namespace Memory {
 
         public static bool Client(string ip, int port) {
             try {
-                NetClient.Start(ip, port, PacketSize);
+                NetClient.Start(ServerDisconnect, ip, port, PacketSize);
                 return true;
             } catch (Exception ex) {
                 MessageBox.Show(ex.Message);
                 return false;
             }
+        }
+
+        public static void ServerDisconnect(string error) {
+            if (error != null) {
+                Console.WriteLine("> DISCONNECT (ERROR)");
+                Console.WriteLine(error);
+            } else {
+                Console.WriteLine("> DISCONNECT (NORMAL)");
+            }
+            BaseGame.Exitgame();
         }
     }
 }
