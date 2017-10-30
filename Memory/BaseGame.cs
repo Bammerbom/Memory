@@ -95,7 +95,7 @@ namespace Memory
 
         public static void InitForm() {
             FormSpeelveld = new FormSpeelveld();
-            FormSpeelveld.ShowDialog();
+            FormSpeelveld.Show();
 
 
 
@@ -122,7 +122,7 @@ namespace Memory
             Render();
         }
 
-        public static void KaartKlik(int x, int y, bool multi = true) { //multi wordt naar false gezet om een infinite loop te voorkomen
+        public static void KaartKlik(int x, int y, bool multi = true) { //multi staat voor multiplayer en wordt naar false gezet om een infinite loop te voorkomen
             if (Speelveld_omgedraaid[x, y] == true) return; //Negeer klikken op kaart als de kaart al omgedraait is
             if (Kaartcounter == 2) return; //Negeer als er al 2 kaarten omgedraait zijn
 
