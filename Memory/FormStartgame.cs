@@ -114,12 +114,13 @@ namespace Memory
             }
         }
 
-        private void pictureBoxStartmenuTerug_Click(object sender, EventArgs e)
+        private void pictureBoxStartmenuTerug_Click_1(object sender, EventArgs e)
         {
-        this.Close();
+            this.Close();
         }
 
-        private void pictureBoxStartmenuStart_Click(object sender, EventArgs e) {
+        private void pictureBoxStartmenuStart_Click_1(object sender, EventArgs e)
+        {
             int h, w;
             BaseGame.Reset(); //Just in case
             if (comboGametype.Text != "Join Multiplayer") {
@@ -202,9 +203,10 @@ namespace Memory
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
+
             }
         }
 
-       
+        
     }
 }

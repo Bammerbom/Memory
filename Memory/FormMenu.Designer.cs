@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
-            this.ThemaComboBox = new System.Windows.Forms.ComboBox();
+            this.ThemaBox = new System.Windows.Forms.ComboBox();
             this.pictureBox2Laden = new System.Windows.Forms.PictureBox();
             this.pictureBox3Highscores = new System.Windows.Forms.PictureBox();
             this.pictureBox4Credits = new System.Windows.Forms.PictureBox();
@@ -44,20 +44,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6Help)).BeginInit();
             this.SuspendLayout();
             // 
-            // ThemaComboBox
+            // ThemaBox
             // 
-            this.ThemaComboBox.FormattingEnabled = true;
-            this.ThemaComboBox.Items.AddRange(new object[] {
+            this.ThemaBox.FormattingEnabled = true;
+            this.ThemaBox.Items.AddRange(new object[] {
             "Default",
             "Disney",
             "StarWars"});
-            this.ThemaComboBox.Location = new System.Drawing.Point(0, 0);
-            this.ThemaComboBox.MaxDropDownItems = 3;
-            this.ThemaComboBox.Name = "ThemaComboBox";
-            this.ThemaComboBox.Size = new System.Drawing.Size(121, 32);
-            this.ThemaComboBox.TabIndex = 8;
-            this.ThemaComboBox.Text = "Thema";
-            this.ThemaComboBox.SelectedIndexChanged += new System.EventHandler(this.ThemaComboBox_SelectedIndexChanged);
+            this.ThemaBox.Location = new System.Drawing.Point(3, 2);
+            this.ThemaBox.MaxDropDownItems = 3;
+            this.ThemaBox.Name = "ThemaBox";
+            this.ThemaBox.Size = new System.Drawing.Size(121, 32);
+            this.ThemaBox.TabIndex = 8;
+            this.ThemaBox.Text = "Thema";
+            this.ThemaBox.SelectedIndexChanged += new System.EventHandler(this.ThemaComboBox_SelectedIndexChanged);
             // 
             // pictureBox2Laden
             // 
@@ -142,7 +142,7 @@
             this.Controls.Add(this.pictureBox4Credits);
             this.Controls.Add(this.pictureBox3Highscores);
             this.Controls.Add(this.pictureBox2Laden);
-            this.Controls.Add(this.ThemaComboBox);
+            this.Controls.Add(this.ThemaBox);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -164,13 +164,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox ThemaComboBox;
         private System.Windows.Forms.PictureBox pictureBox2Laden;
         private System.Windows.Forms.PictureBox pictureBox3Highscores;
         private System.Windows.Forms.PictureBox pictureBox4Credits;
         private System.Windows.Forms.PictureBox pictureBox1Speel;
         private System.Windows.Forms.PictureBox pictureBox5Afsluiten;
         private System.Windows.Forms.PictureBox pictureBox6Help;
+        private System.Windows.Forms.ComboBox ThemaBox;
     }
 }
 

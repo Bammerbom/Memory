@@ -201,6 +201,7 @@
             this.pictureBoxStartmenuStart.Size = new System.Drawing.Size(179, 49);
             this.pictureBoxStartmenuStart.TabIndex = 23;
             this.pictureBoxStartmenuStart.TabStop = false;
+            this.pictureBoxStartmenuStart.Click += new System.EventHandler(this.pictureBoxStartmenuStart_Click_1);
             // 
             // pictureBoxStartmenuTerug
             // 
@@ -212,6 +213,7 @@
             this.pictureBoxStartmenuTerug.Size = new System.Drawing.Size(177, 49);
             this.pictureBoxStartmenuTerug.TabIndex = 24;
             this.pictureBoxStartmenuTerug.TabStop = false;
+            this.pictureBoxStartmenuTerug.Click += new System.EventHandler(this.pictureBoxStartmenuTerug_Click_1);
             // 
             // FormStartgame
             // 
