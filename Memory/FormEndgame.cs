@@ -45,13 +45,13 @@ namespace Memory
             GC.Collect();
             BaseGame.Reset();
             FormStartgame startgame = new FormStartgame();
-            startgame.Show();
+            startgame.ShowDialog();
         }
 
         private void ButtonHighscored_Click(object sender, EventArgs e)
         {
             FormHighscores highscores = new FormHighscores();
-            highscores.Show();
+            highscores.ShowDialog();
         }
 
         private void ButtonHome_Click(object sender, EventArgs e)

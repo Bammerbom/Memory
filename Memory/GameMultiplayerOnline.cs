@@ -178,7 +178,7 @@ namespace Memory
             BaseGame.FormSpeelveld.Dispose();
             GC.Collect();
             FormEndgame endgame = new FormEndgame();
-            endgame.Show();
+            endgame.ShowDialog();
         }
 
         public static bool Reset() {

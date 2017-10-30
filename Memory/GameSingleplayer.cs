@@ -30,13 +30,8 @@ namespace Memory
         }
 
         public static async void End() {
-            BaseGame.Gamestate = 2;
             await Task.Delay(2000);
-            BaseGame.FormSpeelveld.Close();
-            BaseGame.FormSpeelveld.Dispose();
-            GC.Collect();
-            FormEndgame endgame = new FormEndgame();
-            endgame.Show();
+            Exit();
         }
 
         public static void Exit()
@@ -46,7 +41,7 @@ namespace Memory
             BaseGame.FormSpeelveld.Dispose();
             GC.Collect();
             FormEndgame endgame = new FormEndgame();
-            endgame.Show();
+            endgame.ShowDialog();
         }
     }
 }

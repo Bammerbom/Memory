@@ -95,7 +95,7 @@ namespace Memory
 
         public static void InitForm() {
             FormSpeelveld = new FormSpeelveld();
-            FormSpeelveld.Show();
+            FormSpeelveld.ShowDialog();
 
 
 

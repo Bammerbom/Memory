@@ -20,7 +20,7 @@ namespace Memory
         {
             {
                 FormStartgame startgame = new FormStartgame();
-                startgame.Show();
+                startgame.ShowDialog();
             }
         }
         private void pictureBox5Afsluiten_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace Memory
         {
             {
                 FormHighscores Highscores = new FormHighscores();
-                Highscores.Show();
+                Highscores.ShowDialog();
             }
         }
 
@@ -40,14 +40,14 @@ namespace Memory
         {
             {
                 FormHelp Help = new FormHelp();
-                Help.Show();
+                Help.ShowDialog();
             }
         }
         private void pictureBox4Credits_Click(object sender, EventArgs e)
         {
             {
                 FormCredits Credits = new FormCredits();
-                Credits.Show();
+                Credits.ShowDialog();
             }
         }
 
