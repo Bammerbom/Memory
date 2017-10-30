@@ -221,6 +221,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Geluidsicoontje {
+            get {
+                object obj = ResourceManager.GetObject("Geluidsicoontje", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GeluidsicoontjeKruis {
+            get {
+                object obj = ResourceManager.GetObject("GeluidsicoontjeKruis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_5240 {
             get {
                 object obj = ResourceManager.GetObject("IMG_5240", resourceCulture);

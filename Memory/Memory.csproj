@@ -238,6 +238,8 @@
     <None Include="Resources\GameOver.wav" />
     <None Include="Resources\KaartFlick.wav" />
     <None Include="Resources\KaartGelijk.wav" />
+    <None Include="Resources\Geluidsicoontje.png" />
+    <None Include="Resources\GeluidsicoontjeKruis.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
