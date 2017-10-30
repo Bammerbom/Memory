@@ -144,11 +144,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ButtonReset;
-        private System.Windows.Forms.Button ButtonStartgame;
-        private System.Windows.Forms.Button ButtonHighscored;
-        private System.Windows.Forms.Button ButtonHome;
-        private System.Windows.Forms.Label LabelResultatenmatch;
-        private System.Windows.Forms.Button ButtonSluiten;
+        public System.Windows.Forms.Button ButtonReset;
+        public System.Windows.Forms.Button ButtonStartgame;
+        public System.Windows.Forms.Button ButtonHighscored;
+        public System.Windows.Forms.Button ButtonHome;
+        public System.Windows.Forms.Label LabelResultatenmatch;
+        public System.Windows.Forms.Button ButtonSluiten;
     }
 }
