@@ -152,6 +152,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema2Kaart3.png" />
+    <None Include="Resources\Thema1Kaart7.png" />
     <None Include="Resources\Thema2AchtergrondMuziek.wav" />
     <None Include="Resources\Thema1AchtergrondMuziek.wav" />
     <None Include="Resources\Thema0AchtergrondMuziek.wav" />
@@ -189,12 +191,10 @@
     <None Include="Resources\Thema2Kaart6.png" />
     <None Include="Resources\Thema2Kaart5.png" />
     <None Include="Resources\Thema2Kaart4.png" />
-    <None Include="Resources\Thema2Kaart3.png" />
     <None Include="Resources\Thema2Kaart2.png" />
     <None Include="Resources\Thema2Kaart1.png" />
     <None Include="Resources\Thema2Kaart0.png" />
     <None Include="Resources\Thema1Voorkant.png" />
-    <None Include="Resources\Thema1Kaart7.png" />
     <None Include="Resources\Thema1Kaart6.png" />
     <None Include="Resources\Thema1Kaart5.png" />
     <None Include="Resources\Thema1Kaart4.png" />
