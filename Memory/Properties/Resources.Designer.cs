@@ -636,6 +636,16 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema1Kaart7 {
+            get {
+                object obj = ResourceManager.GetObject("Thema1Kaart7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema1MenuAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema1MenuAchtergrond", resourceCulture);
@@ -738,6 +748,16 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema2Kaart2 {
             get {
                 object obj = ResourceManager.GetObject("Thema2Kaart2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2Kaart3 {
+            get {
+                object obj = ResourceManager.GetObject("Thema2Kaart3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

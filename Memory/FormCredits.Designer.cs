@@ -42,6 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
             this.label1.Location = new System.Drawing.Point(119, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -53,6 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.Location = new System.Drawing.Point(162, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -64,6 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label3.Location = new System.Drawing.Point(162, 75);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -75,6 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.Location = new System.Drawing.Point(162, 145);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -86,6 +90,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label5.Location = new System.Drawing.Point(162, 122);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -97,6 +102,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label6.Location = new System.Drawing.Point(162, 51);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -108,6 +114,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label7.Location = new System.Drawing.Point(162, 169);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -125,7 +132,6 @@
             this.Picturebox1Credits.Size = new System.Drawing.Size(151, 86);
             this.Picturebox1Credits.TabIndex = 16;
             this.Picturebox1Credits.TabStop = false;
-            
             // 
             // FormCredits
             // 
