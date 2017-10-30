@@ -65,6 +65,9 @@ namespace Memory
             ManagerThema.VeranderThema(ThemaBox.Text);
 
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
+            Geluid.player.Dispose();
+            GC.Collect();                
+            Geluid.AchtergrondMuziek();
 
         }
 
@@ -73,6 +76,7 @@ namespace Memory
             ManagerThema.Themaprefix = "Thema0";
             ManagerThema.Themanummer = 0;
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
+            Geluid.AchtergrondMuziek();
         }
 
         

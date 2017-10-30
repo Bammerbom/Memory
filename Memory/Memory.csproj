@@ -59,6 +59,7 @@
     </Compile>
     <Compile Include="GameMultiplayerOnline.cs" />
     <Compile Include="GameMultiplayerLocal.cs" />
+    <Compile Include="Geluid.cs" />
     <Compile Include="ManagerHighscores.cs" />
     <Compile Include="GameSingleplayer.cs" />
     <Compile Include="FormHelp.cs">
