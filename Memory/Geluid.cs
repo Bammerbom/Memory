@@ -54,10 +54,7 @@ namespace Memory
                 str = (Stream)Properties.Resources.ResourceManager.GetObject("GameOver");
                 player = new SoundPlayer(str);
                 player.Play();
-                if (BaseGame.Kaartcounter == 2)
-                {
-                    player.Dispose();
-                }
+               
             }
             catch
             {
