@@ -221,6 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Memory.Properties.Resources.Thema0StartGameAchtergrond;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 601);
             this.Controls.Add(this.pictureBoxStartmenuTerug);
             this.Controls.Add(this.pictureBoxStartmenuStart);
