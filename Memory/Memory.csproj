@@ -109,7 +109,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ThemaManager.cs" />
+    <Compile Include="ManagerThema.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="FormCredits.resx">
       <DependentUpon>FormCredits.cs</DependentUpon>

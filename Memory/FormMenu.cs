@@ -62,17 +62,17 @@ namespace Memory
 
         private void ThemaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ThemaManager.VeranderThema(ThemaBox.Text);
+            ManagerThema.VeranderThema(ThemaBox.Text);
 
-            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "MenuAchtergrond");
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
 
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
-            ThemaManager.Themaprefix = "Thema0";
-            ThemaManager.Themanummer = 0;
-            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ThemaManager.Themaprefix + "MenuAchtergrond");
+            ManagerThema.Themaprefix = "Thema0";
+            ManagerThema.Themanummer = 0;
+            this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
         }
 
         

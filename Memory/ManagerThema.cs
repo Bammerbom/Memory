@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Memory
 {
-    class ThemaManager
+    class ManagerThema
     {
 
         public static int Themanummer ;
