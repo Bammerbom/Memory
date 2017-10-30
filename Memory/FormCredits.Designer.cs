@@ -132,11 +132,13 @@
             this.Picturebox1Credits.Size = new System.Drawing.Size(151, 86);
             this.Picturebox1Credits.TabIndex = 16;
             this.Picturebox1Credits.TabStop = false;
+            this.Picturebox1Credits.Click += new System.EventHandler(this.Picturebox1Credits_Click);
             // 
             // FormCredits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(474, 440);
             this.Controls.Add(this.Picturebox1Credits);
             this.Controls.Add(this.label7);

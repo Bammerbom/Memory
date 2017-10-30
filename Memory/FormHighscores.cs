@@ -18,7 +18,7 @@ namespace Memory
             InitializeComponent();
         }
 
-        private void ButtonBack_Click(object sender, EventArgs e)
+        private void pictureBox1Terug_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -85,5 +85,7 @@ namespace Memory
             this.Dispose();
             GC.Collect();
         }
+
+        
     }
 }
