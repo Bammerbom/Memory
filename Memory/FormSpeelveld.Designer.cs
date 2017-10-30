@@ -55,8 +55,10 @@
             this.Label_Zetten_Speler_2 = new System.Windows.Forms.Label();
             this.Textbox_Zetten_Speler_2 = new System.Windows.Forms.TextBox();
             this.Buton_Reset = new System.Windows.Forms.Button();
+            this.Volume = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Volume)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -256,7 +258,7 @@
             // Button_Opslaan
             // 
             this.Button_Opslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Opslaan.Location = new System.Drawing.Point(55, 716);
+            this.Button_Opslaan.Location = new System.Drawing.Point(55, 694);
             this.Button_Opslaan.Name = "Button_Opslaan";
             this.Button_Opslaan.Size = new System.Drawing.Size(221, 77);
             this.Button_Opslaan.TabIndex = 13;
@@ -267,7 +269,7 @@
             // Button_Exit
             // 
             this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Exit.Location = new System.Drawing.Point(55, 830);
+            this.Button_Exit.Location = new System.Drawing.Point(55, 777);
             this.Button_Exit.Name = "Button_Exit";
             this.Button_Exit.Size = new System.Drawing.Size(221, 77);
             this.Button_Exit.TabIndex = 14;
@@ -306,6 +308,18 @@
             this.Buton_Reset.UseVisualStyleBackColor = true;
             this.Buton_Reset.Click += new System.EventHandler(this.Buton_Reset_Click);
             // 
+            // Volume
+            // 
+            this.Volume.BackColor = System.Drawing.Color.White;
+            this.Volume.BackgroundImage = global::Memory.Properties.Resources.Geluidsicoontje;
+            this.Volume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Volume.Location = new System.Drawing.Point(23, 909);
+            this.Volume.Name = "Volume";
+            this.Volume.Size = new System.Drawing.Size(50, 50);
+            this.Volume.TabIndex = 33;
+            this.Volume.TabStop = false;
+            this.Volume.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // FormSpeelveld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,6 +328,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.Controls.Add(this.Volume);
             this.Controls.Add(this.Buton_Reset);
             this.Controls.Add(this.Textbox_Zetten_Speler_2);
             this.Controls.Add(this.Label_Zetten_Speler_2);
@@ -342,6 +357,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Volume)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +391,6 @@
         public System.Windows.Forms.TextBox Textbox_Zetten_Speler_2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         public System.Windows.Forms.Button Buton_Reset;
+        private System.Windows.Forms.PictureBox Volume;
     }
 }

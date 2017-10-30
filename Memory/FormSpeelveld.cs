@@ -15,6 +15,7 @@ namespace Memory
 
         public FormSpeelveld()
         {
+
             double yTussenruimte = 10;
             double xTussenruimte = 60;
             double xSizeTemp = 150;
@@ -78,6 +79,14 @@ namespace Memory
                 }
                 yLocation += Convert.ToInt32(ySizeTemp) + Convert.ToInt32(yTussenruimte); //nieuw y coördinaat
             }
+            if (Geluid.Volume == true)
+            {
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
+            }
+            else
+            {
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
+            }
         }
 
         private void Button_Exit_Click(object sender, EventArgs e) {
@@ -131,7 +140,8 @@ namespace Memory
 
 
         private void FormSpeelveld_Load(object sender, EventArgs e)
-        {
+        {        
+
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "SpeelveldAchtergrond");
             if (ManagerThema.Themanummer == 1)
             {
@@ -147,5 +157,19 @@ namespace Memory
             }
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (Geluid.Volume == true)
+            {
+                Geluid.Volume = false;
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
+                Geluid.player.Stop();
+            }
+            else
+            {
+                Geluid.Volume = true;
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
+            }
+        }
     }
 }

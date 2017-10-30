@@ -204,7 +204,7 @@ namespace Memory.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Game_over_lagere_resolutie {
             get {
-                object obj = ResourceManager.GetObject("Game over lagere resolutie", resourceCulture);
+                object obj = ResourceManager.GetObject("Game_over_lagere_resolutie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

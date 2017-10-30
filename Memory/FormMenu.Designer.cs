@@ -36,15 +36,16 @@
             this.pictureBox1Speel = new System.Windows.Forms.PictureBox();
             this.pictureBox5Afsluiten = new System.Windows.Forms.PictureBox();
             this.pictureBox6Help = new System.Windows.Forms.PictureBox();
+            this.Volume = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Laden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3Highscores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4Credits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Speel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5Afsluiten)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6Help)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Volume)).BeginInit();
             this.SuspendLayout();
             // 
-
             // ThemaBox
             // 
             this.ThemaBox.FormattingEnabled = true;
@@ -131,12 +132,25 @@
             this.pictureBox6Help.TabStop = false;
             this.pictureBox6Help.Click += new System.EventHandler(this.pictureBox6Help_Click);
             // 
+            // Volume
+            // 
+            this.Volume.BackColor = System.Drawing.Color.White;
+            this.Volume.BackgroundImage = global::Memory.Properties.Resources.Geluidsicoontje;
+            this.Volume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Volume.Location = new System.Drawing.Point(23, 337);
+            this.Volume.Name = "Volume";
+            this.Volume.Size = new System.Drawing.Size(50, 50);
+            this.Volume.TabIndex = 16;
+            this.Volume.TabStop = false;
+            this.Volume.Click += new System.EventHandler(this.Volume_Click);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(476, 409);
+            this.Controls.Add(this.Volume);
             this.Controls.Add(this.pictureBox6Help);
             this.Controls.Add(this.pictureBox5Afsluiten);
             this.Controls.Add(this.pictureBox1Speel);
@@ -160,6 +174,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Speel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5Afsluiten)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6Help)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Volume)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,6 +187,7 @@
         private System.Windows.Forms.PictureBox pictureBox5Afsluiten;
         private System.Windows.Forms.PictureBox pictureBox6Help;
         private System.Windows.Forms.ComboBox ThemaBox;
+        private System.Windows.Forms.PictureBox Volume;
     }
 }
 

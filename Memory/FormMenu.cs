@@ -74,12 +74,28 @@ namespace Memory
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
+            Geluid.Volume = true;
+            this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
             ManagerThema.Themaprefix = "Thema0";
             ManagerThema.Themanummer = 0;
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
             Geluid.AchtergrondMuziek();
         }
 
-        
+        private void Volume_Click(object sender, EventArgs e)
+        {
+            if (Geluid.Volume == true)
+            {
+                Geluid.Volume = false;
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
+                Geluid.player.Stop();
+            }
+            else
+            {
+                Geluid.Volume = true;
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
+                Geluid.AchtergrondMuziek();
+            }
+        }
     }
 }

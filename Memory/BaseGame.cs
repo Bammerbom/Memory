@@ -256,6 +256,7 @@ namespace Memory
         }
 
         public static void Endgame() {
+            Geluid.GameOver();
             BaseGame.GameResultatenOpslaan();
             if (Gamemode == 0) GameSingleplayer.End();
             else if (Gamemode == 1) GameMultiplayerLocal.End();
@@ -264,6 +265,7 @@ namespace Memory
 
         public static void Exitgame()
         {
+            Geluid.GameOver();
             if (Gamemode == 0) GameSingleplayer.Exit();
             else if (Gamemode == 1) GameMultiplayerLocal.Exit();
             else if (Gamemode == 2) GameMultiplayerOnline.Exit();
