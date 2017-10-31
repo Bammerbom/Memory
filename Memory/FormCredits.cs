@@ -24,6 +24,9 @@ namespace Memory
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "CreditsAchtergrond");
         }
 
-        
+        private void Picturebox1Credits_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

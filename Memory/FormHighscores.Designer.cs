@@ -40,25 +40,27 @@
             this.dataGridViewSingelplayer = new System.Windows.Forms.DataGridView();
             this.dataGridViewMultiplayer = new System.Windows.Forms.DataGridView();
             this.label_HighscoresVerwijderen = new System.Windows.Forms.Label();
+            this.pictureBox1Terug = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonBack
             // 
             this.ButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.ButtonBack.Location = new System.Drawing.Point(11, 752);
+            this.ButtonBack.Location = new System.Drawing.Point(392, 754);
             this.ButtonBack.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonBack.Name = "ButtonBack";
             this.ButtonBack.Size = new System.Drawing.Size(122, 41);
             this.ButtonBack.TabIndex = 0;
             this.ButtonBack.Text = "Terug";
             this.ButtonBack.UseVisualStyleBackColor = true;
-            this.ButtonBack.Click += new System.EventHandler(this.ButtonBack_Click);
+            
             // 
             // Highscores_2spelers
             // 
@@ -83,20 +85,17 @@
             this.pictureBox1highscore.Size = new System.Drawing.Size(314, 284);
             this.pictureBox1highscore.TabIndex = 6;
             this.pictureBox1highscore.TabStop = false;
-           
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(985, 599);
- 
+            // 
+            // pictureBox5
+            // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Location = new System.Drawing.Point(1012, 22);
-
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(226, 158);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
-     
-           
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
@@ -167,6 +166,17 @@
             this.label_HighscoresVerwijderen.Text = "Highscores verwijderen?";
             this.label_HighscoresVerwijderen.Click += new System.EventHandler(this.Label_HighscoresVerwijderen_Click);
             // 
+            // pictureBox1Terug
+            // 
+            this.pictureBox1Terug.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1Terug.Image = global::Memory.Properties.Resources.Pijltjeterug;
+            this.pictureBox1Terug.Location = new System.Drawing.Point(12, 724);
+            this.pictureBox1Terug.Name = "pictureBox1Terug";
+            this.pictureBox1Terug.Size = new System.Drawing.Size(148, 84);
+            this.pictureBox1Terug.TabIndex = 26;
+            this.pictureBox1Terug.TabStop = false;
+            this.pictureBox1Terug.Click += new System.EventHandler(this.pictureBox1Terug_Click);
+            // 
             // FormHighscores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +184,7 @@
             this.BackgroundImage = global::Memory.Properties.Resources.Thema0HighscoresAchtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 804);
+            this.Controls.Add(this.pictureBox1Terug);
             this.Controls.Add(this.label_HighscoresVerwijderen);
             this.Controls.Add(this.dataGridViewMultiplayer);
             this.Controls.Add(this.dataGridViewSingelplayer);
@@ -199,6 +210,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +228,6 @@
         private System.Windows.Forms.DataGridView dataGridViewSingelplayer;
         private System.Windows.Forms.DataGridView dataGridViewMultiplayer;
         private System.Windows.Forms.Label label_HighscoresVerwijderen;
+        private System.Windows.Forms.PictureBox pictureBox1Terug;
     }
 }
