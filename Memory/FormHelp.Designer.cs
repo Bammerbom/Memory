@@ -112,7 +112,6 @@
             this.label4.Size = new System.Drawing.Size(506, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "Het spel memory wordt gespeeld door één of twee spelers.";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -207,7 +206,6 @@
             this.Name = "FormHelp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHelp_FormClosed);
             this.Load += new System.EventHandler(this.FormHelp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
