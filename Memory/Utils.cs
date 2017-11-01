@@ -12,14 +12,25 @@ namespace Memory
 {
     class Utils
     {
+        
         public static Random rand = new Random();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="items"></param>
+        /// <returns></returns>
         public static List<T> ShuffleList<T>(List<T> items)
         {
             items = items.OrderBy(x => rand.Next()).ToList();
             return items;
         }
 
-
+        /// <summary>
+        /// convert een array naar een string door deze te serializen met de soapformatter
+        /// </summary>
+        /// <param name="ar">input array</param>
+        /// <returns>een array in een string</returns>
         public static string ArrayToString(Array ar) //convert alle soorten arrays naar 1 string
         {
             using (MemoryStream ms = new MemoryStream())
@@ -29,7 +40,11 @@ namespace Memory
                 return Encoding.UTF8.GetString(ms.ToArray());
             }
         }
-
+        /// <summary>
+        /// convert een array in een string terug naar een array
+        /// </summary>
+        /// <param name="s">input array in string</param>
+        /// <returns>een array</returns>
         public static object StringToArray(string s)  //convert string terug naar array
         {
             using (MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(s)))
@@ -53,6 +68,14 @@ namespace Memory
         // This constant determines the number of iterations for the password bytes generation function.
         private const int DerivationIterations = 1000;
 
+        /// <summary>
+        /// code van CraigTP
+        /// https://stackoverflow.com/questions/10168240/encrypting-decrypting-a-string-in-c-sharp
+        /// encrypt een string met een wachtwoord. uit dit wachtwoord word een salt en een iv gehaald die worden geprepend in de encryptie. zodat zelfs met het zelfde wachtwoord de encryptie nooit het zelfde output heeft.
+        /// </summary>
+        /// <param name="plainText"> de string die je wilt encrypten</param>
+        /// <param name="passPhrase"> het wachtwoord voor de encryptie</param>
+        /// <returns>encrypted string</returns>
         public static string Encrypt(string plainText, string passPhrase)
         {
             // Salt and IV is randomly generated each time, but is preprended to encrypted cipher text
@@ -89,7 +112,14 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// code van CraigTP
+        /// https://stackoverflow.com/questions/10168240/encrypting-decrypting-a-string-in-c-sharp
+        /// decrypt een geëncrypte string met een wachtwoord. haalt de salt en de iv eerst uit de encryption omdaarmee vervolgens de rest met het wachtwoord te decrypten.
+        /// </summary>
+        /// <param name="cipherText">input geencrypte string om te deencypten</param>
+        /// <param name="passPhrase"> het wachtwoord</param>
+        /// <returns>decrypted string</returns>
         public static string Decrypt(string cipherText, string passPhrase)
         {
             // Get the complete stream of bytes that represent:
@@ -127,7 +157,12 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// code van CraigTP
+        /// https://stackoverflow.com/questions/10168240/encrypting-decrypting-a-string-in-c-sharp
+        /// genereerd 256 cryptoveilge random bits voor gebruik in de encrypt methode
+        /// </summary>
+        /// <returns>256 bits</returns>
         private static byte[] Generate256BitsOfRandomEntropy()
         {
             var randomBytes = new byte[32]; // 32 Bytes will give us 256 bits.

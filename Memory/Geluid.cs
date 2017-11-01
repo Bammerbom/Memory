@@ -78,7 +78,9 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// speelt het geluid af voor 2 kaarten die gelijk zijn.
+        /// </summary>
         public static void KaartGelijk()
         {
             if (Volume == true)
