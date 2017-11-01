@@ -40,6 +40,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,9 +63,9 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Image = global::Memory.Properties.Resources.LabelHelpDefinitief;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 115);
+            this.pictureBox3.Location = new System.Drawing.Point(1, 111);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(874, 596);
+            this.pictureBox3.Size = new System.Drawing.Size(774, 596);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -95,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F);
-            this.label3.Location = new System.Drawing.Point(380, 157);
+            this.label3.Location = new System.Drawing.Point(308, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 35);
             this.label3.TabIndex = 9;
@@ -106,29 +107,30 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(190, 217);
+            this.label4.Location = new System.Drawing.Point(134, 261);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(506, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "Het spel memory wordt gespeeld door één of twee spelers.";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label5.Location = new System.Drawing.Point(190, 241);
+            this.label5.Location = new System.Drawing.Point(108, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(581, 96);
+            this.label5.Size = new System.Drawing.Size(10, 120);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Het doel is om zoveel mogelijk twee dezelfde kaartjes om te draaien.\r\n\r\n\r\n\r\n";
+            this.label5.Text = "\r\n\r\n\r\n\r\n\r\n";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(190, 266);
+            this.label6.Location = new System.Drawing.Point(134, 321);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(447, 24);
             this.label6.TabIndex = 12;
@@ -139,7 +141,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(190, 313);
+            this.label7.Location = new System.Drawing.Point(134, 357);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(561, 24);
             this.label7.TabIndex = 13;
@@ -151,7 +153,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(190, 337);
+            this.label8.Location = new System.Drawing.Point(134, 381);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(588, 144);
             this.label8.TabIndex = 14;
@@ -159,6 +161,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Memory.Properties.Resources.Pijltjeterug;
             this.pictureBox1.Location = new System.Drawing.Point(12, 662);
             this.pictureBox1.Name = "pictureBox1";
@@ -167,6 +170,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label9.Location = new System.Drawing.Point(134, 297);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(542, 24);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Het doel is om zoveel mogelijk dezelfde paar kaartjes te vormen";
+            // 
             // FormHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +188,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -214,6 +229,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
     }
 }
 
