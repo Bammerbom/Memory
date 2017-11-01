@@ -130,8 +130,8 @@ namespace Memory
 
         private void pictureBoxStartmenuStart_Click_1(object sender, EventArgs e)
         {
-            Geluid.player.Stop();
-            Geluid.player.Dispose();
+            Geluid.Player.Stop();
+            Geluid.Player.Dispose();
             GC.Collect();
             int h, w;
             if (comboGametype.Text != "Join Multiplayer") {

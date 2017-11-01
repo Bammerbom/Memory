@@ -165,7 +165,7 @@ namespace Memory
             {
                 Geluid.Volume = false;
                 this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
-                Geluid.player.Stop();
+                Geluid.Player.Stop();
             }
             else
             {

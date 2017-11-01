@@ -100,8 +100,8 @@ namespace Memory
             {
                 MessageBox.Show("error");
             }
-            Geluid.player.Stop();
-            Geluid.player.Dispose();
+            Geluid.Player.Stop();
+            Geluid.Player.Dispose();
             switch(Convert.ToInt32(Loaddata[0]))
             {
                 case 0:  //singleplayer

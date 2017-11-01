@@ -65,7 +65,7 @@ namespace Memory
             ManagerThema.VeranderThema(ThemaBox.Text);
 
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "MenuAchtergrond");
-            Geluid.player.Dispose();
+            Geluid.Player.Dispose();
             Geluid.str.Dispose();
             GC.Collect();                
             Geluid.AchtergrondMuziek();
@@ -88,8 +88,8 @@ namespace Memory
             {
                 Geluid.Volume = false;
                 this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
-                Geluid.player.Stop();
-                Geluid.player.Dispose();
+                Geluid.Player.Stop();
+                Geluid.Player.Dispose();
             }
             else
             {
