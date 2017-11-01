@@ -33,6 +33,7 @@ namespace Memory
         public static int Tijdbeurt;  //de tijd counter voor de tijd die je hebt in een beurt
         public static int Tijdtotaal;  //de totale tijd die het spel in beslag neemt
         public static bool Terugdraai;  // false = er worden geen kaarten terug gedraaid , true = er worden kaarten teruggedraaid
+        public static bool BeurtVerlopen; //true wanneerbeurt is verlopen
 
         //Maakt game klaar voor een nieuwe ronde
         public static void Reset() {
@@ -240,8 +241,9 @@ namespace Memory
                     Zetten2++;
                     FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
                 }
-
-                BaseGame.VolgendeBeurt();
+                BeurtVerlopen = true;
+                VolgendeBeurt();
+                Render();
             }
 
             
