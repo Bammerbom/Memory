@@ -11,6 +11,13 @@ namespace Memory
     class GameMultiplayerOnline
     {
         public static bool Host;
+        /// <summary>
+        /// Deze method start de online multiplayer game
+        /// </summary>
+        /// <param name="Hoogte">Hoogte van het speelveld</param>
+        /// <param name="Breedte">Breedte van het speelveld</param>
+        /// <param name="Naam">De naam van de speler. Dit kan de client of de host zijn</param>
+        /// <param name="host">Bepaald of de speler de client of de host is</param>
         public static async void Start(int Hoogte, int Breedte, string Naam, bool host) {
             Host = host;
             BaseGame.Gamemode = 2;
