@@ -507,6 +507,16 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema0SpeelveldAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema0SpeelveldAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema0StartGameAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema0StartGameAchtergrond", resourceCulture);
@@ -676,6 +686,16 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Thema1SpeelveldAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema1SpeelveldAchtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thema1StartGameAchtergrond {
             get {
                 object obj = ResourceManager.GetObject("Thema1StartGameAchtergrond", resourceCulture);
@@ -828,6 +848,16 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema2Picturebox2Highscore {
             get {
                 object obj = ResourceManager.GetObject("Thema2Picturebox2Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thema2SpeelveldAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("Thema2SpeelveldAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

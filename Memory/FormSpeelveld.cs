@@ -16,6 +16,8 @@ namespace Memory
         public FormSpeelveld()
         {
 
+            
+
             double yTussenruimte = 10;
             double xTussenruimte = 60;
             double xSizeTemp = 150;
@@ -140,21 +142,21 @@ namespace Memory
 
 
         private void FormSpeelveld_Load(object sender, EventArgs e)
-        {        
-
+        {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "SpeelveldAchtergrond");
             if (ManagerThema.Themanummer == 1)
             {
-                this.pictureBox1.BackColor = System.Drawing.Color.Navy; 
+                KleurBox.BackColor = Color.Navy;
             }
             else if (ManagerThema.Themanummer == 2)
             {
-                this.pictureBox1.BackColor = System.Drawing.Color.RoyalBlue;
+                KleurBox.BackColor = (Color.RoyalBlue);
             }
             else
             {
-                this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
+                KleurBox.BackColor = (Color.Maroon);
             }
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

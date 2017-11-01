@@ -39,7 +39,7 @@
             this.instructiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.creditsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.creditsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.KleurBox = new System.Windows.Forms.PictureBox();
             this.Textbox_Score_Speler_1 = new System.Windows.Forms.TextBox();
             this.Label_Score_Speler_1 = new System.Windows.Forms.Label();
             this.Label_Score_Speler_2 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.Buton_Reset = new System.Windows.Forms.Button();
             this.Volume = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KleurBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Volume)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,14 +144,15 @@
             this.creditsToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
             this.creditsToolStripMenuItem1.Text = "Credits";
             // 
-            // pictureBox1
+            // KleurBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 994);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.KleurBox.BackColor = System.Drawing.Color.Maroon;
+            this.KleurBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.KleurBox.Location = new System.Drawing.Point(-7, 12);
+            this.KleurBox.Name = "KleurBox";
+            this.KleurBox.Size = new System.Drawing.Size(355, 994);
+            this.KleurBox.TabIndex = 1;
+            this.KleurBox.TabStop = false;
             // 
             // Textbox_Score_Speler_1
             // 
@@ -345,7 +346,7 @@
             this.Controls.Add(this.Label_Score_Speler_1);
             this.Controls.Add(this.Textbox_Score_Speler_1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.KleurBox);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -354,9 +355,11 @@
             this.Name = "FormSpeelveld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.FormSpeelveld_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KleurBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Volume)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -374,7 +377,6 @@
         public System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem instructiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem creditsToolStripMenuItem1;
-        public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.TextBox Textbox_Score_Speler_1;
         public System.Windows.Forms.Label Label_Score_Speler_1;
         public System.Windows.Forms.Label Label_Score_Speler_2;
@@ -392,5 +394,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         public System.Windows.Forms.Button Buton_Reset;
         private System.Windows.Forms.PictureBox Volume;
+        public System.Windows.Forms.PictureBox KleurBox;
     }
 }

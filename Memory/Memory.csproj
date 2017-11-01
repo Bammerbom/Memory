@@ -152,6 +152,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
+    <None Include="Resources\Thema1SpeelveldAchtergrond.jpg" />
+    <None Include="Resources\Thema0SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema2AchtergrondMuziek.wav" />
     <None Include="Resources\Thema2Kaart3.png" />
     <None Include="Resources\Thema1Kaart7.png" />
@@ -181,7 +184,6 @@
     <None Include="Resources\Picturebox0Highscore.png" />
     <None Include="Resources\Picturebox0Highscore.jpg" />
     <None Include="Resources\Thema0MenuAchtergrond.jpg" />
-    <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
     <None Include="Resources\micro chip2.jpg" />
     <None Include="Resources\Thema2MenuAchtergrond.jpg" />
     <None Include="Resources\MemoryIcon.ico" />
