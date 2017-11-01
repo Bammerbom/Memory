@@ -12,6 +12,9 @@ namespace Memory
 {
     public partial class FormCredits : Form
     {
+        /// <summary>
+        /// intialized de form
+        /// </summary>
         public FormCredits()
         {
             InitializeComponent();
