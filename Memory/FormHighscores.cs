@@ -29,31 +29,28 @@ namespace Memory
         this.pictureBox7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox2Highscore");
 
             //highscores table singelplayer
-            ManagerHighscores.CheckHighscoreFiles();
+            //ManagerHighscores.CheckHighscoreFiles();
         Load_Tabbelen();
         }
 
         public void Load_Tabbelen()
         {
-            dataGridViewSingelplayer.DataSource = ManagerHighscores.GetTableSingelplayer();
+            dataGridViewSingelplayer.DataSource = ManagerHighscores.GetTable(false);
             dataGridViewSingelplayer.CurrentCell = null;
             dataGridViewSingelplayer.Columns[0].Width = 35;
             dataGridViewSingelplayer.Columns[1].Width = 260;
             dataGridViewSingelplayer.Columns[2].Width = 70;
             dataGridViewSingelplayer.Columns[3].Width = 70;
             //highscores table multiplayer
-            dataGridViewMultiplayer.DataSource = ManagerHighscores.GetTableMultiplayer();
+            dataGridViewMultiplayer.DataSource = ManagerHighscores.GetTable(true);
             dataGridViewMultiplayer.CurrentCell = null;
             dataGridViewMultiplayer.Columns[0].Width = 35;
             dataGridViewMultiplayer.Columns[1].Width = 260;
             dataGridViewMultiplayer.Columns[2].Width = 70;
             dataGridViewMultiplayer.Columns[3].Width = 70;
-            for (int i = 0; i < ManagerHighscores.SaveLengthMultiplayer * 2; i++)
+            for (int i = 1; i < 20; i+=2)
             {
-                if (i % 2 != 0 )
-                {
-                    dataGridViewMultiplayer.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
-                }
+                dataGridViewMultiplayer.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
             }
         }
 

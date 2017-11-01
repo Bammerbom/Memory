@@ -301,15 +301,7 @@ namespace Memory
 
         public static void GameResultatenOpslaan()
         {
-            ManagerHighscores.CheckHighscoreFiles();
-            if (Gamemode == 0)
-            {
-                ManagerHighscores.SingleplayerSave();
-            }
-            else if (Gamemode == 1 || Gamemode == 2)
-            {
-                ManagerHighscores.MultiplayerLocalSave();
-            }
+            ManagerHighscores.UpdateHighscores();
         }
     }
 }
