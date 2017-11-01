@@ -240,8 +240,8 @@ namespace Memory
                     Zetten2++;
                     FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
                 }
-                
 
+                BaseGame.VolgendeBeurt();
             }
 
             
