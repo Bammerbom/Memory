@@ -34,7 +34,9 @@ namespace Memory
         public static int Tijdtotaal;  //de totale tijd die het spel in beslag neemt
         public static bool Terugdraai;  // false = er worden geen kaarten terug gedraaid , true = er worden kaarten teruggedraaid
 
-        //Maakt game klaar voor een nieuwe ronde
+        /// <summary>
+        /// Alle score gerelateerde variabelen worden hier leeggemaakt voor een nieuw spel.
+        /// </summary>
         public static void Reset() {
             Zetten1 = 0;
             Zetten2 = 0;
@@ -45,7 +47,11 @@ namespace Memory
             Tijdtotaal = 0;
             Terugdraai = false;
         }
-
+        /// <summary>
+        /// Deze methode word samen met de Reset methode gecalled om het veld te resetten.
+        /// In deze methode worden de kaarten opnieuw gehusseld en teruggedraaid.
+        /// Vervolgen word de Render methode gecalled.
+        /// </summary>
         public static void ResetVeld() // reset het veld midgame met variabelen van standaard Reset
         {
            
@@ -63,20 +69,26 @@ namespace Memory
             Render();
 
         }
-
-        public static void InitSpeelveld(int h, int w) {
+        /// <summary>
+        /// Hier worden de Hoogte en Breedte van het veld in de betreffende variabelen gezet
+        /// en worden de 2 2D arrays geinit die alle benodigde data van het veld bevatten.
+        /// vervolgens worden alle kaartid's in een list geplaatst welke geshufled word en vervolgens in de 2D array word geplaatst.
+        /// </summary>
+        /// <param name="Hoogte"> ingevoerde hoogte van het speelveld</param>
+        /// <param name="Breedte"> ingevooerde breedte van het speelveld</param>
+        public static void InitSpeelveld(int Hoogte, int Breedte) {
             //Initialize variabelen
-            Height = h;
-            Width = w;
-            Speelveld_types = new int[w, h];
-            Speelveld_omgedraaid = new bool[w, h];
+            Height = Hoogte;
+            Width = Breedte;
+            Speelveld_types = new int[Breedte, Hoogte];
+            Speelveld_omgedraaid = new bool[Breedte, Hoogte];
             Tijdbeurt = 10;
             Tijdtotaal = 0;
             
 
             //Maak tijdelijke lijst met alle velden en shuffle die
             var tempvelden = new List<int>();
-            int length = h * w / 2;
+            int length = Hoogte * Breedte / 2;
             for (int i = 0; i < length; i++) {
                 tempvelden.Add(i);
                 tempvelden.Add(i);
@@ -92,15 +104,14 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// Hier word het speelveld form gemaakt en geopend
+        /// </summary>
         public static void InitForm() {
             FormSpeelveld = new FormSpeelveld();
             FormSpeelveld.Show();
 
-
-
-
-            ////Hide alle kaarten die buiten het speelveld liggen
+            ///Hide alle kaarten die buiten het speelveld liggen
             //for (int y = 3; y >= Height; y--)
             //{
             //    for (int x = 0; x < 4; x++)
@@ -121,12 +132,22 @@ namespace Memory
             //Render standaard waardes
             Render();
         }
-
-        public static void KaartKlik(int x, int y, bool multi = true) { //multi staat voor multiplayer en wordt naar false gezet om een infinite loop te voorkomen
+        /// <summary>
+        /// Deze methode word gecalled wanneer er een kaart op het speelveld word aangeklikt.
+        /// Eerst word gechecked of de aangeklikte kaart al is omgedraaid of dat er al 2 kaarten zijn omgedraaid deze beurt, als dit zo is dan word de methode stopgezet.
+        /// vervolgens word de kaart omgedraaid en word de counter die bijhoud hoeveel kaarten zijn omgedraaid deze beurt verhoogd.
+        /// Als dit de tweede kaart is die word aangeklikt dan word gechecked of ze gelijk zijn. zo ja dan word de score van de speler die aan beurt is verhoogd, zo niet dan word de methode zetomgedraaid gecalled om ze weer terug te draaien.
+        /// ook word dan gecheckt of dit het laatst omgedraaide paar is. zo ja dan word de endgame methode gecalled.
+        /// vervolgens word de beurt aaan de andere speler gegeven mits er een multiplayer spel word gespeeld
+        /// </summary>
+        /// <param name="x"> x coordinaat van aangeklikte coordinaat</param>
+        /// <param name="y"> y coordinaat van aangeklikte kaart</param>
+        /// <param name="Negeerkaartklik"> word op false gezet wanner de ander speler aan de beurt is in een online multiplayer spel. voorkomt dat de speler die niet aan beurt is kaarten kan omdraaien.</param>
+        public static void KaartKlik(int x, int y, bool Negeerkaartklik = true) { //word op false gezet als andere speler aan beurt in is GameMultiplayerOnline spel
             if (Speelveld_omgedraaid[x, y] == true) return; //Negeer klikken op kaart als de kaart al omgedraait is
             if (Kaartcounter == 2) return; //Negeer als er al 2 kaarten omgedraait zijn
 
-            if(Gamemode == 2 && multi) {
+            if(Gamemode == 2 && Negeerkaartklik) {
                 if (GameMultiplayerOnline.KlikKaart(x, y)) return;
             }
 
@@ -166,12 +187,14 @@ namespace Memory
                     DraaiKaartenTerug(); //Draai beide kaarten terug om
                 }
                 Render();
-                if (multi) {
+                if (Negeerkaartklik) {
                     VolgendeBeurt();
                 }
             }
         }
-
+        /// <summary>
+        /// Deze methode draait kaarten terug wanneer er een verkeerd paar is omgedraaid met een delay van 2 seconden.
+        /// </summary>
         public static async void DraaiKaartenTerug() {
             Terugdraai = true;
             Tijdbeurt = 10; // reset timer
@@ -189,12 +212,18 @@ namespace Memory
             } catch { };
         }
 
+        /// <summary>
+        /// Deze methode wisslet de speler die ann beurt is wanneer hij word gecalled.
+        /// </summary>
         public static void VolgendeBeurt() {
             if (Gamemode == 0) GameSingleplayer.VolgendeBeurt();
             else if (Gamemode == 1) GameMultiplayerLocal.VolgendeBeurt();
             else if (Gamemode == 2) GameMultiplayerOnline.VolgendeBeurt();
         }
 
+        /// <summary>
+        /// deze methode update de textboxes in het score bord van het speelveld.
+        /// </summary>
         public static void Render() {
             FormSpeelveld.Textbox_Score_Speler_1.Text = Convert.ToString(Score1); //update textboxes
             FormSpeelveld.Textbox_Score_Speler_2.Text = Convert.ToString(Score2);
@@ -208,6 +237,9 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// Dit is de timer die langzaam afteld en een beurt afpakt wanneer dde timer afloopt.
+        /// </summary>
         public static async void Timer() {            //timer methode 
             while (Gamestate == 1)
             {
@@ -247,14 +279,19 @@ namespace Memory
             
         }
 
-        //check of alle kaarten zijn omgedraaid en returned true als dat gebeurt is
+        /// <summary>
+        /// Deze methode checked of alle kaarten zijn omgedraait
+        /// </summary>
+        /// <returns>returns true wanneer alle kaarten zijn omgedraaid</returns>
         public static bool Checkwin() {
             foreach(bool omgedraaid in Speelveld_omgedraaid) {
                 if (!omgedraaid) return false;
             }
             return true;
         }
-
+        /// <summary>
+        /// redirect naar de end game van de betreffende gamemode en slaat highscores op.
+        /// </summary>
         public static void Endgame() {
             Geluid.GameOver();
             BaseGame.GameResultatenOpslaan();
@@ -262,7 +299,9 @@ namespace Memory
             else if (Gamemode == 1) GameMultiplayerLocal.End();
             else if (Gamemode == 2) GameMultiplayerOnline.End();
         }
-
+        /// <summary>
+        /// redirect naar de exit game methode van de betreffende gamemode.
+        /// </summary>
         public static void Exitgame()
         {
             Geluid.GameOver();
@@ -270,7 +309,12 @@ namespace Memory
             else if (Gamemode == 1) GameMultiplayerLocal.Exit();
             else if (Gamemode == 2) GameMultiplayerOnline.Exit();
         }
-
+        /// <summary>
+        /// Draait een kaart om door het plaatje in een picturebox te veranderen.
+        /// </summary>
+        /// <param name="x">X coordinaat van kaart</param>
+        /// <param name="y">Y coordinaat van kaart</param>
+        /// <param name="omgedraaid"> variabele die aangeeft of een kaart omgedraaid is of niet.</param>
         public static void ZetOmgedraaid(int x, int y, bool omgedraaid) {
             Speelveld_omgedraaid[x, y] = omgedraaid; //zet string in afkorting
             string kaartnaam = "Kaart" + x + "" + y; //zet kaartnaam in string voor gebruik in
@@ -299,6 +343,9 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// slaat de scores van het spel op in de highscores
+        /// </summary>
         public static void GameResultatenOpslaan()
         {
             ManagerHighscores.CheckHighscoreFiles();
