@@ -191,30 +191,6 @@ namespace Memory
         private void FormSpeelveld_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "SpeelveldAchtergrond");
-<<<<<<< HEAD
-            if (ManagerThema.Themanummer == 1)
-            {
-                KleurBox.BackColor = Color.Navy;
-            }
-            else if (ManagerThema.Themanummer == 2)
-            {
-                KleurBox.BackColor = (Color.RoyalBlue);
-            }
-            else
-            {
-                KleurBox.BackColor = (Color.Maroon);
-            }
-            if (Geluid.Volume == true)
-            {
-                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
-            }
-            else
-            {
-                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
-            }
-=======
-            
->>>>>>> Interfaceforms
 
         }
 
