@@ -29,20 +29,26 @@
             this.comboGametype = new System.Windows.Forms.ComboBox();
             this.titel = new System.Windows.Forms.Label();
             this.textboxNaam1 = new System.Windows.Forms.TextBox();
-            this.labelNaam1 = new System.Windows.Forms.Label();
-            this.labelNaam2 = new System.Windows.Forms.Label();
             this.textboxNaam2 = new System.Windows.Forms.TextBox();
             this.labelSpelgrootte = new System.Windows.Forms.Label();
             this.comboSpelgrootte = new System.Windows.Forms.ComboBox();
-            this.labelIp = new System.Windows.Forms.Label();
             this.textboxIp = new System.Windows.Forms.TextBox();
-            this.labelPort = new System.Windows.Forms.Label();
             this.textboxPort = new System.Windows.Forms.NumericUpDown();
             this.pictureBoxStartmenuStart = new System.Windows.Forms.PictureBox();
             this.pictureBoxStartmenuTerug = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNaam2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIPadres = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNaam1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSpeelveld = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPort = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuTerug)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIPadres)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelveld)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPort)).BeginInit();
             this.SuspendLayout();
             // 
             // comboGametype
@@ -56,7 +62,7 @@
             "Local Multiplayer",
             "Host Multiplayer",
             "Join Multiplayer"});
-            this.comboGametype.Location = new System.Drawing.Point(261, 62);
+            this.comboGametype.Location = new System.Drawing.Point(255, 62);
             this.comboGametype.Name = "comboGametype";
             this.comboGametype.Size = new System.Drawing.Size(278, 45);
             this.comboGametype.TabIndex = 0;
@@ -76,37 +82,17 @@
             // textboxNaam1
             // 
             this.textboxNaam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNaam1.Location = new System.Drawing.Point(262, 239);
+            this.textboxNaam1.Location = new System.Drawing.Point(262, 258);
             this.textboxNaam1.MaxLength = 15;
             this.textboxNaam1.Name = "textboxNaam1";
             this.textboxNaam1.Size = new System.Drawing.Size(277, 32);
             this.textboxNaam1.TabIndex = 3;
             this.textboxNaam1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textboxNaam1_KeyPress);
             // 
-            // labelNaam1
-            // 
-            this.labelNaam1.AutoSize = true;
-            this.labelNaam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNaam1.Location = new System.Drawing.Point(316, 210);
-            this.labelNaam1.Name = "labelNaam1";
-            this.labelNaam1.Size = new System.Drawing.Size(169, 26);
-            this.labelNaam1.TabIndex = 14;
-            this.labelNaam1.Text = "Naam 1 invullen";
-            // 
-            // labelNaam2
-            // 
-            this.labelNaam2.AutoSize = true;
-            this.labelNaam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNaam2.Location = new System.Drawing.Point(315, 297);
-            this.labelNaam2.Name = "labelNaam2";
-            this.labelNaam2.Size = new System.Drawing.Size(169, 26);
-            this.labelNaam2.TabIndex = 16;
-            this.labelNaam2.Text = "Naam 2 invullen";
-            // 
             // textboxNaam2
             // 
             this.textboxNaam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNaam2.Location = new System.Drawing.Point(261, 326);
+            this.textboxNaam2.Location = new System.Drawing.Point(262, 342);
             this.textboxNaam2.MaxLength = 15;
             this.textboxNaam2.Name = "textboxNaam2";
             this.textboxNaam2.Size = new System.Drawing.Size(278, 32);
@@ -118,12 +104,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpelgrootte.AutoSize = true;
+            this.labelSpelgrootte.BackColor = System.Drawing.SystemColors.Control;
             this.labelSpelgrootte.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSpelgrootte.Location = new System.Drawing.Point(342, 128);
             this.labelSpelgrootte.Name = "labelSpelgrootte";
-            this.labelSpelgrootte.Size = new System.Drawing.Size(108, 26);
+            this.labelSpelgrootte.Size = new System.Drawing.Size(0, 26);
             this.labelSpelgrootte.TabIndex = 17;
-            this.labelSpelgrootte.Text = "Speelveld";
             // 
             // comboSpelgrootte
             // 
@@ -136,38 +122,19 @@
             "2x4",
             "3x4",
             "4x4"});
-            this.comboSpelgrootte.Location = new System.Drawing.Point(366, 157);
+            this.comboSpelgrootte.Location = new System.Drawing.Point(365, 169);
             this.comboSpelgrootte.Name = "comboSpelgrootte";
             this.comboSpelgrootte.Size = new System.Drawing.Size(68, 33);
             this.comboSpelgrootte.TabIndex = 7;
             // 
-            // labelIp
-            // 
-            this.labelIp.AutoSize = true;
-            this.labelIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIp.Location = new System.Drawing.Point(342, 297);
-            this.labelIp.Name = "labelIp";
-            this.labelIp.Size = new System.Drawing.Size(96, 26);
-            this.labelIp.TabIndex = 19;
-            this.labelIp.Text = "IP Adres";
-            // 
             // textboxIp
             // 
             this.textboxIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxIp.Location = new System.Drawing.Point(262, 326);
+            this.textboxIp.Location = new System.Drawing.Point(261, 342);
             this.textboxIp.Name = "textboxIp";
             this.textboxIp.Size = new System.Drawing.Size(278, 32);
             this.textboxIp.TabIndex = 18;
-            // 
-            // labelPort
-            // 
-            this.labelPort.AutoSize = true;
-            this.labelPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPort.Location = new System.Drawing.Point(361, 381);
-            this.labelPort.Name = "labelPort";
-            this.labelPort.Size = new System.Drawing.Size(52, 26);
-            this.labelPort.TabIndex = 21;
-            this.labelPort.Text = "Port";
+            this.textboxIp.TextChanged += new System.EventHandler(this.textboxIp_TextChanged);
             // 
             // textboxPort
             // 
@@ -177,7 +144,7 @@
             0,
             0,
             0});
-            this.textboxPort.Location = new System.Drawing.Point(262, 410);
+            this.textboxPort.Location = new System.Drawing.Point(261, 429);
             this.textboxPort.Maximum = new decimal(new int[] {
             9000,
             0,
@@ -196,10 +163,11 @@
             // 
             this.pictureBoxStartmenuStart.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxStartmenuStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxStartmenuStart.Image = global::Memory.Properties.Resources.Button_SpeelveldStart;
-            this.pictureBoxStartmenuStart.Location = new System.Drawing.Point(571, 62);
+            this.pictureBoxStartmenuStart.Image = global::Memory.Properties.Resources.StartButtonGroen;
+            this.pictureBoxStartmenuStart.Location = new System.Drawing.Point(567, 62);
             this.pictureBoxStartmenuStart.Name = "pictureBoxStartmenuStart";
-            this.pictureBoxStartmenuStart.Size = new System.Drawing.Size(179, 49);
+            this.pictureBoxStartmenuStart.Size = new System.Drawing.Size(190, 49);
+            this.pictureBoxStartmenuStart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBoxStartmenuStart.TabIndex = 23;
             this.pictureBoxStartmenuStart.TabStop = false;
             this.pictureBoxStartmenuStart.Click += new System.EventHandler(this.pictureBoxStartmenuStart_Click_1);
@@ -208,13 +176,63 @@
             // 
             this.pictureBoxStartmenuTerug.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxStartmenuTerug.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxStartmenuTerug.Image = global::Memory.Properties.Resources.Button_SpeelveldTerug;
-            this.pictureBoxStartmenuTerug.Location = new System.Drawing.Point(45, 62);
+            this.pictureBoxStartmenuTerug.Image = global::Memory.Properties.Resources.TerugButtonBlue;
+            this.pictureBoxStartmenuTerug.Location = new System.Drawing.Point(23, 62);
             this.pictureBoxStartmenuTerug.Name = "pictureBoxStartmenuTerug";
-            this.pictureBoxStartmenuTerug.Size = new System.Drawing.Size(177, 49);
+            this.pictureBoxStartmenuTerug.Size = new System.Drawing.Size(191, 49);
             this.pictureBoxStartmenuTerug.TabIndex = 24;
             this.pictureBoxStartmenuTerug.TabStop = false;
             this.pictureBoxStartmenuTerug.Click += new System.EventHandler(this.pictureBoxStartmenuTerug_Click_1);
+            // 
+            // pictureBoxNaam2
+            // 
+            this.pictureBoxNaam2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxNaam2.Image = global::Memory.Properties.Resources.Naam2InvullenLabel;
+            this.pictureBoxNaam2.Location = new System.Drawing.Point(272, 296);
+            this.pictureBoxNaam2.Name = "pictureBoxNaam2";
+            this.pictureBoxNaam2.Size = new System.Drawing.Size(253, 40);
+            this.pictureBoxNaam2.TabIndex = 27;
+            this.pictureBoxNaam2.TabStop = false;
+            // 
+            // pictureBoxIPadres
+            // 
+            this.pictureBoxIPadres.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxIPadres.Image = global::Memory.Properties.Resources.PortLabelGeel;
+            this.pictureBoxIPadres.Location = new System.Drawing.Point(312, 296);
+            this.pictureBoxIPadres.Name = "pictureBoxIPadres";
+            this.pictureBoxIPadres.Size = new System.Drawing.Size(171, 42);
+            this.pictureBoxIPadres.TabIndex = 28;
+            this.pictureBoxIPadres.TabStop = false;
+            // 
+            // pictureBoxNaam1
+            // 
+            this.pictureBoxNaam1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxNaam1.Image = global::Memory.Properties.Resources.Naam1InvullenLabel;
+            this.pictureBoxNaam1.Location = new System.Drawing.Point(272, 208);
+            this.pictureBoxNaam1.Name = "pictureBoxNaam1";
+            this.pictureBoxNaam1.Size = new System.Drawing.Size(253, 42);
+            this.pictureBoxNaam1.TabIndex = 29;
+            this.pictureBoxNaam1.TabStop = false;
+            // 
+            // pictureBoxSpeelveld
+            // 
+            this.pictureBoxSpeelveld.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxSpeelveld.Image = global::Memory.Properties.Resources.SpeelveldButtonGeel;
+            this.pictureBoxSpeelveld.Location = new System.Drawing.Point(312, 122);
+            this.pictureBoxSpeelveld.Name = "pictureBoxSpeelveld";
+            this.pictureBoxSpeelveld.Size = new System.Drawing.Size(171, 41);
+            this.pictureBoxSpeelveld.TabIndex = 30;
+            this.pictureBoxSpeelveld.TabStop = false;
+            // 
+            // pictureBoxPort
+            // 
+            this.pictureBoxPort.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPort.Image = global::Memory.Properties.Resources.IPadresLabelGeel;
+            this.pictureBoxPort.Location = new System.Drawing.Point(312, 380);
+            this.pictureBoxPort.Name = "pictureBoxPort";
+            this.pictureBoxPort.Size = new System.Drawing.Size(172, 43);
+            this.pictureBoxPort.TabIndex = 31;
+            this.pictureBoxPort.TabStop = false;
             // 
             // FormStartgame
             // 
@@ -223,16 +241,17 @@
             this.BackgroundImage = global::Memory.Properties.Resources.Thema0StartGameAchtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 601);
+            this.Controls.Add(this.pictureBoxPort);
+            this.Controls.Add(this.pictureBoxSpeelveld);
+            this.Controls.Add(this.pictureBoxNaam1);
+            this.Controls.Add(this.pictureBoxIPadres);
+            this.Controls.Add(this.pictureBoxNaam2);
             this.Controls.Add(this.pictureBoxStartmenuTerug);
             this.Controls.Add(this.pictureBoxStartmenuStart);
             this.Controls.Add(this.textboxPort);
-            this.Controls.Add(this.labelPort);
-            this.Controls.Add(this.labelIp);
             this.Controls.Add(this.textboxIp);
             this.Controls.Add(this.labelSpelgrootte);
-            this.Controls.Add(this.labelNaam2);
             this.Controls.Add(this.textboxNaam2);
-            this.Controls.Add(this.labelNaam1);
             this.Controls.Add(this.comboSpelgrootte);
             this.Controls.Add(this.textboxNaam1);
             this.Controls.Add(this.titel);
@@ -248,6 +267,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuTerug)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIPadres)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelveld)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPort)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,16 +282,20 @@
         private System.Windows.Forms.ComboBox comboGametype;
         private System.Windows.Forms.Label titel;
         private System.Windows.Forms.TextBox textboxNaam1;
-        private System.Windows.Forms.Label labelNaam1;
         private System.Windows.Forms.Label labelNaam2;
         private System.Windows.Forms.TextBox textboxNaam2;
         private System.Windows.Forms.Label labelSpelgrootte;
         private System.Windows.Forms.ComboBox comboSpelgrootte;
-        private System.Windows.Forms.Label labelIp;
         private System.Windows.Forms.TextBox textboxIp;
-        private System.Windows.Forms.Label labelPort;
         private System.Windows.Forms.NumericUpDown textboxPort;
         private System.Windows.Forms.PictureBox pictureBoxStartmenuStart;
         private System.Windows.Forms.PictureBox pictureBoxStartmenuTerug;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxNaam2;
+        private System.Windows.Forms.PictureBox pictureBoxIPadres;
+        private System.Windows.Forms.PictureBox pictureBoxNaam1;
+        private System.Windows.Forms.PictureBox pictureBoxSpeelveld;
+        private System.Windows.Forms.PictureBox pictureBoxPort;
     }
 }

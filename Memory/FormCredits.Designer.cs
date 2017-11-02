@@ -126,10 +126,10 @@
             // Picturebox1Credits
             // 
             this.Picturebox1Credits.BackColor = System.Drawing.Color.Transparent;
-            this.Picturebox1Credits.Image = global::Memory.Properties.Resources.Pijltjeterug;
-            this.Picturebox1Credits.Location = new System.Drawing.Point(12, 355);
+            this.Picturebox1Credits.Image = global::Memory.Properties.Resources.TerugButtonBlauw;
+            this.Picturebox1Credits.Location = new System.Drawing.Point(3, 393);
             this.Picturebox1Credits.Name = "Picturebox1Credits";
-            this.Picturebox1Credits.Size = new System.Drawing.Size(151, 86);
+            this.Picturebox1Credits.Size = new System.Drawing.Size(172, 44);
             this.Picturebox1Credits.TabIndex = 16;
             this.Picturebox1Credits.TabStop = false;
             this.Picturebox1Credits.Click += new System.EventHandler(this.Picturebox1Credits_Click);

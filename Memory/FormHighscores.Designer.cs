@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHighscores));
-            this.ButtonBack = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Highscores_2spelers = new System.Windows.Forms.Label();
             this.pictureBox1highscore = new System.Windows.Forms.PictureBox();
@@ -49,18 +48,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ButtonBack
-            // 
-            this.ButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.ButtonBack.Location = new System.Drawing.Point(392, 754);
-            this.ButtonBack.Margin = new System.Windows.Forms.Padding(2);
-            this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(122, 41);
-            this.ButtonBack.TabIndex = 0;
-            this.ButtonBack.Text = "Terug";
-            this.ButtonBack.UseVisualStyleBackColor = true;
-            
             // 
             // Highscores_2spelers
             // 
@@ -169,10 +156,10 @@
             // pictureBox1Terug
             // 
             this.pictureBox1Terug.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1Terug.Image = global::Memory.Properties.Resources.Pijltjeterug;
-            this.pictureBox1Terug.Location = new System.Drawing.Point(12, 724);
+            this.pictureBox1Terug.Image = global::Memory.Properties.Resources.TerugButtonBlauw;
+            this.pictureBox1Terug.Location = new System.Drawing.Point(12, 747);
             this.pictureBox1Terug.Name = "pictureBox1Terug";
-            this.pictureBox1Terug.Size = new System.Drawing.Size(148, 84);
+            this.pictureBox1Terug.Size = new System.Drawing.Size(171, 48);
             this.pictureBox1Terug.TabIndex = 26;
             this.pictureBox1Terug.TabStop = false;
             this.pictureBox1Terug.Click += new System.EventHandler(this.pictureBox1Terug_Click);
@@ -193,7 +180,6 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1highscore);
-            this.Controls.Add(this.ButtonBack);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -216,8 +202,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button ButtonBack;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label Highscores_2spelers;
         private System.Windows.Forms.PictureBox pictureBox1highscore;

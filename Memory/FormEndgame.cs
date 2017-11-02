@@ -135,5 +135,7 @@ namespace Memory
                 LabelResultatenmatch.Text = "het spel is voortijdig beëindigt.";
             }
         }
+
+        
     }
 }
