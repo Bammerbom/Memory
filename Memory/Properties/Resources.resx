@@ -127,12 +127,6 @@
   <data name="Thema0Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Game over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_5240" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\floppy-disks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema0Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,9 +147,6 @@
   </data>
   <data name="Thema2Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema2Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OKE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OKE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema1Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,9 +192,6 @@
   </data>
   <data name="MemoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MemoryIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_5240 - kopie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_5240 - kopie.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema0Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,17 +241,11 @@
   <data name="Thema0HighscoresAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sterren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Thema1HighscoresAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeathstarAchtergrondHighscore.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema0Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema1HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitled21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema1CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1CreditsAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -288,45 +270,6 @@
   </data>
   <data name="Thema2Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema2Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ArrowBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArrowBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ArrowTerug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArrowTerug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuAfsluiten1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuAfsluiten1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuCredits" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuCredits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuHighscores" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuHighscores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuLaden" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuLaden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_menuSpeel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button menuSpeel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_SpeelveldStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button SpeelveldStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Button_SpeelveldTerug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button SpeelveldTerug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PijlTerug1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PijlTerug1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pijltjeterug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pijltjeterug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Buttonclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buttonclick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -418,9 +361,6 @@
   <data name="TerugButtonRood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonRood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yellow_button03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yellow_button03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="HighscoresButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HighscoresButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -438,5 +378,8 @@
   </data>
   <data name="TerugButtonBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow_button03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow_button03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
