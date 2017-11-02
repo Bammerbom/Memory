@@ -14,10 +14,18 @@ namespace Memory
 {
     public partial class FormStartgame : Form
     {
+        /// <summary>
+        /// intialized components
+        /// </summary>
         public FormStartgame() {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// load het juiste thema en hide alle textboxes en dropdownmenu's
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormStartgame_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "StartGameAchtergrond");
@@ -30,6 +38,10 @@ namespace Memory
             labelNaam2.Visible = false;
         }
 
+        /// <summary>
+        /// zoekt het lokale ip adres voor de online multiplayer host
+        /// </summary>
+        /// <returns></returns>
         private string GetLocalIPAddress() {
             var host = Dns.GetHostEntry(Dns.GetHostName());
             foreach (var ip in host.AddressList) {
@@ -40,6 +52,11 @@ namespace Memory
             return "";
         }
 
+        /// <summary>
+        /// laat verschillende textboxes en dropdownmenu's zien bij het veranderen van de gamemmode.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gametype_SelectedIndexChanged(object sender, EventArgs e) {
             if(comboGametype.Text == "Kies spelmodus")
             {
@@ -114,12 +131,22 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// closed en disposed de formstartgame.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pictureBoxStartmenuTerug_Click_1(object sender, EventArgs e)
         {
             this.Close();
             this.Dispose();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textboxNaam1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsNumber(e.KeyChar))
@@ -128,6 +155,12 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// zet alle ingevoerde data in variabelen. en called de startgame methode van de gekozen gamemode. 
+        /// vervolgens word de form geclosed en gedisposed.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pictureBoxStartmenuStart_Click_1(object sender, EventArgs e)
         {
             Geluid.Player.Stop();
@@ -136,7 +169,7 @@ namespace Memory
             int h, w;
             if (comboGametype.Text != "Join Multiplayer") {
                 switch (comboSpelgrootte.Text) {
-                    //2x2 2x3 2x4 3x4 4x4
+                    //vooet grote van het speelveld in
                     case "2x2":
                         h = 2;
                         w = 2;
@@ -165,6 +198,7 @@ namespace Memory
                 h = 0;
                 w = 0;
             }
+            //voert naam in en called stargame
             switch (comboGametype.Text) {
                 case "Singleplayer":
                     string naam = textboxNaam1.Text;
@@ -213,7 +247,7 @@ namespace Memory
                         this.Close();
                         this.Dispose();
                     }
-                    //Errorbox wordt weergegeven dooe Client method
+                    //Errorbox wordt weergegeven doe Client method
                     break;
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
