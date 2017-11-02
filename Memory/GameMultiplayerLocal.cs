@@ -36,11 +36,12 @@ namespace Memory
         public static void VolgendeBeurt()
         {
             //Als de kaarten niet gelijk zijn
-            if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y])
+            if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y] ||BaseGame.BeurtVerlopen == true)
             {
                 //Coole syntax om speler aan beurt te switchen tussen 1 en 2
                 BaseGame.SpelerAanBeurt = BaseGame.SpelerAanBeurt == 1 ? 2 : 1;
-
+                BaseGame.BeurtVerlopen = false;
+             
             }
             
             
