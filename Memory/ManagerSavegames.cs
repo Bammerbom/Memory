@@ -164,10 +164,14 @@ namespace Memory
             }
 
             //draait 2 ongelijke kaarten terug als die geload zijn.
-            if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y]) 
+            try
             {
-                BaseGame.DraaiKaartenTerug();
+                if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y])
+                {
+                    BaseGame.DraaiKaartenTerug();
+                }
             }
+            catch { }
             
 
         }
