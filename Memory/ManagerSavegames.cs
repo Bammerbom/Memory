@@ -16,7 +16,9 @@ namespace Memory
 
 
         
-
+        /// <summary>
+        /// alle variabelen worden naar 1 string geserialized en geëncrypt. vervolgens word de string naar een .sav file geschreven
+        /// </summary>
         public static void Savegame()
         {
             //vooer savedata in
@@ -72,6 +74,10 @@ namespace Memory
           
         }
 
+        /// <summary>
+        /// leest 1 string uit een .sav file. decrypt deze string en deserialized de string.
+        /// vervolgens start de methode een nieuwe game en initialized hij de varibelen uit de string in de game.
+        /// </summary>
         public static void Loadgame()
         {
             //get bestands path met open file dialog
@@ -118,6 +124,9 @@ namespace Memory
 
         }
 
+        /// <summary>
+        /// zet alle variabelen in de game. draait omgedraaide kaarten om en revert niet gelijke kaarten als die geload zijn.
+        /// </summary>
         private static void Initiate()
         {
             //laad alle variabelen
@@ -163,6 +172,9 @@ namespace Memory
 
         }
 
+        /// <summary>
+        /// saved de game en stopt de game
+        /// </summary>
         public static void SaveEnEnd()
         {
             Savegame();
