@@ -13,6 +13,9 @@ namespace Memory
 {
     public partial class FormHighscores : Form
     {
+        /// <summary>
+        /// intialized de form
+        /// </summary>
         public FormHighscores()
         {
             InitializeComponent();
@@ -21,10 +24,18 @@ namespace Memory
         private void pictureBox1Terug_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+            this.Dispose();
+            GC.Collect();
 
+        }
+        /// <summary>
+        /// laad de foto's voor de thema's en called de Load Tabellen methode.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormHighscores_Load(object sender, EventArgs e)
         {
+
         this.pictureBox5.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox1Highscore");
         this.pictureBox7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox2Highscore");
 
@@ -32,7 +43,9 @@ namespace Memory
             //ManagerHighscores.CheckHighscoreFiles();
         Load_Tabbelen();
         }
-
+        /// <summary>
+        /// laad de highscore tabellen met highscores
+        /// </summary>
         public void Load_Tabbelen()
         {
             dataGridViewSingelplayer.DataSource = ManagerHighscores.GetTable(false);
@@ -54,7 +67,11 @@ namespace Memory
             }
         }
 
-        //vraagt of je zeker bent dat je de de singelplayer en/of multiplayer highscores gegefens wil verwijderen
+        /// <summary>
+        /// vraagt of je zeker bent dat je de de singelplayer en/of multiplayer highscores gegefens wil verwijderen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Label_HighscoresVerwijderen_Click(object sender, EventArgs e)
         {
             DialogResult result1 = MessageBox.Show("Wil je de singelplayer highscores verwijderen?", "Verwijderen highscores singelplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -77,12 +94,7 @@ namespace Memory
             }
         }
 
-        private void FormHighscores_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Dispose();
-            GC.Collect();
-        }
-
+      
         
     }
 }

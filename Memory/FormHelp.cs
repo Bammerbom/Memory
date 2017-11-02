@@ -19,7 +19,11 @@ namespace Memory
         
 
 
-
+        /// <summary>
+        /// select de juiste achtergrond en tekstkleur voor het gekozen thema tijdens het laden van de form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormHelp_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "HelpAchtergrond");
@@ -59,22 +63,18 @@ namespace Memory
 
 
 
-        
-        private void FormHelp_FormClosed(object sender, FormClosedEventArgs e)
+     
+        /// <summary>
+        /// closed en disposed de form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            this.Close();
             this.Dispose();
             GC.Collect();
         }
 
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

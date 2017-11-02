@@ -12,13 +12,21 @@ namespace Memory
 {
     public partial class FormEndgame : Form
     {
+
         public static FormEndgame instance;
+        /// <summary>
+        /// initialized de form
+        /// </summary>
         public FormEndgame()
         {
             InitializeComponent();
             FormEndgame.instance = this;
         }
-
+        /// <summary>
+        /// Restart het spel met dezelfde instellingen en namen als het vorig spel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return;
@@ -34,7 +42,11 @@ namespace Memory
                 GameMultiplayerOnline.Reset2();
             }
         }
-
+        /// <summary>
+        /// Opened het de startgame form zodat je een nieuw spel kunt doen met andere instellingen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonStartgame_Click(object sender, EventArgs e)
         {
             if (BaseGame.Gamemode == 2) {
@@ -47,13 +59,21 @@ namespace Memory
             FormStartgame startgame = new FormStartgame();
             startgame.ShowDialog();
         }
-
+        /// <summary>
+        /// opened de highscores form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonHighscored_Click(object sender, EventArgs e)
         {
             FormHighscores highscores = new FormHighscores();
             highscores.ShowDialog();
         }
-
+        /// <summary>
+        /// Closed de endgame form en reset de variabelen voor en nieuw spel gaat terug naar het hoofdmenu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonHome_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -62,15 +82,21 @@ namespace Memory
             BaseGame.Reset();
         }
 
-        private void LabelGameResultaat()               //<----------------------- ?
-        {
-              
-        }
+
+        /// <summary>
+        /// sluit het complete programma af
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSluiten_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// zet bij het loaden van de form de scores in de labels
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormEndgame_Load(object sender, EventArgs e)
         {
             Geluid.AchtergrondMuziek();

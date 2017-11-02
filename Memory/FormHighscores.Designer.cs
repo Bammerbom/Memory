@@ -202,7 +202,6 @@
             this.Name = "FormHighscores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHighscores_FormClosed);
             this.Load += new System.EventHandler(this.FormHighscores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).EndInit();

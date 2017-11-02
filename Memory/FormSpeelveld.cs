@@ -12,7 +12,10 @@ namespace Memory
 {
     public partial class FormSpeelveld : Form
     {
-
+        /// <summary>
+        /// load het dynamisch speelveld met de opgegeven grootte. afhankelijk van hoeveel kaarten moeten afgebeeld worden, worden de picture boxes groter gemaakt.
+        /// ook de settings van de pictureboxes worden hier geset.
+        /// </summary>
         public FormSpeelveld()
         {
 
@@ -81,52 +84,85 @@ namespace Memory
                 }
                 yLocation += Convert.ToInt32(ySizeTemp) + Convert.ToInt32(yTussenruimte); //nieuw y coördinaat
             }
-            if (Geluid.Volume == true)
-            {
-                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
-            }
-            else
-            {
-                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
-            }
+            
         }
 
+        /// <summary>
+        /// called de exitgame methode waarbij de form word afgesloten en de endgame word geopend
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Exit_Click(object sender, EventArgs e) {
             BaseGame.Exitgame();
         }
 
+        /// <summary>
+        /// called de saveenend methode 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Opslaan_Click(object sender, EventArgs e) {
             ManagerSavegames.SaveEnEnd();
         }
 
+        /// <summary>
+        /// called de save en end methode
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ManagerSavegames.SaveEnEnd();
         }
 
+        /// <summary>
+        /// showed de help form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormHelp Help = new FormHelp();
             Help.Show();
         }
 
+        /// <summary>
+        /// laat de credits form zien
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void creditsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormCredits Credits = new FormCredits();
             Credits.Show();
         }
 
+        /// <summary>
+        /// called de exitgame methode
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             BaseGame.Exitgame();
 
         }
 
+        /// <summary>
+        /// called de savegame methode
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ManagerSavegames.Savegame();          
         }
 
+        /// <summary>
+        /// reset het spel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return; 
@@ -134,13 +170,24 @@ namespace Memory
             BaseGame.ResetVeld();
         }
 
+        /// <summary>
+        /// reset het spel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Buton_Reset_Click(object sender, EventArgs e)
         {
+            if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return;
             BaseGame.Reset();
             BaseGame.ResetVeld();
+            
         }
 
-
+        /// <summary>
+        /// laad het thema voor het speelveld en de status van de mute button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormSpeelveld_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "SpeelveldAchtergrond");
@@ -156,22 +203,36 @@ namespace Memory
             {
                 KleurBox.BackColor = (Color.Maroon);
             }
+            if (Geluid.Volume == true)
+            {
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
+            }
+            else
+            {
+                this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
+            }
 
         }
 
+        /// <summary>
+        /// mute & unmute het geluid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (Geluid.Volume == true)
             {
                 Geluid.Volume = false;
                 this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("GeluidsicoontjeKruis");
-                Geluid.player.Stop();
+                Geluid.Player.Stop();
             }
             else
             {
                 Geluid.Volume = true;
                 this.Volume.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Geluidsicoontje");
             }
+
         }
     }
 }

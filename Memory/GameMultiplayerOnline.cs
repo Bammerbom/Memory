@@ -12,8 +12,9 @@ namespace Memory
     {
         public static bool Host;
         /// <summary>
-        /// Deze method start de online multiplayer game
-        /// </summary>
+        /// Deze method start de online multiplayer game. de host krijgt eerst de naam van de client speler met het join packet, vervolgens antwoord de host met zijn naam en met de inhoud van he speelveld met het join2 packet.
+        /// dan word het speelveld geopend.
+        /// 
         /// <param name="Hoogte">Hoogte van het speelveld</param>
         /// <param name="Breedte">Breedte van het speelveld</param>
         /// <param name="Naam">De naam van de speler. Dit kan de client of de host zijn</param>
@@ -93,6 +94,11 @@ namespace Memory
             return false;
         }
 
+        /// <summary>
+        /// deze methode wisselt de beurt van de spelers als 2 getrokken kaarten niet gelijk aan elkaar zijn.
+        /// de client of de host sturen het volgendebeurt packet (hangt er van af wie aan de beurt was) de ander luistert.
+        /// 
+        /// </summary>
         public static void VolgendeBeurt() {
             //Als de kaarten niet gelijk zijn is volgende aan beurt
             if (BaseGame.Speelveld_types[BaseGame.Kaart1x, BaseGame.Kaart1y] != BaseGame.Speelveld_types[BaseGame.Kaart2x, BaseGame.Kaart2y]) {
@@ -110,6 +116,7 @@ namespace Memory
                 NetClient.SendMessage(Utils.ArrayToString(volgendebeurt));
             }
         }
+
 
         public static void KlaarVoorVolgendeKlikkaart() {
             //Als deze speler niet aan de beurt is

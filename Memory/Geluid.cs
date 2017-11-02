@@ -11,10 +11,12 @@ namespace Memory
     class Geluid
     {
         public static Stream str = (Stream)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "AchtergrondMuziek");
-        public static SoundPlayer player = new SoundPlayer(str);
+        public static SoundPlayer Player = new SoundPlayer(str);
         public static bool Volume;
 
-
+        /// <summary>
+        /// speelt de achtergrond muziek van het geselecteerde thema af
+        /// </summary>
         public static void AchtergrondMuziek()
         {
             if (Volume == true)
@@ -22,8 +24,8 @@ namespace Memory
                 try
                 {
                     str = (Stream)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "AchtergrondMuziek");
-                    player = new SoundPlayer(str);
-                    player.PlayLooping();
+                    Player = new SoundPlayer(str);
+                    Player.PlayLooping();
                 }
                 catch
                 {
@@ -31,19 +33,22 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// speelt het geluid van een omdraaiende kaart af
+        /// </summary>
         public static void KaartKlik()
         {
             if (Volume == true)
             {
                 try
                 {
+                    Player.Dispose();
                     str = (Stream)Properties.Resources.ResourceManager.GetObject("KaartFlick");
-                    player = new SoundPlayer(str);
-                    player.Play();
+                    Player = new SoundPlayer(str);
+                    Player.Play();
                     if (BaseGame.Kaartcounter == 2)
                     {
-                        player.Dispose();
+                        Player.Dispose();
                     }
 
                 }
@@ -53,7 +58,9 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// speelt het endgame geluid af
+        /// </summary>
         public static void GameOver()
         {
             if (Volume == true)
@@ -61,8 +68,8 @@ namespace Memory
                 try
                 {
                     str = (Stream)Properties.Resources.ResourceManager.GetObject("GameOver");
-                    player = new SoundPlayer(str);
-                    player.Play();
+                    Player = new SoundPlayer(str);
+                    Player.Play();
 
                 }
                 catch
@@ -71,7 +78,9 @@ namespace Memory
                 }
             }
         }
-
+        /// <summary>
+        /// speelt het geluid af voor 2 kaarten die gelijk zijn.
+        /// </summary>
         public static void KaartGelijk()
         {
             if (Volume == true)
@@ -79,8 +88,8 @@ namespace Memory
                 try
                 {
                     str = (Stream)Properties.Resources.ResourceManager.GetObject("KaartGelijk");
-                    player = new SoundPlayer(str);
-                    player.Play();
+                    Player = new SoundPlayer(str);
+                    Player.Play();
 
                 }
                 catch

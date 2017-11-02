@@ -12,7 +12,10 @@ namespace Memory
         public static int Themanummer ;
         public static string Themaprefix;
 
-
+        /// <summary>
+        /// deze thema verandert de themaperfix en nummer die gebruikt worden bij het loaden van thema's in andere forms.
+        /// </summary>
+        /// <param name="Thema"></param>
         public static void VeranderThema(string Thema)
         {
             
