@@ -376,4 +376,67 @@
   <data name="Thema0CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema0CreditsAchtergrond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonAfsluitenRood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonAfsluitenRood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonCreditsBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonCreditsBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonHelpBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonHelpBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonHighscoresBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonHighscoresBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonLadenBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonLadenBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonSpeelGroen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSpeelGroen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IPadresLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IPadresLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Naam1InvullenLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Naam1InvullenLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Naam2InvullenLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Naam2InvullenLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeelveldButtonGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpeelveldButtonGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartButtonGroen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartButtonGroen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerugButtonBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerugButtonBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerugButtonRood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerugButtonRood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow_button03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow_button03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighscoresButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HighscoresButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HoofdmenuButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HoofdmenuButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InstellingenButtonBlauw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstellingenButtonBlauw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeelopnieuwButtonGreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpeelopnieuwButtonGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpelAfsluitenButtonRood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpelAfsluitenButtonRood1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerugButtonBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerugButtonBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

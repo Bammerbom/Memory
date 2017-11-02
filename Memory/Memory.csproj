@@ -152,6 +152,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\SpelAfsluitenButtonRood1.png" />
+    <None Include="Resources\SpeelopnieuwButtonGreen1.png" />
+    <None Include="Resources\SpelAfsluitenButtonRood.png" />
+    <None Include="Resources\SpeelopnieuwButtonGreen.png" />
+    <None Include="Resources\TerugButtonBlauw.png" />
+    <None Include="Resources\TerugButtonBlueGoed.png" />
+    <None Include="Resources\TerugButtonBlue.png" />
+    <None Include="Resources\yellow_button03.png" />
+    <None Include="Resources\PortLabelGeel.png" />
+    <None Include="Resources\SpeelveldButtonGeel.png" />
+    <None Include="Resources\Naam2InvullenLabel.png" />
+    <None Include="Resources\Naam1InvullenLabel.png" />
+    <None Include="Resources\TerugButtonRood.png" />
+    <None Include="Resources\StartButtonGroen.png" />
     <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema1SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema0SpeelveldAchtergrond.jpg" />
@@ -243,6 +257,21 @@
     <None Include="Resources\KaartGelijk.wav" />
     <None Include="Resources\Geluidsicoontje.png" />
     <None Include="Resources\GeluidsicoontjeKruis.png" />
+    <None Include="Resources\ButtonAfsluitenRood.png" />
+    <None Include="Resources\ButtonCreditsBlauw.png" />
+    <None Include="Resources\ButtonHelpBlauw.png" />
+    <None Include="Resources\ButtonHighscoresBlauw.png" />
+    <None Include="Resources\ButtonLadenBlauw.png" />
+    <None Include="Resources\ButtonSpeelGroen.png" />
+    <None Include="Resources\IPadresLabelGeel.png" />
+    <None Include="Resources\HighscoresButtonBlauw.png" />
+    <None Include="Resources\HoofdmenuButtonBlauw.png" />
+    <None Include="Resources\InstellingenButtonBlauw.png" />
+    <None Include="Resources\HighscoresButtonBlauw1.png" />
+    <None Include="Resources\HoofdmenuButtonBlauw1.png" />
+    <None Include="Resources\InstellingenButtonBlauw1.png" />
+    <None Include="Resources\HighscoresButtonBlauw12.png" />
+    <None Include="Resources\HoofdmenuButtonBlauw12.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

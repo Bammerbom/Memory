@@ -162,10 +162,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Memory.Properties.Resources.Pijltjeterug;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 662);
+            this.pictureBox1.Image = global::Memory.Properties.Resources.TerugButtonBlauw;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 684);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 76);
+            this.pictureBox1.Size = new System.Drawing.Size(172, 45);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);

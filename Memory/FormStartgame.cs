@@ -23,11 +23,11 @@ namespace Memory
             this.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "StartGameAchtergrond");
             comboGametype.Text = "Kies spelmodus";
             comboSpelgrootte.Visible = false;
-            labelSpelgrootte.Visible = false;
+            pictureBoxSpeelveld.Visible = false;
             textboxNaam1.Visible = false;
             textboxNaam2.Visible = false;
-            labelNaam1.Visible = false;
-            labelNaam2.Visible = false;
+            pictureBoxNaam1.Visible = false;
+            pictureBoxNaam2.Visible = false;
         }
 
         private string GetLocalIPAddress() {
@@ -44,70 +44,70 @@ namespace Memory
             if(comboGametype.Text == "Kies spelmodus")
             {
                 comboSpelgrootte.Visible = false;
-                labelSpelgrootte.Visible = false;
+                pictureBoxSpeelveld.Visible = false;
                 textboxNaam1.Visible = false;
                 textboxNaam2.Visible = false;
-                labelNaam1.Visible = false;
-                labelNaam2.Visible = false;
-                labelIp.Visible = false;
+                pictureBoxNaam1.Visible = false;
+                pictureBoxNaam2.Visible = false;
+                pictureBoxIPadres.Visible = false;
                 textboxIp.Visible = false;
-                labelPort.Visible = false;
+                pictureBoxPort.Visible = false;
                 textboxPort.Visible = false;
             }
             else if(comboGametype.Text == "Singleplayer")
             {
                 comboSpelgrootte.Visible = true;
-                labelSpelgrootte.Visible = true;
+                pictureBoxSpeelveld.Visible = true;
                 textboxNaam1.Visible = true;
-                labelNaam1.Text = "Naam invullen";
-                labelNaam1.Visible = true;
+                pictureBoxNaam1.Text = "Naam invullen";
+                pictureBoxNaam1.Visible = true;
                 textboxNaam2.Visible = false;
-                labelNaam2.Visible = false;
-                labelIp.Visible = false;
+                pictureBoxNaam2.Visible = false;
+                pictureBoxIPadres.Visible = false;
                 textboxIp.Visible = false;
-                labelPort.Visible = false;
+                pictureBoxPort.Visible = false;
                 textboxPort.Visible = false;
             }
             else if (comboGametype.Text == "Local Multiplayer")
             {
                 comboSpelgrootte.Visible = true;
-                labelSpelgrootte.Visible = true;
+                pictureBoxSpeelveld.Visible = true;
                 textboxNaam1.Visible = true;
                 textboxNaam2.Visible = true;
-                labelNaam1.Text = "Naam 1 invullen";
-                labelNaam1.Visible = true;
-                labelNaam2.Visible = true;
-                labelIp.Visible = false;
+                pictureBoxNaam1.Text = "Naam 1 invullen";
+                pictureBoxNaam1.Visible = true;
+                pictureBoxNaam2.Visible = true;
+                pictureBoxIPadres.Visible = false;
                 textboxIp.Visible = false;
-                labelPort.Visible = false;
+                pictureBoxPort.Visible = false;
                 textboxPort.Visible = false;
             }
             else if(comboGametype.Text == "Host Multiplayer") {
                 comboSpelgrootte.Visible = true;
-                labelSpelgrootte.Visible = true;
+                pictureBoxSpeelveld.Visible = true;
                 textboxNaam1.Visible = true;
-                labelNaam1.Text = "Naam invullen";
-                labelNaam1.Visible = true;
+                pictureBoxNaam1.Text = "Naam invullen";
+                pictureBoxNaam2.Visible = true;
                 textboxNaam2.Visible = false;
-                labelNaam2.Visible = false;
-                labelIp.Visible = true;
+                pictureBoxNaam2.Visible = false;
+                pictureBoxIPadres.Visible = true;
                 textboxIp.Visible = true;
-                labelPort.Visible = true;
+                pictureBoxPort.Visible = true;
                 textboxPort.Visible = true;
                 textboxIp.Text = GetLocalIPAddress();
                 textboxIp.ReadOnly = true;
             }
             else if (comboGametype.Text == "Join Multiplayer") {
                 comboSpelgrootte.Visible = false;
-                labelSpelgrootte.Visible = false;
+                pictureBoxSpeelveld.Visible = false;
                 textboxNaam1.Visible = true;
-                labelNaam1.Text = "Naam invullen";
-                labelNaam1.Visible = true;
+                pictureBoxNaam1.Text = "Naam invullen";
+                pictureBoxNaam2.Visible = true;
                 textboxNaam2.Visible = false;
-                labelNaam2.Visible = false;
-                labelIp.Visible = true;
+                pictureBoxNaam2.Visible = false;
+                pictureBoxIPadres.Visible = true;
                 textboxIp.Visible = true;
-                labelPort.Visible = true;
+                pictureBoxPort.Visible = true;
                 textboxPort.Visible = true;
                 textboxIp.Text = "";
                 textboxIp.ReadOnly = false;
@@ -222,6 +222,9 @@ namespace Memory
             }
         }
 
-        
+        private void textboxIp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

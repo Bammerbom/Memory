@@ -65,10 +65,10 @@
             // 
             this.pictureBox2Laden.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2Laden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2Laden.Image = global::Memory.Properties.Resources.Button_menuLaden;
-            this.pictureBox2Laden.Location = new System.Drawing.Point(145, 100);
+            this.pictureBox2Laden.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2Laden.Image")));
+            this.pictureBox2Laden.Location = new System.Drawing.Point(145, 110);
             this.pictureBox2Laden.Name = "pictureBox2Laden";
-            this.pictureBox2Laden.Size = new System.Drawing.Size(185, 48);
+            this.pictureBox2Laden.Size = new System.Drawing.Size(192, 48);
             this.pictureBox2Laden.TabIndex = 10;
             this.pictureBox2Laden.TabStop = false;
             this.pictureBox2Laden.Click += new System.EventHandler(this.pictureBox2Laden_Click);
@@ -77,10 +77,10 @@
             // 
             this.pictureBox3Highscores.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3Highscores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3Highscores.Image = global::Memory.Properties.Resources.Button_menuHighscores;
-            this.pictureBox3Highscores.Location = new System.Drawing.Point(145, 154);
+            this.pictureBox3Highscores.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3Highscores.Image")));
+            this.pictureBox3Highscores.Location = new System.Drawing.Point(145, 164);
             this.pictureBox3Highscores.Name = "pictureBox3Highscores";
-            this.pictureBox3Highscores.Size = new System.Drawing.Size(185, 50);
+            this.pictureBox3Highscores.Size = new System.Drawing.Size(192, 50);
             this.pictureBox3Highscores.TabIndex = 11;
             this.pictureBox3Highscores.TabStop = false;
             this.pictureBox3Highscores.Click += new System.EventHandler(this.pictureBox3Highscores_Click);
@@ -89,10 +89,10 @@
             // 
             this.pictureBox4Credits.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4Credits.Image = global::Memory.Properties.Resources.Button_menuCredits;
-            this.pictureBox4Credits.Location = new System.Drawing.Point(145, 210);
+            this.pictureBox4Credits.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4Credits.Image")));
+            this.pictureBox4Credits.Location = new System.Drawing.Point(145, 220);
             this.pictureBox4Credits.Name = "pictureBox4Credits";
-            this.pictureBox4Credits.Size = new System.Drawing.Size(185, 51);
+            this.pictureBox4Credits.Size = new System.Drawing.Size(192, 51);
             this.pictureBox4Credits.TabIndex = 12;
             this.pictureBox4Credits.TabStop = false;
             this.pictureBox4Credits.Click += new System.EventHandler(this.pictureBox4Credits_Click);
@@ -101,10 +101,10 @@
             // 
             this.pictureBox1Speel.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1Speel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1Speel.Image = global::Memory.Properties.Resources.Button_menuSpeel2;
-            this.pictureBox1Speel.Location = new System.Drawing.Point(145, 45);
+            this.pictureBox1Speel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Speel.Image")));
+            this.pictureBox1Speel.Location = new System.Drawing.Point(124, 40);
             this.pictureBox1Speel.Name = "pictureBox1Speel";
-            this.pictureBox1Speel.Size = new System.Drawing.Size(185, 49);
+            this.pictureBox1Speel.Size = new System.Drawing.Size(231, 60);
             this.pictureBox1Speel.TabIndex = 13;
             this.pictureBox1Speel.TabStop = false;
             this.pictureBox1Speel.Click += new System.EventHandler(this.pictureBox1Speel_Click);
@@ -113,10 +113,10 @@
             // 
             this.pictureBox5Afsluiten.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5Afsluiten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5Afsluiten.Image = global::Memory.Properties.Resources.Button_menuAfsluiten1;
-            this.pictureBox5Afsluiten.Location = new System.Drawing.Point(145, 323);
+            this.pictureBox5Afsluiten.Image = global::Memory.Properties.Resources.ButtonAfsluitenRood;
+            this.pictureBox5Afsluiten.Location = new System.Drawing.Point(145, 333);
             this.pictureBox5Afsluiten.Name = "pictureBox5Afsluiten";
-            this.pictureBox5Afsluiten.Size = new System.Drawing.Size(185, 48);
+            this.pictureBox5Afsluiten.Size = new System.Drawing.Size(192, 51);
             this.pictureBox5Afsluiten.TabIndex = 14;
             this.pictureBox5Afsluiten.TabStop = false;
             this.pictureBox5Afsluiten.Click += new System.EventHandler(this.pictureBox5Afsluiten_Click);
@@ -124,10 +124,10 @@
             // pictureBox6Help
             // 
             this.pictureBox6Help.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6Help.Image = global::Memory.Properties.Resources.Button_menuHelp;
-            this.pictureBox6Help.Location = new System.Drawing.Point(145, 267);
+            this.pictureBox6Help.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6Help.Image")));
+            this.pictureBox6Help.Location = new System.Drawing.Point(145, 277);
             this.pictureBox6Help.Name = "pictureBox6Help";
-            this.pictureBox6Help.Size = new System.Drawing.Size(185, 50);
+            this.pictureBox6Help.Size = new System.Drawing.Size(192, 50);
             this.pictureBox6Help.TabIndex = 15;
             this.pictureBox6Help.TabStop = false;
             this.pictureBox6Help.Click += new System.EventHandler(this.pictureBox6Help_Click);
@@ -137,7 +137,7 @@
             this.Volume.BackColor = System.Drawing.Color.White;
             this.Volume.BackgroundImage = global::Memory.Properties.Resources.Geluidsicoontje;
             this.Volume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Volume.Location = new System.Drawing.Point(23, 337);
+            this.Volume.Location = new System.Drawing.Point(21, 347);
             this.Volume.Name = "Volume";
             this.Volume.Size = new System.Drawing.Size(50, 50);
             this.Volume.TabIndex = 16;
