@@ -152,6 +152,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema0SpeelveldAchtergrond1.jpg" />
     <None Include="Resources\SpelAfsluitenButtonRood1.png" />
     <None Include="Resources\SpeelopnieuwButtonGreen1.png" />
     <None Include="Resources\SpelAfsluitenButtonRood.png" />
