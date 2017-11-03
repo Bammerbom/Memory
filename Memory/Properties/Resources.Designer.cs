@@ -63,6 +63,16 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2DbuttonHighscoresVerwijderen {
+            get {
+                object obj = ResourceManager.GetObject("_2DbuttonHighscoresVerwijderen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Achterkant {
             get {
                 object obj = ResourceManager.GetObject("Achterkant", resourceCulture);
@@ -184,6 +194,16 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap HighscoresButtonBlauw12 {
             get {
                 object obj = ResourceManager.GetObject("HighscoresButtonBlauw12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HighscoresVerwijderenRedButton {
+            get {
+                object obj = ResourceManager.GetObject("HighscoresVerwijderenRedButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

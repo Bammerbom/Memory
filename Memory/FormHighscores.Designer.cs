@@ -38,8 +38,8 @@
             this.Highscores_1spelers = new System.Windows.Forms.Label();
             this.dataGridViewSingelplayer = new System.Windows.Forms.DataGridView();
             this.dataGridViewMultiplayer = new System.Windows.Forms.DataGridView();
-            this.label_HighscoresVerwijderen = new System.Windows.Forms.Label();
             this.pictureBox1Terug = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -47,6 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Highscores_2spelers
@@ -140,19 +141,6 @@
             this.dataGridViewMultiplayer.Size = new System.Drawing.Size(551, 466);
             this.dataGridViewMultiplayer.TabIndex = 23;
             // 
-            // label_HighscoresVerwijderen
-            // 
-            this.label_HighscoresVerwijderen.AutoSize = true;
-            this.label_HighscoresVerwijderen.BackColor = System.Drawing.Color.Transparent;
-            this.label_HighscoresVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_HighscoresVerwijderen.ForeColor = System.Drawing.Color.White;
-            this.label_HighscoresVerwijderen.Location = new System.Drawing.Point(1036, 770);
-            this.label_HighscoresVerwijderen.Name = "label_HighscoresVerwijderen";
-            this.label_HighscoresVerwijderen.Size = new System.Drawing.Size(225, 25);
-            this.label_HighscoresVerwijderen.TabIndex = 25;
-            this.label_HighscoresVerwijderen.Text = "Highscores verwijderen?";
-            this.label_HighscoresVerwijderen.Click += new System.EventHandler(this.Label_HighscoresVerwijderen_Click);
-            // 
             // pictureBox1Terug
             // 
             this.pictureBox1Terug.BackColor = System.Drawing.Color.Transparent;
@@ -164,6 +152,17 @@
             this.pictureBox1Terug.TabStop = false;
             this.pictureBox1Terug.Click += new System.EventHandler(this.pictureBox1Terug_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Memory.Properties.Resources.HighscoresVerwijderenRedButton;
+            this.pictureBox1.Location = new System.Drawing.Point(1062, 744);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 48);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.Label_HighscoresVerwijderen_Click);
+            // 
             // FormHighscores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,8 +170,8 @@
             this.BackgroundImage = global::Memory.Properties.Resources.Thema0HighscoresAchtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 804);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox1Terug);
-            this.Controls.Add(this.label_HighscoresVerwijderen);
             this.Controls.Add(this.dataGridViewMultiplayer);
             this.Controls.Add(this.dataGridViewSingelplayer);
             this.Controls.Add(this.Highscores_2spelers);
@@ -197,6 +196,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,7 +211,7 @@
         private System.Windows.Forms.Label Highscores_1spelers;
         private System.Windows.Forms.DataGridView dataGridViewSingelplayer;
         private System.Windows.Forms.DataGridView dataGridViewMultiplayer;
-        private System.Windows.Forms.Label label_HighscoresVerwijderen;
         private System.Windows.Forms.PictureBox pictureBox1Terug;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

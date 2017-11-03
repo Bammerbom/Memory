@@ -57,6 +57,8 @@ namespace Memory
         //vraagt of je zeker bent dat je de de singelplayer en/of multiplayer highscores gegefens wil verwijderen
         private void Label_HighscoresVerwijderen_Click(object sender, EventArgs e)
         {
+            
+
             DialogResult result1 = MessageBox.Show("Wil je de singelplayer highscores verwijderen?", "Verwijderen highscores singelplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (result1 != DialogResult.Cancel)
             {
