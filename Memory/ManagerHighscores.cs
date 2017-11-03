@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Data;
-using System.Linq;
 
 namespace Memory
 {
@@ -127,9 +126,9 @@ namespace Memory
                     table.Rows.Add(" ", highscore[4], highscore[5], highscore[6], null);
                 }
             }
-            for(int i = 0; i < (BaseGame.Gamemode == 0 ? 20 : 10) - highscores.Count; i++)
+            for(int i = 0; i < (multi == false ? 20 - highscores.Count : (10 - highscores.Count) * 2 ); i++) 
             {
-                table.Rows.Add();
+                table.Rows.Add();  
             }
             return table;
         }

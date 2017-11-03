@@ -92,11 +92,12 @@
             // textboxNaam2
             // 
             this.textboxNaam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNaam2.Location = new System.Drawing.Point(262, 342);
+            this.textboxNaam2.Location = new System.Drawing.Point(262, 344);
             this.textboxNaam2.MaxLength = 15;
             this.textboxNaam2.Name = "textboxNaam2";
             this.textboxNaam2.Size = new System.Drawing.Size(278, 32);
             this.textboxNaam2.TabIndex = 15;
+            this.textboxNaam2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textboxNaam1_KeyPress);
             // 
             // labelSpelgrootte
             // 
@@ -130,7 +131,7 @@
             // textboxIp
             // 
             this.textboxIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxIp.Location = new System.Drawing.Point(261, 342);
+            this.textboxIp.Location = new System.Drawing.Point(262, 344);
             this.textboxIp.Name = "textboxIp";
             this.textboxIp.Size = new System.Drawing.Size(278, 32);
             this.textboxIp.TabIndex = 18;

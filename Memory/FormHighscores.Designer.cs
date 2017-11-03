@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHighscores));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Highscores_2spelers = new System.Windows.Forms.Label();
             this.pictureBox1highscore = new System.Windows.Forms.PictureBox();
@@ -53,13 +57,13 @@
             // 
             this.Highscores_2spelers.AutoSize = true;
             this.Highscores_2spelers.BackColor = System.Drawing.Color.Transparent;
-            this.Highscores_2spelers.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.Highscores_2spelers.Font = new System.Drawing.Font("KenVector Future", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Highscores_2spelers.ForeColor = System.Drawing.Color.White;
             this.Highscores_2spelers.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Highscores_2spelers.Location = new System.Drawing.Point(875, 197);
+            this.Highscores_2spelers.Location = new System.Drawing.Point(865, 199);
             this.Highscores_2spelers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Highscores_2spelers.Name = "Highscores_2spelers";
-            this.Highscores_2spelers.Size = new System.Drawing.Size(155, 39);
+            this.Highscores_2spelers.Size = new System.Drawing.Size(241, 37);
             this.Highscores_2spelers.TabIndex = 5;
             this.Highscores_2spelers.Text = "2 spelers";
             this.Highscores_2spelers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,13 +101,13 @@
             // 
             this.Highscores_1spelers.AutoSize = true;
             this.Highscores_1spelers.BackColor = System.Drawing.Color.Transparent;
-            this.Highscores_1spelers.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.Highscores_1spelers.Font = new System.Drawing.Font("KenVector Future", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Highscores_1spelers.ForeColor = System.Drawing.Color.White;
-            this.Highscores_1spelers.Location = new System.Drawing.Point(220, 196);
+            this.Highscores_1spelers.Location = new System.Drawing.Point(197, 199);
             this.Highscores_1spelers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Highscores_1spelers.Name = "Highscores_1spelers";
             this.Highscores_1spelers.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Highscores_1spelers.Size = new System.Drawing.Size(155, 39);
+            this.Highscores_1spelers.Size = new System.Drawing.Size(229, 37);
             this.Highscores_1spelers.TabIndex = 21;
             this.Highscores_1spelers.Text = "1 spelers";
             this.Highscores_1spelers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,7 +119,23 @@
             this.dataGridViewSingelplayer.AllowUserToResizeColumns = false;
             this.dataGridViewSingelplayer.AllowUserToResizeRows = false;
             this.dataGridViewSingelplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("KenVector Future", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSingelplayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSingelplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("KenVector Future", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewSingelplayer.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewSingelplayer.Enabled = false;
             this.dataGridViewSingelplayer.Location = new System.Drawing.Point(30, 252);
             this.dataGridViewSingelplayer.Name = "dataGridViewSingelplayer";
@@ -131,7 +151,23 @@
             this.dataGridViewMultiplayer.AllowUserToResizeColumns = false;
             this.dataGridViewMultiplayer.AllowUserToResizeRows = false;
             this.dataGridViewMultiplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("KenVector Future", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMultiplayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewMultiplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("KenVector Future", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewMultiplayer.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewMultiplayer.Enabled = false;
             this.dataGridViewMultiplayer.Location = new System.Drawing.Point(687, 252);
             this.dataGridViewMultiplayer.Name = "dataGridViewMultiplayer";
@@ -144,11 +180,11 @@
             // 
             this.label_HighscoresVerwijderen.AutoSize = true;
             this.label_HighscoresVerwijderen.BackColor = System.Drawing.Color.Transparent;
-            this.label_HighscoresVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_HighscoresVerwijderen.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_HighscoresVerwijderen.ForeColor = System.Drawing.Color.White;
-            this.label_HighscoresVerwijderen.Location = new System.Drawing.Point(1036, 770);
+            this.label_HighscoresVerwijderen.Location = new System.Drawing.Point(881, 772);
             this.label_HighscoresVerwijderen.Name = "label_HighscoresVerwijderen";
-            this.label_HighscoresVerwijderen.Size = new System.Drawing.Size(225, 25);
+            this.label_HighscoresVerwijderen.Size = new System.Drawing.Size(371, 23);
             this.label_HighscoresVerwijderen.TabIndex = 25;
             this.label_HighscoresVerwijderen.Text = "Highscores verwijderen?";
             this.label_HighscoresVerwijderen.Click += new System.EventHandler(this.Label_HighscoresVerwijderen_Click);
