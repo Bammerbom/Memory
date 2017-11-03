@@ -11,6 +11,12 @@ namespace Memory {
     class ManagerClient {
         private static readonly int PacketSize = 1024 * 1024;
 
+        /// <summary>
+        /// Verbindt met de server op het gegeven ip en poort
+        /// </summary>
+        /// <param name="ip">Het ip</param>
+        /// <param name="port">De poort</param>
+        /// <returns>Of er succesvol verbonden is</returns>
         public static bool Client(string ip, int port) {
             try {
                 NetClient.Start(ServerDisconnect, ip, port, PacketSize);
@@ -21,6 +27,10 @@ namespace Memory {
             }
         }
 
+        /// <summary>
+        /// Deze method wordt gecalled als een client disconnect
+        /// </summary>
+        /// <param name="error">De error, or null als die niet bekend is</param>
         public static void ServerDisconnect(string error) {
             if (error != null) {
                 Console.WriteLine("> DISCONNECT (ERROR)");
