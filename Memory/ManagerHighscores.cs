@@ -21,7 +21,7 @@ namespace Memory
         public static List<Object[]> GetHighscores(string path)
         {
             //Als de file niet bestaat return een lege lijst
-            if (!File.Exists(path)) return new List<Object[]>();
+            if (!File.Exists(path) || File.ReadAllText(path) == "") return new List<Object[]>();
 
             //Lees het bestand
             string lines = File.ReadAllText(path);
