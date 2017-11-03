@@ -293,6 +293,8 @@
     <None Include="Resources\InstellingenButtonBlauw1.png" />
     <None Include="Resources\HighscoresButtonBlauw12.png" />
     <None Include="Resources\HoofdmenuButtonBlauw12.png" />
+    <None Include="Resources\HighscoresVerwijderenRedButton.png" />
+    <None Include="Resources\2DbuttonHighscoresVerwijderen.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

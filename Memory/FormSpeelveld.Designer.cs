@@ -144,21 +144,21 @@
             // 
             // Textbox_Score_Speler_1
             // 
-            this.Textbox_Score_Speler_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Score_Speler_1.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Textbox_Score_Speler_1.Location = new System.Drawing.Point(195, 145);
             this.Textbox_Score_Speler_1.Name = "Textbox_Score_Speler_1";
             this.Textbox_Score_Speler_1.ReadOnly = true;
-            this.Textbox_Score_Speler_1.Size = new System.Drawing.Size(81, 35);
+            this.Textbox_Score_Speler_1.Size = new System.Drawing.Size(81, 34);
             this.Textbox_Score_Speler_1.TabIndex = 2;
             // 
             // Label_Score_Speler_1
             // 
             this.Label_Score_Speler_1.AutoSize = true;
             this.Label_Score_Speler_1.BackColor = System.Drawing.SystemColors.Control;
-            this.Label_Score_Speler_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Score_Speler_1.Location = new System.Drawing.Point(50, 148);
+            this.Label_Score_Speler_1.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Score_Speler_1.Location = new System.Drawing.Point(26, 150);
             this.Label_Score_Speler_1.Name = "Label_Score_Speler_1";
-            this.Label_Score_Speler_1.Size = new System.Drawing.Size(116, 29);
+            this.Label_Score_Speler_1.Size = new System.Drawing.Size(163, 27);
             this.Label_Score_Speler_1.TabIndex = 3;
             this.Label_Score_Speler_1.Text = "Speler 1 :";
             // 
@@ -166,30 +166,30 @@
             // 
             this.Label_Score_Speler_2.AutoSize = true;
             this.Label_Score_Speler_2.BackColor = System.Drawing.SystemColors.Control;
-            this.Label_Score_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Score_Speler_2.Location = new System.Drawing.Point(50, 245);
+            this.Label_Score_Speler_2.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Score_Speler_2.Location = new System.Drawing.Point(17, 247);
             this.Label_Score_Speler_2.Name = "Label_Score_Speler_2";
-            this.Label_Score_Speler_2.Size = new System.Drawing.Size(116, 29);
+            this.Label_Score_Speler_2.Size = new System.Drawing.Size(172, 27);
             this.Label_Score_Speler_2.TabIndex = 4;
             this.Label_Score_Speler_2.Text = "Speler 2 :";
             // 
             // Textbox_Score_Speler_2
             // 
-            this.Textbox_Score_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Score_Speler_2.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Textbox_Score_Speler_2.Location = new System.Drawing.Point(195, 242);
             this.Textbox_Score_Speler_2.Name = "Textbox_Score_Speler_2";
             this.Textbox_Score_Speler_2.ReadOnly = true;
-            this.Textbox_Score_Speler_2.Size = new System.Drawing.Size(81, 35);
+            this.Textbox_Score_Speler_2.Size = new System.Drawing.Size(81, 34);
             this.Textbox_Score_Speler_2.TabIndex = 5;
             // 
             // Label_Score
             // 
             this.Label_Score.AutoSize = true;
             this.Label_Score.BackColor = System.Drawing.Color.White;
-            this.Label_Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Score.Location = new System.Drawing.Point(105, 54);
+            this.Label_Score.Font = new System.Drawing.Font("KenVector Future", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Score.Location = new System.Drawing.Point(82, 52);
             this.Label_Score.Name = "Label_Score";
-            this.Label_Score.Size = new System.Drawing.Size(126, 46);
+            this.Label_Score.Size = new System.Drawing.Size(185, 45);
             this.Label_Score.TabIndex = 6;
             this.Label_Score.Text = "Score";
             // 
@@ -197,25 +197,25 @@
             // 
             this.Label_Zetten_Speler_1.AutoSize = true;
             this.Label_Zetten_Speler_1.BackColor = System.Drawing.Color.White;
-            this.Label_Zetten_Speler_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Zetten_Speler_1.Location = new System.Drawing.Point(50, 189);
+            this.Label_Zetten_Speler_1.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Zetten_Speler_1.Location = new System.Drawing.Point(43, 191);
             this.Label_Zetten_Speler_1.Name = "Label_Zetten_Speler_1";
-            this.Label_Zetten_Speler_1.Size = new System.Drawing.Size(92, 29);
+            this.Label_Zetten_Speler_1.Size = new System.Drawing.Size(146, 27);
             this.Label_Zetten_Speler_1.TabIndex = 7;
             this.Label_Zetten_Speler_1.Text = "Zetten :";
             // 
             // Textbox_Zetten_Speler_1
             // 
-            this.Textbox_Zetten_Speler_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Zetten_Speler_1.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Textbox_Zetten_Speler_1.Location = new System.Drawing.Point(195, 186);
             this.Textbox_Zetten_Speler_1.Name = "Textbox_Zetten_Speler_1";
             this.Textbox_Zetten_Speler_1.ReadOnly = true;
-            this.Textbox_Zetten_Speler_1.Size = new System.Drawing.Size(81, 35);
+            this.Textbox_Zetten_Speler_1.Size = new System.Drawing.Size(81, 34);
             this.Textbox_Zetten_Speler_1.TabIndex = 8;
             // 
             // TextBox_Beurt
             // 
-            this.TextBox_Beurt.Font = new System.Drawing.Font("Microsoft Sans Serif", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_Beurt.Font = new System.Drawing.Font("KenVector Future", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_Beurt.Location = new System.Drawing.Point(55, 392);
             this.TextBox_Beurt.Name = "TextBox_Beurt";
             this.TextBox_Beurt.ReadOnly = true;
@@ -227,26 +227,26 @@
             // 
             this.Label_Timer.AutoSize = true;
             this.Label_Timer.BackColor = System.Drawing.Color.White;
-            this.Label_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Timer.Location = new System.Drawing.Point(12, 524);
+            this.Label_Timer.Font = new System.Drawing.Font("KenVector Future", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Timer.Location = new System.Drawing.Point(0, 521);
             this.Label_Timer.Name = "Label_Timer";
-            this.Label_Timer.Size = new System.Drawing.Size(209, 63);
+            this.Label_Timer.Size = new System.Drawing.Size(276, 59);
             this.Label_Timer.TabIndex = 11;
             this.Label_Timer.Text = "Timer : ";
             // 
             // Textbox_Timer
             // 
-            this.Textbox_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox_Timer.Location = new System.Drawing.Point(227, 521);
+            this.Textbox_Timer.Font = new System.Drawing.Font("KenVector Future", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Timer.Location = new System.Drawing.Point(248, 519);
             this.Textbox_Timer.Name = "Textbox_Timer";
             this.Textbox_Timer.ReadOnly = true;
-            this.Textbox_Timer.Size = new System.Drawing.Size(100, 68);
+            this.Textbox_Timer.Size = new System.Drawing.Size(100, 67);
             this.Textbox_Timer.TabIndex = 12;
             this.Textbox_Timer.Text = "10";
             // 
             // Button_Opslaan
             // 
-            this.Button_Opslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Opslaan.Font = new System.Drawing.Font("KenVector Future", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Opslaan.Location = new System.Drawing.Point(55, 694);
             this.Button_Opslaan.Name = "Button_Opslaan";
             this.Button_Opslaan.Size = new System.Drawing.Size(221, 77);
@@ -257,7 +257,7 @@
             // 
             // Button_Exit
             // 
-            this.Button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Exit.Font = new System.Drawing.Font("KenVector Future", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Exit.Location = new System.Drawing.Point(55, 777);
             this.Button_Exit.Name = "Button_Exit";
             this.Button_Exit.Size = new System.Drawing.Size(221, 77);
@@ -270,25 +270,25 @@
             // 
             this.Label_Zetten_Speler_2.AutoSize = true;
             this.Label_Zetten_Speler_2.BackColor = System.Drawing.Color.White;
-            this.Label_Zetten_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Zetten_Speler_2.Location = new System.Drawing.Point(50, 283);
+            this.Label_Zetten_Speler_2.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Zetten_Speler_2.Location = new System.Drawing.Point(43, 288);
             this.Label_Zetten_Speler_2.Name = "Label_Zetten_Speler_2";
-            this.Label_Zetten_Speler_2.Size = new System.Drawing.Size(92, 29);
+            this.Label_Zetten_Speler_2.Size = new System.Drawing.Size(146, 27);
             this.Label_Zetten_Speler_2.TabIndex = 31;
             this.Label_Zetten_Speler_2.Text = "Zetten :";
             // 
             // Textbox_Zetten_Speler_2
             // 
-            this.Textbox_Zetten_Speler_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Textbox_Zetten_Speler_2.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Textbox_Zetten_Speler_2.Location = new System.Drawing.Point(195, 283);
             this.Textbox_Zetten_Speler_2.Name = "Textbox_Zetten_Speler_2";
             this.Textbox_Zetten_Speler_2.ReadOnly = true;
-            this.Textbox_Zetten_Speler_2.Size = new System.Drawing.Size(81, 35);
+            this.Textbox_Zetten_Speler_2.Size = new System.Drawing.Size(81, 34);
             this.Textbox_Zetten_Speler_2.TabIndex = 32;
             // 
             // Buton_Reset
             // 
-            this.Buton_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Buton_Reset.Font = new System.Drawing.Font("KenVector Future", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Buton_Reset.Location = new System.Drawing.Point(55, 611);
             this.Buton_Reset.Name = "Buton_Reset";
             this.Buton_Reset.Size = new System.Drawing.Size(221, 77);
