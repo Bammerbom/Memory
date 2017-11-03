@@ -104,6 +104,7 @@ namespace Memory
                 pictureBoxSpeelveld.Visible = true;
                 textboxNaam1.Visible = true;
                 pictureBoxNaam1.Text = "Naam invullen";
+                pictureBoxNaam1.Visible = true;
                 pictureBoxNaam2.Visible = true;
                 textboxNaam2.Visible = false;
                 pictureBoxNaam2.Visible = false;
@@ -119,6 +120,7 @@ namespace Memory
                 pictureBoxSpeelveld.Visible = false;
                 textboxNaam1.Visible = true;
                 pictureBoxNaam1.Text = "Naam invullen";
+                pictureBoxNaam1.Visible = true;
                 pictureBoxNaam2.Visible = true;
                 textboxNaam2.Visible = false;
                 pictureBoxNaam2.Visible = false;
