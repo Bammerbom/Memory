@@ -118,269 +118,269 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Thema2Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema0Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LabelHelpDefinitief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LabelHelpDefinitief.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2MenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="USBSTICKWOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\USBSTICKWOW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2StartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DisneyStartGameAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Spaceship_starwars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Spaceship starwars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0StartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\floppy-disks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VraagtekenHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\VraagtekenHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Achterkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Achterkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Voorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Game_over_lagere_resolutie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Game over lagere resolutie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MemoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MemoryIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1StartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StartGameStormtroopers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0MenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Voorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DarthVaderMenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Picturebox0Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Picturebox0Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KaartVoorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0HighscoresAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sterren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1CreditsAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2CreditsAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Buttonclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Buttonclick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="GameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GameOver.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="KaartFlick" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KaartFlick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Piano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Piano.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Thema0AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Thema1AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="KaartGelijk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KaartGelijk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Geluidsicoontje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Geluidsicoontje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GeluidsicoontjeKruis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GeluidsicoontjeKruis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Thema0SpeelveldAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0SpeelveldAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema1SpeelveldAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema1SpeelveldAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema2SpeelveldAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema2SpeelveldAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thema0CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thema0CreditsAchtergrond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ButtonAfsluitenRood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonAfsluitenRood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonCreditsBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonCreditsBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonHelpBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonHelpBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonHighscoresBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonHighscoresBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonLadenBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonLadenBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonSpeelGroen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ButtonSpeelGroen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IPadresLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IPadresLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Naam1InvullenLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Naam1InvullenLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Naam2InvullenLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Naam2InvullenLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PortLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PortLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SpeelveldButtonGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SpeelveldButtonGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StartButtonGroen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StartButtonGroen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TerugButtonBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TerugButtonBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TerugButtonRood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonRood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HighscoresButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HighscoresButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonHelpBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonHelpBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HoofdmenuButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HoofdmenuButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Achterkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Achterkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="InstellingenButtonBlauw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InstellingenButtonBlauw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Thema1AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Piano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Piano.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Thema1StartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartGameStormtroopers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonSpeelGroen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonSpeelGroen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USBSTICKWOW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USBSTICKWOW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SpeelopnieuwButtonGreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SpeelopnieuwButtonGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonCreditsBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonCreditsBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighscoresButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HighscoresButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0HighscoresAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sterren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Geluidsicoontje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Geluidsicoontje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0CreditsAchtergrond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IPadresLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IPadresLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SpelAfsluitenButtonRood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SpelAfsluitenButtonRood1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StartButtonGroen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartButtonGroen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2CreditsAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2SpeelveldAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2SpeelveldAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Voorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spaceship_starwars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spaceship starwars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Thema2Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Naam1InvullenLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Naam1InvullenLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KaartGelijk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KaartGelijk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelHelpDefinitief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LabelHelpDefinitief.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VraagtekenHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VraagtekenHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1CreditsAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1CreditsAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Voorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2StartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DisneyStartGameAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DarthVaderMenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0StartGameAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\floppy-disks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2HelpAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2HelpAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonLadenBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonLadenBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PortLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeluidsicoontjeKruis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeluidsicoontjeKruis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow_button03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow_button03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonHighscoresBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonHighscoresBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameOver.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="InstellingenButtonBlauw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstellingenButtonBlauw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Kaart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Naam2InvullenLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Naam2InvullenLabel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HoofdmenuButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HoofdmenuButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KaartVoorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Kaart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Kaart6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1SpeelveldAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1SpeelveldAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema2MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2MenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoryIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TerugButtonBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yellow_button03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yellow_button03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Thema0MenuAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0MenuAchtergrond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeelveldButtonGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpeelveldButtonGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonclick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Thema2Kaart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema2Kaart5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TerugButtonBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TerugButtonBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Picturebox0Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Picturebox0Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema1Picturebox1Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema1Picturebox1Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Game_over_lagere_resolutie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Game over lagere resolutie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thema0SpeelveldAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thema0SpeelveldAchtergrond1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HighscoresVerwijderenRedButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HighscoresVerwijderenRedButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
