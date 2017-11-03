@@ -75,6 +75,12 @@ namespace Memory
             KlaarVoorVolgendeKlikkaart();
         }
 
+        /// <summary>
+        /// wordt gecalled als er iemand op een kaart klikt
+        /// </summary>
+        /// <param name="x">De x van de kaart</param>
+        /// <param name="y">De y van de kaart</param>
+        /// <returns>True als de logica in basegame niet door moet gaan, anders false</returns>
         public static bool KlikKaart(int x, int y) {
             //Als de speler niet aan de beurt is, return true
             if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) return true;
@@ -117,7 +123,10 @@ namespace Memory
             }
         }
 
-
+        /// <summary>
+        /// Wacht op een klikkaart packet van de andere speler
+        /// Als die gekregen is voert hij de logica uit die nodig is
+        /// </summary>
         public static void KlaarVoorVolgendeKlikkaart() {
             //Als deze speler niet aan de beurt is
             if ((Host ? 1 : 2) != BaseGame.SpelerAanBeurt) {  // ((Host ? 1 : 2) als de host true is dan 1 zo niet dan 2
@@ -155,6 +164,10 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// Eindigt de game
+        /// Als dit de client is, wacht op een reset packet van de host
+        /// </summary>
         public static async void End() {
             BaseGame.Gamestate = 2;
             await Task.Delay(2000);
@@ -185,6 +198,9 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// Sluit de game abrupt af
+        /// </summary>
         public static void Exit()
         {
             BaseGame.Gamestate = 2;
@@ -195,6 +211,10 @@ namespace Memory
             endgame.ShowDialog();
         }
 
+        /// <summary>
+        /// Wordt gecalled als er iemand op de reset knop drukt
+        /// </summary>
+        /// <returns></returns>
         public static bool Reset() {
             if (Host) {
                 return false;
@@ -204,6 +224,9 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// Stuurt een reset packet van de host naar die client
+        /// </summary>
         public static void Reset2() {
             if (Host) {
                 object[] reset = new object[1];
@@ -213,6 +236,9 @@ namespace Memory
             }
         }
 
+        /// <summary>
+        /// Disconnect de huidige speler
+        /// </summary>
         public static void Disconnect() {
             if (Host) {
                 NetServer.Disconnect();

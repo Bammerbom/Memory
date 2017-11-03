@@ -17,7 +17,14 @@ namespace Memory {
         private static Action<string> cJoin;
         private static Action<string> cDisconnect;
 
-        public static async void Start(Action<string> clJoin, Action<string> clDisconnect, int port, int bytesize) {
+        /// <summary>
+        /// Start een server waar nog niet naar verbonden kan worden (zie: NextClient())
+        /// </summary>
+        /// <param name="clJoin">Deze method wordt gecalled als een client joint</param>
+        /// <param name="clDisconnect">Deze method wordt gecalled als een client disconnect</param>
+        /// <param name="port">De poort waar de client naar toe moet connecten</param>
+        /// <param name="bytesize">Het aantal bytes dat per packet gestuurd wordt. (moet constant zijn tussen client en server)</param>
+        public static void Start(Action<string> clJoin, Action<string> clDisconnect, int port, int bytesize) {
             cJoin = clJoin;
             cDisconnect = clDisconnect;
             Port = port;
@@ -27,14 +34,26 @@ namespace Memory {
 			Listener.Start();
 		}
 
+        /// <summary>
+        /// Returned true als er momenteel een verbinding is
+        /// </summary>
+        /// <returns>Of er een verbinding is</returns>
         public static bool IsOpen() {
             return Open;
         }
 
+        /// <summary>
+        /// Sluit de huidige verbinding
+        /// </summary>
         public static void Disconnect() {
             Client.Close();
+            Open = false;
         }
 
+        /// <summary>
+        /// Freezed de huidige thread tot een client verbonden is
+        /// </summary>
+        /// <returns></returns>
         public static bool NextClient() {
             Client = Listener.AcceptTcpClient();
             cJoin(Client.Client.RemoteEndPoint.ToString());
@@ -42,6 +61,11 @@ namespace Memory {
             return true;
         }
 
+        /// <summary>
+        /// Stuurt een bericht naar de client
+        /// </summary>
+        /// <param name="message">Het bericht</param>
+        /// <returns>Of het succesvol afgeleverd is</returns>
         public static bool SendMessage(string message) {
             try {
                 byte[] bytes = Encoding.UTF8.GetBytes(message);
@@ -55,6 +79,10 @@ namespace Memory {
             }
         }
 
+        /// <summary>
+        /// Wacht tot er een bericht binnenkomt van de client
+        /// </summary>
+        /// <returns></returns>
         public static string ReceiveMessage() {
             try {
                 byte[] buffer = new byte[ByteSize];
@@ -75,6 +103,11 @@ namespace Memory {
             }
         }
 
+        /// <summary>
+        /// Zet bytes om in een string
+        /// </summary>
+        /// <param name="bytes">De bytes die omgezet moeten worden</param>
+        /// <returns>Het bericht</returns>
 		private static string cleanMessage(byte[] bytes) {
 			string message = Encoding.UTF8.GetString(bytes);
 
