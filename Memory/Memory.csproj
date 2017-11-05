@@ -172,6 +172,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\StartButtonGroen2D.png" />
+    <None Include="Resources\StartButtonGroen.png" />
     <None Include="Resources\SpelAfsluitenButtonRoodEndgame2D.png" />
     <None Include="Resources\SpelAfsluitenButtonRoodEndgame.png" />
     <None Include="Resources\SpeelOpnieuwButtonEndgame2D.png" />
@@ -195,7 +197,6 @@
     <None Include="Resources\Naam2InvullenLabel.png" />
     <None Include="Resources\Naam1InvullenLabel.png" />
     <None Include="Resources\TerugButtonRood.png" />
-    <None Include="Resources\StartButtonGroen.png" />
     <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema1SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema0SpeelveldAchtergrond.jpg" />

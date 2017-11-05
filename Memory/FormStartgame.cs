@@ -136,8 +136,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBoxStartmenuTerug_Click_1(object sender, EventArgs e)
+        private async void pictureBoxStartmenuTerug_Click_1(object sender, EventArgs e)
         {
+            this.pictureBoxTerug.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("TerugButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBoxTerug.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("TerugButtonBlauw");
             this.Close();
             this.Dispose();
         }
@@ -161,8 +164,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBoxStartmenuStart_Click_1(object sender, EventArgs e)
+        private async void pictureBoxStartmenuStart_Click_1(object sender, EventArgs e)
         {
+            this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("StartButtonGroen2D");
+            await Task.Delay(300);
+            this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("StartButtonGroen");
             Geluid.Player.Stop();
             Geluid.Player.Dispose();
             GC.Collect();

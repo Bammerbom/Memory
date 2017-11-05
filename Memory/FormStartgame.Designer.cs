@@ -34,16 +34,16 @@
             this.comboSpelgrootte = new System.Windows.Forms.ComboBox();
             this.textboxIp = new System.Windows.Forms.TextBox();
             this.textboxPort = new System.Windows.Forms.NumericUpDown();
-            this.pictureBoxStartmenuStart = new System.Windows.Forms.PictureBox();
-            this.pictureBoxStartmenuTerug = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStart = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTerug = new System.Windows.Forms.PictureBox();
             this.pictureBoxNaam2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxIPadres = new System.Windows.Forms.PictureBox();
             this.pictureBoxNaam1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxSpeelveld = new System.Windows.Forms.PictureBox();
             this.pictureBoxPort = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuTerug)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTerug)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIPadres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam1)).BeginInit();
@@ -160,30 +160,30 @@
             0,
             0});
             // 
-            // pictureBoxStartmenuStart
+            // pictureBoxStart
             // 
-            this.pictureBoxStartmenuStart.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxStartmenuStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxStartmenuStart.Image = global::Memory.Properties.Resources.StartButtonGroen;
-            this.pictureBoxStartmenuStart.Location = new System.Drawing.Point(567, 62);
-            this.pictureBoxStartmenuStart.Name = "pictureBoxStartmenuStart";
-            this.pictureBoxStartmenuStart.Size = new System.Drawing.Size(190, 49);
-            this.pictureBoxStartmenuStart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxStartmenuStart.TabIndex = 23;
-            this.pictureBoxStartmenuStart.TabStop = false;
-            this.pictureBoxStartmenuStart.Click += new System.EventHandler(this.pictureBoxStartmenuStart_Click_1);
+            this.pictureBoxStart.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxStart.BackgroundImage")));
+            this.pictureBoxStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxStart.Location = new System.Drawing.Point(567, 62);
+            this.pictureBoxStart.Name = "pictureBoxStart";
+            this.pictureBoxStart.Size = new System.Drawing.Size(190, 49);
+            this.pictureBoxStart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxStart.TabIndex = 23;
+            this.pictureBoxStart.TabStop = false;
+            this.pictureBoxStart.Click += new System.EventHandler(this.pictureBoxStartmenuStart_Click_1);
             // 
-            // pictureBoxStartmenuTerug
+            // pictureBoxTerug
             // 
-            this.pictureBoxStartmenuTerug.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxStartmenuTerug.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxStartmenuTerug.Image = global::Memory.Properties.Resources.TerugButtonBlauw;
-            this.pictureBoxStartmenuTerug.Location = new System.Drawing.Point(23, 62);
-            this.pictureBoxStartmenuTerug.Name = "pictureBoxStartmenuTerug";
-            this.pictureBoxStartmenuTerug.Size = new System.Drawing.Size(191, 49);
-            this.pictureBoxStartmenuTerug.TabIndex = 24;
-            this.pictureBoxStartmenuTerug.TabStop = false;
-            this.pictureBoxStartmenuTerug.Click += new System.EventHandler(this.pictureBoxStartmenuTerug_Click_1);
+            this.pictureBoxTerug.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxTerug.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxTerug.BackgroundImage")));
+            this.pictureBoxTerug.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxTerug.Location = new System.Drawing.Point(23, 62);
+            this.pictureBoxTerug.Name = "pictureBoxTerug";
+            this.pictureBoxTerug.Size = new System.Drawing.Size(190, 49);
+            this.pictureBoxTerug.TabIndex = 24;
+            this.pictureBoxTerug.TabStop = false;
+            this.pictureBoxTerug.Click += new System.EventHandler(this.pictureBoxStartmenuTerug_Click_1);
             // 
             // pictureBoxNaam2
             // 
@@ -247,8 +247,8 @@
             this.Controls.Add(this.pictureBoxNaam1);
             this.Controls.Add(this.pictureBoxIPadres);
             this.Controls.Add(this.pictureBoxNaam2);
-            this.Controls.Add(this.pictureBoxStartmenuTerug);
-            this.Controls.Add(this.pictureBoxStartmenuStart);
+            this.Controls.Add(this.pictureBoxTerug);
+            this.Controls.Add(this.pictureBoxStart);
             this.Controls.Add(this.textboxPort);
             this.Controls.Add(this.textboxIp);
             this.Controls.Add(this.labelSpelgrootte);
@@ -266,8 +266,8 @@
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormStartgame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStartmenuTerug)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTerug)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIPadres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNaam1)).EndInit();
@@ -289,8 +289,8 @@
         private System.Windows.Forms.ComboBox comboSpelgrootte;
         private System.Windows.Forms.TextBox textboxIp;
         private System.Windows.Forms.NumericUpDown textboxPort;
-        private System.Windows.Forms.PictureBox pictureBoxStartmenuStart;
-        private System.Windows.Forms.PictureBox pictureBoxStartmenuTerug;
+        private System.Windows.Forms.PictureBox pictureBoxStart;
+        private System.Windows.Forms.PictureBox pictureBoxTerug;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBoxNaam2;
