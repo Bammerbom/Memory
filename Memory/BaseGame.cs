@@ -179,6 +179,7 @@ namespace Memory
                     Tijdbeurt = 10; //reset timer
                                         
                     if (Checkwin()) {    //Check voor win 
+                        Render();
                         Endgame();
                         return;
                     }
