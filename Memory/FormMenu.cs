@@ -26,12 +26,14 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox1Speel_Click(object sender, EventArgs e)
+        private async void pictureBox1Speel_Click(object sender, EventArgs e)
         {
-            {
-                FormStartgame startgame = new FormStartgame();
-                startgame.ShowDialog();
-            }
+            this.pictureBox1Speel.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelButtonGroen2D");
+            await Task.Delay(300);
+            this.pictureBox1Speel.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelButtonGroen");
+            FormStartgame startgame = new FormStartgame();
+            startgame.ShowDialog();
+
         }
 
         /// <summary>
@@ -39,9 +41,12 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox5Afsluiten_Click(object sender, EventArgs e)
+        private async void pictureBox5Afsluiten_Click(object sender, EventArgs e)
         {
-        this.Close();
+            this.pictureBox5Afsluiten.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("AfsluitenButtonRood2D");
+            await Task.Delay(300);
+            this.pictureBox5Afsluiten.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("AfsluitenButtonRood");
+            this.Close();
            
         }
 
@@ -50,12 +55,14 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox3Highscores_Click(object sender, EventArgs e)
+        private async void pictureBox3Highscores_Click(object sender, EventArgs e)
         {
-            {
-                FormHighscores Highscores = new FormHighscores();
-                Highscores.ShowDialog();
-            }
+            this.pictureBox3Highscores.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBox3Highscores.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresButtonBlauw");
+            FormHighscores Highscores = new FormHighscores();
+            Highscores.ShowDialog();
+
         }
 
         /// <summary>
@@ -63,12 +70,14 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox6Help_Click(object sender, EventArgs e)
+        private async void pictureBox6Help_Click(object sender, EventArgs e)
         {
-            {
-                FormHelp Help = new FormHelp();
-                Help.ShowDialog();
-            }
+            this.pictureBox6Help.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HelpButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBox6Help.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HelpButtonBlauw");
+            FormHelp Help = new FormHelp();
+            Help.ShowDialog();
+
         }
 
         /// <summary>
@@ -76,12 +85,14 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox4Credits_Click(object sender, EventArgs e)
+        private async void pictureBox4Credits_Click(object sender, EventArgs e)
         {
-            {
-                FormCredits Credits = new FormCredits();
-                Credits.ShowDialog();
-            }
+            this.pictureBox4Credits.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("CreditsButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBox4Credits.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("CreditsButtonBlauw");
+            FormCredits Credits = new FormCredits();
+            Credits.ShowDialog();
+            
         }
 
         /// <summary>
@@ -89,12 +100,14 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox2Laden_Click(object sender, EventArgs e)
+        private async void pictureBox2Laden_Click(object sender, EventArgs e)
         {
-            {
-                ManagerSavegames.Loadgame();
+            this.pictureBox2Laden.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("LadenButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBox2Laden.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("LadenButtonBlauw");
+            ManagerSavegames.Loadgame();
 
-            }
+            
         }
 
         /// <summary>
