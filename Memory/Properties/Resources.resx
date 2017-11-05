@@ -154,12 +154,6 @@
   <data name="Thema1Kaart7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1Kaart7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SpeelopnieuwButtonGreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SpeelopnieuwButtonGreen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HighscoresButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HighscoresButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema0HighscoresAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sterren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,9 +177,6 @@
   </data>
   <data name="IPadresLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IPadresLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SpelAfsluitenButtonRood1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SpelAfsluitenButtonRood1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema0AchtergrondMuziek" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema0AchtergrondMuziek.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -289,9 +280,6 @@
   <data name="GameOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GameOver.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="InstellingenButtonBlauw1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InstellingenButtonBlauw1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Thema1Kaart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1Kaart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -306,9 +294,6 @@
   </data>
   <data name="Thema1Picturebox2Highscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thema1Picturebox2Highscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HoofdmenuButtonBlauw12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HoofdmenuButtonBlauw12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Thema0Voorkant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KaartVoorkant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -396,6 +381,36 @@
   </data>
   <data name="SpeelButtonGroen2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SpeelButtonGroen2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighscoresButtonBlauwEndgame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HighscoresButtonBlauwEndgame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighscoresButtonBlauwEndgame2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HighscoresButtonBlauwEndgame2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HoofdmenuButtonBlauwEndgame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HoofdmenuButtonBlauwEndgame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HoofdmenuButtonBlauwEndgame2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HoofdmenuButtonBlauwEndgame2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InstellingenButtonBlauwEndgame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstellingenButtonBaluwEndgame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InstellingenButtonBlauwEndgame2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InstellingenButtonBaluwEndgame2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeelOpnieuwButtonGroenEndgame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpeelOpnieuwButtonEndgame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeelOpnieuwButtonGroenEndgame2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpeelOpnieuwButtonEndgame2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpelAfsluitenButtonRoodEndgame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpelAfsluitenButtonRoodEndgame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpelAfsluitenButtonRoodEndgame2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpelAfsluitenButtonRoodEndgame2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TerugButtonBlauw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonBlauw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

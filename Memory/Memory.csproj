@@ -172,6 +172,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\SpelAfsluitenButtonRoodEndgame2D.png" />
+    <None Include="Resources\SpelAfsluitenButtonRoodEndgame.png" />
+    <None Include="Resources\SpeelOpnieuwButtonEndgame2D.png" />
+    <None Include="Resources\SpeelOpnieuwButtonEndgame.png" />
     <None Include="Resources\TerugButtonBlauw2D.png" />
     <None Include="Resources\TerugButtonBlauw.png" />
     <None Include="Resources\LadenButtonBlauw2D.png" />
@@ -307,6 +311,12 @@
     <None Include="Resources\HelpButtonBlauw2D.png" />
     <None Include="Resources\HighscoresButtonBlauw.png" />
     <None Include="Resources\HighscoresButtonBlauw2D.png" />
+    <None Include="Resources\HighscoresButtonBlauwEndgame.png" />
+    <None Include="Resources\HighscoresButtonBlauwEndgame2D.png" />
+    <None Include="Resources\HoofdmenuButtonBlauwEndgame.png" />
+    <None Include="Resources\HoofdmenuButtonBlauwEndgame2D.png" />
+    <None Include="Resources\InstellingenButtonBaluwEndgame.png" />
+    <None Include="Resources\InstellingenButtonBaluwEndgame2D.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

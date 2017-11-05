@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEndgame));
             this.LabelResultatenmatch = new System.Windows.Forms.Label();
-            this.pictureBoxSpeelopnieuw = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelopnieuw)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pictureBoxSpeelOpnieuw = new System.Windows.Forms.PictureBox();
+            this.pictureBoxInstellingen = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHighscores = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHoofdmenu = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSpelAfsluiten = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelOpnieuw)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInstellingen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHighscores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHoofdmenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpelAfsluiten)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelResultatenmatch
@@ -55,55 +55,55 @@
             this.LabelResultatenmatch.TabIndex = 5;
             this.LabelResultatenmatch.Text = "Label";
             // 
-            // pictureBoxSpeelopnieuw
+            // pictureBoxSpeelOpnieuw
             // 
-            this.pictureBoxSpeelopnieuw.Image = global::Memory.Properties.Resources.SpeelopnieuwButtonGreen1;
-            this.pictureBoxSpeelopnieuw.Location = new System.Drawing.Point(3, 377);
-            this.pictureBoxSpeelopnieuw.Name = "pictureBoxSpeelopnieuw";
-            this.pictureBoxSpeelopnieuw.Size = new System.Drawing.Size(149, 72);
-            this.pictureBoxSpeelopnieuw.TabIndex = 8;
-            this.pictureBoxSpeelopnieuw.TabStop = false;
-            this.pictureBoxSpeelopnieuw.Click += new System.EventHandler(this.ButtonReset_Click);
+            this.pictureBoxSpeelOpnieuw.BackgroundImage = global::Memory.Properties.Resources.SpeelOpnieuwButtonGroenEndgame;
+            this.pictureBoxSpeelOpnieuw.Location = new System.Drawing.Point(7, 380);
+            this.pictureBoxSpeelOpnieuw.Name = "pictureBoxSpeelOpnieuw";
+            this.pictureBoxSpeelOpnieuw.Size = new System.Drawing.Size(150, 70);
+            this.pictureBoxSpeelOpnieuw.TabIndex = 8;
+            this.pictureBoxSpeelOpnieuw.TabStop = false;
+            this.pictureBoxSpeelOpnieuw.Click += new System.EventHandler(this.ButtonSpeelOpnieuw_Click);
             // 
-            // pictureBox1
+            // pictureBoxInstellingen
             // 
-            this.pictureBox1.Image = global::Memory.Properties.Resources.InstellingenButtonBlauw1;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 377);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 73);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.ButtonStartgame_Click);
+            this.pictureBoxInstellingen.BackgroundImage = global::Memory.Properties.Resources.InstellingenButtonBlauwEndgame;
+            this.pictureBoxInstellingen.Location = new System.Drawing.Point(162, 380);
+            this.pictureBoxInstellingen.Name = "pictureBoxInstellingen";
+            this.pictureBoxInstellingen.Size = new System.Drawing.Size(150, 70);
+            this.pictureBoxInstellingen.TabIndex = 9;
+            this.pictureBoxInstellingen.TabStop = false;
+            this.pictureBoxInstellingen.Click += new System.EventHandler(this.ButtonInstellingen_Click);
             // 
-            // pictureBox2
+            // pictureBoxHighscores
             // 
-            this.pictureBox2.Image = global::Memory.Properties.Resources.HighscoresButtonBlauw12;
-            this.pictureBox2.Location = new System.Drawing.Point(475, 377);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(152, 73);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.ButtonHighscored_Click);
+            this.pictureBoxHighscores.BackgroundImage = global::Memory.Properties.Resources.HighscoresButtonBlauwEndgame;
+            this.pictureBoxHighscores.Location = new System.Drawing.Point(472, 380);
+            this.pictureBoxHighscores.Name = "pictureBoxHighscores";
+            this.pictureBoxHighscores.Size = new System.Drawing.Size(150, 70);
+            this.pictureBoxHighscores.TabIndex = 10;
+            this.pictureBoxHighscores.TabStop = false;
+            this.pictureBoxHighscores.Click += new System.EventHandler(this.ButtonHighscores_Click);
             // 
-            // pictureBox3
+            // pictureBoxHoofdmenu
             // 
-            this.pictureBox3.Image = global::Memory.Properties.Resources.HoofdmenuButtonBlauw12;
-            this.pictureBox3.Location = new System.Drawing.Point(316, 377);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(153, 73);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.ButtonHome_Click);
+            this.pictureBoxHoofdmenu.BackgroundImage = global::Memory.Properties.Resources.HoofdmenuButtonBlauwEndgame;
+            this.pictureBoxHoofdmenu.Location = new System.Drawing.Point(317, 380);
+            this.pictureBoxHoofdmenu.Name = "pictureBoxHoofdmenu";
+            this.pictureBoxHoofdmenu.Size = new System.Drawing.Size(150, 70);
+            this.pictureBoxHoofdmenu.TabIndex = 11;
+            this.pictureBoxHoofdmenu.TabStop = false;
+            this.pictureBoxHoofdmenu.Click += new System.EventHandler(this.ButtonHoofdmenu_Click);
             // 
-            // pictureBox4
+            // pictureBoxSpelAfsluiten
             // 
-            this.pictureBox4.Image = global::Memory.Properties.Resources.SpelAfsluitenButtonRood1;
-            this.pictureBox4.Location = new System.Drawing.Point(633, 377);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(153, 73);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.ButtonSluiten_Click);
+            this.pictureBoxSpelAfsluiten.BackgroundImage = global::Memory.Properties.Resources.SpelAfsluitenButtonRoodEndgame;
+            this.pictureBoxSpelAfsluiten.Location = new System.Drawing.Point(627, 380);
+            this.pictureBoxSpelAfsluiten.Name = "pictureBoxSpelAfsluiten";
+            this.pictureBoxSpelAfsluiten.Size = new System.Drawing.Size(150, 70);
+            this.pictureBoxSpelAfsluiten.TabIndex = 12;
+            this.pictureBoxSpelAfsluiten.TabStop = false;
+            this.pictureBoxSpelAfsluiten.Click += new System.EventHandler(this.ButtonSpelAfsluiten_Click);
             // 
             // FormEndgame
             // 
@@ -112,11 +112,11 @@
             this.BackgroundImage = global::Memory.Properties.Resources.Game_over_lagere_resolutie;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBoxSpeelopnieuw);
+            this.Controls.Add(this.pictureBoxSpelAfsluiten);
+            this.Controls.Add(this.pictureBoxHoofdmenu);
+            this.Controls.Add(this.pictureBoxHighscores);
+            this.Controls.Add(this.pictureBoxInstellingen);
+            this.Controls.Add(this.pictureBoxSpeelOpnieuw);
             this.Controls.Add(this.LabelResultatenmatch);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -128,11 +128,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
             this.Load += new System.EventHandler(this.FormEndgame_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelopnieuw)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelOpnieuw)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInstellingen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHighscores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHoofdmenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpelAfsluiten)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,10 +140,10 @@
 
         #endregion
         public System.Windows.Forms.Label LabelResultatenmatch;
-        private System.Windows.Forms.PictureBox pictureBoxSpeelopnieuw;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBoxSpeelOpnieuw;
+        private System.Windows.Forms.PictureBox pictureBoxInstellingen;
+        private System.Windows.Forms.PictureBox pictureBoxHighscores;
+        private System.Windows.Forms.PictureBox pictureBoxHoofdmenu;
+        private System.Windows.Forms.PictureBox pictureBoxSpelAfsluiten;
     }
 }

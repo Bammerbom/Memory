@@ -27,8 +27,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonReset_Click(object sender, EventArgs e)
+        private async void ButtonSpeelOpnieuw_Click(object sender, EventArgs e)
         {
+            this.pictureBoxSpeelOpnieuw.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelOpnieuwButtonGroenEndgame2D");
+            await Task.Delay(300);
+            this.pictureBoxSpeelOpnieuw.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelOpnieuwButtonGroenEndgame");
             if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return;
             this.Close();
             this.Dispose();
@@ -47,8 +50,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonStartgame_Click(object sender, EventArgs e)
+        private async void ButtonInstellingen_Click(object sender, EventArgs e)
         {
+            this.pictureBoxInstellingen.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("InstellingenButtonBlauwEndgame");
+            await Task.Delay(300);
+            this.pictureBoxInstellingen.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("InstellingenButtonBlauwEndgame");
             if (BaseGame.Gamemode == 2) {
                 GameMultiplayerOnline.Disconnect();
             }
@@ -64,8 +70,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonHighscored_Click(object sender, EventArgs e)
+        private async void ButtonHighscores_Click(object sender, EventArgs e)
         {
+            this.pictureBoxHighscores.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresButtonBlauwEndgame");
+            await Task.Delay(300);
+            this.pictureBoxHighscores.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresButtonBlauwEndgame");
             FormHighscores highscores = new FormHighscores();
             highscores.ShowDialog();
         }
@@ -74,8 +83,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonHome_Click(object sender, EventArgs e)
+        private async void ButtonHoofdmenu_Click(object sender, EventArgs e)
         {
+            this.pictureBoxHighscores.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HoofdmenuButtonBlauwEndgame");
+            await Task.Delay(300);
+            this.pictureBoxHighscores.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HoofdmenuButtonBlauwEndgame");
             this.Close();
             this.Dispose();
             GC.Collect();
@@ -88,8 +100,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ButtonSluiten_Click(object sender, EventArgs e)
+        private async void ButtonSpelAfsluiten_Click(object sender, EventArgs e)
         {
+            this.pictureBoxSpelAfsluiten.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresButtonBlauwEndgame");
+            await Task.Delay(300);
+            this.pictureBoxSpelAfsluiten.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresButtonBlauwEndgame");
             Application.Exit();
         }
         /// <summary>
