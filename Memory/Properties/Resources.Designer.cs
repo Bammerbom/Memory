@@ -438,16 +438,6 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SpeelOpnieuwButtonGroenEndgame2D {
-            get {
-                object obj = ResourceManager.GetObject("SpeelOpnieuwButtonGroenEndgame2D", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SpeelveldButtonGeel {
             get {
                 object obj = ResourceManager.GetObject("SpeelveldButtonGeel", resourceCulture);

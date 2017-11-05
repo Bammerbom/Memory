@@ -312,11 +312,11 @@
     <None Include="Resources\HighscoresButtonBlauw.png" />
     <None Include="Resources\HighscoresButtonBlauw2D.png" />
     <None Include="Resources\HighscoresButtonBlauwEndgame.png" />
-    <None Include="Resources\HighscoresButtonBlauwEndgame2D.png" />
     <None Include="Resources\HoofdmenuButtonBlauwEndgame.png" />
-    <None Include="Resources\HoofdmenuButtonBlauwEndgame2D.png" />
     <None Include="Resources\InstellingenButtonBaluwEndgame.png" />
     <None Include="Resources\InstellingenButtonBaluwEndgame2D.png" />
+    <None Include="Resources\HoofdmenuButtonBlauwEndgame2D.png" />
+    <None Include="Resources\HighscoresButtonBlauwEndgame2D.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
