@@ -317,6 +317,8 @@
     <None Include="Resources\InstellingenButtonBaluwEndgame2D.png" />
     <None Include="Resources\HoofdmenuButtonBlauwEndgame2D.png" />
     <None Include="Resources\HighscoresButtonBlauwEndgame2D.png" />
+    <None Include="Resources\HighscoresVerwijderenButtonRood.png" />
+    <None Include="Resources\HighscoresVerwijderenButtonRood2D.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

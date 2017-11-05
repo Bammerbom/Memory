@@ -180,10 +180,10 @@
             // pictureBox1Terug
             // 
             this.pictureBox1Terug.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1Terug.Image = global::Memory.Properties.Resources.TerugButtonBlauw;
+            this.pictureBox1Terug.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1Terug.BackgroundImage")));
             this.pictureBox1Terug.Location = new System.Drawing.Point(12, 747);
             this.pictureBox1Terug.Name = "pictureBox1Terug";
-            this.pictureBox1Terug.Size = new System.Drawing.Size(171, 48);
+            this.pictureBox1Terug.Size = new System.Drawing.Size(190, 49);
             this.pictureBox1Terug.TabIndex = 26;
             this.pictureBox1Terug.TabStop = false;
             this.pictureBox1Terug.Click += new System.EventHandler(this.pictureBox1Terug_Click);
@@ -191,10 +191,10 @@
             // HighscoresVerwijderen
             // 
             this.HighscoresVerwijderen.BackColor = System.Drawing.Color.Transparent;
-            this.HighscoresVerwijderen.Image = global::Memory.Properties.Resources.HighscoresVerwijderenRedButton;
+            this.HighscoresVerwijderen.BackgroundImage = global::Memory.Properties.Resources.HighscoresVerwijderenButtonRood;
             this.HighscoresVerwijderen.Location = new System.Drawing.Point(1062, 744);
             this.HighscoresVerwijderen.Name = "HighscoresVerwijderen";
-            this.HighscoresVerwijderen.Size = new System.Drawing.Size(190, 48);
+            this.HighscoresVerwijderen.Size = new System.Drawing.Size(190, 49);
             this.HighscoresVerwijderen.TabIndex = 27;
             this.HighscoresVerwijderen.TabStop = false;
             this.HighscoresVerwijderen.Click += new System.EventHandler(this.Label_HighscoresVerwijderen_Click);
