@@ -64,8 +64,7 @@
             // pictureBox2Laden
             // 
             this.pictureBox2Laden.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2Laden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2Laden.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2Laden.Image")));
+            this.pictureBox2Laden.BackgroundImage = global::Memory.Properties.Resources.LadenButtonBlauw;
             this.pictureBox2Laden.Location = new System.Drawing.Point(145, 110);
             this.pictureBox2Laden.Name = "pictureBox2Laden";
             this.pictureBox2Laden.Size = new System.Drawing.Size(192, 48);
@@ -76,8 +75,7 @@
             // pictureBox3Highscores
             // 
             this.pictureBox3Highscores.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3Highscores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3Highscores.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3Highscores.Image")));
+            this.pictureBox3Highscores.BackgroundImage = global::Memory.Properties.Resources.HighscoresButtonBlauw;
             this.pictureBox3Highscores.Location = new System.Drawing.Point(145, 164);
             this.pictureBox3Highscores.Name = "pictureBox3Highscores";
             this.pictureBox3Highscores.Size = new System.Drawing.Size(192, 50);
@@ -88,8 +86,7 @@
             // pictureBox4Credits
             // 
             this.pictureBox4Credits.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4Credits.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4Credits.Image")));
+            this.pictureBox4Credits.BackgroundImage = global::Memory.Properties.Resources.CreditsButtonBlauw;
             this.pictureBox4Credits.Location = new System.Drawing.Point(145, 220);
             this.pictureBox4Credits.Name = "pictureBox4Credits";
             this.pictureBox4Credits.Size = new System.Drawing.Size(192, 51);
@@ -100,8 +97,8 @@
             // pictureBox1Speel
             // 
             this.pictureBox1Speel.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1Speel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1Speel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1Speel.Image")));
+            this.pictureBox1Speel.BackgroundImage = global::Memory.Properties.Resources.SpeelButtonGroen;
+            this.pictureBox1Speel.ErrorImage = null;
             this.pictureBox1Speel.Location = new System.Drawing.Point(124, 40);
             this.pictureBox1Speel.Name = "pictureBox1Speel";
             this.pictureBox1Speel.Size = new System.Drawing.Size(231, 60);
@@ -112,8 +109,7 @@
             // pictureBox5Afsluiten
             // 
             this.pictureBox5Afsluiten.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5Afsluiten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5Afsluiten.Image = global::Memory.Properties.Resources.ButtonAfsluitenRood;
+            this.pictureBox5Afsluiten.BackgroundImage = global::Memory.Properties.Resources.AfsluitenButtonRood;
             this.pictureBox5Afsluiten.Location = new System.Drawing.Point(145, 333);
             this.pictureBox5Afsluiten.Name = "pictureBox5Afsluiten";
             this.pictureBox5Afsluiten.Size = new System.Drawing.Size(192, 51);
@@ -124,7 +120,7 @@
             // pictureBox6Help
             // 
             this.pictureBox6Help.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6Help.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6Help.Image")));
+            this.pictureBox6Help.BackgroundImage = global::Memory.Properties.Resources.HelpButtonBlauw;
             this.pictureBox6Help.Location = new System.Drawing.Point(145, 277);
             this.pictureBox6Help.Name = "pictureBox6Help";
             this.pictureBox6Help.Size = new System.Drawing.Size(192, 50);

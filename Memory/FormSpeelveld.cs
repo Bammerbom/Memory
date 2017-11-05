@@ -195,7 +195,7 @@ namespace Memory
         }
 
         /// <summary>
-        /// mute & unmute het geluid
+        /// mute en unmute het geluid
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

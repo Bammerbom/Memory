@@ -172,12 +172,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\StartButtonGroen2D.png" />
+    <None Include="Resources\StartButtonGroen.png" />
+    <None Include="Resources\SpelAfsluitenButtonRoodEndgame2D.png" />
+    <None Include="Resources\SpelAfsluitenButtonRoodEndgame.png" />
+    <None Include="Resources\SpeelOpnieuwButtonEndgame2D.png" />
+    <None Include="Resources\SpeelOpnieuwButtonEndgame.png" />
+    <None Include="Resources\TerugButtonBlauw2D.png" />
+    <None Include="Resources\TerugButtonBlauw.png" />
+    <None Include="Resources\LadenButtonBlauw2D.png" />
+    <None Include="Resources\LadenButtonBlauw.png" />
+    <None Include="Resources\SpeelButtonGroen2D.png" />
+    <None Include="Resources\SpeelButtonGroen.png" />
     <None Include="Resources\Thema0SpeelveldAchtergrond1.jpg" />
     <None Include="Resources\SpelAfsluitenButtonRood1.png" />
     <None Include="Resources\SpeelopnieuwButtonGreen1.png" />
     <None Include="Resources\SpelAfsluitenButtonRood.png" />
     <None Include="Resources\SpeelopnieuwButtonGreen.png" />
-    <None Include="Resources\TerugButtonBlauw.png" />
     <None Include="Resources\TerugButtonBlueGoed.png" />
     <None Include="Resources\TerugButtonBlue.png" />
     <None Include="Resources\yellow_button03.png" />
@@ -186,7 +197,6 @@
     <None Include="Resources\Naam2InvullenLabel.png" />
     <None Include="Resources\Naam1InvullenLabel.png" />
     <None Include="Resources\TerugButtonRood.png" />
-    <None Include="Resources\StartButtonGroen.png" />
     <None Include="Resources\Thema2SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema1SpeelveldAchtergrond.jpg" />
     <None Include="Resources\Thema0SpeelveldAchtergrond.jpg" />
@@ -285,7 +295,6 @@
     <None Include="Resources\ButtonLadenBlauw.png" />
     <None Include="Resources\ButtonSpeelGroen.png" />
     <None Include="Resources\IPadresLabelGeel.png" />
-    <None Include="Resources\HighscoresButtonBlauw.png" />
     <None Include="Resources\HoofdmenuButtonBlauw.png" />
     <None Include="Resources\InstellingenButtonBlauw.png" />
     <None Include="Resources\HighscoresButtonBlauw1.png" />
@@ -293,6 +302,24 @@
     <None Include="Resources\InstellingenButtonBlauw1.png" />
     <None Include="Resources\HighscoresButtonBlauw12.png" />
     <None Include="Resources\HoofdmenuButtonBlauw12.png" />
+    <None Include="Resources\HighscoresVerwijderenRedButton.png" />
+    <None Include="Resources\2DbuttonHighscoresVerwijderen.png" />
+    <None Include="Resources\AfsluitenButtonRood.png" />
+    <None Include="Resources\AfsluitenButtonRood2D.png" />
+    <None Include="Resources\CreditsButtonBlauw.png" />
+    <None Include="Resources\CreditsButtonBlauw2D.png" />
+    <None Include="Resources\HelpButtonBlauw.png" />
+    <None Include="Resources\HelpButtonBlauw2D.png" />
+    <None Include="Resources\HighscoresButtonBlauw.png" />
+    <None Include="Resources\HighscoresButtonBlauw2D.png" />
+    <None Include="Resources\HighscoresButtonBlauwEndgame.png" />
+    <None Include="Resources\HoofdmenuButtonBlauwEndgame.png" />
+    <None Include="Resources\InstellingenButtonBaluwEndgame.png" />
+    <None Include="Resources\InstellingenButtonBaluwEndgame2D.png" />
+    <None Include="Resources\HoofdmenuButtonBlauwEndgame2D.png" />
+    <None Include="Resources\HighscoresButtonBlauwEndgame2D.png" />
+    <None Include="Resources\HighscoresVerwijderenButtonRood.png" />
+    <None Include="Resources\HighscoresVerwijderenButtonRood2D.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

@@ -21,8 +21,11 @@ namespace Memory
             InitializeComponent();
         }
 
-        private void pictureBox1Terug_Click(object sender, EventArgs e)
+        private async void pictureBox1Terug_Click(object sender, EventArgs e)
         {
+            this.pictureBox1Terug.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("TerugButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBox1Terug.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("TerugButtonBlauw");
             this.Close();
             this.Dispose();
             GC.Collect();
@@ -72,8 +75,12 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Label_HighscoresVerwijderen_Click(object sender, EventArgs e)
+        private async void Label_HighscoresVerwijderen_Click(object sender, EventArgs e)
         {
+            this.HighscoresVerwijderen.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresVerwijderenButtonRood2D");
+            await Task.Delay(300);
+            this.HighscoresVerwijderen.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresVerwijderenButtonRood");
+
             DialogResult result1 = MessageBox.Show("Wil je de singelplayer highscores verwijderen?", "Verwijderen highscores singelplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (result1 != DialogResult.Cancel)
             {

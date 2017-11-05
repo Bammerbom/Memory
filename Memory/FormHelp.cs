@@ -69,8 +69,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+        private async void pictureBox1_Click_1(object sender, EventArgs e)
         {
+            this.pictureBox1.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("TerugButtonBlauw2D");
+            await Task.Delay(300);
+            this.pictureBox1.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("TerugButtonBlauw");
             this.Close();
             this.Dispose();
             GC.Collect();
