@@ -448,9 +448,9 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TerugButtonBlue {
+        internal static System.Drawing.Bitmap TerugButtonBlauw2D {
             get {
-                object obj = ResourceManager.GetObject("TerugButtonBlue", resourceCulture);
+                object obj = ResourceManager.GetObject("TerugButtonBlauw2D", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -998,16 +998,6 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap VraagtekenHelp {
             get {
                 object obj = ResourceManager.GetObject("VraagtekenHelp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap yellow_button03 {
-            get {
-                object obj = ResourceManager.GetObject("yellow_button03", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

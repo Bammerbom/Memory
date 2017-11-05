@@ -144,7 +144,7 @@ namespace Memory
         }
 
         /// <summary>
-        /// mute & unmute het geluid. set ook een variabele die word gebruikt bij het loaden van aaandere froms om te bepalen of het geluid uit of aan moet.
+        /// mute en unmute het geluid. set ook een variabele die word gebruikt bij het loaden van aaandere froms om te bepalen of het geluid uit of aan moet.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

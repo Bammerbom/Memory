@@ -177,7 +177,7 @@
             // 
             this.pictureBoxStartmenuTerug.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxStartmenuTerug.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxStartmenuTerug.Image = global::Memory.Properties.Resources.TerugButtonBlue;
+            this.pictureBoxStartmenuTerug.Image = global::Memory.Properties.Resources.TerugButtonBlauw;
             this.pictureBoxStartmenuTerug.Location = new System.Drawing.Point(23, 62);
             this.pictureBoxStartmenuTerug.Name = "pictureBoxStartmenuTerug";
             this.pictureBoxStartmenuTerug.Size = new System.Drawing.Size(191, 49);

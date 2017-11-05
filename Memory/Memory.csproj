@@ -172,6 +172,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\TerugButtonBlauw2D.png" />
+    <None Include="Resources\TerugButtonBlauw.png" />
     <None Include="Resources\LadenButtonBlauw2D.png" />
     <None Include="Resources\LadenButtonBlauw.png" />
     <None Include="Resources\SpeelButtonGroen2D.png" />
@@ -181,7 +183,6 @@
     <None Include="Resources\SpeelopnieuwButtonGreen1.png" />
     <None Include="Resources\SpelAfsluitenButtonRood.png" />
     <None Include="Resources\SpeelopnieuwButtonGreen.png" />
-    <None Include="Resources\TerugButtonBlauw.png" />
     <None Include="Resources\TerugButtonBlueGoed.png" />
     <None Include="Resources\TerugButtonBlue.png" />
     <None Include="Resources\yellow_button03.png" />
