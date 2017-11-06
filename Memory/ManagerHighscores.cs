@@ -20,14 +20,18 @@ namespace Memory
         /// <returns>De highscores</returns>
         public static List<Object[]> GetHighscores(string path)
         {
-            //Als de file niet bestaat return een lege lijst
-            if (!File.Exists(path) || File.ReadAllText(path) == "") return new List<Object[]>();
+            try {
+                //Als de file niet bestaat return een lege lijst
+                if (!File.Exists(path) || File.ReadAllText(path) == "") return new List<Object[]>();
 
-            //Lees het bestand
-            string lines = File.ReadAllText(path);
+                //Lees het bestand
+                string lines = File.ReadAllText(path);
 
-            //Convert lines naar list
-            return new List<object[]>(Utils.StringToArray(lines) as object[][]);
+                //Convert lines naar list
+                return new List<object[]>(Utils.StringToArray(lines) as object[][]);
+            } catch (Exception) {
+                return new List<Object[]>();
+            }
         }
 
         /// <summary>
