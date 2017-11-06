@@ -46,12 +46,12 @@
             // 
             this.LabelResultatenmatch.AutoSize = true;
             this.LabelResultatenmatch.BackColor = System.Drawing.Color.Transparent;
-            this.LabelResultatenmatch.Font = new System.Drawing.Font("KenVector Future", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelResultatenmatch.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelResultatenmatch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LabelResultatenmatch.Location = new System.Drawing.Point(161, 125);
+            this.LabelResultatenmatch.Location = new System.Drawing.Point(193, 125);
             this.LabelResultatenmatch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelResultatenmatch.Name = "LabelResultatenmatch";
-            this.LabelResultatenmatch.Size = new System.Drawing.Size(73, 18);
+            this.LabelResultatenmatch.Size = new System.Drawing.Size(67, 25);
             this.LabelResultatenmatch.TabIndex = 5;
             this.LabelResultatenmatch.Text = "Label";
             // 
