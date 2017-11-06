@@ -214,5 +214,11 @@ namespace Memory
             }
 
         }
+
+        
+        private void Textbox_Timer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

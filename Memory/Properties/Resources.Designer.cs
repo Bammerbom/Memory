@@ -91,6 +91,16 @@ namespace Memory.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BeurtBoxWitGeel {
+            get {
+                object obj = ResourceManager.GetObject("BeurtBoxWitGeel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Buttonclick {
@@ -135,6 +145,16 @@ namespace Memory.Properties {
         internal static System.IO.UnmanagedMemoryStream GameOver {
             get {
                 return ResourceManager.GetStream("GameOver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GeleSpeelveldButton {
+            get {
+                object obj = ResourceManager.GetObject("GeleSpeelveldButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -391,6 +411,26 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap PortLabelGeel {
             get {
                 object obj = ResourceManager.GetObject("PortLabelGeel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ScoreBoxWitGeel {
+            get {
+                object obj = ResourceManager.GetObject("ScoreBoxWitGeel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ScoreLabelGeel {
+            get {
+                object obj = ResourceManager.GetObject("ScoreLabelGeel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1028,6 +1068,16 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema2Voorkant {
             get {
                 object obj = ResourceManager.GetObject("Thema2Voorkant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TimerAchtergrond {
+            get {
+                object obj = ResourceManager.GetObject("TimerAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -64,7 +64,7 @@ namespace Memory
             BaseGame.FormSpeelveld.Buton_Reset.Hide();
             BaseGame.FormSpeelveld.restartToolStripMenuItem.HideDropDown();
             BaseGame.FormSpeelveld.Label_Timer.Hide();
-            BaseGame.FormSpeelveld.Textbox_Timer.Hide();
+            BaseGame.FormSpeelveld.Label_Timer.Hide();
             
             BaseGame.Gamestate = 1;
             BaseGame.FormSpeelveld.Label_Score_Speler_1.Text = BaseGame.Naam1 + " : ";

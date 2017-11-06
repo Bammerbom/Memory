@@ -418,4 +418,19 @@
   <data name="TerugButtonBlauw2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonBlauw2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GeleSpeelveldButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeleSpeelveldButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeurtBoxWitGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeurtBoxWitGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScoreBoxWitGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScoreBoxWitGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScoreLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScoreLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TimerAchtergrond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TimerAchtergrond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
