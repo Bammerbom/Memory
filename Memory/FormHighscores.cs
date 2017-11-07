@@ -81,7 +81,7 @@ namespace Memory
             await Task.Delay(300);
             this.HighscoresVerwijderen.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("HighscoresVerwijderenButtonRood");
 
-            DialogResult result1 = MessageBox.Show("Wil je de singelplayer highscores verwijderen?", "Verwijderen highscores singelplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            DialogResult result1 = MessageBox.Show("Wil je de singleplayer highscores verwijderen?", "Verwijderen highscores singleplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (result1 != DialogResult.Cancel)
             {
                 DialogResult result2 = MessageBox.Show("Wil je de multiplayer highscores verwijderen?", "Verwijderen highscores multiplayer!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
