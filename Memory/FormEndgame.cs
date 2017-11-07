@@ -29,9 +29,9 @@ namespace Memory
         /// <param name="e"></param>
         private async void ButtonSpeelOpnieuw_Click(object sender, EventArgs e)
         {
-            this.pictureBoxSpeelOpnieuw.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelOpnieuwButtonGroenEndgame2D");
+            this.pictureBoxSpeelOpnieuw.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelOpnieuwButtonEndgame2D");
             await Task.Delay(300);
-            this.pictureBoxSpeelOpnieuw.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelOpnieuwButtonGroenEndgame");
+            this.pictureBoxSpeelOpnieuw.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("SpeelOpnieuwButtonEndgame");
             if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return;
             this.Close();
             this.Dispose();
