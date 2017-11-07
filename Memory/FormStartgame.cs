@@ -94,6 +94,7 @@ namespace Memory
                 pictureBoxNaam1.Text = "Naam 1 invullen";
                 pictureBoxNaam1.Visible = true;
                 pictureBoxNaam2.Visible = true;
+                textboxNaam2.MaxLength = 10;
                 pictureBoxIPadres.Visible = false;
                 textboxIp.Visible = false;
                 pictureBoxPort.Visible = false;
