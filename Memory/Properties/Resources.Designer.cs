@@ -528,9 +528,9 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SpeelOpnieuwButtonEndgame2D {
+        internal static System.Drawing.Bitmap SpeelOpnieuwButtonEndgame {
             get {
-                object obj = ResourceManager.GetObject("SpeelOpnieuwButtonEndgame2D", resourceCulture);
+                object obj = ResourceManager.GetObject("SpeelOpnieuwButtonEndgame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -538,9 +538,9 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SpeelOpnieuwButtonGroenEndgame {
+        internal static System.Drawing.Bitmap SpeelOpnieuwButtonEndgame2D {
             get {
-                object obj = ResourceManager.GetObject("SpeelOpnieuwButtonGroenEndgame", resourceCulture);
+                object obj = ResourceManager.GetObject("SpeelOpnieuwButtonEndgame2D", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -58,7 +58,7 @@
             // 
             // pictureBoxSpeelOpnieuw
             // 
-            this.pictureBoxSpeelOpnieuw.BackgroundImage = global::Memory.Properties.Resources.SpeelOpnieuwButtonGroenEndgame;
+            this.pictureBoxSpeelOpnieuw.BackgroundImage = global::Memory.Properties.Resources.SpeelOpnieuwButtonEndgame;
             this.pictureBoxSpeelOpnieuw.Location = new System.Drawing.Point(7, 380);
             this.pictureBoxSpeelOpnieuw.Name = "pictureBoxSpeelOpnieuw";
             this.pictureBoxSpeelOpnieuw.Size = new System.Drawing.Size(150, 70);
