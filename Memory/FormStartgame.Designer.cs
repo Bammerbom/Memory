@@ -83,7 +83,7 @@
             // 
             this.textboxNaam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxNaam1.Location = new System.Drawing.Point(262, 258);
-            this.textboxNaam1.MaxLength = 15;
+            this.textboxNaam1.MaxLength = 10;
             this.textboxNaam1.Name = "textboxNaam1";
             this.textboxNaam1.Size = new System.Drawing.Size(277, 32);
             this.textboxNaam1.TabIndex = 3;

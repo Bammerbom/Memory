@@ -295,9 +295,9 @@
             // 
             this.Label_Beurt.AutoSize = true;
             this.Label_Beurt.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Beurt.Font = new System.Drawing.Font("KenVector Future", 30F);
+            this.Label_Beurt.Font = new System.Drawing.Font("KenVector Future", 20F);
             this.Label_Beurt.Image = global::Memory.Properties.Resources.BeurtBoxWitGeel;
-            this.Label_Beurt.Location = new System.Drawing.Point(49, 458);
+            this.Label_Beurt.Location = new System.Drawing.Point(49, 455);
             this.Label_Beurt.MinimumSize = new System.Drawing.Size(220, 120);
             this.Label_Beurt.Name = "Label_Beurt";
             this.Label_Beurt.Size = new System.Drawing.Size(220, 120);
