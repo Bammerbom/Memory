@@ -172,6 +172,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ResetButtonBlauwSpeelveld2D.png" />
+    <None Include="Resources\ResetButtonBlauwSpeelveld.png" />
+    <None Include="Resources\OpslaanEnExitButtonBlauwSpeelveld2D.png" />
+    <None Include="Resources\OpslaanEnExitButtonBlauwSpeelveld.png" />
+    <None Include="Resources\TimerAchtergrond.png" />
+    <None Include="Resources\ScoreLabelGeel.png" />
+    <None Include="Resources\ScoreBoxWitGeel.png" />
     <None Include="Resources\StartButtonGroen2D.png" />
     <None Include="Resources\StartButtonGroen.png" />
     <None Include="Resources\SpelAfsluitenButtonRoodEndgame2D.png" />
@@ -320,6 +327,10 @@
     <None Include="Resources\HighscoresButtonBlauwEndgame2D.png" />
     <None Include="Resources\HighscoresVerwijderenButtonRood.png" />
     <None Include="Resources\HighscoresVerwijderenButtonRood2D.png" />
+    <None Include="Resources\GeleSpeelveldButton.png" />
+    <None Include="Resources\BeurtBoxWitGeel.png" />
+    <None Include="Resources\ExitButtonBlauwSpeelveld.png" />
+    <None Include="Resources\ExitButtonBlauwSpeelveld2D.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>

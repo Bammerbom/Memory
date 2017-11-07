@@ -232,9 +232,9 @@ namespace Memory
             FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
             FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
             if (SpelerAanBeurt == 1) {
-                FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam1;
+                FormSpeelveld.Label_Beurt.Text = "Beurt:\n" + Naam1;
             } else {
-                FormSpeelveld.TextBox_Beurt.Text = "Beurt:\n" + Naam2;
+                FormSpeelveld.Label_Beurt.Text = "Beurt:\n" + Naam2;
             }
         }
 

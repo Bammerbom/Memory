@@ -418,4 +418,34 @@
   <data name="TerugButtonBlauw2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TerugButtonBlauw2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GeleSpeelveldButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeleSpeelveldButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeurtBoxWitGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeurtBoxWitGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScoreBoxWitGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScoreBoxWitGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScoreLabelGeel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScoreLabelGeel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExitButtonBlauwSpeelveld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExitButtonBlauwSpeelveld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExitButtonBlauwSpeelveld2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExitButtonBlauwSpeelveld2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpslaanEnExitButtonBlauwSpeelveld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpslaanEnExitButtonBlauwSpeelveld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpslaanEnExitButtonBlauwSpeelveld2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpslaanEnExitButtonBlauwSpeelveld2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResetButtonBlauwSpeelveld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResetButtonBlauwSpeelveld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ResetButtonBlauwSpeelveld2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResetButtonBlauwSpeelveld2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

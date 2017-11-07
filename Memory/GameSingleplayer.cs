@@ -12,11 +12,11 @@ namespace Memory
             BaseGame.Gamemode = 0;
             BaseGame.InitSpeelveld(Hoogte, Breedte);
             BaseGame.InitForm();
-            BaseGame.FormSpeelveld.Textbox_Score_Speler_2.Visible = false;
+            BaseGame.FormSpeelveld.Label_Score_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Label_Score_Speler_2.Visible = false;
             BaseGame.FormSpeelveld.Label_Zetten_Speler_2.Visible = false;
-            BaseGame.FormSpeelveld.Textbox_Zetten_Speler_2.Visible = false;
-            BaseGame.FormSpeelveld.TextBox_Beurt.Visible = false;
+            BaseGame.FormSpeelveld.Label_Zetten_Speler_2.Visible = false;
+            BaseGame.FormSpeelveld.Label_Beurt.Visible = false;
             BaseGame.SpelerAanBeurt = 1;
             BaseGame.Gamestate = 1;
             BaseGame.Naam1 = Naam;
