@@ -171,7 +171,6 @@ namespace Memory
         public static async void End() {
             BaseGame.Gamestate = 2;
             await Task.Delay(2000);
-            Exit();
 
             //Als het een client is, wacht op reset packet van host
             if (!Host) {
@@ -196,6 +195,8 @@ namespace Memory
                 };
                 b.RunWorkerAsync();
             }
+
+            Exit();
         }
 
         /// <summary>
