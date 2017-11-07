@@ -40,7 +40,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Highscores_1spelers = new System.Windows.Forms.Label();
-            this.dataGridViewSingelplayer = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSingleplayer = new System.Windows.Forms.DataGridView();
             this.dataGridViewMultiplayer = new System.Windows.Forms.DataGridView();
             this.pictureBox1Terug = new System.Windows.Forms.PictureBox();
             this.HighscoresVerwijderen = new System.Windows.Forms.PictureBox();
@@ -48,7 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingleplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighscoresVerwijderen)).BeginInit();
@@ -108,18 +108,18 @@
             this.Highscores_1spelers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Highscores_1spelers.Name = "Highscores_1spelers";
             this.Highscores_1spelers.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Highscores_1spelers.Size = new System.Drawing.Size(229, 37);
+            this.Highscores_1spelers.Size = new System.Drawing.Size(202, 37);
             this.Highscores_1spelers.TabIndex = 21;
-            this.Highscores_1spelers.Text = "1 spelers";
+            this.Highscores_1spelers.Text = "1 speler";
             this.Highscores_1spelers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // dataGridViewSingelplayer
+            // dataGridViewSingleplayer
             // 
-            this.dataGridViewSingelplayer.AllowUserToAddRows = false;
-            this.dataGridViewSingelplayer.AllowUserToDeleteRows = false;
-            this.dataGridViewSingelplayer.AllowUserToResizeColumns = false;
-            this.dataGridViewSingelplayer.AllowUserToResizeRows = false;
-            this.dataGridViewSingelplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewSingleplayer.AllowUserToAddRows = false;
+            this.dataGridViewSingleplayer.AllowUserToDeleteRows = false;
+            this.dataGridViewSingleplayer.AllowUserToResizeColumns = false;
+            this.dataGridViewSingleplayer.AllowUserToResizeRows = false;
+            this.dataGridViewSingleplayer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("KenVector Future", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -127,8 +127,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSingelplayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewSingelplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSingleplayer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewSingleplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("KenVector Future", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,14 +136,14 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewSingelplayer.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewSingelplayer.Enabled = false;
-            this.dataGridViewSingelplayer.Location = new System.Drawing.Point(30, 252);
-            this.dataGridViewSingelplayer.Name = "dataGridViewSingelplayer";
-            this.dataGridViewSingelplayer.ReadOnly = true;
-            this.dataGridViewSingelplayer.RowHeadersVisible = false;
-            this.dataGridViewSingelplayer.Size = new System.Drawing.Size(551, 466);
-            this.dataGridViewSingelplayer.TabIndex = 22;
+            this.dataGridViewSingleplayer.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewSingleplayer.Enabled = false;
+            this.dataGridViewSingleplayer.Location = new System.Drawing.Point(30, 252);
+            this.dataGridViewSingleplayer.Name = "dataGridViewSingleplayer";
+            this.dataGridViewSingleplayer.ReadOnly = true;
+            this.dataGridViewSingleplayer.RowHeadersVisible = false;
+            this.dataGridViewSingleplayer.Size = new System.Drawing.Size(551, 466);
+            this.dataGridViewSingleplayer.TabIndex = 22;
             // 
             // dataGridViewMultiplayer
             // 
@@ -209,7 +209,7 @@
             this.Controls.Add(this.HighscoresVerwijderen);
             this.Controls.Add(this.pictureBox1Terug);
             this.Controls.Add(this.dataGridViewMultiplayer);
-            this.Controls.Add(this.dataGridViewSingelplayer);
+            this.Controls.Add(this.dataGridViewSingleplayer);
             this.Controls.Add(this.Highscores_2spelers);
             this.Controls.Add(this.Highscores_1spelers);
             this.Controls.Add(this.pictureBox7);
@@ -228,7 +228,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1highscore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingelplayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSingleplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMultiplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Terug)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HighscoresVerwijderen)).EndInit();
@@ -244,7 +244,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label Highscores_1spelers;
-        private System.Windows.Forms.DataGridView dataGridViewSingelplayer;
+        private System.Windows.Forms.DataGridView dataGridViewSingleplayer;
         private System.Windows.Forms.DataGridView dataGridViewMultiplayer;
         private System.Windows.Forms.PictureBox pictureBox1Terug;
         private System.Windows.Forms.PictureBox HighscoresVerwijderen;

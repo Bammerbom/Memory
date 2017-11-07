@@ -43,11 +43,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
-            this.label1.Location = new System.Drawing.Point(119, 7);
+            this.label1.Font = new System.Drawing.Font("KenVector Future", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 44);
+            this.label1.Size = new System.Drawing.Size(389, 41);
             this.label1.TabIndex = 2;
             this.label1.Text = "Gemaakt door:";
             // 
@@ -55,11 +55,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(162, 98);
+            this.label2.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(103, 97);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 25);
+            this.label2.Size = new System.Drawing.Size(272, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Jonathan Brouwer";
             // 
@@ -67,11 +67,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.Location = new System.Drawing.Point(162, 75);
+            this.label3.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(91, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(186, 25);
+            this.label3.Size = new System.Drawing.Size(294, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Maarten v/d Meulen";
             // 
@@ -79,11 +79,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(162, 145);
+            this.label4.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(127, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 25);
+            this.label4.Size = new System.Drawing.Size(216, 23);
             this.label4.TabIndex = 5;
             this.label4.Text = "Jelle Bleeker";
             // 
@@ -91,11 +91,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label5.Location = new System.Drawing.Point(162, 122);
+            this.label5.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(118, 121);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 25);
+            this.label5.Size = new System.Drawing.Size(243, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "Jasper de Leeuw";
             // 
@@ -103,11 +103,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label6.Location = new System.Drawing.Point(162, 51);
+            this.label6.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(91, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 25);
+            this.label6.Size = new System.Drawing.Size(306, 23);
             this.label6.TabIndex = 7;
             this.label6.Text = "Jorunn Oosterwegel";
             // 
@@ -115,11 +115,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label7.Location = new System.Drawing.Point(162, 169);
+            this.label7.Font = new System.Drawing.Font("KenVector Future", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(139, 167);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 25);
+            this.label7.Size = new System.Drawing.Size(192, 23);
             this.label7.TabIndex = 8;
             this.label7.Text = "Gerlof Prins";
             // 
@@ -127,7 +127,7 @@
             // 
             this.Picturebox1Terug.BackColor = System.Drawing.Color.Transparent;
             this.Picturebox1Terug.BackgroundImage = global::Memory.Properties.Resources.TerugButtonBlauw;
-            this.Picturebox1Terug.Location = new System.Drawing.Point(3, 393);
+            this.Picturebox1Terug.Location = new System.Drawing.Point(12, 379);
             this.Picturebox1Terug.Name = "Picturebox1Terug";
             this.Picturebox1Terug.Size = new System.Drawing.Size(190, 49);
             this.Picturebox1Terug.TabIndex = 16;

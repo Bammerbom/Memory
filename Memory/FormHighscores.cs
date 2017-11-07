@@ -42,7 +42,7 @@ namespace Memory
         this.pictureBox5.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox1Highscore");
         this.pictureBox7.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(ManagerThema.Themaprefix + "Picturebox2Highscore");
 
-            //highscores table singelplayer
+            //highscores table singleplayer
             //ManagerHighscores.CheckHighscoreFiles();
         Load_Tabbelen();
         }
@@ -51,12 +51,16 @@ namespace Memory
         /// </summary>
         public void Load_Tabbelen()
         {
-            dataGridViewSingelplayer.DataSource = ManagerHighscores.GetTable(false);
-            dataGridViewSingelplayer.CurrentCell = null;
-            dataGridViewSingelplayer.Columns[0].Width = 35;
-            dataGridViewSingelplayer.Columns[1].Width = 260;
-            dataGridViewSingelplayer.Columns[2].Width = 70;
-            dataGridViewSingelplayer.Columns[3].Width = 70;
+            dataGridViewSingleplayer.DataSource = ManagerHighscores.GetTable(false);
+            dataGridViewSingleplayer.CurrentCell = null;
+            dataGridViewSingleplayer.Columns[0].Width = 35;
+            dataGridViewSingleplayer.Columns[1].Width = 260;
+            dataGridViewSingleplayer.Columns[2].Width = 70;
+            dataGridViewSingleplayer.Columns[3].Width = 70;
+            for (int i = 1; i < 20; i += 2)
+            {
+                dataGridViewSingleplayer.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+            }
             //highscores table multiplayer
             dataGridViewMultiplayer.DataSource = ManagerHighscores.GetTable(true);
             dataGridViewMultiplayer.CurrentCell = null;
@@ -64,14 +68,15 @@ namespace Memory
             dataGridViewMultiplayer.Columns[1].Width = 260;
             dataGridViewMultiplayer.Columns[2].Width = 70;
             dataGridViewMultiplayer.Columns[3].Width = 70;
-            for (int i = 1; i < 20; i+=2)
+            for (int i = 2; i < 20; i += 4)
             {
                 dataGridViewMultiplayer.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                dataGridViewMultiplayer.Rows[i + 1].DefaultCellStyle.BackColor = Color.LightGray;
             }
         }
 
         /// <summary>
-        /// vraagt of je zeker bent dat je de de singelplayer en/of multiplayer highscores gegefens wil verwijderen
+        /// vraagt of je zeker bent dat je de de singleplayer en/of multiplayer highscores gegefens wil verwijderen
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
