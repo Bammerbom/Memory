@@ -15,6 +15,8 @@ namespace Memory
 {
     public partial class FormStartgame : Form
     {
+        BackgroundWorker mpworker;
+
         /// <summary>
         /// intialized components
         /// </summary>
@@ -233,24 +235,26 @@ namespace Memory
                     this.Dispose();
                     break;
                 case "Host Multiplayer":
+                    pictureBoxStart.Enabled = false;
+
                     string naams = textboxNaam1.Text;
                     if (naams == null || naams.Length == 0) {
                         naams = "Speler 1";
                     }
                     int port = (int) textboxPort.Value;
 
-                    BackgroundWorker worker = new BackgroundWorker();
-                    worker.DoWork += delegate (object o, DoWorkEventArgs args) {
+                    mpworker = new BackgroundWorker();
+                    mpworker.DoWork += delegate (object o, DoWorkEventArgs args) {
                         args.Result = ManagerServer.Server(port);
                     };
-                    worker.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
+                    mpworker.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
                         if ((bool) args.Result) {
                             GameMultiplayerOnline.Start(h, w, naams, true);
                             this.Close();
                             this.Dispose();
                         }
                     };
-                    worker.RunWorkerAsync();
+                    mpworker.RunWorkerAsync();
                     //Errorbox wordt weergegeven door Server method
                     break;
                 case "Join Multiplayer":
@@ -277,6 +281,10 @@ namespace Memory
         private void textboxIp_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormStartgame_FormClosed(object sender, FormClosedEventArgs e) {
+            mpworker.CancelAsync();
         }
     }
 }

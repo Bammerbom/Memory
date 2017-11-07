@@ -264,6 +264,7 @@
             this.Name = "FormStartgame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memory";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStartgame_FormClosed);
             this.Load += new System.EventHandler(this.FormStartgame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.textboxPort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStart)).EndInit();
