@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -237,11 +238,19 @@ namespace Memory
                         naams = "Speler 1";
                     }
                     int port = (int) textboxPort.Value;
-                    if (ManagerServer.Server(port)) {
-                        GameMultiplayerOnline.Start(h, w, naams, true);
-                        this.Close();
-                        this.Dispose();
-                    }
+
+                    BackgroundWorker worker = new BackgroundWorker();
+                    worker.DoWork += delegate (object o, DoWorkEventArgs args) {
+                        args.Result = ManagerServer.Server(port);
+                    };
+                    worker.RunWorkerCompleted += delegate (object o, RunWorkerCompletedEventArgs args) {
+                        if ((bool) args.Result) {
+                            GameMultiplayerOnline.Start(h, w, naams, true);
+                            this.Close();
+                            this.Dispose();
+                        }
+                    };
+                    worker.RunWorkerAsync();
                     //Errorbox wordt weergegeven door Server method
                     break;
                 case "Join Multiplayer":
