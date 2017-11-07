@@ -43,10 +43,7 @@
             this.Label_Score_Speler_2 = new System.Windows.Forms.Label();
             this.Label_Zetten_Speler_1 = new System.Windows.Forms.Label();
             this.Label_Timer = new System.Windows.Forms.Label();
-            this.Button_Opslaan = new System.Windows.Forms.Button();
-            this.Button_Exit = new System.Windows.Forms.Button();
             this.Label_Zetten_Speler_2 = new System.Windows.Forms.Label();
-            this.Buton_Reset = new System.Windows.Forms.Button();
             this.Volume = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Textbox_Score_Speler_1 = new System.Windows.Forms.Label();
@@ -55,9 +52,15 @@
             this.Textbox_Zetten_Speler_2 = new System.Windows.Forms.Label();
             this.Label_Beurt = new System.Windows.Forms.Label();
             this.Textbox_Timer = new System.Windows.Forms.Label();
+            this.PictureBox_Reset = new System.Windows.Forms.PictureBox();
+            this.PictureBox_Exit = new System.Windows.Forms.PictureBox();
+            this.PictureBox_Opslaan_En_Exit = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Volume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Reset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Opslaan_En_Exit)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -149,7 +152,7 @@
             this.Label_Score_Speler_1.BackColor = System.Drawing.Color.Transparent;
             this.Label_Score_Speler_1.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Score_Speler_1.Image = global::Memory.Properties.Resources.GeleSpeelveldButton;
-            this.Label_Score_Speler_1.Location = new System.Drawing.Point(5, 124);
+            this.Label_Score_Speler_1.Location = new System.Drawing.Point(26, 124);
             this.Label_Score_Speler_1.MinimumSize = new System.Drawing.Size(190, 45);
             this.Label_Score_Speler_1.Name = "Label_Score_Speler_1";
             this.Label_Score_Speler_1.Size = new System.Drawing.Size(190, 45);
@@ -163,7 +166,7 @@
             this.Label_Score_Speler_2.BackColor = System.Drawing.Color.Transparent;
             this.Label_Score_Speler_2.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Score_Speler_2.Image = global::Memory.Properties.Resources.GeleSpeelveldButton;
-            this.Label_Score_Speler_2.Location = new System.Drawing.Point(5, 245);
+            this.Label_Score_Speler_2.Location = new System.Drawing.Point(26, 245);
             this.Label_Score_Speler_2.MinimumSize = new System.Drawing.Size(190, 45);
             this.Label_Score_Speler_2.Name = "Label_Score_Speler_2";
             this.Label_Score_Speler_2.Size = new System.Drawing.Size(190, 45);
@@ -177,7 +180,7 @@
             this.Label_Zetten_Speler_1.BackColor = System.Drawing.Color.Transparent;
             this.Label_Zetten_Speler_1.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Zetten_Speler_1.Image = global::Memory.Properties.Resources.GeleSpeelveldButton;
-            this.Label_Zetten_Speler_1.Location = new System.Drawing.Point(5, 184);
+            this.Label_Zetten_Speler_1.Location = new System.Drawing.Point(26, 184);
             this.Label_Zetten_Speler_1.MinimumSize = new System.Drawing.Size(190, 45);
             this.Label_Zetten_Speler_1.Name = "Label_Zetten_Speler_1";
             this.Label_Zetten_Speler_1.Size = new System.Drawing.Size(190, 45);
@@ -190,37 +193,15 @@
             this.Label_Timer.AutoSize = true;
             this.Label_Timer.BackColor = System.Drawing.Color.Transparent;
             this.Label_Timer.Font = new System.Drawing.Font("KenVector Future", 18F);
-            this.Label_Timer.Image = global::Memory.Properties.Resources.TimerAchtergrond;
-            this.Label_Timer.Location = new System.Drawing.Point(5, 400);
-            this.Label_Timer.MaximumSize = new System.Drawing.Size(190, 45);
-            this.Label_Timer.MinimumSize = new System.Drawing.Size(190, 45);
+            this.Label_Timer.Image = global::Memory.Properties.Resources.GeleSpeelveldButton;
+            this.Label_Timer.Location = new System.Drawing.Point(26, 381);
+            this.Label_Timer.MaximumSize = new System.Drawing.Size(190, 49);
+            this.Label_Timer.MinimumSize = new System.Drawing.Size(190, 49);
             this.Label_Timer.Name = "Label_Timer";
-            this.Label_Timer.Size = new System.Drawing.Size(190, 45);
+            this.Label_Timer.Size = new System.Drawing.Size(190, 49);
             this.Label_Timer.TabIndex = 11;
             this.Label_Timer.Text = "Timer : ";
             this.Label_Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Button_Opslaan
-            // 
-            this.Button_Opslaan.Font = new System.Drawing.Font("KenVector Future", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Opslaan.Location = new System.Drawing.Point(55, 694);
-            this.Button_Opslaan.Name = "Button_Opslaan";
-            this.Button_Opslaan.Size = new System.Drawing.Size(221, 77);
-            this.Button_Opslaan.TabIndex = 13;
-            this.Button_Opslaan.Text = "Opslaan en Exit";
-            this.Button_Opslaan.UseVisualStyleBackColor = true;
-            this.Button_Opslaan.Click += new System.EventHandler(this.Button_Opslaan_Click);
-            // 
-            // Button_Exit
-            // 
-            this.Button_Exit.Font = new System.Drawing.Font("KenVector Future", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Exit.Location = new System.Drawing.Point(55, 777);
-            this.Button_Exit.Name = "Button_Exit";
-            this.Button_Exit.Size = new System.Drawing.Size(221, 77);
-            this.Button_Exit.TabIndex = 14;
-            this.Button_Exit.Text = "Exit";
-            this.Button_Exit.UseVisualStyleBackColor = true;
-            this.Button_Exit.Click += new System.EventHandler(this.Button_Exit_Click);
             // 
             // Label_Zetten_Speler_2
             // 
@@ -228,24 +209,13 @@
             this.Label_Zetten_Speler_2.BackColor = System.Drawing.Color.Transparent;
             this.Label_Zetten_Speler_2.Font = new System.Drawing.Font("KenVector Future", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Zetten_Speler_2.Image = global::Memory.Properties.Resources.GeleSpeelveldButton;
-            this.Label_Zetten_Speler_2.Location = new System.Drawing.Point(5, 306);
+            this.Label_Zetten_Speler_2.Location = new System.Drawing.Point(26, 306);
             this.Label_Zetten_Speler_2.MinimumSize = new System.Drawing.Size(190, 45);
             this.Label_Zetten_Speler_2.Name = "Label_Zetten_Speler_2";
             this.Label_Zetten_Speler_2.Size = new System.Drawing.Size(190, 45);
             this.Label_Zetten_Speler_2.TabIndex = 31;
             this.Label_Zetten_Speler_2.Text = "Zetten :";
             this.Label_Zetten_Speler_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Buton_Reset
-            // 
-            this.Buton_Reset.Font = new System.Drawing.Font("KenVector Future", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buton_Reset.Location = new System.Drawing.Point(55, 611);
-            this.Buton_Reset.Name = "Buton_Reset";
-            this.Buton_Reset.Size = new System.Drawing.Size(221, 77);
-            this.Buton_Reset.TabIndex = 14;
-            this.Buton_Reset.Text = "Reset";
-            this.Buton_Reset.UseVisualStyleBackColor = true;
-            this.Buton_Reset.Click += new System.EventHandler(this.Buton_Reset_Click);
             // 
             // Volume
             // 
@@ -263,7 +233,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Memory.Properties.Resources.ScoreLabelGeel;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(287, 69);
             this.pictureBox1.TabIndex = 34;
@@ -275,7 +245,7 @@
             this.Textbox_Score_Speler_1.BackColor = System.Drawing.Color.Transparent;
             this.Textbox_Score_Speler_1.Font = new System.Drawing.Font("KenVector Future", 24F);
             this.Textbox_Score_Speler_1.Image = global::Memory.Properties.Resources.ScoreBoxWitGeel;
-            this.Textbox_Score_Speler_1.Location = new System.Drawing.Point(203, 124);
+            this.Textbox_Score_Speler_1.Location = new System.Drawing.Point(224, 124);
             this.Textbox_Score_Speler_1.MinimumSize = new System.Drawing.Size(75, 49);
             this.Textbox_Score_Speler_1.Name = "Textbox_Score_Speler_1";
             this.Textbox_Score_Speler_1.Size = new System.Drawing.Size(75, 49);
@@ -288,7 +258,7 @@
             this.Textbox_Zetten_Speler_1.BackColor = System.Drawing.Color.Transparent;
             this.Textbox_Zetten_Speler_1.Font = new System.Drawing.Font("KenVector Future", 24F);
             this.Textbox_Zetten_Speler_1.Image = global::Memory.Properties.Resources.ScoreBoxWitGeel;
-            this.Textbox_Zetten_Speler_1.Location = new System.Drawing.Point(203, 184);
+            this.Textbox_Zetten_Speler_1.Location = new System.Drawing.Point(224, 184);
             this.Textbox_Zetten_Speler_1.MinimumSize = new System.Drawing.Size(75, 49);
             this.Textbox_Zetten_Speler_1.Name = "Textbox_Zetten_Speler_1";
             this.Textbox_Zetten_Speler_1.Size = new System.Drawing.Size(75, 49);
@@ -301,7 +271,7 @@
             this.Textbox_Score_Speler_2.BackColor = System.Drawing.Color.Transparent;
             this.Textbox_Score_Speler_2.Font = new System.Drawing.Font("KenVector Future", 24F);
             this.Textbox_Score_Speler_2.Image = global::Memory.Properties.Resources.ScoreBoxWitGeel;
-            this.Textbox_Score_Speler_2.Location = new System.Drawing.Point(203, 245);
+            this.Textbox_Score_Speler_2.Location = new System.Drawing.Point(224, 245);
             this.Textbox_Score_Speler_2.MinimumSize = new System.Drawing.Size(75, 49);
             this.Textbox_Score_Speler_2.Name = "Textbox_Score_Speler_2";
             this.Textbox_Score_Speler_2.Size = new System.Drawing.Size(75, 49);
@@ -314,7 +284,7 @@
             this.Textbox_Zetten_Speler_2.BackColor = System.Drawing.Color.Transparent;
             this.Textbox_Zetten_Speler_2.Font = new System.Drawing.Font("KenVector Future", 24F);
             this.Textbox_Zetten_Speler_2.Image = global::Memory.Properties.Resources.ScoreBoxWitGeel;
-            this.Textbox_Zetten_Speler_2.Location = new System.Drawing.Point(203, 306);
+            this.Textbox_Zetten_Speler_2.Location = new System.Drawing.Point(224, 306);
             this.Textbox_Zetten_Speler_2.MinimumSize = new System.Drawing.Size(75, 49);
             this.Textbox_Zetten_Speler_2.Name = "Textbox_Zetten_Speler_2";
             this.Textbox_Zetten_Speler_2.Size = new System.Drawing.Size(75, 49);
@@ -327,7 +297,7 @@
             this.Label_Beurt.BackColor = System.Drawing.Color.Transparent;
             this.Label_Beurt.Font = new System.Drawing.Font("KenVector Future", 30F);
             this.Label_Beurt.Image = global::Memory.Properties.Resources.BeurtBoxWitGeel;
-            this.Label_Beurt.Location = new System.Drawing.Point(56, 470);
+            this.Label_Beurt.Location = new System.Drawing.Point(49, 458);
             this.Label_Beurt.MinimumSize = new System.Drawing.Size(220, 120);
             this.Label_Beurt.Name = "Label_Beurt";
             this.Label_Beurt.Size = new System.Drawing.Size(220, 120);
@@ -341,13 +311,46 @@
             this.Textbox_Timer.BackColor = System.Drawing.Color.Transparent;
             this.Textbox_Timer.Font = new System.Drawing.Font("KenVector Future", 24F);
             this.Textbox_Timer.Image = global::Memory.Properties.Resources.ScoreBoxWitGeel;
-            this.Textbox_Timer.Location = new System.Drawing.Point(205, 400);
+            this.Textbox_Timer.Location = new System.Drawing.Point(226, 381);
             this.Textbox_Timer.MinimumSize = new System.Drawing.Size(75, 49);
             this.Textbox_Timer.Name = "Textbox_Timer";
             this.Textbox_Timer.Size = new System.Drawing.Size(75, 49);
             this.Textbox_Timer.TabIndex = 40;
             this.Textbox_Timer.Text = "10";
             this.Textbox_Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PictureBox_Reset
+            // 
+            this.PictureBox_Reset.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Reset.BackgroundImage = global::Memory.Properties.Resources.ResetButtonBlauwSpeelveld;
+            this.PictureBox_Reset.Location = new System.Drawing.Point(49, 600);
+            this.PictureBox_Reset.Name = "PictureBox_Reset";
+            this.PictureBox_Reset.Size = new System.Drawing.Size(220, 75);
+            this.PictureBox_Reset.TabIndex = 41;
+            this.PictureBox_Reset.TabStop = false;
+            this.PictureBox_Reset.Click += new System.EventHandler(this.Buton_Reset_Click);
+            // 
+            // PictureBox_Exit
+            // 
+            this.PictureBox_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Exit.BackgroundImage = global::Memory.Properties.Resources.ExitButtonBlauwSpeelveld;
+            this.PictureBox_Exit.Location = new System.Drawing.Point(49, 762);
+            this.PictureBox_Exit.Name = "PictureBox_Exit";
+            this.PictureBox_Exit.Size = new System.Drawing.Size(220, 75);
+            this.PictureBox_Exit.TabIndex = 42;
+            this.PictureBox_Exit.TabStop = false;
+            this.PictureBox_Exit.Click += new System.EventHandler(this.Button_Exit_Click);
+            // 
+            // PictureBox_Opslaan_En_Exit
+            // 
+            this.PictureBox_Opslaan_En_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Opslaan_En_Exit.BackgroundImage = global::Memory.Properties.Resources.OpslaanEnExitButtonBlauwSpeelveld;
+            this.PictureBox_Opslaan_En_Exit.Location = new System.Drawing.Point(49, 681);
+            this.PictureBox_Opslaan_En_Exit.Name = "PictureBox_Opslaan_En_Exit";
+            this.PictureBox_Opslaan_En_Exit.Size = new System.Drawing.Size(220, 75);
+            this.PictureBox_Opslaan_En_Exit.TabIndex = 43;
+            this.PictureBox_Opslaan_En_Exit.TabStop = false;
+            this.PictureBox_Opslaan_En_Exit.Click += new System.EventHandler(this.Button_Opslaan_Click);
             // 
             // FormSpeelveld
             // 
@@ -357,6 +360,9 @@
             this.BackgroundImage = global::Memory.Properties.Resources.Thema0SpeelveldAchtergrond;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.Controls.Add(this.PictureBox_Opslaan_En_Exit);
+            this.Controls.Add(this.PictureBox_Exit);
+            this.Controls.Add(this.PictureBox_Reset);
             this.Controls.Add(this.Textbox_Timer);
             this.Controls.Add(this.Label_Beurt);
             this.Controls.Add(this.Textbox_Zetten_Speler_2);
@@ -365,10 +371,7 @@
             this.Controls.Add(this.Textbox_Score_Speler_1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Volume);
-            this.Controls.Add(this.Buton_Reset);
             this.Controls.Add(this.Label_Zetten_Speler_2);
-            this.Controls.Add(this.Button_Exit);
-            this.Controls.Add(this.Button_Opslaan);
             this.Controls.Add(this.Label_Timer);
             this.Controls.Add(this.Label_Zetten_Speler_1);
             this.Controls.Add(this.Label_Score_Speler_2);
@@ -388,6 +391,9 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Volume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Reset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Opslaan_En_Exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,11 +414,8 @@
         public System.Windows.Forms.Label Label_Score_Speler_2;
         public System.Windows.Forms.Label Label_Zetten_Speler_1;
         public System.Windows.Forms.Label Label_Timer;
-        public System.Windows.Forms.Button Button_Opslaan;
-        public System.Windows.Forms.Button Button_Exit;
         public System.Windows.Forms.Label Label_Zetten_Speler_2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
-        public System.Windows.Forms.Button Buton_Reset;
         public System.Windows.Forms.PictureBox Volume;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label Textbox_Score_Speler_1;
@@ -421,5 +424,8 @@
         public System.Windows.Forms.Label Textbox_Zetten_Speler_2;
         public System.Windows.Forms.Label Label_Beurt;
         public System.Windows.Forms.Label Textbox_Timer;
+        public System.Windows.Forms.PictureBox PictureBox_Reset;
+        public System.Windows.Forms.PictureBox PictureBox_Exit;
+        public System.Windows.Forms.PictureBox PictureBox_Opslaan_En_Exit;
     }
 }

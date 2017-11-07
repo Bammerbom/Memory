@@ -92,7 +92,10 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Button_Exit_Click(object sender, EventArgs e) {
+        private async void Button_Exit_Click(object sender, EventArgs e) {
+            this.PictureBox_Exit.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("ExitButtonBlauwSpeelveld2D");
+            await Task.Delay(300);
+            this.PictureBox_Exit.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("ExitButtonBlauwSpeelveld");
             BaseGame.Exitgame();
         }
 
@@ -101,7 +104,10 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Button_Opslaan_Click(object sender, EventArgs e) {
+        private async void Button_Opslaan_Click(object sender, EventArgs e) {
+            this.PictureBox_Opslaan_En_Exit.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("OpslaanEnExitButtonBlauwSpeelveld2D");
+            await Task.Delay(300);
+            this.PictureBox_Opslaan_En_Exit.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("OpslaanEnExitButtonBlauwSpeelveld");
             ManagerSavegames.SaveEnEnd();
         }
 
@@ -175,8 +181,11 @@ namespace Memory
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Buton_Reset_Click(object sender, EventArgs e)
+        private async void Buton_Reset_Click(object sender, EventArgs e)
         {
+            this.PictureBox_Reset.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("ResetButtonBlauwSpeelveld2D");
+            await Task.Delay(300);
+            this.PictureBox_Reset.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("ResetButtonBlauwSpeelveld");
             if (BaseGame.Gamemode == 2 && GameMultiplayerOnline.Reset()) return;
             BaseGame.Reset();
             BaseGame.ResetVeld();

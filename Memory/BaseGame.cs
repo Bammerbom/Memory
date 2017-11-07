@@ -226,11 +226,11 @@ namespace Memory
         /// deze methode update de textboxes in het score bord van het speelveld.
         /// </summary>
         public static void Render() {
-            FormSpeelveld.Label_Score_Speler_1.Text = Convert.ToString(Score1); //update textboxes
-            FormSpeelveld.Label_Score_Speler_2.Text = Convert.ToString(Score2);
-            FormSpeelveld.Label_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
-            FormSpeelveld.Label_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
-            FormSpeelveld.Label_Timer.Text = Convert.ToString(Tijdbeurt);
+            FormSpeelveld.Textbox_Score_Speler_1.Text = Convert.ToString(Score1); //update textboxes
+            FormSpeelveld.Textbox_Score_Speler_2.Text = Convert.ToString(Score2);
+            FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
+            FormSpeelveld.Textbox_Zetten_Speler_2.Text = Convert.ToString(Zetten2);
+            FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
             if (SpelerAanBeurt == 1) {
                 FormSpeelveld.Label_Beurt.Text = "Beurt:\n" + Naam1;
             } else {
@@ -257,7 +257,7 @@ namespace Memory
                         Tijdbeurt--;
                     }
                     Tijdtotaal ++ ;
-                    FormSpeelveld.Label_Timer.Text = Convert.ToString(Tijdbeurt);
+                    FormSpeelveld.Textbox_Timer.Text = Convert.ToString(Tijdbeurt);
 
                 }
 
@@ -266,12 +266,12 @@ namespace Memory
                 if (SpelerAanBeurt == 1)
                 {
                     Zetten1++;
-                    FormSpeelveld.Label_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
+                    FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten1);
                 }
                 if (SpelerAanBeurt == 2)
                 {
                     Zetten2++;
-                    FormSpeelveld.Label_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
+                    FormSpeelveld.Textbox_Zetten_Speler_1.Text = Convert.ToString(Zetten2);
                 }
 
                 BaseGame.VolgendeBeurt();

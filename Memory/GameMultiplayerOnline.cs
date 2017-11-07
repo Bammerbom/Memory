@@ -60,8 +60,8 @@ namespace Memory
             }
 
             BaseGame.InitForm();
-            BaseGame.FormSpeelveld.Button_Opslaan.Hide();
-            BaseGame.FormSpeelveld.Buton_Reset.Hide();
+            BaseGame.FormSpeelveld.PictureBox_Opslaan_En_Exit.Hide();
+            BaseGame.FormSpeelveld.PictureBox_Reset.Hide();
             BaseGame.FormSpeelveld.restartToolStripMenuItem.HideDropDown();
             BaseGame.FormSpeelveld.Label_Timer.Hide();
             BaseGame.FormSpeelveld.Label_Timer.Hide();

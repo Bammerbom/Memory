@@ -132,6 +132,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ExitButtonBlauwSpeelveld {
+            get {
+                object obj = ResourceManager.GetObject("ExitButtonBlauwSpeelveld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ExitButtonBlauwSpeelveld2D {
+            get {
+                object obj = ResourceManager.GetObject("ExitButtonBlauwSpeelveld2D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Game_over_lagere_resolutie {
             get {
                 object obj = ResourceManager.GetObject("Game_over_lagere_resolutie", resourceCulture);
@@ -387,6 +407,26 @@ namespace Memory.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpslaanEnExitButtonBlauwSpeelveld {
+            get {
+                object obj = ResourceManager.GetObject("OpslaanEnExitButtonBlauwSpeelveld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpslaanEnExitButtonBlauwSpeelveld2D {
+            get {
+                object obj = ResourceManager.GetObject("OpslaanEnExitButtonBlauwSpeelveld2D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Piano {
@@ -411,6 +451,26 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap PortLabelGeel {
             get {
                 object obj = ResourceManager.GetObject("PortLabelGeel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ResetButtonBlauwSpeelveld {
+            get {
+                object obj = ResourceManager.GetObject("ResetButtonBlauwSpeelveld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ResetButtonBlauwSpeelveld2D {
+            get {
+                object obj = ResourceManager.GetObject("ResetButtonBlauwSpeelveld2D", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1068,16 +1128,6 @@ namespace Memory.Properties {
         internal static System.Drawing.Bitmap Thema2Voorkant {
             get {
                 object obj = ResourceManager.GetObject("Thema2Voorkant", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap TimerAchtergrond {
-            get {
-                object obj = ResourceManager.GetObject("TimerAchtergrond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
