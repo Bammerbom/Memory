@@ -11,8 +11,9 @@ namespace Memory {
         private static int Port;
         private static int ByteSize;
         private static bool Open = false;
-        private static TcpListener Listener;
-        private static TcpClient Client;
+        public static TcpListener Listener;
+        public static TcpClient Client;
+        public static bool Started;
 
         private static Action<string> cJoin;
         private static Action<string> cDisconnect;
@@ -30,6 +31,10 @@ namespace Memory {
             Port = port;
             ByteSize = bytesize;
             IPEndPoint ep = new IPEndPoint(IPAddress.Any, Port);
+            if (Listener != null)
+            {
+                Listener.Stop();
+            }
 			Listener = new TcpListener(ep);
 			Listener.Start();
 		}

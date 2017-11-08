@@ -285,7 +285,17 @@ namespace Memory
         }
 
         private void FormStartgame_FormClosed(object sender, FormClosedEventArgs e) {
-            mpworker.CancelAsync();
+            switch (comboGametype.Text)
+            {
+                case "Join Multiplayer":
+                    break;
+
+                case "Host Multiplayer":
+                    ManagerServer.Cancel = true;
+                    break;
+
+            }
+
         }
     }
 }
