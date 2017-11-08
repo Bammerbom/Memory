@@ -179,6 +179,11 @@ namespace Memory
             Geluid.Player.Dispose();
             GC.Collect();
             int h, w;
+            if (comboGametype.Text == "Kies spelmodus")
+            {
+                MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (comboGametype.Text != "Join Multiplayer") {
                 switch (comboSpelgrootte.Text) {
                     //vooet grote van het speelveld in
