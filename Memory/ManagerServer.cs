@@ -32,6 +32,7 @@ namespace Memory {
         /// <returns>Of er een verbinding is</returns>
         private static void Server_internal(int port) {
             NetServer.Start(ServerConnect, ServerDisconnect, port, PacketSize);
+
             NetServer.NextClient();
         }
 

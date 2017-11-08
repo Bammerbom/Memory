@@ -172,6 +172,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\VerbindenButtonGroen.png" />
     <None Include="Resources\SpeelOpnieuwButtonEndgame2D.png" />
     <None Include="Resources\ResetButtonBlauwSpeelveld2D.png" />
     <None Include="Resources\ResetButtonBlauwSpeelveld.png" />

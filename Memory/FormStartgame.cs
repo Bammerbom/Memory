@@ -235,6 +235,7 @@ namespace Memory
                     this.Dispose();
                     break;
                 case "Host Multiplayer":
+                    pictureBoxStart.BackgroundImage = this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("");
                     pictureBoxStart.Enabled = false;
 
                     string naams = textboxNaam1.Text;
