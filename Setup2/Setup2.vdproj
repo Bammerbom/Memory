@@ -21,8 +21,26 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1CADAF16BBE94D72A333D9A67A1F669A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8343E21FD37CDAC8F9DDF60FB2282496"
         "OwnerKey" = "8:_12D85910B830435D85DD91FFAC4A0ACF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B6A421F7B40F4B82888A751CF53B3BB4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E25529514D1B4954ABD7B736BFD57C10"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,6 +118,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1CADAF16BBE94D72A333D9A67A1F669A"
+            {
+            "SourcePath" = "8:C:\\Users\\Jelle\\Desktop\\UIpack\\Font\\kenvector_future_thin.ttf"
+            "TargetName" = "8:kenvector_future_thin.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_230ED977B09B4CB69D662E84DD87BE3C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8343E21FD37CDAC8F9DDF60FB2282496"
             {
             "AssemblyRegister" = "3:1"
@@ -131,12 +169,63 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B6A421F7B40F4B82888A751CF53B3BB4"
+            {
+            "SourcePath" = "8:C:\\Users\\Jelle\\Downloads\\MemoryIcon64x64.ico"
+            "TargetName" = "8:MemoryIcon64x64.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_3D4337283CF34FF19E411B4758D0C1FE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E25529514D1B4954ABD7B736BFD57C10"
+            {
+            "SourcePath" = "8:C:\\Users\\Jelle\\Desktop\\UIpack\\Font\\kenvector_future.ttf"
+            "TargetName" = "8:kenvector_future.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_230ED977B09B4CB69D662E84DD87BE3C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
         }
         "Folder"
         {
+            "{1525181F-901A-416C-8A58-119130FE478E}:_230ED977B09B4CB69D662E84DD87BE3C"
+            {
+            "Name" = "8:#1911"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:FontsFolder"
+                "Folders"
+                {
+                }
+            }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_3D4337283CF34FF19E411B4758D0C1FE"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
@@ -188,7 +277,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup2"
         "ProductCode" = "8:{4723B86C-4E6D-4CB9-95FA-5AB781512B63}"
-        "PackageCode" = "8:{8DE14C96-2BE2-43F8-A9EF-9CACF136A73F}"
+        "PackageCode" = "8:{F803D4CA-7A13-4FB0-8AB4-CC3ABA6D9934}"
         "UpgradeCode" = "8:{9CE7CB56-7D43-4DD6-B685-5627616BC75A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -308,32 +397,32 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2A75E9F314CB477098B007DB3D744BE7"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_75AD881C6D644EE29D641A2080CE06EE"
             {
-            "Name" = "8:Memory Groep 17"
+            "Name" = "8:MemoryGroep17"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
-            "IconIndex" = "3:32512"
+            "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_12D85910B830435D85DD91FFAC4A0ACF"
             "Folder" = "8:_8D743F14A5BD4942A86723F422F69F85"
             "WorkingFolder" = "8:_3D4337283CF34FF19E411B4758D0C1FE"
-            "Icon" = "8:_12D85910B830435D85DD91FFAC4A0ACF"
+            "Icon" = "8:_B6A421F7B40F4B82888A751CF53B3BB4"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9578110639F64A2ABDB93B088BCDBF05"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8AA921EAC7D7459E8E455841FDEA2DF9"
             {
-            "Name" = "8:Memory Groep 17"
+            "Name" = "8:MemoryGroep17"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
-            "IconIndex" = "3:32512"
+            "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_12D85910B830435D85DD91FFAC4A0ACF"
             "Folder" = "8:_69A075F0768C492A9E2732AECAF188D2"
             "WorkingFolder" = "8:_3D4337283CF34FF19E411B4758D0C1FE"
-            "Icon" = "8:_12D85910B830435D85DD91FFAC4A0ACF"
+            "Icon" = "8:_B6A421F7B40F4B82888A751CF53B3BB4"
             "Feature" = "8:"
             }
         }
