@@ -25,7 +25,9 @@ namespace Memory
                 if (!File.Exists(path) || File.ReadAllText(path) == "") return new List<Object[]>();
 
                 //Lees het bestand
-                string lines = File.ReadAllText(path);
+                string linesencrypted = File.ReadAllText(path);
+                //decrypt het bestand
+                string lines = Utils.Decrypt(linesencrypted, "ditiseenwachtwoord");
 
                 //Convert lines naar list
                 return new List<object[]>(Utils.StringToArray(lines) as object[][]);
@@ -42,7 +44,9 @@ namespace Memory
         public static void SaveHighscores(string path, List<Object[]> highscores)
         {
             object[][] highscores_array = highscores.ToArray();
-            File.WriteAllText(path, Utils.ArrayToString(highscores_array));
+            string lines2 = Utils.ArrayToString(highscores_array);
+            lines2 = Utils.Encrypt(lines2, "ditiseenwachtwoord");
+            File.WriteAllText(path, lines2);
         }
 
         /// <summary>

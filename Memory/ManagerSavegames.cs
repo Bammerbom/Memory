@@ -49,7 +49,7 @@ namespace Memory
             Savedata[24] = Convert.ToString("");
 
             string WriteData = Utils.ArrayToString(Savedata); //convert array naar 1 string
-            WriteData = Utils.Encrypt(WriteData, "dat boi harro");
+            WriteData = Utils.Encrypt(WriteData, "ditiseenwachtwoord");
 
 
             //maak bestands path met save file dialog
@@ -99,7 +99,7 @@ namespace Memory
             try
             {
                 string Readdata = System.IO.File.ReadAllText(Bestandslocatie);  //read
-                Readdata = Utils.Decrypt(Readdata, "dat boi harro");
+                Readdata = Utils.Decrypt(Readdata, "ditiseenwachtwoord");
                 Loaddata = Utils.StringToArray(Readdata) as string[];  //convert naar array
             }
             catch
