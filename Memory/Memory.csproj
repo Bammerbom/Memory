@@ -172,6 +172,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Thema0Picturebox2Highscore.png" />
+    <None Include="Resources\Thema0Picturebox1Highscore.png" />
+    <None Include="Resources\LabelHelp3333.png" />
     <None Include="Resources\SpeelOpnieuwButtonEndgame2D.png" />
     <None Include="Resources\ResetButtonBlauwSpeelveld2D.png" />
     <None Include="Resources\ResetButtonBlauwSpeelveld.png" />
@@ -213,10 +216,8 @@
     <None Include="Resources\PijlTerug.png" />
     <None Include="Resources\Thema2Picturebox1Highscore.png" />
     <None Include="Resources\Thema1Picturebox1Highscore.png" />
-    <None Include="Resources\Thema0Picturebox2Highscore.png" />
     <None Include="Resources\Thema2Picturebox2Highscore.png" />
     <None Include="Resources\Thema1Picturebox2Highscore.png" />
-    <None Include="Resources\Thema0Picturebox1Highscore.png" />
     <None Include="Resources\Thema2Picturebox1Highscore.jpg" />
     <None Include="Resources\Thema2CreditsAchtergrond.jpg" />
     <None Include="Resources\Thema1CreditsAchtergrond.jpg" />
@@ -291,6 +292,8 @@
     <None Include="Resources\BeurtBoxWitGeel.png" />
     <None Include="Resources\ExitButtonBlauwSpeelveld.png" />
     <None Include="Resources\ExitButtonBlauwSpeelveld2D.png" />
+    <None Include="Resources\HelpLabelText.png" />
+    <None Include="Resources\HelpLabelMetText.png" />
     <Content Include="Resources\KaartVoorkant.png" />
   </ItemGroup>
   <ItemGroup>
