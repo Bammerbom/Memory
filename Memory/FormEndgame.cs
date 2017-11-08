@@ -117,17 +117,19 @@ namespace Memory
             Geluid.AchtergrondMuziek();
             if (BaseGame.Gamemode == 0 && BaseGame.Checkwin() == true) //1 speler spel
             {
+                LabelResultatenMatch2.Visible = false;
                 LabelResultatenmatch.Text = "Gefeliciteerd! U heeft gewonnen.\nU heeft een score behaald van " + BaseGame.Score1 + " punten." 
                     + "\nU had " + BaseGame.Tijdtotaal + " seconden nodig om te winnen."
                     + "\nU had " + BaseGame.Zetten1 + " zetten nodig om te winnen." ;
             }
             else if (BaseGame.Checkwin() == true) //2 speler spel
             {
+                LabelResultatenmatch.Visible = false;
                 String winnaam = BaseGame.Score1 > BaseGame.Score2 ? BaseGame.Naam1 : BaseGame.Naam2;
                 String verliesnaam = BaseGame.Score1 < BaseGame.Score2 ? BaseGame.Naam1 : BaseGame.Naam2;
                 if(BaseGame.Score1 != BaseGame.Score2) {
                     //Er is een winnaar
-                    LabelResultatenmatch.Text = winnaam + " heeft gewonnen!\n"
+                    LabelResultatenMatch2.Text = winnaam + " heeft gewonnen!\n"
                         + BaseGame.Naam1 + " heeft score: " + BaseGame.Score1 + " (Zetten: " + BaseGame.Zetten1 + ")\n"
                         + BaseGame.Naam2 + " heeft score: " + BaseGame.Score2 + " (Zetten: " + BaseGame.Zetten2 + ")";
                 } else {
@@ -135,11 +137,11 @@ namespace Memory
                     if(BaseGame.Zetten1 != BaseGame.Zetten2) {
                         winnaam = BaseGame.Zetten1 < BaseGame.Zetten2 ? BaseGame.Naam1 : BaseGame.Naam2;
                         verliesnaam = BaseGame.Zetten1 > BaseGame.Zetten2 ? BaseGame.Naam1 : BaseGame.Naam2;
-                        LabelResultatenmatch.Text = winnaam + " heeft gewonnenen met minder zetten!\n"
+                        LabelResultatenMatch2.Text = winnaam + " heeft gewonnenen met minder zetten!\n"
                         + BaseGame.Naam1 + " heeft score: " + BaseGame.Score1 + " (Zetten: " + BaseGame.Zetten1 + ")\n"
                         + BaseGame.Naam2 + " heeft score: " + BaseGame.Score2 + " (Zetten: " + BaseGame.Zetten2 + ")";
                     } else {
-                        LabelResultatenmatch.Text = "Gelijkspel! Beide spelers hebben evenveel score en zetten.\n"
+                        LabelResultatenMatch2.Text = "Gelijkspel! Beide spelers hebben evenveel score en zetten.\n"
                         + BaseGame.Naam1 + " heeft score: " + BaseGame.Score1 + " (Zetten: " + BaseGame.Zetten1 + ")\n"
                         + BaseGame.Naam2 + " heeft score: " + BaseGame.Score2 + " (Zetten: " + BaseGame.Zetten2 + ")";
                     }
@@ -147,7 +149,8 @@ namespace Memory
             }
             else
             {
-                LabelResultatenmatch.Text = "het spel is voortijdig beëindigt.";
+                LabelResultatenmatch.Text = "Het spel is voortijdig beëindigt.";
+                LabelResultatenMatch2.Visible = false;
             }
         }
 

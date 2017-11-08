@@ -35,6 +35,7 @@
             this.pictureBoxHighscores = new System.Windows.Forms.PictureBox();
             this.pictureBoxHoofdmenu = new System.Windows.Forms.PictureBox();
             this.pictureBoxSpelAfsluiten = new System.Windows.Forms.PictureBox();
+            this.LabelResultatenMatch2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeelOpnieuw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInstellingen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHighscores)).BeginInit();
@@ -106,6 +107,23 @@
             this.pictureBoxSpelAfsluiten.TabStop = false;
             this.pictureBoxSpelAfsluiten.Click += new System.EventHandler(this.ButtonSpelAfsluiten_Click);
             // 
+            // LabelResultatenMatch2
+            // 
+            this.LabelResultatenMatch2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LabelResultatenMatch2.AutoSize = true;
+            this.LabelResultatenMatch2.BackColor = System.Drawing.Color.Transparent;
+            this.LabelResultatenMatch2.Font = new System.Drawing.Font("KenVector Future", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelResultatenMatch2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LabelResultatenMatch2.Location = new System.Drawing.Point(115, 131);
+            this.LabelResultatenMatch2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelResultatenMatch2.Name = "LabelResultatenMatch2";
+            this.LabelResultatenMatch2.Size = new System.Drawing.Size(100, 23);
+            this.LabelResultatenMatch2.TabIndex = 13;
+            this.LabelResultatenMatch2.Text = "Label";
+            this.LabelResultatenMatch2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormEndgame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -113,6 +131,7 @@
             this.BackgroundImage = global::Memory.Properties.Resources.Game_over_lagere_resolutie;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.LabelResultatenMatch2);
             this.Controls.Add(this.pictureBoxSpelAfsluiten);
             this.Controls.Add(this.pictureBoxHoofdmenu);
             this.Controls.Add(this.pictureBoxHighscores);
@@ -146,5 +165,6 @@
         private System.Windows.Forms.PictureBox pictureBoxHighscores;
         private System.Windows.Forms.PictureBox pictureBoxHoofdmenu;
         private System.Windows.Forms.PictureBox pictureBoxSpelAfsluiten;
+        public System.Windows.Forms.Label LabelResultatenMatch2;
     }
 }
