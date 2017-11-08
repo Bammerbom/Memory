@@ -221,6 +221,26 @@ namespace Memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HelpLabelMetText {
+            get {
+                object obj = ResourceManager.GetObject("HelpLabelMetText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HelpLabelText {
+            get {
+                object obj = ResourceManager.GetObject("HelpLabelText", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HighscoresButtonBlauw {
             get {
                 object obj = ResourceManager.GetObject("HighscoresButtonBlauw", resourceCulture);
