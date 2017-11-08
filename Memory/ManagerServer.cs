@@ -11,6 +11,7 @@ namespace Memory {
     class ManagerServer {
         private static readonly int PacketSize = 1024 * 1024;
         private static BackgroundWorker b;
+        public static bool Cancel;
 
         /// <summary>
         /// Locked de thread tot er een verbinding is
@@ -31,7 +32,16 @@ namespace Memory {
         /// <param name="port">De poort waar de server naar moet verbinden</param>
         /// <returns>Of er een verbinding is</returns>
         private static void Server_internal(int port) {
+            Cancel = false;
             NetServer.Start(ServerConnect, ServerDisconnect, port, PacketSize);
+            while (!NetServer.Listener.Pending())
+            {
+                Thread.Sleep(100);
+                if (Cancel == true)
+                {
+                    return;
+                }
+            }
             NetServer.NextClient();
         }
 

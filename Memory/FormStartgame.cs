@@ -235,6 +235,7 @@ namespace Memory
                     this.Dispose();
                     break;
                 case "Host Multiplayer":
+                    pictureBoxStart.BackgroundImage = this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("VerbindenButtonGroen");
                     pictureBoxStart.Enabled = false;
 
                     string naams = textboxNaam1.Text;
@@ -253,11 +254,16 @@ namespace Memory
                             this.Close();
                             this.Dispose();
                         }
+                        this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("StartButtonGroen");
                     };
                     mpworker.RunWorkerAsync();
                     //Errorbox wordt weergegeven door Server method
                     break;
+
+
                 case "Join Multiplayer":
+                    pictureBoxStart.BackgroundImage = this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("VerbindenButtonGroen");
+                    await Task.Delay(10);
                     string naamt = textboxNaam1.Text;
                     if (naamt == null || naamt.Length == 0) {
                         naamt = "Speler 2";
@@ -268,8 +274,12 @@ namespace Memory
                         GameMultiplayerOnline.Start(h, w, naamt, false);
                         this.Close();
                         this.Dispose();
+
                     }
+
+                    this.pictureBoxStart.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("StartButtonGroen");
                     //Errorbox wordt weergegeven doe Client method
+
                     break;
                 case "Kies spelmodus":
                     MessageBox.Show("Voer een spelmodus in", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -284,7 +294,17 @@ namespace Memory
         }
 
         private void FormStartgame_FormClosed(object sender, FormClosedEventArgs e) {
-            mpworker.CancelAsync();
+            switch (comboGametype.Text)
+            {
+                case "Join Multiplayer":
+                    break;
+
+                case "Host Multiplayer":
+                    ManagerServer.Cancel = true;
+                    break;
+
+            }
+
         }
     }
 }
