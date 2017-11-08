@@ -10,8 +10,8 @@ namespace Memory
 {
     class ManagerHighscores
     {
-        public static string path1 = "SingleplayerScores.txt"; //@"C:\Users\Me\Documents\GitHub\Memory\
-        public static string path2 = "LocalMultiplayerScores.txt";
+        public static string path1 = "SingleplayerScores.sav"; //@"C:\Users\Me\Documents\GitHub\Memory\
+        public static string path2 = "LocalMultiplayerScores.sav";
 
         /// <summary>
         /// Verkrijg alle highscores in een lijst
