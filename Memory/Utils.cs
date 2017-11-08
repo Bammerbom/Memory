@@ -56,10 +56,7 @@ namespace Memory
 
 
         //string encryption begint hier
-        //2 mehtodes encrypt en decrypt. invoer is 1 string en een wachtwoord
-        //3e methode word gebruikt door encrypt en decrypt
-        //code van CraigTP
-        //https://stackoverflow.com/questions/10168240/encrypting-decrypting-a-string-in-c-sharp
+       
 
         // This constant is used to determine the keysize of the encryption algorithm in bits.
         // We divide this by 8 within the code below to get the equivalent number of bytes.
