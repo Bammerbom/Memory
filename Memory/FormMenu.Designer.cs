@@ -48,6 +48,7 @@
             // 
             // ThemaBox
             // 
+            this.ThemaBox.Font = new System.Drawing.Font("KenVector Future Thin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThemaBox.FormattingEnabled = true;
             this.ThemaBox.Items.AddRange(new object[] {
             "Default",
@@ -56,7 +57,7 @@
             this.ThemaBox.Location = new System.Drawing.Point(3, 2);
             this.ThemaBox.MaxDropDownItems = 3;
             this.ThemaBox.Name = "ThemaBox";
-            this.ThemaBox.Size = new System.Drawing.Size(121, 32);
+            this.ThemaBox.Size = new System.Drawing.Size(121, 30);
             this.ThemaBox.TabIndex = 8;
             this.ThemaBox.Text = "Thema";
             this.ThemaBox.SelectedIndexChanged += new System.EventHandler(this.ThemaComboBox_SelectedIndexChanged);
